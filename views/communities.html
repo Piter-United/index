@@ -1,6 +1,6 @@
 <div class="container content">
-  <h1>Cообщества</h1>
-  <div class="well community" ng-repeat="comm in communities">
+  <h1><input placeholder="Сообщества" ng-model="search" style="border: 1px solid #ddd;"/></h1>
+  <div class="well community" ng-repeat="comm in communities | csearch:search">
     <img src="{{comm.logo}}" alt="ups"/>
     <a href="{{comm.url}}">
       <h3> {{comm.title}}</h3>

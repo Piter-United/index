@@ -16,6 +16,19 @@ app = angular.module('app', ['ngRoute'],
       });
     });
 
+app.filter('csearch', function() {
+  return function(input, term) {
+    term = $.trim(term).toLowerCase();
+    if(!term){
+      return input;
+    }
+    return input.filter(function(item){
+      console.log(item);
+      return item.abstract.toLowerCase().indexOf(term) > -1 || item.title.toLowerCase().indexOf(term) > -1
+    });
+  };
+});
+
 function HomeCntl($route, $routeParams, $location) {
   console.log('HomeCntl')
 }
