@@ -1,0 +1,9 @@
+<div class="container content">
+  <h1>Cообщества</h1>
+  <div class="well" ng-repeat="comm in communities">
+    <h4> {{comm.title}}</h4>
+    <p> {{comm.abstract}}</p>
+    <a href="{{comm.url}}">{{comm.url}}</a>
+    <hr/>
+  </div>
+</div>
