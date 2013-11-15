@@ -2,7 +2,7 @@ app = angular.module('app', ['ngRoute'],
     function($routeProvider, $locationProvider) {
       $routeProvider.when('/', {
         templateUrl: 'views/home.html',
-        controller: HomeCntl
+      controller: HomeCntl
       });
 
       $routeProvider.when('/meetups', {
@@ -20,8 +20,12 @@ function HomeCntl($route, $routeParams, $location) {
   console.log('HomeCntl')
 }
 
-function MeetupsCntl($http, $routeParams) {
-  console.log('MeetupsCntl', $http)
+function MeetupsCntl($scope, $http, $routeParams) {
+  var url = "http://www.google.com/calendar/feeds/piterunited@gmail.com/public/full?alt=json-in-script&callback=JSON_CALLBACK&orderby=starttime&max-results=15&singleevents=true&sortorder=ascending&futureevents=true";
+  $http.jsonp(url).success(function(data){
+    console.log(data.feed.entry);
+    $scope.events = data.feed.entry;
+  });
 }
 
 function CommunitiesCntl($scope, $http, $routeParams) {
@@ -34,7 +38,7 @@ function CommunitiesCntl($scope, $http, $routeParams) {
         console.log(key);
         if(key.match(/^gsx\$/)){
           attr = key.replace('gsx$','')
-          comm[attr] = item[key].$t
+      comm[attr] = item[key].$t
         }
       }
       return comm;

@@ -1,9 +1,11 @@
 <div class="container content">
   <h1>Cообщества</h1>
-  <div class="well" ng-repeat="comm in communities">
-    <h4> {{comm.title}}</h4>
+  <div class="well community" ng-repeat="comm in communities">
+    <img src="{{comm.logo}}" alt="ups"/>
+    <a href="{{comm.url}}">
+      <h3> {{comm.title}}</h3>
+    </a>
     <p> {{comm.abstract}}</p>
-    <a href="{{comm.url}}">{{comm.urltext}}</a>
-    <hr/>
+    <div class="clear"></div>
   </div>
 </div>

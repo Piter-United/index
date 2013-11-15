@@ -6,3 +6,17 @@ body {
   padding: 40px;
   padding-top: 100px;
 }
+.community {
+}
+.community img{
+  width: 100px;
+  float: right;
+  margin: 4px;
+  background: white;
+  padding: 4px;
+  border-radius: 100%;
+  border: 1px solid #bbb;
+}
+.clear {
+  clear: both;
+}

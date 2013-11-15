@@ -1,6 +1,18 @@
-<div class="content">
-  <center>
-    <h1>Ближайшие встречи</h1>
-    <iframe src="https://www.google.com/calendar/embed?title=Piter%20United&amp;height=600&amp;wkst=2&amp;hl=ru&amp;bgcolor=%23FFFFFF&amp;src=piterunited%40gmail.com&amp;color=%232952A3&amp;ctz=Europe%2FMoscow" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
-  </center>
+<div class="container content">
+  <h1>Ближайшие встречи</h1>
+  <div class="alert alert-success">Чтобы получить доступ к календарю ...</div>
+  <hr/>
+
+  <div class="well" ng-repeat="ev in events">
+    <b>{{ ev.gd$when[0].startTime | date:'medium' }} - {{ ev.gd$when[0].endTime | date:'HH:mm' }}</b>
+    <h4>{{ ev.title.$t }}</h4>
+    <p>{{ ev.content.$t }}</p>
+    <p>{{ ev.gd$where[0].valueString }}</p>
+  </div>
+
+  <br/>
+
+  <h1>Календарь</h1>
+  <hr/>
+  <iframe src="https://www.google.com/calendar/embed?title=Piter%20United&amp;height=600&amp;wkst=2&amp;hl=ru&amp;bgcolor=%23FFFFFF&amp;src=piterunited%40gmail.com&amp;color=%232952A3&amp;ctz=Europe%2FMoscow" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
