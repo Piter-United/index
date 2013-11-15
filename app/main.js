@@ -1,17 +1,17 @@
 app = angular.module('app', ['ngRoute'],
     function($routeProvider, $locationProvider) {
       $routeProvider.when('/', {
-        templateUrl: '/views/home.html',
+        templateUrl: 'views/home.html',
         controller: HomeCntl
       });
 
       $routeProvider.when('/meetups', {
-        templateUrl: '/views/meetups.html',
+        templateUrl: 'views/meetups.html',
         controller: MeetupsCntl
       });
 
       $routeProvider.when('/communities', {
-        templateUrl: '/views/communities.html',
+        templateUrl: 'views/communities.html',
         controller: CommunitiesCntl
       });
     });
