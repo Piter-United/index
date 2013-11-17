@@ -12,6 +12,9 @@ body {
     max-width: 880px;
   }
 }
+.navbar-nav {
+  float: none;
+}
 .container-narrow > hr {
   margin: 30px 0;
 }

@@ -29,14 +29,29 @@ app.filter('csearch', function() {
   };
 });
 
+app.directive('navItem', function($location) {
+  return {
+    replace: true,
+  restrict: 'E',
+  transclude: true,
+  scope: { href: '@' },
+  template: '<li ng-class="{active: active}"><a href="#{{href}}" ng-transclude></a></li>',
+  link: function (scope, element) {
+    scope.$on('$locationChangeSuccess', function(){
+      scope.active = ($location.path() == scope.href)
+    })
+  }
+  };
+});
+
 function HomeCntl($route, $routeParams, $location) {
-  console.log('HomeCntl')
+  // console.log('HomeCntl')
 }
 
 function MeetupsCntl($scope, $http, $routeParams) {
   var url = "http://www.google.com/calendar/feeds/piterunited@gmail.com/public/full?alt=json-in-script&callback=JSON_CALLBACK&orderby=starttime&max-results=15&singleevents=true&sortorder=ascending&futureevents=true";
   $http.jsonp(url).success(function(data){
-    console.log(data.feed.entry);
+    // console.log(data.feed.entry);
     $scope.events = data.feed.entry;
   });
 }
@@ -45,10 +60,10 @@ function CommunitiesCntl($scope, $http, $routeParams) {
   var url = "https://spreadsheets.google.com/feeds/list/0AhI9eP7t1xJedGg3VFVnbHBJUFBsQ1FONDN5WUY5dFE/1/public/values?alt=json-in-script&callback=JSON_CALLBACK";
   $http.jsonp(url).success(function(data){
     $scope.communities = data.feed.entry.map(function(item){
-      console.log(item);
+      // console.log(item);
       var comm = {}
       for(var key in item) {
-        console.log(key);
+        // console.log(key);
         if(key.match(/^gsx\$/)){
           attr = key.replace('gsx$','')
       comm[attr] = item[key].$t
@@ -56,7 +71,7 @@ function CommunitiesCntl($scope, $http, $routeParams) {
       }
       return comm;
     })
-    console.log($scope.communities);
+    // console.log($scope.communities);
   });
 }
 
