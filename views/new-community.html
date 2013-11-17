@@ -1,0 +1,26 @@
+<div class="container content">
+  <form role="form">
+    <h2>Зарегистрировать сообщество</h2>
+    <div class="form-group">
+      <label for="title">Название</label>
+      <input ng-model="community.title" type="text" class="form-control"  placeholder="Название">
+    </div>
+    <div class="form-group">
+      <label for="title">Ссылка</label>
+      <input ng-model="community.url" type="text" class="form-control"  placeholder="Название">
+    </div>
+    <div class="form-group">
+      <label for="title">Ссылка на лого</label>
+      <input ng-model="community.logo" type="text" class="form-control"  placeholder="Название">
+    </div>
+    <div class="form-group">
+      <label for="title">Описание</label>
+      <textarea ng-model="community.abstract" type="text" class="form-control"/>
+    </div>
+    <hr/>
+    <div class="form-group">
+      <button ng-click="save()" type="submit" class="btn btn-primary">Сохранить</button>
+      <a href="#/communities" class="btn btn-default">Отмена</a>
+    </div>
+  </form>
+</div>

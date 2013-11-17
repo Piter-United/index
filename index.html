@@ -13,6 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -30,6 +31,7 @@
   <!-- NAVBAR
   ================================================== -->
   <body ng-app="app">
+    <a href="https://github.com/Piter-United/index"><img style="position: absolute; top: 0; right: 0; border: 0;z-index: 1000;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
     <div class="navbar-wrapper">
       <div class="container">
         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -41,18 +43,21 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">&#8746;</a>
+              <a class="navbar-brand" href="#">
+                <i class="icon-group"></i>
+              </a>
             </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <nav-item href="/">Piter United</nav-item>
-                <nav-item href="/communities">Сообщества</nav-item>
-                <nav-item href="/meetups">Встречи</nav-item>
-              </ul>
-            </div>
+            <ul ng-controller="AuthController" class="nav navbar-nav">
+              <nav-item href="/">Piter United</nav-item>
+              <nav-item href="/communities">Сообщества</nav-item>
+              <nav-item href="/meetups">Встречи</nav-item>
+              <li><a href="#" hg-show="user" ng-click="logout()">{{user.displayName}} <img ng-src="{{user.avatar_url}}" style="height: 20px;"/></a></li>
+              <li><a href="#" ng-hide="user" ng-click="login('github')">
+                <i class="icon-github"></i>
+              </a></li>
+            </ul>
           </div>
         </div>
-
       </div>
     </div>
     <div ng-view>
@@ -67,6 +72,9 @@
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+  <script src="bower_components/angular-fire/angularfire.min.js"></script>
+  <script type='text/javascript' src='https://cdn.firebase.com/v0/firebase-simple-login.js'></script>
   <script src="app/main.js"></script>
 </body>
 </html>

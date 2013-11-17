@@ -3,7 +3,8 @@
   <hr/>
 
   <div class="well" ng-repeat="ev in events">
-    <b>{{ ev.gd$when[0].startTime | date:'medium' }} - {{ ev.gd$when[0].endTime | date:'HH:mm' }}</b>
+    <b>{{ ev.gd$when[0].startTime | date }} </b>
+    <b>{{ ev.gd$when[0].startTime | date:'HH:mm' }} - {{ ev.gd$when[0].endTime | date:'HH:mm' }}</b>
     <h2>{{ ev.title.$t }}</h2>
     <p>{{ ev.content.$t }}</p>
     <p>{{ ev.gd$where[0].valueString }}</p>
