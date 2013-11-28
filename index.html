@@ -31,37 +31,77 @@
   <!-- NAVBAR
   ================================================== -->
   <body ng-app="app">
-    <a href="https://github.com/Piter-United/index"><img style="position: absolute; top: 0; right: 0; border: 0;z-index: 1000;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
-    <div class="navbar-wrapper">
-      <div class="container">
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">
-                <i class="icon-group"></i>
-              </a>
-            </div>
-            <ul ng-controller="AuthController" class="nav navbar-nav">
-              <nav-item href="/">Piter United</nav-item>
-              <nav-item href="/communities">Сообщества</nav-item>
-              <nav-item href="/meetups">Встречи</nav-item>
-              <li><a href="#" hg-show="user" ng-click="logout()">{{user.displayName}} <img ng-src="{{user.avatar_url}}" style="height: 20px;"/></a></li>
-              <li><a href="#" ng-hide="user" ng-click="login('github')">
-                <i class="icon-github"></i>
-              </a></li>
-            </ul>
-          </div>
-        </div>
+    <h1 style="padding-right: 2em; text-align: right; padding: 0; margin: 0; padding-right: 30px;"><a href="about.html"> Piter United <i class="icon-github"></i></a></h1>
+    <h1 class="title">
+      Глобальный митап
+      <div class="date">
+        16 декабря 18:00
       </div>
-    </div>
-    <div ng-view>
-    </div>
+      <div class="place">
+        музей связи - Почтамтская 4
+      </div>
+      <hr/>
+      <a href="#" class="c"><img src="img/sm.jpg"/></a>
+      <a href="#" class="c"><img src="img/sp.jpg"/></a>
+      <a href="#" class="c"><img src="img/pa.jpg"/></a>
+      <a href="#" class="c"><img src="img/ct.png"/></a>
+      <a href="#" class="c"><img src="img/sr.jpg"/></a>
+      <a href="#" class="c"><img src="img/gl.png"/></a>
+      <a href="#" class="c"><img src="img/nn.svg"/></a>
+      <a href="#" class="c"><img src="img/nn.svg"/></a>
+    </h1>
+
+    <style>
+      .c img{
+        margin: 0;
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        padding: 5px;
+        background: white;
+        border-radius: 100%;
+        width: 70px;
+        height: 70px;
+      }
+      .sm {
+        background-image: url('img/sm.jpg');
+      }
+      .sm {
+        background-image: url('img/sp.jpg');
+      }
+      body {
+        background-image: url('img/meetup.jpg');
+      }
+      h1.title {
+        margin-top: 30px;
+        padding: 50px;
+        padding-bottom: 20px;
+        color: black;
+        text-align: center;
+        font-size: 5em;
+        font-weight: bold;
+        text-shadow: 0px 0px 4px white;
+        text-transform: uppercase;
+        background: #aaa;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        box-shadow: 0px 0px 10px white;
+        opacity: 0.7;
+      }
+      .date {
+        color: green;
+        font-size: 0.8em;
+        font-weight: bold;
+        text-shadow: 0px 0px 4px white;
+      }
+      .place {
+        margin-top: 10px;
+        font-size: 0.3em;
+        font-weight: bold;
+        text-shadow: 0px 0px 4px white;
+      }
+    </style>
   </div><!-- /.container -->
 
 
@@ -71,10 +111,6 @@
   <script src="bower_components/jquery/jquery.min.js"></script>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
-  <script src="bower_components/angular-route/angular-route.min.js"></script>
-  <script src='https://cdn.firebase.com/v0/firebase.js'></script>
-  <script src="bower_components/angular-fire/angularfire.min.js"></script>
-  <script type='text/javascript' src='https://cdn.firebase.com/v0/firebase-simple-login.js'></script>
   <script src="app/main.js"></script>
 </body>
 </html>
