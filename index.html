@@ -31,75 +31,72 @@
   <!-- NAVBAR
   ================================================== -->
   <body ng-app="app">
-    <h1 style="padding-right: 2em; text-align: right; padding: 0; margin: 0; padding-right: 30px;"><a href="about.html"> Piter United <i class="icon-github"></i></a></h1>
-    <h1 class="title">
-      Глобальный митап
-      <div class="date">
-        16 декабря 18:00
-      </div>
-      <div class="place">
-        музей связи - Почтамтская 4
-      </div>
-      <hr/>
-      <a href="#" class="c"><img src="img/sm.jpg"/></a>
-      <a href="#" class="c"><img src="img/sp.jpg"/></a>
-      <a href="#" class="c"><img src="img/pa.jpg"/></a>
-      <a href="#" class="c"><img src="img/ct.png"/></a>
-      <a href="#" class="c"><img src="img/sr.jpg"/></a>
-      <a href="#" class="c"><img src="img/gl.png"/></a>
-      <a href="#" class="c"><img src="img/nn.svg"/></a>
-      <a href="#" class="c"><img src="img/nn.svg"/></a>
-    </h1>
-
+    <div class="date">
+      16
+      <small>декабря</small>
+    </div>
+    <h1 class="title"> IT Global Meetup</h1>
+    <h2 class="subtitle">ИТ Сообщества Санкт-Петербурга в одном месте в одно время</h1>
+    <h2 class="place">
+      Почтамтская ул. 15 Начало в 18:00
+    </h2>
+    <br/>
+    <a class="b" href="https://plus.google.com/u/0/communities/117927540789820622012">
+      <h4>SPRUG</h4>
+      <p>Ruby User Group</p>
+    </a>
+    <a class="b">
+      <h4>SPRUG</h4>
+      <p>Ruby User Group</p>
+    </a>
+    <a class="b">
+      <h4>SPRUG</h4>
+      <p>Ruby User Group</p>
+    </a>
+    <a class="b">
+      <h4>SPRUG</h4>
+      <p>Ruby User Group</p>
+    </a>
+    <a class="b">
+      <h4>Piter United</h4>
+      <p>Ruby User Group</p>
+    </a>
+    <div class="clear"/>
+    <br/>
     <style>
-      .c img{
-        margin: 0;
-        padding: 0;
-        width: 50px;
-        height: 50px;
-        display: inline-block;
-        padding: 5px;
-        background: white;
-        border-radius: 100%;
-        width: 70px;
-        height: 70px;
-      }
-      .sm {
-        background-image: url('img/sm.jpg');
-      }
-      .sm {
-        background-image: url('img/sp.jpg');
-      }
       body {
-        background-image: url('img/meetup.jpg');
+        padding: 4em 6em;
+        color: white;
+        background: #004763;
       }
       h1.title {
-        margin-top: 30px;
-        padding: 50px;
-        padding-bottom: 20px;
-        color: black;
-        text-align: center;
-        font-size: 5em;
-        font-weight: bold;
-        text-shadow: 0px 0px 4px white;
+        font-size: 70px;
         text-transform: uppercase;
-        background: #aaa;
-        border-top: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
-        box-shadow: 0px 0px 10px white;
-        opacity: 0.7;
       }
       .date {
-        color: green;
-        font-size: 0.8em;
-        font-weight: bold;
-        text-shadow: 0px 0px 4px white;
+        float: right;
+        color: white;
+        font-size: 80px;
       }
-      .place {
-        margin-top: 10px;
-        font-size: 0.3em;
-        font-weight: bold;
-        text-shadow: 0px 0px 4px white;
+      .date small {
+        display: block;
+        font-size: 40px;
+      }
+      .b, .b:hover {
+        float: left;
+        width: 25%;
+        padding: 20px 30px;
+        background: #FC1E4A;
+        margin: 10px 10px 0 0;
+        color: white;
+        text-decoration: none;
+      }
+
+      .b h4 {
+        font-size: 2em;
+      }
+      .clear {
+        clear: both;
       }
     </style>
   </div><!-- /.container -->
