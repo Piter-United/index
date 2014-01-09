@@ -14,7 +14,7 @@
                         <h3><a ng-href="{{community.url || '#/community/' + community.id}}">{{community.title}}</a></h3>
                     </div>
                     <div class="col-md-3">
-                        <button class="btn btn-link pull-right" pu-access="['@community.owner','admin']" ng-click="edit('info')">редактировать</button
+                        <button class="btn btn-link pull-right" pu-access="['@community.owner','admin']" ng-click="edit('info')">редактировать</button>
                     </div>
                 </li>
                 <li>
@@ -78,7 +78,7 @@
             <ul class="list-unstyled" ng-if="!editor.note">
                 <li class="row">
                     <div class="col-md-3 col-md-offset-9">
-                        <button class="btn btn-link pull-right" pu-access="['@community.owner','admin']" ng-click="edit('note')">редактировать</button
+                        <button class="btn btn-link pull-right" pu-access="['@community.owner','admin']" ng-click="edit('note')">редактировать</button>
                     </div>
                 </li>
                 <li>

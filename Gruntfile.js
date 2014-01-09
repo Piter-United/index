@@ -23,6 +23,7 @@ module.exports = function(grunt) {
             }
         },
 //TODO: grunt-concat и т.п. должны проводиться с ключем build, выполняемой перед заливкой проекта на гитхаб
+//TODO: Перед минификацией все определения сервисов, контроллеров и директив ангуляра должны приводится к виду .smth['dep', function(dep){...}] вручную или автоматически
         watch: {
 //            livereload: {
 //                // Here we watch the files the sass task will compile to
