@@ -1,0 +1,6 @@
+.nav, .pagination, .carousel a {
+    cursor: pointer;
+}
+.container-main {
+    margin-top: 100px;
+}

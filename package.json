@@ -1,0 +1,11 @@
+{
+    "dependencies": {
+    },
+    "devDependencies": {
+        "grunt": "*",
+        "grunt-contrib-connect": "*",
+        "grunt-contrib-watch": "*",
+        "grunt-connect-pushstate": "0.2.0",
+        "connect-livereload": "0.3.1"
+    }
+}

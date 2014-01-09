@@ -1,0 +1,41 @@
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="MainNavigationCtrl">
+
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" ng-init="navCollapsed=true"
+                    ng-click="navCollapsed = !navCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Piter United</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'">
+            <ul class="nav navbar-nav">
+                <li ng-class="active('/communities')"><a href="#/communities">Сообщества</a></li>
+                <li ng-class="active('/calendar')"><a href="#/calendar">Календарь мероприятий</a></li>
+                <li ng-class="active('/places')"><a href="#/places">Места</a></li>
+                <li ng-class="active('/users')" pu-access="['admin','moderator']"><a ng-href="#/users">Пользователи</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li pu-access="['guest']" ng-controller="UserRegisterCtrl">
+                    <a href="" ng-click="registerPopup()">Регистрация</a>
+                </li>
+                <li pu-access="['guest']" ng-controller="UserLoginCtrl">
+                    <a href="" ng-click="loginPopup()">Вход</a>
+                </li>
+                <li class="dropdown" pu-access="['!guest']">
+                    <a ng-href="#" class="dropdown-toggle" data-toggle="dropdown">{{auth.user.profile.name}} <b class="caret"></b>&nbsp;</a>
+                    <ul class="dropdown-menu">
+                        <li><a ng-href="#/user/{{auth.user.id}}">Профиль</a></li>
+                        <li ng-controller="UserLogoutCtrl"><a href="" ng-click="logout()">Выход</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div>
