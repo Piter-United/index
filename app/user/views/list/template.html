@@ -1,0 +1,61 @@
+<div ng-controller="UserListCtrl">
+
+    <h3>Новый пользователь</h3>
+    <form class="form-inline" name="Register" ng-controller="UserRegisterCtrl">
+
+        <div class="form-group" ng-class="{'has-error':Register.email.$invalid && Register.email.$dirty}">
+             <input class="form-control" type="email" ng-model="newUser.email" name="email" required placeholder="Эл. почта">
+        </div>
+        <div class="form-group" ng-class="{'has-error':Register.pass.$invalid && Register.pass.$dirty}">
+            <input class="form-control" type="text" ng-model="newUser.password" name="pass" required placeholder="Пароль">
+        </div>
+        <div class="form-group">
+            <select class="form-control"
+                    ng-model="newUser.status"
+                    ng-options="r for r in ['registered','moderator','deleted']"
+                    ng-disabled="auth.user.status!='admin'"></select>
+        </div>
+        <button class="btn btn-success" ng-click="registerAndStay()" ng-disabled="Register.$invalid">Зарегистрировать</button>
+    </form>
+
+    <h3>Список пользователей</h3>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Поиск пользователей" ng-model="searchText">
+    </div>
+    <div class="form-horizontal form-group" ng-repeat="user in users | filter:searchText | orderBy:'date'">
+        <div class="row">
+            <label class="col-md-1 control-label">{{user.$id}}</label>
+            <div class="col-md-2 control-label">{{user.date | date:'dd.MM.yyyy'}}</div>
+
+            <div class="col-md-4 form-group">
+                <label class="control-label"><a ng-href="#/user/{{user.$id}}">{{user.profile.name}}</a></label>
+            </div>
+            <div class="col-md-3 form-group">
+                <select class="form-control"
+                        ng-model="user.status"
+                        ng-options="r for r in (user.status=='admin' ? ['admin'] : (auth.user.status=='moderator' ? (user.status=='moderator' ? ['moderator'] : ['registered','deleted']) : ['registered','moderator','deleted']))"
+                        ng-change="change(user.$id, user.status)"
+                        ng-disabled="auth.user.status!='admin' && auth.user.status!='moderator' || user.status=='admin' || auth.user.status=='moderator' && user.status=='moderator'"></select>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-link" ng-init="extra=false" ng-click="extra=!extra">профиль</button>
+            </div>
+            <button class="btn btn-link" ng-controller="UserRegisterCtrl" ng-click="unregister(user.$id)">
+                <span class="glyphicon glyphicon-remove text-danger"></span>
+            </button>
+        </div>
+        <ul class="list-unstyled form-horizontal" ng-if="extra">
+            <li class="form-group row" ng-repeat="(field, value) in user.profile">
+                <label class="col-md-3 control-label">{{field}}</label>
+                <div class="col-md-9">
+                    <input class="form-control input-sm" type="text" ng-model="user.profile[field]" ng-disabled="auth.user.id!=user.$id">
+                </div>
+            </li>
+            <li class="form-group row" ng-if="auth.user.id==user.$id">
+                <div class="col-md-9 col-md-offset-3">
+                    <button class="btn btn-primary" ng-click="save(user.$id)">Сохранить</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

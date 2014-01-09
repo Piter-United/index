@@ -1,245 +1,90 @@
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="ru" ng-app="app">
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
     <title>Piter-United</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="stylesheets/index.css" rel="stylesheet">
-    <link href="stylesheets/carousel.css" rel="stylesheet">
-  </head>
-  <!-- NAVBAR
-  ================================================== -->
-  <body ng-app="app">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
 
-    <div class="cnt">
-      <div class="row dirtmargin">
-        <div class="col-md-10">
-          <a href="https://plus.google.com/events/c2bmi82chkel46o226jvpb8qijo" target="_blank">
-            <h1 class="title dirtmargin" >IT Global Meetup</h1>
-          </a>
-          <h2 class="subtitle dirtmargin">ИТ Сообщества Санкт-Петербурга в одном месте в одно время</h2>
-          <h2 class="place">
-            <a href="http://maps.google.com/maps?q=почтамтская+15&hl=ru&ie=UTF8&sll=59.924055,30.377541&sspn=0.154162,0.333023&t=h&hnear=Почтамтская+ул.,+15,+Санкт-Петербург,+город+Санкт-Петербург,+Россия&z=16&iwloc=A" target="_blank">
-              Почтамтская ул. 15
-            </a></br>
-            Начало в 18:00</h2>
-        </div>
+<!-- Markup
+================================================== -->
+<nav ng-include="routeData.navigationTopUrl"></nav>
+<div class="container container-main">
+    <div class="row">
+        <section class="col-md-8">
+            <header ng-include="routeData.contentHeaderUrl"></header>
+            <div ng-view></div>
+        </section>
+        <aside class="col-md-4 hidden-xs">
+            <div ng-include="routeData.asideTopUrl"></div>
+            <div ng-include="routeData.asideMiddleUrl"></div>
+            <div ng-include="routeData.asideBottomUrl"></div>
+        </aside>
+    </div>
+</div>
 
-        <div class="col-md-2">
-          <h1 class="title">16 </br>
-            <p class="datetext">Декабря<p>
-          </h1>
-        </div>
-      </div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular-route/angular-route.min.js"></script>
+<script src="lib/angular-cookies/angular-cookies.min.js"></script>
+<script src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src='https://cdn.firebase.com/v0/firebase.js'></script>
+<script src="lib/angularfire/angularfire.js"></script>
+<script src='https://cdn.firebase.com/v0/firebase-simple-login.js'></script>
+<script src="app/app.js"></script>
 
-      <div class="row">
-        <div class="col-md-4 blue box">
-          <a class="coltext" href="https://plus.google.com/u/0/communities/117927540789820622012" target="_blank">
-            <h2 class="dirtmargin">SPRUG</h2>
-            <p>Сообщество</br>
-            Ruby-программистов</p>
-          </a>
-        </div>
+<!--TODO: автоматическое подключение всех js- и css-файлов. Склеивание иминификация их в папке app.dist -->
 
-        <div class="col-md-4 red box">
-          <a class="coltext" href="https://plus.google.com/u/0/communities/108809460896106613736?partnerid=gplp0" target="_blank">
-            <h2 class="dirtmargin">Smart Management</h2>
-            <p>Сообщество</br>
-            IT менеджеров</p>
-          </a>
-        </div>
-
-        <div class="col-md-4 green box">
-          <a class="coltext" href="http://www.meetup.com/DevOps-40/" target="_blank">
-            <h2 class="dirtmargin">DevOps-40</h2>
-            <p>Сообщество</br>
-            DevOps</p>
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4 orange box">
-          <a class="coltext" href="https://plus.google.com/u/0/communities/112264824472767454602?partnerid=gplp0" target="_blank">
-            <h2 class="dirtmargin">AgilePiter</h2>
-            <p>Сообщество интересующихся гибкоми</br>
-            подходами к разработке</p>
-          </a>
-        </div>
-
-        <div class="col-md-4 purpur box">
-          <a class="coltext" href="http://www.meetup.com/Golang-Peter/" target="_blank">
-            <h2 class="dirtmargin">Go</h2>
-            <p>Сообщество</br>
-            Go-программистов</p>
-          </a>
-        </div>
-
-        <div class="col-md-4 orange box">
-          <a class="coltext" href="http://sqagroup.spb.ru" target="_blank">
-            <h2 class="dirtmargin">SQA Group</h2>
-            <p>Сообщество</br>
-            тестировщиков</p>
-          </a>
-        </div>
-
-      </div>
+<link href="app/main/views/home/style.css" rel="stylesheet">
+<link href="app/main/services/linkInput/style.css" rel="stylesheet">
+<script src="app/main/services/fireBase/resource.js"></script>
+<script src="app/main/services/linkInput/puLinkInputDirective.js"></script>
+<script src="app/main/config.js"></script>
+<script src="app/main/views/home/controller.js"></script>
+<script src="app/main/views/navigation/controller.js"></script>
 
 
+<link href="app/community/views/list/style.css" rel="stylesheet">
+<link href="app/community/views/aside/style.css" rel="stylesheet">
+<script src="app/community/config.js"></script>
+<script src="app/community/resources/community.js"></script>
+<script src="app/community/views/list/controller.js"></script>
+<script src="app/community/views/list/page/controller.js"></script>
+<script src="app/community/views/aside/controller.js"></script>
 
-      <div class="row">
+<link href="app/calendar/views/aside/style.css" rel="stylesheet">
+<script src="app/calendar/config.js"></script>
+<script src="app/calendar/views/page/controller.js"></script>
+<script src="app/calendar/views/aside/controller.js"></script>
 
-        <div class="col-md-4 redpurpur box">
-          <a class="coltext" href="https://plus.google.com/u/0/communities/109003572589840580141" target="_blank">
-            <h2 class="dirtmargin">AngularJS</h2>
-            <p>Сообщество</br>
-            любителей AngularJS</p>
-          </a>
-        </div>
+<script src="app/place/config.js"></script>
+<script src="app/place/views/page/controller.js"></script>
+<script src="app/place/views/list/controller.js"></script>
 
-        <div class="col-md-4 blue box">
-          <a class="coltext" href="http://vk.com/spb_analytics" target="_blank">
-            <h2 class="dirtmargin">CoA</h2>
-            <p>Сообщество</br>
-            аналитиков</p>
-          </a>
-        </div>
+<link href="app/banner/views/aside/style.css" rel="stylesheet">
+<script src="app/banner/views/aside/controller.js"></script>
 
-        <div class="col-md-4 green box">
-          <a class="coltext" href="https://groups.google.com/forum/#!forum/erlang-russian" target="_blank">
-            <h2 class="dirtmargin">Erlang</h2>
-            <p>Сообщество</br>
-            Erlang-программистов</p>
-          </a>
-        </div>
+<link href="app/user/services/afterAuth/style.css" rel="stylesheet">
+<script src="app/user/services/auth/auth.js"></script>
+<script src="app/user/services/auth/puAccessDirective.js"></script>
+<script src="app/user/services/afterAuth/puAfterAuthDirective.js"></script>
+<script src="app/user/config.js"></script>
+<script src="app/user/resources/user.js"></script>
+<script src="app/user/views/register/controller.js"></script>
+<script src="app/user/views/login/controller.js"></script>
+<script src="app/user/views/logout/controller.js"></script>
+<script src="app/user/views/list/controller.js"></script>
+<script src="app/user/views/page/controller.js"></script>
+</body>
+</html>
 
-      </div>
-
-
-      <div class="row">
-        <div class="col-md-4 purpur box">
-          <a class="coltext" href="http://lanyrd.com/2013/fprog-10/" target="_blank">
-            <h2 class="dirtmargin">FProg</h2>
-            <p>Сообщество</br> функциональных</br> программистов</p>
-          </a>
-        </div>
-
-        <div class="col-md-4 red box">
-          <a href="#">
-            <p>и другие...</p>
-          </a>
-        </div>
-
-        <div class="col-md-4 box">
-          <a class="coltext" href="https://plus.google.com/communities/108851235934496354072" target="_blank">
-            <h2 class="dirtmargin">Piter United</h2>
-          </a>
-        </div>
-      </div>
-
-      <div>
-        <style>
-
-          body {
-            padding: 4em 6em;
-            color: white;
-            background: #004763;
-          }
-
-          .wrap {
-            width: 1400px;
-            margin: 0 auto;
-          }
-
-          h1.title {
-            font-size: 90px;
-          }
-
-          .datetext {
-            font-size: 0.3em;
-          }
-
-          a {
-            color: white;
-            text-decoration: none;
-          }
-          a:hover {
-            color: white;
-          }
-
-          p {
-            font-size: 18px;
-          }
-
-          .box {
-            padding: 3px;
-          }
-
-          .box a {
-            display: block;
-            padding: 20px 30px;
-            height: 200px;
-            opacity: 0.9;
-          }
-          .box a:hover {
-            text-decoration: none;
-            opacity: 1;
-          }
-          .blue a {
-            background-color: #4EB3B8;
-          }
-          .orange a {
-            background-color: #DA532C;
-          }
-          .green a {
-            background-color: #089045;
-          }
-          .purpur a {
-            background-color: #624D9F;
-          }
-          .redpurpur a {
-            background-color: #7C236C;
-          }
-          .red a {
-            background-color: #BE1E4A;
-          }
-
-          .cnt {
-            width: auto;
-            margin: 0 auto;
-          }
-
-        </style>
-        <!-- /.container -->
-
-
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="bower_components/jquery/jquery.min.js"></script>
-        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-        <script src="bower_components/angular/angular.min.js"></script>
-        <script src="app/main.js"></script>
-      </body>
-    </html>

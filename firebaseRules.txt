@@ -1,0 +1,56 @@
+{
+  "rules": {
+    "communities": {
+      ".read": true,
+      "$communityId": {
+        //Registered user can create new community.
+        //Admin, moderator and owner has exeptional power
+        ".write": "auth != null && root.child('users/'+auth.id+'/status').val() != 'deleted' && (
+          !data.exists() ||
+          root.child('users/'+auth.id+'/status').val() == 'admin' ||
+          root.child('users/'+auth.id+'/status').val() == 'moderator' ||
+          data.child('owner').val() == auth.id)",
+        ".validate": "newData.hasChild('owner')",
+        "id": {
+          ".validate": "!data.exists() || newData.val() == data.val()" //Nobody can change it
+        },
+        "data": {
+          ".validate": "!data.exists() || newData.val() == data.val()" //Nobody can change it
+        },
+        "owner": {
+          ".validate": "!data.exists() || newData.val() == data.val() || root.child('users/'+auth.id+'/status').val() == 'admin'" //Only admin can change owner
+        }
+      }
+    },
+    "users": {
+      ".read": true,
+      "$userId": {
+        //Anybody can create new users, but nobody can remove existing ones.
+        ".write": "!data.exists() || newData.exists() && newData.hasChildren(['id','status','date','provider','profile'])",
+        "id": {
+          ".validate": "!data.exists() || newData.val() == data.val()" //Nobody can change it. We validate it because generally we work with whole user item, but change only profile
+        },
+        "status": {
+          //Nobody can set or change status 'admin'
+          //Moderator can set any status except 'admin' and 'moderator' to anybody except admin and moderator
+          //Registered and deleted can set own status 'deleted' or 'registered'
+          ".validate": "!data.exists() || newData.val() == data.val() ||
+            data.val() != 'admin' && newData.val() != 'admin' && auth != null && (
+              root.child('users/'+auth.id+'/status').val() == 'admin' ||
+              root.child('users/'+auth.id+'/status').val() == 'moderator' && newData.val() != 'moderator' && data.val() != 'moderator' ||
+              auth.id == $userId && data.val() != 'admin' && data.val() != 'moderator' && (newData.val() == 'registered' || newData.val() == 'deleted'))"
+        },
+        "date": {
+          ".validate": "!data.exists() || newData.val() == data.val()" //Nobody can change it
+        },
+        "provider": {
+          ".validate": "!data.exists() || newData.val() == data.val()" //Nobody can change it
+        },
+        "profile": {
+          //Owners can write own profile
+          ".validate": "!data.exists() || auth.id == $userId"
+        }
+      }
+    }
+  }
+}

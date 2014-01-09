@@ -1,0 +1,13 @@
+{
+  "name": "observe-js",
+  "homepage": "https://github.com/jeffbcross/observe-js",
+  "_release": "3c8009ea1b",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "3c8009ea1b96f1bfb708cd39b9d13b38c53db786"
+  },
+  "_source": "https://github.com/jeffbcross/observe-js.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/jeffbcross/observe-js.git"
+}
