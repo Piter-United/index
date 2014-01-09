@@ -2,6 +2,7 @@
 
 var app = angular.module('app', ['ngRoute', 'ngCookies', 'ui.bootstrap', 'firebase']);
 
+//main — главный модуль
 //Контроллеры именуются в зависимости от своего расположения: МодульВид[Вложенныевиды]Ctrl
 
 // TODO: Автоматическое добавление файлов в index.html и склейка их в один в app.dist
