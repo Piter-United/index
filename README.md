@@ -21,4 +21,4 @@ Windows cmd:
 
     grunt
 
-http://piter-united.local:8000/spb/tv
+http://piter-united.local:8000
