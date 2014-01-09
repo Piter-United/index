@@ -22,7 +22,7 @@ module.exports = function(grunt) {
                 }
             }
         },
-
+//TODO: grunt-concat и т.п. должны проводиться с ключем build, выполняемой перед заливкой проекта на гитхаб
         watch: {
 //            livereload: {
 //                // Here we watch the files the sass task will compile to
