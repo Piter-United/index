@@ -32,3 +32,5 @@ http://piter-united.local:8000
 - Регистрация через соц. сети
 - Разобраться с глюками роутера
 - Остальной функционал
+
+[Прототип.pdf](https://www.dropbox.com/s/mnbtbzdxzdanyp9/Piter%20United%20prototype%20v1.pdf)
