@@ -1,0 +1,56 @@
+body {
+  padding: 30px;
+  background: #ddd;
+}
+
+.b {
+  width: 700px;
+  margin: 0px auto;
+}
+
+.c {
+  border: 1px solid #ccc;
+  margin: 15px 0;
+  background: white;
+}
+.c h3 {
+  margin: 10px;
+}
+.c p {
+  margin: 10px;
+}
+.srch {
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 40px;
+  margin-bottom: 3px;
+  border-left: none;
+  border-right: none;
+  padding: 4px 10px;
+}
+.c .img {
+  border-right: 1px solid #ddd;
+  float: left;
+  width: 100px;
+}
+.c .dsc {
+  margin-left: 100px;
+  padding: 5px;
+}
+.part {
+  clear: both;
+  border-top: 1px solid #ddd;
+  padding: 5px;
+  margin-top: 5px;
+  text-align: right;
+  background: #eee;
+}
+.part img {
+  height: 32px;
+  width: 32px;
+  border-radius: 100%;
+}
+.mtp {
+  color: #855;
+  float: left;
+}
