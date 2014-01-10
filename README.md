@@ -1,4 +1,4 @@
-# Сайт сообщества Piter United
+# Сайт сообщества [Piter United](http://piter-united.ru/)
 
 ## Используемые технологии
 
