@@ -1,4 +1,22 @@
-# Piter United
+# Сайт сообщества Piter United
+
+## Используемые технологии
+
+- [AngularJS](http://angularjs.org/)
+- [Angular-bootstrap](http://angular-ui.github.io/bootstrap/)
+- [Angular-fire](http://angularfire.com/)
+
+## To do
+
+- Автоматическое добавление файлов в index.html, склейка их в один в app.dist и минификация
+- Валидация форм, система вывода сообщений об ошибках
+- Прелоадеры
+- Загрузка картинок (логотипы, аватарки)
+- Регистрация через соц. сети
+- Разобраться с глюками роутера
+- Остальной функционал
+
+[Прототип.pdf](https://www.dropbox.com/s/mnbtbzdxzdanyp9/Piter%20United%20prototype%20v1.pdf)
 
 ## Install
 
@@ -22,15 +40,3 @@ Windows cmd:
     grunt
 
 http://piter-united.local:8000
-
-## To do
-
-- Автоматическое добавление файлов в index.html, склейка их в один в app.dist и минификация
-- Валидация форм, система вывода сообщений об ошибках
-- Прелоадеры
-- Загрузка картинок (логотипы, аватарки)
-- Регистрация через соц. сети
-- Разобраться с глюками роутера
-- Остальной функционал
-
-[Прототип.pdf](https://www.dropbox.com/s/mnbtbzdxzdanyp9/Piter%20United%20prototype%20v1.pdf)
