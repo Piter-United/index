@@ -21,17 +21,17 @@
                 <li ng-class="active('/users')" pu-access="['admin','moderator']"><a ng-href="#/users">Пользователи</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li pu-access="['guest']" ng-controller="UserRegisterCtrl">
-                    <a href="" ng-click="registerPopup()">Регистрация</a>
+                <li pu-access="['guest']">
+                    <a href="" pu-auth-popup>Вход</a>
                 </li>
-                <li pu-access="['guest']" ng-controller="UserLoginCtrl">
-                    <a href="" ng-click="loginPopup()">Вход</a>
+                <li pu-access="['guest']">
+                    <a href="" pu-auth-popup="register">Регистрация</a>
                 </li>
                 <li class="dropdown" pu-access="['!guest']">
                     <a ng-href="#" class="dropdown-toggle" data-toggle="dropdown">{{auth.user.profile.name}} <b class="caret"></b>&nbsp;</a>
                     <ul class="dropdown-menu">
                         <li><a ng-href="#/user/{{auth.user.id}}">Профиль</a></li>
-                        <li ng-controller="UserLogoutCtrl"><a href="" ng-click="logout()">Выход</a></li>
+                        <li ng-controller="UserLogoutCtrl"><a href="" pu-logout>Выход</a></li>
                     </ul>
                 </li>
             </ul>

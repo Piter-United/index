@@ -1,0 +1,54 @@
+<tabset justified="true">
+    <tab heading="Вход" ng-controller="UserLoginCtrl">
+        <form name="Login" class="form-horizontal pu-after-auth-form">
+            <div class="form-group" ng-class="{'has-error':Login.email.$invalid && Login.email.$dirty}">
+                <div class="col-md-2">
+                    <label class="control-label">Эл. почта</label>
+                </div>
+                <div class="col-md-10">
+                    <input class="form-control" type="email" name="email" ng-model="user.email" ng-change="form.error=false" required>
+                </div>
+            </div>
+            <div class="form-group" ng-class="{'has-error':Login.pass.$invalid && Login.pass.$dirty}">
+                <div class="col-md-2">
+                    <label class="control-label">Пароль</label>
+                </div>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" name="pass" ng-model="user.password" ng-change="form.error=false" required>
+                </div>
+            </div>
+            <div class="alert alert-danger" ng-if="form.error">{{form.error}}</div>
+            <div class="form-group">
+                <div class="col-md-12">
+                    <button class="btn btn-success pull-right" ng-click="login(afterAuthAction)" ng-disabled="Login.$invalid">{{afterAuthLoginTitle}}</button>
+                </div>
+            </div>
+        </form>
+    </tab>
+    <tab heading="Регистрация" ng-controller="UserRegisterCtrl">
+        <form name="Register" class="form-horizontal pu-after-auth-form">
+            <div class="form-group" ng-class="{'has-error':Register.email.$invalid && Register.email.$dirty}">
+                <div class="col-md-2">
+                    <label class="control-label">Эл. почта</label>
+                </div>
+                <div class="col-md-10">
+                    <input class="form-control" type="email" name="email" ng-model="newUser.email" ng-change="form.error=false" required>
+                </div>
+            </div>
+            <div class="form-group" ng-class="{'has-error':Register.pass.$invalid && Register.pass.$dirty}">
+                <div class="col-md-2">
+                    <label class="control-label">Пароль</label>
+                </div>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" name="pass" ng-model="newUser.password" ng-change="form.error=false" required>
+                </div>
+            </div>
+            <div class="alert alert-danger" ng-if="form.error">{{form.error}}</div>
+            <div class="form-group">
+                <div class="col-md-12">
+                    <button class="btn btn-success pull-right" ng-click="register(afterAuthAction)" ng-disabled="Register.$invalid">{{afterAuthRegisterTitle}}</button>
+                </div>
+            </div>
+        </form>
+    </tab>
+</tabset>
