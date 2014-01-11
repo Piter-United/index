@@ -46,9 +46,9 @@
 <!--TODO: автоматическое подключение всех js- и css-файлов. Склеивание иминификация их в папке app.dist -->
 
 <link href="app/main/views/home/style.css" rel="stylesheet">
-<link href="app/main/services/linkInput/style.css" rel="stylesheet">
+<link href="app/main/directives/linkInput/style.css" rel="stylesheet">
 <script src="app/main/services/fireBase/resource.js"></script>
-<script src="app/main/services/linkInput/puLinkInputDirective.js"></script>
+<script src="app/main/directives/linkInput/directive.js"></script>
 <script src="app/main/config.js"></script>
 <script src="app/main/views/home/controller.js"></script>
 <script src="app/main/views/navigation/controller.js"></script>
@@ -73,16 +73,18 @@
 
 <link href="app/banner/views/aside/style.css" rel="stylesheet">
 <script src="app/banner/views/aside/controller.js"></script>
-
 <link href="app/user/services/afterAuth/style.css" rel="stylesheet">
+
 <script src="app/user/services/auth/auth.js"></script>
-<script src="app/user/services/auth/puAccessDirective.js"></script>
-<script src="app/user/services/afterAuth/puAfterAuthDirective.js"></script>
+<script src="app/user/directives/authCtrl.js"></script>
+<script src="app/user/directives/authPopup/directive.js"></script>
+<script src="app/user/directives/registerPopup/directive.js"></script>
+<script src="app/user/directives/loginPopup/directive.js"></script>
+<script src="app/user/directives/logout/directive.js"></script>
+<script src="app/user/directives/access/directive.js"></script>
+<script src="app/user/directives/afterAuth/directive.js"></script>
 <script src="app/user/config.js"></script>
 <script src="app/user/resources/user.js"></script>
-<script src="app/user/views/register/controller.js"></script>
-<script src="app/user/views/login/controller.js"></script>
-<script src="app/user/views/logout/controller.js"></script>
 <script src="app/user/views/list/controller.js"></script>
 <script src="app/user/views/page/controller.js"></script>
 

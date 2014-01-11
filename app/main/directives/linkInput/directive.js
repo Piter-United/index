@@ -13,7 +13,7 @@ app.directive('puLinkInput', function($parse) {
         return token.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase()
     }
     return {
-        templateUrl: 'app/main/services/linkInput/template.html',
+        templateUrl: 'app/main/directives/linkInput/template.html',
         scope: true,
         replace: true,
         compile: function(tElem, tAttrs) {

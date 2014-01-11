@@ -1,0 +1,29 @@
+<form name="Register" class="form-horizontal">
+    <div class="modal-header">
+        <button type="button" class="close" ng-click="close()">&times;</button>
+        <h4 class="modal-title">Регистрация</h4>
+    </div>
+    <div class="modal-body">
+        <div class="form-group" ng-class="{'has-error':Register.email.$invalid && Register.email.$dirty}">
+            <div class="col-md-2">
+                <label class="control-label">Эл. почта</label>
+            </div>
+            <div class="col-md-10">
+                <input class="form-control" type="email" name="email" ng-model="newUser.email" ng-change="form.error=false" required>
+            </div>
+        </div>
+        <div class="form-group" ng-class="{'has-error':Register.pass.$invalid && Register.pass.$dirty}">
+            <div class="col-md-2">
+                <label class="control-label">Пароль</label>
+            </div>
+            <div class="col-md-10">
+                <input class="form-control" type="text" name="pass" ng-model="newUser.password" ng-change="form.error=false" required>
+            </div>
+        </div>
+        <div class="alert alert-danger" ng-if="form.error">{{form.error}}</div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" ng-click="close()">Отмена</button>
+        <button type="button" class="btn btn-primary" ng-click="register()" ng-disabled="Register.$invalid">Зарегистрироваться</button>
+    </div>
+</form>
