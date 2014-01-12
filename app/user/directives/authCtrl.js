@@ -28,35 +28,46 @@ app.controller('AuthCtrl', function($scope, $parse, $modal, Auth) {
         if (callback) {
             $parse(callback)($scope);
         }
-    };
+    }
 
-    function loginUser(callback, modal) {
+    function authErrorLogin(error) {
+        switch(error.code) {
+            case 'INVALID_USER'     : this.loginMsg.error = 'Такого пользователя не существует'; break;
+            case 'INVALID_PASSWORD' : this.loginMsg.error = 'Неверный пароль'; break;
+            default                 : this.loginMsg.error = 'Ошибка входа';
+        }
+    }
+
+    function loginEmail(callback, modal) {
         var form = this;
 
         Auth.$login('password', form.user)
             .then(authSuccess.bind(form, callback, modal))
-            .catch(function(error) {
-                switch(error.code) {
-                    case 'INVALID_USER'     : form.loginMsg.error = 'Такого пользователя не существует'; break;
-                    case 'INVALID_PASSWORD' : form.loginMsg.error = 'Неверный пароль'; break;
-                    default                 : form.loginMsg.error = 'Ошибка входа';
-                }
-            });
+            .catch(authErrorLogin.bind(form));
     }
 
     function loginFacebook(callback, modal) {
         var form = this;
-        form.user.provider = 'persona';
 
         Auth.$login('facebook', {rememberMe: true, scope: 'email,user_likes'})
             .then(authSuccess.bind(form, callback, modal))
-            .catch(function(error) {
-                switch(error.code) {
-                    case 'INVALID_USER'     : form.loginMsg.error = 'Такого пользователя не существует'; break;
-                    case 'INVALID_PASSWORD' : form.loginMsg.error = 'Неверный пароль'; break;
-                    default                 : form.loginMsg.error = 'Ошибка входа';
-                }
-            });
+            .catch(authErrorLogin.bind(form));
+    }
+
+    function loginTwitter(callback, modal) {
+        var form = this;
+
+        Auth.$login('twitter', {rememberMe: true})
+            .then(authSuccess.bind(form, callback, modal))
+            .catch(authErrorLogin.bind(form));
+    }
+
+    function loginGithub(callback, modal) {
+        var form = this;
+
+        Auth.$login('github', {rememberMe: true, scope: 'user,gist'})
+            .then(authSuccess.bind(form, callback, modal))
+            .catch(authErrorLogin.bind(form));
     }
 
     function registerUser(stay, callback, modal) {
@@ -78,7 +89,10 @@ app.controller('AuthCtrl', function($scope, $parse, $modal, Auth) {
 
 
     //Login
-    this.login = loginUser.bind(form);
+    this.login         = loginEmail.bind(form);
+    this.loginFacebook = loginFacebook.bind(form);
+    this.loginTwitter  = loginTwitter.bind(form);
+    this.loginGithub   = loginGithub.bind(form);
 
     this.loginPopup = function(callback) {
         $modal.open({
@@ -132,8 +146,10 @@ app.controller('AuthCtrl', function($scope, $parse, $modal, Auth) {
                         form.tab.login    = true;
                         form.tab.register = false;
                 }
-                $scope.login = loginUser.bind(form, callback, $modalInstance);
+                $scope.login         = loginEmail.bind(form, callback, $modalInstance);
                 $scope.loginFacebook = loginFacebook.bind(form, callback, $modalInstance);
+                $scope.loginTwitter  = loginTwitter.bind(form, callback, $modalInstance);
+                $scope.loginGithub   = loginGithub.bind(form, callback, $modalInstance);
                 $scope.register = registerUser.bind(form, callback, $modalInstance);
                 $scope.close = $modalInstance.close;
             }

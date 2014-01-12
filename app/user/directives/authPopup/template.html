@@ -1,6 +1,8 @@
 <tabset justified="true">
     <tab heading="Вход" active="tab.login">
         <button class="btn btn-primary" ng-click="loginFacebook()">Фейсбук</button>
+        <button class="btn btn-info" ng-click="loginTwitter()">Твиттер</button>
+        <button class="btn btn-default" ng-click="loginGithub()">Гитхаб</button>
         <form name="Login" class="form-horizontal pu-after-auth-form">
             <div class="modal-body">
                 <div class="form-group" ng-class="{'has-error':Login.email.$invalid && Login.email.$dirty}">
