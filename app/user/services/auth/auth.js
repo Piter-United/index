@@ -29,8 +29,8 @@
  *
  * - `$logout()` – see fireAngular `$logout`
  *
- * - `$registerUser(newUser, login)` – register new user from object `newUser`.
- *  If `login` is true new user will be login after registration
+ * - `$registerUser(newUser, stay)` – register new user from object `newUser`.
+ *  If `stay` is undefined new user will be login after registration
  *
  * - `$unregisterUser(id)` – set user status `deleted`
  *
@@ -49,34 +49,31 @@ app.factory('Auth', function($q, $cookies, $location, $firebaseAuth, User) {
     var authLogin = auth.$login;
     var authLogout = auth.$logout;
 
+    function setUser(user, deferred) {
+        var userData = User.get({id: user.uid});
+
+        userData.$on('change', function() {
+            if (userData.status) {
+                auth.$current.user = userData;
+                deferred.resolve(user);
+            }
+        });
+    }
+
     auth.$current = {
         user: angular.copy(guest)
-    }
+    };
     auth.$authorizing = $q.when('guest');
 
     auth.$login = function(token, options) {
         var deferred = $q.defer(),
             authPromise = auth.$authorizing = deferred.promise;
 
-        function setUser (user) {
-            var userData = User.get({id: user.id});
-            userData.$on('change', function() {
-                if (userData.status) {
-                    auth.$current.user = userData;
-                    userData.$on('change', function() {
-                        deferred.resolve(user);
-                    })
-                }
-            });
-        }
-
         if (!token || !options) {
             if ($cookies.auth) {
-
                 authRef.auth($cookies.auth, function(error, user) {
                     if(!error) {
-                        setUser(user.auth);
-
+                        setUser(user.auth, deferred);
                     } else {
                         console.log("Login Failed!", error);
                         deferred.reject(error);
@@ -84,14 +81,21 @@ app.factory('Auth', function($q, $cookies, $location, $firebaseAuth, User) {
                 });
             }
         } else {
-            authLogin(token, options).then(function(user) {
-                $cookies.auth = user.firebaseAuthToken;
-                setUser(user);
-
-            }, function(error) {
-                console.error('Login failed: ', error);
-                deferred.reject(error);
-            });
+            authLogin(token, options)
+                .then(function(user) {
+                    User.isset(user.uid)
+                        .then(function() {
+                            $cookies.auth = user.firebaseAuthToken;
+                            setUser(user, deferred);
+                        })
+                        .catch(function(){
+                            auth.$registerUser(user, false, deferred);
+                        });
+                })
+                .catch(function(error) {
+                    console.error('Login failed: ', error);
+                    deferred.reject(error);
+                });
         }
         return authPromise;
     }
@@ -100,10 +104,10 @@ app.factory('Auth', function($q, $cookies, $location, $firebaseAuth, User) {
         auth.$current.user = angular.copy(guest);
         authLogout();
     }
-    auth.$registerUser = function(newUser, stay) {
+    auth.$registerUser = function(newUser, stay, loginDeferred) {
         var deferred = $q.defer();
 
-        if (newUser.provider === "password" && newUser.email && newUser.password) {
+        if (newUser.provider === undefined && newUser.email && newUser.password) {
 
             auth.$createUser(newUser.email, newUser.password, function(error, user) {
                 if (!error) {
@@ -111,7 +115,7 @@ app.factory('Auth', function($q, $cookies, $location, $firebaseAuth, User) {
 
                     var date = new Date();
                     newUser.date = date.getTime();
-                    newUser.id = user.id;
+                    newUser.id = user.uid;
 
                     if(!newUser.status) newUser.status = "registered";
 
@@ -122,10 +126,9 @@ app.factory('Auth', function($q, $cookies, $location, $firebaseAuth, User) {
                     delete newUser.email;
                     delete newUser.password;
 
-                    User.addByKey(user.id, newUser);
-
+                    User.addByKey(user.uid, newUser);
                     if (stay) {
-                        //TODO: stay old use in firebase auth
+                        //TODO: stay old user in firebase auth
                         //auth.$login();
                         deferred.resolve(user);
                     } else {
@@ -140,6 +143,24 @@ app.factory('Auth', function($q, $cookies, $location, $firebaseAuth, User) {
                     console.log('Ошибка регистрации');
                 }
             });
+        }
+        if (newUser.provider === "twitter" && newUser.username) {
+            var user = newUser;
+            var date = new Date();
+            newUser = {
+                date: date.getTime(),
+                id: user.uid,
+                status: "registered",
+                scope: user,
+                profile: {
+                    name: newUser.username,
+                    nick: newUser.username,
+                    avatar: newUser.profile_image_url,
+                    url: 'https://twitter.com/' + newUser.username
+                }
+            };
+            User.addByKey(user.uid, newUser);
+            setUser(user, loginDeferred);
         }
         return deferred.promise;
     }

@@ -8,7 +8,8 @@
 app.directive('puAfterAuth', function() {
     return {
         templateUrl: 'app/user/directives/afterAuth/template.html',
-        link: function (scope, elem, attr) {
+        controller: 'AuthCtrl',
+        link: function (scope, elem, attr, ctrl) {
             scope.afterAuthAction        = attr.puAfterAuth;
             scope.afterAuthLoginTitle    = attr.loginTitle;
             scope.afterAuthRegisterTitle = attr.registerTitle;

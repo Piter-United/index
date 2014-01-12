@@ -1,17 +1,17 @@
 <div ng-controller="UserListCtrl">
 
     <h3>Новый пользователь</h3>
-    <form class="form-inline" name="Register" ng-controller="UserRegisterCtrl">
+    <form class="form-inline" name="Register" ng-controller="AuthCtrl">
 
         <div class="form-group" ng-class="{'has-error':Register.email.$invalid && Register.email.$dirty}">
-             <input class="form-control" type="email" ng-model="newUser.email" name="email" required placeholder="Эл. почта">
+             <input class="form-control" type="email" ng-model="user.email" name="email" required placeholder="Эл. почта">
         </div>
         <div class="form-group" ng-class="{'has-error':Register.pass.$invalid && Register.pass.$dirty}">
-            <input class="form-control" type="text" ng-model="newUser.password" name="pass" required placeholder="Пароль">
+            <input class="form-control" type="text" ng-model="user.password" name="pass" required placeholder="Пароль">
         </div>
         <div class="form-group">
             <select class="form-control"
-                    ng-model="newUser.status"
+                    ng-model="user.status"
                     ng-options="r for r in ['registered','moderator','deleted']"
                     ng-disabled="auth.user.status!='admin'"></select>
         </div>
@@ -24,8 +24,8 @@
     </div>
     <div class="form-horizontal form-group" ng-repeat="user in users | filter:searchText | orderBy:'date'">
         <div class="row">
-            <label class="col-md-1 control-label">{{user.$id}}</label>
-            <div class="col-md-2 control-label">{{user.date | date:'dd.MM.yyyy'}}</div>
+            <label class="col-md-3 control-label">{{user.$id}}</label>
+            <!--<div class="col-md-2 control-label">{{user.date | date:'dd.MM.yyyy'}}</div>-->
 
             <div class="col-md-4 form-group">
                 <label class="control-label"><a ng-href="#/user/{{user.$id}}">{{user.profile.name}}</a></label>
@@ -40,7 +40,7 @@
             <div class="col-md-2">
                 <button class="btn btn-link" ng-init="extra=false" ng-click="extra=!extra">профиль</button>
             </div>
-            <button class="btn btn-link" ng-controller="UserRegisterCtrl" ng-click="unregister(user.$id)">
+            <button class="btn btn-link" ng-click="unregister(user.$id)">
                 <span class="glyphicon glyphicon-remove text-danger"></span>
             </button>
         </div>

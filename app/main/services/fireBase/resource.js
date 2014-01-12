@@ -19,7 +19,7 @@ app.factory('$firebaseArr', ['$firebase', '$filter', function($firebase, $filter
 /**
  * Simple FireBase factory
  */
-app.factory('$firebaseRes', ['$firebase', '$firebaseArr', function ($firebase, $firebaseArr) {
+app.factory('$firebaseRes', ['$q', '$firebase', '$firebaseArr', function ($q, $firebase, $firebaseArr) {
 
     //--Copy from Angular Resource
     var noop = angular.noop,
@@ -154,28 +154,45 @@ app.factory('$firebaseRes', ['$firebase', '$firebaseArr', function ($firebase, $
                 },
                 'add': function(value, url, params) {
 
-                    var items = this.get(url, params);
-                    items.$add(value);
+                    var ref = newFirebase(url, params);
+                    return ref.push(value).name();
                 },
                 'addWithId': function(value, key) {
 
                     key = key ? key : 'id';
-                    var items = this.get(),
-                        id = items.$add(value).name();
-                    items.$child(id).$child(key).$set(id);
-
+                    var ref = newFirebase(),
+                        itemRef = ref.push(value),
+                        id = itemRef.name();
+                    itemRef.child(key).set(id);
                     return id;
                 },
                 'addByKey': function(key, value, url, params) {
 
-                    var item = this.get(url, params);
-                    item.$child(key).$set(value);
+                    var ref = newFirebase(url, params);
+                    ref.child(key).set(value);
                 },
                 'remove': function(url, params) {
 
                     var items = this.get(url, params);
                     items.$remove();
+                },
+                'isset': function(key, url, params) {
+
+                    var ref = newFirebase(url, params),
+                        deferred = $q.defer();
+
+                    ref.child(key).once('value', function(snapshot) {
+                        var value = snapshot.val();
+
+                        value ? deferred.resolve(value) : deferred.reject();
+                    });
+                    return deferred.promise;
+                },
+                //for tests
+                'ref': function(url, params) {
+                    return newFirebase(url, params);
                 }
+//                //not works
 //                'save': function(url, params) {
 //
 //                    var items = this.get(url, params);
