@@ -1,9 +1,8 @@
 {
   "name": "angularfire",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "main": [
-    "./angularfire.js",
-    "./angularfire.min.js"
+    "./angularfire.js"
   ],
   "ignore": [
     "Gruntfile.js",
@@ -15,16 +14,18 @@
   "dependencies": {
     "angular": "~1.2.0",
     "angular-mocks": "~1.2.0",
+    "firebase": "~1.0.2",
+    "firebase-simple-login": "~1.0.2",
     "observe-js": "https://github.com/jeffbcross/observe-js.git"
   },
   "homepage": "https://github.com/firebase/angularFire",
-  "_release": "0.5.0",
+  "_release": "0.6.0",
   "_resolution": {
     "type": "version",
-    "tag": "v0.5.0",
-    "commit": "d97e226e41028f8cc776d714bac9bc85ecafab80"
+    "tag": "v0.6.0",
+    "commit": "2b7da5c83d59d26b5099e492817675aa0bea0f17"
   },
   "_source": "git://github.com/firebase/angularFire.git",
-  "_target": "0.5.0",
+  "_target": "0.6.0",
   "_originalSource": "angularfire"
 }

@@ -7,7 +7,9 @@ app.controller('CommunityListCtrl', function($scope, $window, Community, Auth) {
         logo: "app/community/img/no_logo.jpg"
     };
     var newCommunity = angular.extend({}, emptyCommunity);
+    var today = new Date();
 
+    $scope.today = today.getTime();
     $scope.communities = communities;
     $scope.newCommunity = newCommunity;
 
@@ -21,12 +23,12 @@ app.controller('CommunityListCtrl', function($scope, $window, Community, Auth) {
         for (var k in newCommunity) {
             newCommunity[k] = emptyCommunity[k] ? emptyCommunity[k] : undefined;
         }
-    }
+    };
     $scope.remove = function(id) {
         communities.$remove(id);
         // or
         // Test.remove({"id": id});
-    }
+    };
     $scope.save = function(id) {
         communities.$save(id);
     }

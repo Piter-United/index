@@ -1,11 +1,10 @@
 'use strict';
 
 /**
- * Return data as array
+ * Convert object to array
  */
-app.factory('$firebaseArr', ['$firebase', '$filter', function($firebase, $filter) {
-    return function(ref) {
-        var dataObj = $firebase(ref);
+app.factory('$objToArr', ['$firebase', '$filter', function($firebase, $filter) {
+    return function(dataObj) {
         var dataArr = angular.extend([], dataObj);
 
         dataObj.$on('change', function() {
@@ -13,6 +12,15 @@ app.factory('$firebaseArr', ['$firebase', '$filter', function($firebase, $filter
             angular.extend(dataArr, $filter('orderByPriority')(dataObj));
         });
         return dataArr;
+    }
+}]);
+
+/**
+ * Return data as array
+ */
+app.factory('$firebaseArr', ['$firebase', '$objToArr', function($firebase, $objToArr) {
+    return function(ref) {
+        return $objToArr($firebase(ref));
     }
 }]);
 

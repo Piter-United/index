@@ -72,9 +72,10 @@
 
     <tabset justified="true" ng-if="!creating">
         <tab heading="Мероприятия" active="tab.events">
-            Список мероприятий
+            <div ng-include="'app/community/views/page/events/template.html'"></div>
         </tab>
         <tab heading="Описание" active="tab.note">
+            <!--Просмотр-->
             <ul class="list-unstyled" ng-if="!editor.note">
                 <li class="row">
                     <div class="col-md-3 col-md-offset-9">
@@ -86,6 +87,7 @@
                 </li>
             </ul>
 
+            <!--Редактирование-->
             <ul class="list-unstyled form-horizontal" ng-if="editor.note">
                 <li class="form-group">
                     <div class="col-md-3 col-md-offset-9">
