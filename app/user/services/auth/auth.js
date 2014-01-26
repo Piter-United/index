@@ -39,13 +39,13 @@
  *  `next`, `current` — params from `$routeChangeStart` event of ngRouter
  */
 
-app.factory('Auth', function($q, $cookies, $location, $firebaseAuth, User) {
+app.factory('Auth', function($q, $cookies, $location, $firebaseSimpleLogin, User) {
     var authRef = new Firebase("https://piterunited.firebaseio.com");
-    var auth = $firebaseAuth(authRef);
+    var auth = $firebaseSimpleLogin(authRef);
     var guest = {
         status: "guest",
         profile: {}
-    }
+    };
     var authLogin = auth.$login;
     var authLogout = auth.$logout;
 
@@ -98,12 +98,12 @@ app.factory('Auth', function($q, $cookies, $location, $firebaseAuth, User) {
                 });
         }
         return authPromise;
-    }
+    };
     auth.$logout = function() {
         $cookies.auth = "";
         auth.$current.user = angular.copy(guest);
         authLogout();
-    }
+    };
     auth.$registerUser = function(newUser, stay, loginDeferred) {
         var deferred = $q.defer();
 
@@ -163,11 +163,11 @@ app.factory('Auth', function($q, $cookies, $location, $firebaseAuth, User) {
             setUser(user, loginDeferred);
         }
         return deferred.promise;
-    }
+    };
     auth.$unregisterUser = function(id){
         id = id ? id : auth.$current.user.id;
         User.get({id: id}).$child("status").$set("deleted");
-    }
+    };
     auth.$isAllow = function(value) {
         var userGroup, userId,
             access = false;
@@ -215,4 +215,4 @@ app.factory('Auth', function($q, $cookies, $location, $firebaseAuth, User) {
         }
     };
     return auth;
-})
+});

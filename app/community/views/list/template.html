@@ -4,7 +4,10 @@
     <div class="row communities-list-item" ng-repeat-start="community in communities | filter:searchText | orderBy:'title'">
         <div class="col-xs-9 col-md-10">
             <h3><a href="#/community/{{community.id}}">{{community.title}}</a></h3>
-            <p>{{community.abstract}}</p>
+            <p>{{community.abstract}}</p><br/>
+            <p ng-repeat="event in community.events" ng-if="event.startDate > today">
+                {{event.startDate | date:'d'}} {{event.startDate | date:'MMMM'}} — <a ng-href="#/community/{{community.id}}/events">{{event.title}}</a>
+            </p>
         </div>
         <div class="col-xs-3 col-md-2">
             <a ng-href="#/community/{{community.id}}">
