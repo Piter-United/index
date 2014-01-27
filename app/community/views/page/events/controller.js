@@ -1,6 +1,7 @@
 app.controller('CommunityPageEventsCtrl', function($scope, $routeParams, $location, $objToArr, Community, Event, Calendar, Auth) {
 
-    var events = $objToArr(Community.get({id: $routeParams.communityId}).$child('events'));
+    var communityId = $routeParams.communityId;
+    var events = $objToArr(Community.get({id: communityId}).$child('events'));
     var today = new Date(),
         startTime = '19:00';
     setTime(today, startTime);
@@ -93,6 +94,7 @@ app.controller('CommunityPageEventsCtrl', function($scope, $routeParams, $locati
         eventUpd.date = date.getTime();
         eventUpd.startDate = tempDate.getTime();
         eventUpd.owner = Auth.$current.user.id;
+        eventUpd.communityId = communityId;
         clean(eventUpd);
 
         eventId = Event.addWithId(eventUpd);

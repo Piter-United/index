@@ -19,11 +19,15 @@
 <nav ng-include="routeData.navigationTopUrl"></nav>
 <div class="container container-main">
     <div class="row">
-        <section class="col-md-8">
+        <section class="col-md-12" ng-if="routeData.fullWidth">
             <header ng-include="routeData.contentHeaderUrl"></header>
             <div ng-view></div>
         </section>
-        <aside class="col-md-4 hidden-xs">
+        <section class="col-md-8" ng-if="!routeData.fullWidth">
+            <header ng-include="routeData.contentHeaderUrl"></header>
+            <div ng-view></div>
+        </section>
+        <aside class="col-md-4 hidden-xs" ng-if="!routeData.fullWidth">
             <!--<div ng-include="routeData.asideTopUrl"></div>-->
             <div ng-include="routeData.asideMiddleUrl"></div>
             <!--<div ng-include="routeData.asideBottomUrl"></div>-->
@@ -65,6 +69,7 @@
 <script src="app/community/views/aside/controller.js"></script>
 
 <link href="app/calendar/views/aside/style.css" rel="stylesheet">
+<link href="app/calendar/views/page/style.css" rel="stylesheet">
 <script src="app/calendar/resources/calendar.js"></script>
 <script src="app/calendar/config.js"></script>
 <script src="app/calendar/views/page/controller.js"></script>
