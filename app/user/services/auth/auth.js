@@ -76,6 +76,7 @@ app.factory('Auth', function($q, $cookies, $location, $firebaseSimpleLogin, User
                         setUser(user.auth, deferred);
                     } else {
                         console.log("Login Failed!", error);
+                        auth.$logout();
                         deferred.reject(error);
                     }
                 });

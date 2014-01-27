@@ -1,3 +1,6 @@
-<div class="panel panel-default calendar-aside" ng-controller="CalendarAsideCtrl">
-    aside calendar
+<div class="calendar-aside" ng-controller="CalendarAsideCtrl">
+    <h4>Предстоящие мероприятия</h4>
+    <p ng-repeat="event in events" ng-if="event.startDate > today">
+        {{event.startDate | date:'d'}} {{event.startDate | date:'MMMM'}} — <a ng-href="#/community/{{community.id}}/events">{{event.title}}</a>
+    </p>
 </div>

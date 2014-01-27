@@ -74,7 +74,6 @@ app.controller('CalendarPageCtrl', function($scope, $objToArr, Calendar) {
                 dateEvents[startDate.getDate()].push(events[i]);
                 i++;
             }
-            console.log(events[1], angular.copy(events))
         })
     }
     setMonth();
