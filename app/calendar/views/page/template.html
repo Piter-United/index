@@ -1,3 +1,22 @@
 <div ng-controller="CalendarPageCtrl">
-    Calendar page
+    <div class="calendar-title center-block row">
+        <div class="calendar-title-arrow pull-left"><button class="btn btn-link" ng-click="prevMonth()"><span class="glyphicon glyphicon-arrow-left"></span></button></div>
+        <div class="calendar-title-arrow pull-right"><button class="btn btn-link" ng-click="nextMonth()"><span class="glyphicon glyphicon-arrow-right"></span></button></div>
+        <div class="calendar-title-text"><h4>{{monthNames[calendar.thisMonth]}}, {{calendar.thisYear}}</h4></div>
+    </div>
+    <table class="table table-bordered">
+        <tr>
+            <th class="calendar-month-week-day calendar-month-week-day_title active" ng-repeat="day in dayNames">{{day}}</th>
+        </tr>
+        <tr ng-repeat="week in calendar.month">
+            <td class="calendar-month-week-day"
+                ng-class="{'calendar-month-week-day_disable': day.$otherMonth, 'calendar-month-week-day_today': day.$isToday}"
+                ng-repeat="day in week">
+                <p>{{day.$date | date:'d'}}</p>
+                <ul class="calendar-month-week-day-events list-unstyled">
+                    <li ng-repeat="event in day.events"><a ng-href="#/community/{{event.communityId}}/events">{{event.title}}</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
 </div>
