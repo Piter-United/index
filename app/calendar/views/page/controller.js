@@ -2,7 +2,7 @@ app.controller('CalendarPageCtrl', function($scope, $objToArr, Calendar) {
     var calendar = {},
         msInDay = 86400000,
         today = new Date(),
-        todayYear = today.getYear(),
+        todayFullYear = today.getFullYear(),
         todayMonth = today.getMonth(),
         todayDate = today.getDate(),
         monthNames = [
@@ -29,8 +29,8 @@ app.controller('CalendarPageCtrl', function($scope, $objToArr, Calendar) {
             'Воскресенье'
         ];
 
-    calendar.thisMonth = 0;
-    calendar.thisYear = 2014;
+    calendar.thisMonth = todayMonth;
+    calendar.thisYear = todayFullYear;
 
     function setMonth() {
         var i, currentWeek, countDate, countMonth, startDate, otherMonth, countDateNumber,
@@ -57,7 +57,7 @@ app.controller('CalendarPageCtrl', function($scope, $objToArr, Calendar) {
                 }
                 calendar.month[currentWeek].push({
                     $date: countDate,
-                    $isToday: countDate.getYear() === todayYear && countDate.getMonth() === todayMonth && countDate.getDate() === todayDate,
+                    $isToday: countDate.getFullYear() === todayFullYear && countDate.getMonth() === todayMonth && countDate.getDate() === todayDate,
                     $fullDate: countDate.toLocaleDateString(),
                     $otherMonth: otherMonth,
                     events: dateEvents[countDateNumber]
