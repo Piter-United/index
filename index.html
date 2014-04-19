@@ -1,114 +1,91 @@
-<!DOCTYPE html>
-<html lang="ru" ng-app="app">
-<head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+---
+layout: default
+title: Piter United
+---
 
-    <title>Piter-United</title>
+<div class="container">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
 
-    <!-- Bootstrap core CSS -->
-    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-
-<!-- Markup
-================================================== -->
-<nav ng-include="routeData.navigationTopUrl"></nav>
-<div class="container container-main">
-    <div class="row">
-        <section class="col-md-12" ng-if="routeData.fullWidth">
-            <header ng-include="routeData.contentHeaderUrl"></header>
-            <div ng-view></div>
-        </section>
-        <section class="col-md-8" ng-if="!routeData.fullWidth">
-            <header ng-include="routeData.contentHeaderUrl"></header>
-            <div ng-view></div>
-        </section>
-        <aside class="col-md-4 hidden-xs" ng-if="!routeData.fullWidth">
-            <div ng-include="routeData.asideTopUrl"></div>
-            <div ng-include="routeData.asideMiddleUrl"></div>
-            <!--<div ng-include="routeData.asideBottomUrl"></div>-->
-        </aside>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="slide1">
+        <!--
+          <img src="img/pu_logo.png" width="100px">
+        -->
+          <h2>Piter United</h2>
+          <p>Объединение активистов ИТ сообществ Санкт-Петербурга, <br>развивающих профессионально-образовательную инфраструктуру на базе сообществ</p>
+        </div>
+      </div>
+      <div class="item">
+         <div class="slide1">
+          <!--
+          <a href="/" class="btn btn-default"> Подробнее </a>
+        -->
+          <h2>IT Global Meetups</h2>
+          <p>Ежеквартальная встреча всех ИТ сообществ Санкт-Петербурга <br> в одно время в одном месте</p>
+        </div>
+      </div>
+      <div class="item">
+         <div class="slide1">
+          <h2>IT Communities</h2>
+          <p>В нашем городе орагнизовано 12 профессиональных ИТ сообществ, <br>которые ежемесячно проводят офф-лайн встречи и общаются на своих он-лайн площадках </p>
+        </div>
+      </div>
     </div>
+
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</div>
+<!--
+<div class="container">
+  <div class="header">
+  
+    <img src="img/piterunited.png" class="img-responsive img-rounded" width="200px">
+
+    <h3><strong></body>Piter United</strong></h3>
+    <hr>
+    <p>Объединение активистов ИТ-сообществ формирующих и развивающих <br> профессионально-образовательную инфраструктуру на базе сообществ <br>в Санкт-Петербурге </p>
+  </div>
+</div>
+-->
+
+<div class="container">
+  <h3 class="communities"> ИТ сообщества Санкт-Петербурга</h3>
+  <div class="row">
+  {% for community in site.data.communities %}
+    <div class="col-xs-12 col-md-4">
+      <div class="thumbnail">
+        <div class="cname">
+          <div class="test">
+            <img src="{{community.logo}}" width="80px" alt="..." class="img-circle">
+            <p class="title"> {{community.title}} </p>
+            <p class="desc"> {{community.desc}} </p>
+          </div>
+          <hr>
+          <span> {{community.members}}</span>
+          <a class="btn btn-default btn-sm join" href="{{community.link}}"> Join Community </a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
 </div>
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="lib/angular/angular.min.js"></script>
-<script src="lib/angular-i18n/angular-locale_ru.js"></script>
-<script src="lib/angular-route/angular-route.min.js"></script>
-<script src="lib/angular-cookies/angular-cookies.min.js"></script>
-<script src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-<script src='https://cdn.firebase.com/v0/firebase.js'></script>
-<script src="lib/angularfire/angularfire.js"></script>
-<script src='https://cdn.firebase.com/v0/firebase-simple-login.js'></script>
-<script src="app/app.js"></script>
-
-<!--TODO: автоматическое подключение всех js- и css-файлов. Склеивание иминификация их в папке app.dist -->
-
-<link href="app/main/views/home/style.css" rel="stylesheet">
-<link href="app/main/directives/linkInput/style.css" rel="stylesheet">
-<script src="app/main/services/fireBase/resource.js"></script>
-<script src="app/main/directives/linkInput/directive.js"></script>
-<script src="app/main/config.js"></script>
-<script src="app/main/views/home/controller.js"></script>
-<script src="app/main/views/navigation/controller.js"></script>
-
-<link href="app/community/views/page/events/style.css" rel="stylesheet">
-<link href="app/community/views/list/style.css" rel="stylesheet">
-<link href="app/community/views/aside/style.css" rel="stylesheet">
-<script src="app/community/config.js"></script>
-<script src="app/community/resources/community.js"></script>
-<script src="app/community/views/list/controller.js"></script>
-<script src="app/community/views/page/controller.js"></script>
-<script src="app/community/views/page/events/controller.js"></script>
-<script src="app/community/views/aside/controller.js"></script>
-
-<link href="app/calendar/views/aside/style.css" rel="stylesheet">
-<link href="app/calendar/views/page/style.css" rel="stylesheet">
-<script src="app/calendar/resources/calendar.js"></script>
-<script src="app/calendar/config.js"></script>
-<script src="app/calendar/views/page/controller.js"></script>
-<script src="app/calendar/views/aside/controller.js"></script>
-
-<script src="app/place/config.js"></script>
-<script src="app/place/views/page/controller.js"></script>
-<script src="app/place/views/list/controller.js"></script>
-
-<link href="app/banner/views/aside/style.css" rel="stylesheet">
-<script src="app/banner/views/aside/controller.js"></script>
-<link href="app/user/directives/afterAuth/style.css" rel="stylesheet">
-<script src="app/user/services/auth/auth.js"></script>
-<script src="app/user/directives/authCtrl.js"></script>
-<script src="app/user/directives/authPopup/directive.js"></script>
-<script src="app/user/directives/registerPopup/directive.js"></script>
-<script src="app/user/directives/loginPopup/directive.js"></script>
-<script src="app/user/directives/logout/directive.js"></script>
-<script src="app/user/directives/access/directive.js"></script>
-<script src="app/user/directives/afterAuth/directive.js"></script>
-<script src="app/user/config.js"></script>
-<script src="app/user/resources/user.js"></script>
-<script src="app/user/views/list/controller.js"></script>
-<script src="app/user/views/page/controller.js"></script>
-
-<script src="app/event/config.js"></script>
-<script src="app/event/resources/event.js"></script>
-<script src="app/event/views/list/controller.js"></script>
-
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-46376696-1', 'piter-united.ru');
-    ga('send', 'pageview');
-
-</script>
-</body>
-</html>
-
+<div class="row">
+<div class="footer">  </div>
+</div>

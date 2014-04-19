@@ -1,0 +1,120 @@
+body{
+	font-size: 23px;
+	background-color: whitesmoke;
+}
+
+.container h1, h2, h3, h4, a{
+	color: #c0392b;
+}
+
+.container a:hover, a:link{
+	color: #c0392b;
+}
+
+.container hr{
+	border-color: #c0392b;
+}
+
+.contacts{
+	position: absolute;
+	right: 20px;
+	bottom: 60px;
+}
+
+.contacts a:link, span{
+	color: #7f8c8d;
+	font-size: 23px;
+}
+
+.contacts a:hover{
+	color: #95a5a6;
+}
+
+.wrapper{
+	width: 100%;
+	height: 70vh;
+	margin-top: 15vh;
+}
+
+a:link, a:active, a:hover{
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+a:hover{
+	opacity: 0.8;
+}
+
+a.piter-united{
+	float: left;
+	background-color: #c0392b;
+	width: 40%;
+	height: 100%;
+	border: 2px solid whitesmoke;
+	padding: 3%;
+	padding-top: 13%;
+	color: whitesmoke;
+	display: block;
+}
+
+a.communities{
+	float:right;
+	background-color: #16a085;
+	width: 40%;
+	height: 50%;
+	border: 2px solid whitesmoke;
+	padding-top: 5%;
+	padding: 2%;
+	color: whitesmoke;
+	display: block;
+}
+
+a.meetups{
+	float:left;
+	background-color: #2980b9;
+	width: 20%;
+	height: 50%;
+	border: 2px solid whitesmoke;
+	padding-top: 5%;
+	padding: 2%;
+	color: whitesmoke;
+	display: block;
+}
+
+a.global-meetup{
+	float:left;
+	background-color: #34495e;
+	width: 40%;
+	height: 50%;
+	border: 2px solid whitesmoke;
+	padding-top: 5%;
+	padding: 2%;
+	color: whitesmoke;
+	display: block;
+}
+
+a.logo{
+	float: right;
+	background-color: #c0392b;
+	width: 20%;
+	height: 50%;
+	border: 2px solid whitesmoke;
+	padding-top: 5%;
+	padding: 2%;
+	color: whitesmoke;
+	display: block;
+	background-image: url("pu_logo.png");
+}
+
+.contacts a.test{
+	color: black;
+}
+
+img {
+ -webkit-filter: invert(100%);  
+ padding-top: 20px;
+}
+
+
+
+

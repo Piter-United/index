@@ -1,0 +1,69 @@
+- title: Piter United 
+  members: 145 members
+  link: https://plus.google.com/u/0/communities/108851235934496354072
+  desc: Объединение активистов ИТ сообществ Санкт-Петербурга
+  logo: img/piterunited.png
+
+- title: Agile Piter
+  members: 112 members
+  link: https://plus.google.com/u/0/communities/112264824472767454602
+  desc: Сообщество практикующих и интересующихся гибкими и бережливыми подходами
+  logo: img/agilepiter.png
+
+- title: SMART management
+  members: 116 members
+  link: https://plus.google.com/u/0/communities/108809460896106613736
+  desc: Сообщество ИТ менеджеров
+  logo: img/smart.png 
+
+- title: AngularJS
+  members: 374 members
+  link: https://plus.google.com/communities/109003572589840580141
+  desc: Сообщество программистов на AngularJS
+  logo: img/angular.png
+
+- title: SPb Frontend
+  members: 107 members
+  link: https://plus.google.com/u/0/communities/104754387486747286577
+  desc: Сообщество front-end разработчиков
+  logo: img/frontend.png 
+
+- title: DevOps-40
+  members:
+  link: http://www.meetup.com/DevOps-40/
+  logo: img/devops.png
+
+- title: SPb Haskell User Group
+  members:
+  link: https://groups.google.com/forum/#!forum/spbhug
+  logo: img/haskell.png
+
+- title: SPb Linux User Group
+  members:
+  link:
+  desc: Группа пользователей GNU/Linux и других OpenSource систем
+  logo: img/linux.png
+
+- title: SPb SQA Group
+  members:
+  link: http://sqagroup.spb.ru/
+  desc: Сообщество тестировщиков
+  logo: img/spbsqa.png
+
+- title: SPb Ruby User Group
+  members: 357 members
+  link: https://plus.google.com/u/0/communities/117927540789820622012
+  desc: Сообщество пассионарных рубистов с берегов Невы и им сочувствующих
+  logo: img/sprug.png
+
+- title: SPb Community of Analysts
+  members:	
+  link: http://vk.com/spb_analytics
+  desc: Сообщество системных и бизнес аналитиков
+  logo: img/spbcoa.png
+
+- title: IT Talk
+  members:
+  link: http://it-talk.dataart.ru/
+  desc: Сообщество компании DataArt
+  logo: img/ittalk.png 
