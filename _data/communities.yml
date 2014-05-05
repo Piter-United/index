@@ -40,9 +40,9 @@
 
 - title: SPb Linux User Group
   members:
-  link:
+  link: https://plus.google.com/communities/109619119969254890213
   desc: Группа пользователей GNU/Linux и других OpenSource систем
-  logo: img/linux.png
+  logo: img/spblug.png
 
 - title: SPb SQA Group
   members:
@@ -67,3 +67,9 @@
   link: http://it-talk.dataart.ru/
   desc: Сообщество компании DataArt
   logo: img/ittalk.png 
+
+- title: SPb Technical Writers
+  members:
+  link: https://plus.google.com/u/0/communities/111110772662436773783
+  desc: Сообщество технических писателей
+  logo: img/techwriters.png
