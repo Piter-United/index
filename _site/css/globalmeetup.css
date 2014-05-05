@@ -66,9 +66,10 @@ hr.primary_hr{
 
 .jumbotron{
 	background-color: transparent;
+	margin-bottom: 0px;
 }
 
-.jumbotron li,p{
+.jumbotron li{
 	font-size: 16px;
 }
 
@@ -76,11 +77,22 @@ hr.primary_hr{
 	margin-top: 60px;
 }
 
+.global_registration button{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+}
 
 .footer{
 	margin-top: 60px;
 	height: 20vh;
 	background-color: #4d7488;
+	color: white;
+	padding-top: 30px;
+}
+
+.footer a{
+	color: white;
 }
 
 #share-buttons img {
