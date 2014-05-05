@@ -68,7 +68,7 @@ hr.primary_hr{
 	background-color: transparent;
 }
 
-.jumbotron p{
+.jumbotron li,p{
 	font-size: 16px;
 }
 
