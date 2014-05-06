@@ -1,91 +1,99 @@
 ---
-layout: default
+layout: landing
 title: Piter United
 ---
 
-<div class="container">
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <div class="slide1">
-        <!--
-          <img src="img/pu_logo.png" width="100px">
-        -->
-          <h2>Piter United</h2>
-          <p>Объединение активистов ИТ сообществ Санкт-Петербурга, <br>развивающих профессионально-образовательную инфраструктуру на базе сообществ</p>
-        </div>
-      </div>
-      <div class="item">
-         <div class="slide1">
-          <!--
-          <a href="/" class="btn btn-default"> Подробнее </a>
-        -->
-          <h2>IT Global Meetups</h2>
-          <p>Ежеквартальная встреча всех ИТ сообществ Санкт-Петербурга <br> в одно время в одном месте</p>
-        </div>
-      </div>
-      <div class="item">
-         <div class="slide1">
-          <h2>IT Communities</h2>
-          <p>В нашем городе организовано 13 профессиональных ИТ сообществ, <br>которые ежемесячно проводят офф-лайн встречи и общаются на своих он-лайн площадках </p>
-        </div>
-      </div>
-    </div>
-
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
-  </div>
-</div>
-<!--
-<div class="container">
-  <div class="header">
-  
-    <img src="img/piterunited.png" class="img-responsive img-rounded" width="200px">
-
-    <h3><strong></body>Piter United</strong></h3>
-    <hr>
-    <p>Объединение активистов ИТ-сообществ формирующих и развивающих <br> профессионально-образовательную инфраструктуру на базе сообществ <br>в Санкт-Петербурге </p>
-  </div>
-</div>
--->
-
-<div class="container">
-  <h3 class="communities"> ИТ сообщества Санкт-Петербурга</h3>
-  <div class="row">
-  {% for community in site.data.communities %}
-    <div class="col-xs-12 col-md-4">
-      <div class="thumbnail">
-        <div class="cname">
-          <div class="test">
-            <img src="{{community.logo}}" width="80px" alt="..." class="img-rounded">
-            <p class="title"> {{community.title}} </p>
-            <p class="desc"> {{community.desc}} </p>
-          </div>
-          <hr>
-          <span> {{community.members}}</span>
-          <a class="btn btn-default btn-sm join" href="{{community.link}}"> Join Community </a>
-        </div>
-      </div>
-    </div>
-  {% endfor %}
-  </div>
+<div class="row global_header">
+	<div class="container">
+		<div class="col-md-6">
+			<h1> IT Global Meetup</h1>
+			<p> Все профессиональные IT-сообщества Санкт-Петербурга <br> в одно время в одном месте</p>
+		</div>
+		<div class="col-md-6 righted">
+			<h1> 30 May'14</h1>
+			<p>Музей связи <br>ул. Почтамтская, 15</p>
+		</div>
+	</div>
 </div>
 
-<div class="row">
-<div class="footer">  </div>
+<div class="container">
+	<div class="row global_history">
+		<div class="col-md-3"> 
+			<h2>Piter United</h2>
+		</div>
+		<div class="col-md-9"> Объединение IT сообществ Санкт-Петербурга, нацеленное на формирование и развитие профессионально-образовательной инфраструктуры на базе сообществ.<hr>
+		С 2013 года ежеквартально проводит встречи <strong>IT Global Meetups</strong>, на которых собираются участники всех IT сообществ Санкт-Петербурга, знакомятся, обмениваются профессиональным опытом, развиваются и развивают!
+		</div>
+	</div>
+
+	<div class="well">Мы рады пригласить вас на весенний <br> <strong>IT Global Meetup</strong> <br>30 мая 2014 года в Санкт-Петербурге</div>
+
+	<div class="row global_programm">
+		<h2> Программа </h2>
+		<img src="img/timeline.png" class="img-responsive">
+	</div>
+
+	<div class="row global_proposition">
+		<h2>Участие в мероприятии</h2>
+		<div class="col-md-4 jumbotron">
+			<h3>Активное участие</h3>
+			<ul>
+				<li><a href="#registration">зарегистрироваться</a></li>
+				<li><a href="/">присоединиться к сообществу</a></li>
+				<li>поучаствовать в формировании программы вашего сообщества</li>
+				<li>прийти на встречу</li>
+			</ul>
+		</div>
+		<div class="col-md-4 jumbotron">
+			<h3>Инфо- поддержка</h3>
+			<ul>
+				<li><a href="#registration">зарегистрироваться</a></li>
+				<li>рассказать коллегам и друзьям о событии:</li>
+			</ul>
+			<div id="share-buttons">
+				<!-- Facebook -->
+				<a href="http://www.facebook.com/sharer.php?u=http://piter-united.ru" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+				<!-- Twitter -->
+				<a href="http://twitter.com/share?url=http://piter-united.ru&text=Simple Share Buttons" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+				<!-- Google+ -->
+				<a href="https://plus.google.com/share?url=http://piter-united.ru" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a>
+				<!-- LinkedIn -->
+				<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://piter-united.ru" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+			</div>
+
+		</div>
+		<div class="col-md-4 jumbotron">
+			<h3>Просто участие</h3>
+			<ul>
+				<li><a href="#registration">зарегистрироваться</a></li>
+				<li>прийти на встречу</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="well">Регистрация БЕСПЛАТНАЯ, участие ОБЯЗАТЕЛЬНОЕ!!!</div>
+
+	<div class="row global_registration" id="registration">
+		<h2> Регистрация и место проведения</h2>
+			
+		<div class="col-md-6">
+			<h4>Музей связи, ул. Почтамтская 15</h4>
+			<h4>30 мая с 14.00 до 22.00</h4>
+			<button class="btn btn-primary btn-lg"> Зарегистрироваться </button>
+		</div>
+		<div class="col-md-6">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1999.0387483663649!2d30.2994503!3d59.9314992!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696311dcf95acab%3A0xf371f6498aeac213!2sPochtamtskaya+ulitsa%2C+15%2C+Sankt-Peterburg!5e0!3m2!1sen!2sru!4v1399284688602" width="600" height="450" frameborder="0" style="border:0"></iframe>
+		</div>
+	</div>
+
+	<div class="row sponsors">
+		<h2>Партнеры и спонсоры</h2>
+		<p>... логотипы и названия ...</p>
+	</div>
+</div>
+
+<div class="row footer">
+	<div class="container">
+		<a href="mailto:piterunited@gmail.com"> piterunited@gmail.com </a>
+	</div>
 </div>
