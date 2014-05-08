@@ -16,7 +16,7 @@ h2{
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 60px;
+	margin-top: 20px;
 }
 
 .global_header{
@@ -84,7 +84,15 @@ hr.primary_hr{
 }
 
 .global_registration h2{
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+}
+
+.sponsors h2{
+	margin-bottom: 40px;
+}
+
+.sponsors .row{
+	margin-left: 0px;
 }
 
 .footer{
