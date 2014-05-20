@@ -60,6 +60,19 @@ hr.primary_hr{
 	margin-right: auto;
 }
 
+.prog_link{
+	padding-top: 40px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.prog_link .btn-default{
+	color: #4d7488;
+	border: 2px solid #4d7488;
+	border-radius: 0px;
+	font-size: 20px;
+}
+
 .global_proposition{
 	margin-top: 60px;
 }

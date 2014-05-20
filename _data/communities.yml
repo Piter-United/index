@@ -73,3 +73,9 @@
   link: https://plus.google.com/u/0/communities/111110772662436773783
   desc: Сообщество технических писателей
   logo: img/techwriters.png
+
+- title: Spb Lisp Users
+  members:
+  link: http://vk.com/lisp.users
+  desc: Сообщество программистов на Lisp
+  logo: img/lisp.png
