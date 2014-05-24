@@ -79,3 +79,10 @@
   link: http://vk.com/lisp.users
   desc: Сообщество программистов на Lisp
   logo: img/lisp.png
+
+- title: Spb Python User Group
+  members:
+  link: https://plus.google.com/u/0/communities/107328406287050920928
+  desc: Сообщество python-программистов Санкт-Петербурга 
+  logo: img/python.png
+
