@@ -1,0 +1,91 @@
+---
+layout: default
+title: Piter United
+---
+
+<div class="container">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="slide1">
+        <!--
+          <img src="img/pu_logo.png" width="100px">
+        -->
+          <h2>Piter United</h2>
+          <p>Объединение активистов ИТ сообществ Санкт-Петербурга, <br>развивающих профессионально-образовательную инфраструктуру на базе сообществ</p>
+        </div>
+      </div>
+      <div class="item">
+         <div class="slide1">
+          <!--
+          <a href="/" class="btn btn-default"> Подробнее </a>
+        -->
+          <h2>IT Global Meetups</h2>
+          <p>Ежеквартальная встреча всех ИТ сообществ Санкт-Петербурга <br> в одно время в одном месте</p>
+        </div>
+      </div>
+      <div class="item">
+         <div class="slide1">
+          <h2>IT Communities</h2>
+          <p>В нашем городе организовано 13 профессиональных ИТ сообществ, <br>которые ежемесячно проводят офф-лайн встречи и общаются на своих он-лайн площадках </p>
+        </div>
+      </div>
+    </div>
+
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</div>
+<!--
+<div class="container">
+  <div class="header">
+  
+    <img src="img/piterunited.png" class="img-responsive img-rounded" width="200px">
+
+    <h3><strong></body>Piter United</strong></h3>
+    <hr>
+    <p>Объединение активистов ИТ-сообществ формирующих и развивающих <br> профессионально-образовательную инфраструктуру на базе сообществ <br>в Санкт-Петербурге </p>
+  </div>
+</div>
+-->
+
+<div class="container">
+  <h3 class="communities"> ИТ сообщества Санкт-Петербурга</h3>
+  <div class="row">
+  {% for community in site.data.communities %}
+    <div class="col-xs-12 col-md-4">
+      <div class="thumbnail">
+        <div class="cname">
+          <div class="test">
+            <img src="{{community.logo}}" width="80px" alt="..." class="img-rounded">
+            <p class="title"> {{community.title}} </p>
+            <p class="desc"> {{community.desc}} </p>
+          </div>
+          <hr>
+          <span> {{community.members}}</span>
+          <a class="btn btn-default btn-sm join" href="{{community.link}}" target="_blank"> Join Community </a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</div>
+
+<div class="row">
+<div class="footer">  </div>
+</div>

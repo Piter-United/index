@@ -1,0 +1,79 @@
+body{
+	background-color: white;
+	text-align: center;
+	font-size: 21px;
+}
+
+h1{
+	font-size: 60px;
+}
+
+h2{
+	font-size: 26px;
+}
+
+h3{
+	font-size: 26px;
+	font-weight: bold;
+	margin-top: 40px;
+}
+
+h4{
+	font-size: 21px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+hr{
+	margin-top: 40px;
+}
+
+img.logo{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.btn-primary{
+	font-size: 26px;
+	padding: 20px 40px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.description{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.participants{
+	text-align: left;
+}
+
+.programm{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.organizers{
+	margin-top: 40px;
+}
+
+img.media-object{
+	padding: 0px 10px;
+}
+
+.footer{
+	height: 200px;
+	margin-top: 100px;
+	background-color: #2e3234;
+	padding-top: 30px;
+}
+
+#footer{
+	color: #ddd;
+}
