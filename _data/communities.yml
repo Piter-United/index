@@ -1,32 +1,32 @@
 - title: Piter United 
-  members: 145 members
+  members: 248 members
   link: https://plus.google.com/u/0/communities/108851235934496354072
   desc: Объединение активистов ИТ сообществ Санкт-Петербурга
   logo: img/piterunited.png
 
 - title: Agile Piter
-  members: 112 members
+  members: 161 members
   link: https://plus.google.com/u/0/communities/112264824472767454602
   desc: Сообщество практикующих и интересующихся гибкими и бережливыми подходами
   logo: img/agilepiter.png
 
 - title: SMART management
-  members: 116 members
+  members: 179 members
   link: https://plus.google.com/u/0/communities/108809460896106613736
   desc: Сообщество ИТ менеджеров
   logo: img/smart.png 
 
 - title: AngularJS
-  members: 374 members
+  members: 683 members
   link: https://plus.google.com/communities/109003572589840580141
   desc: Сообщество программистов на AngularJS
   logo: img/angular.png
 
 - title: SPb Frontend
-  members: 107 members
+  members: 257 members
   link: https://plus.google.com/u/0/communities/104754387486747286577
   desc: Сообщество front-end разработчиков
-  logo: img/frontend.png 
+  logo: img/frontend.jpg 
 
 - title: DevOps-40
   members:
@@ -51,7 +51,7 @@
   logo: img/spbsqa.png
 
 - title: SPb Ruby User Group
-  members: 357 members
+  members: 409 members
   link: https://plus.google.com/u/0/communities/117927540789820622012
   desc: Сообщество пассионарных рубистов с берегов Невы и им сочувствующих
   logo: img/sprug.png
