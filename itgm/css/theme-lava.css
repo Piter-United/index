@@ -84,7 +84,7 @@ img {
   max-width: 100%;
 }
 img.itgm{
-  width: 300px;
+  width: 250px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -444,6 +444,11 @@ nav .logo {
   top: -6px;
   opacity: 1;
 }
+
+nav h1{
+  color: white;
+}
+
 nav .text-right {
   position: relative;
 }
@@ -463,10 +468,6 @@ nav .container {
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
-}
-
-.overlay-nav h1{
-  color: white;
 }
 
 .overlay-nav .logo-dark {
