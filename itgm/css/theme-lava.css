@@ -1983,11 +1983,11 @@ p.question {
 }
 .sponsor {
   margin-bottom: 36px;
-  height: 80px;
-  line-height: 80px;
+  height: 140px;
+  line-height: 140px;
 }
 .sponsor img {
-  max-width: 100px;
+  max-width: 140px;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
