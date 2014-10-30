@@ -52,11 +52,13 @@
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
 }
+
 .transition-700 {
   transition: all 0.7s ease-out;
   -webkit-transition: all 0.7s ease-out;
   -moz-transition: all 0.7s ease-out;
 }
+
 .overlay:before {
   background-color: #333333;
   opacity: 0.5;
@@ -71,6 +73,7 @@
   position: relative;
   z-index: 2;
 }
+
 /*!
 // 2. Helper Classes & Resets
 // --------------------------------------------------*/
@@ -203,16 +206,20 @@ img.itgm{
   }
 }
 .main-container {
+  /*
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   opacity: 0;
+  */
 }
 nav {
+  /*
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   opacity: 0;
+  */
 }
 .show-content {
   opacity: 1 !important;

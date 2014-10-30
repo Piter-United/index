@@ -311,7 +311,7 @@ $(window).load(function() {
         iFrame.contents().find('form').attr('target', '_blank').submit();
         return false;
     });
-
+    /*
     setTimeout(function() {
         $('.loader').addClass('hide-loader');
         setTimeout(function() {
@@ -320,6 +320,6 @@ $(window).load(function() {
             $('nav').addClass('show-content');
         }, 500);
     }, 10);
-
+*/
 
 }); 
