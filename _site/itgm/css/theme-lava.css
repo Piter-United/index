@@ -1958,6 +1958,11 @@ p.question {
   font-size: 18px;
 }
 
+.contact-tweets ul a{
+  color: white;
+  font-size: 18px;
+}
+
 .fullwidth-map {
   padding: 0px;
   position: relative;
