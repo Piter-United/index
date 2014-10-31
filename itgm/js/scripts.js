@@ -321,5 +321,6 @@ $(window).load(function() {
         }, 500);
     }, 10);
 */
+    $('.social-link a').prettySocial();
 
 }); 
