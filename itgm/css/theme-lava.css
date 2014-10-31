@@ -272,7 +272,7 @@ h3 {
   line-height: 28px;
 }
 .large-h1 {
-  font-size: 42px;
+  font-size: 41px;
   line-height: 48px;
   font-weight: 300;
 }
@@ -297,6 +297,13 @@ span.lead {
   display: inline-block;
   margin-right: -1px;
 }
+
+.centered-title{
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 strong {
   font-weight: 600;
 }
@@ -1002,7 +1009,7 @@ nav .container {
 }
 .countdown {
   text-align: center;
-  margin-top: 72px;
+  margin-top: 30px;
 }
 .countdown-row {
   color: #fff;
