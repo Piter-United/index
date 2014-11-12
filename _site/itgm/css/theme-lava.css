@@ -267,6 +267,19 @@ h1 {
   line-height: 36px;
   margin-bottom: 42px;
 }
+
+h1.prog_title{
+  margin-top: 20px;
+}
+
+.centered{
+  text-align: center;
+}
+
+.speaker-description h2{
+  color: red;
+}
+
 h3 {
   font-size: 20px;
   line-height: 28px;
