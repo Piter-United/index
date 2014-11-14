@@ -1331,12 +1331,12 @@ nav .container {
   margin-bottom: 36px;
 }
 .speaker-with-bio .speaker {
-  width: 50%;
+  width: 25%;
   float: left;
   margin-bottom: 0px;
 }
 .speaker-with-bio .speaker-description {
-  width: 100%;
+  width: 75%;
   float: left;
   padding-left: 30px;
 }
