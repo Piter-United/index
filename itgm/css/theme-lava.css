@@ -1335,11 +1335,31 @@ nav .container {
   float: left;
   margin-bottom: 0px;
 }
+
+.speaker-with-bio .speaker-map {
+  width: 50%;
+  float: left;
+  margin-bottom: 0px;
+}
+
+.speaker-with-bio .speaker-map-primary {
+  width: 100%;
+  float: left;
+  margin-bottom: 0px;
+}
+
 .speaker-with-bio .speaker-description {
   width: 75%;
   float: left;
   padding-left: 30px;
 }
+
+.speaker-with-bio .speaker-description-map {
+  width: 40%;
+  float: left;
+  padding-left: 30px;
+}
+
 .speaker-description span {
   display: inline-block;
   margin-bottom: 18px;
