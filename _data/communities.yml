@@ -1,29 +1,29 @@
 - title: Piter United 
-  members: 248 members
+  members:
   link: https://plus.google.com/u/0/communities/108851235934496354072
   desc: Объединение активистов ИТ сообществ Санкт-Петербурга
   logo: img/piterunited.png
 
 - title: Agile Piter
-  members: 161 members
+  members:
   link: https://plus.google.com/u/0/communities/112264824472767454602
   desc: Сообщество практикующих и интересующихся гибкими и бережливыми подходами
   logo: img/agilepiter.png
 
 - title: SMART management
-  members: 179 members
+  members:
   link: https://plus.google.com/u/0/communities/108809460896106613736
   desc: Сообщество ИТ менеджеров
   logo: img/smart.png 
 
 - title: AngularJS
-  members: 683 members
+  members:
   link: https://plus.google.com/communities/109003572589840580141
   desc: Сообщество программистов на AngularJS
   logo: img/angular.png
 
 - title: SPb Frontend
-  members: 257 members
+  members:
   link: https://plus.google.com/u/0/communities/104754387486747286577
   desc: Сообщество front-end разработчиков
   logo: img/frontend.jpg 
@@ -51,7 +51,7 @@
   logo: img/spbsqa.png
 
 - title: SPb Ruby User Group
-  members: 409 members
+  members:
   link: https://plus.google.com/u/0/communities/117927540789820622012
   desc: Сообщество пассионарных рубистов с берегов Невы и им сочувствующих
   logo: img/sprug.png
@@ -85,4 +85,28 @@
   link: https://plus.google.com/u/0/communities/107328406287050920928
   desc: Сообщество python-программистов Санкт-Петербурга 
   logo: img/python.png
+
+- title: Clojure Russia (представители в СПб)
+  members:
+  link: https://plus.google.com/communities/114227952963737516047
+  desc: Сообщество практикующих и интересующихся clojure 
+  logo: img/clojure.png
+
+- title: SPb CIO Club
+  members:
+  link: http://www.spbcioclub.ru/
+  desc: Санкт-Петербургский клуб ИТ-директоров 
+  logo: img/spbcio.gif
+
+- title: UX SPb
+  members:
+  link: http://ux-spb.ru/
+  desc: Проектировщики интерфейсов и юзабилисты Санкт-Петербурга 
+  logo: img/uxspb.png
+
+- title: SPb Startup
+  members:
+  link: 
+  desc: ИТ-предприниматели Санкт-Петербурга 
+  logo: img/spbstartup.png
 
