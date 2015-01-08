@@ -106,7 +106,13 @@
 
 - title: SPb Startup
   members:
-  link: 
+  link: https://www.facebook.com/groups/pitervc/
   desc: ИТ-предприниматели Санкт-Петербурга 
   logo: img/spbstartup.png
+
+- title: SPb WordPress
+  members:
+  link: http://wpspb.org/
+  desc: Сообщество неравнодушных к CMS WordPress 
+  logo: img/wpspb.png
 
