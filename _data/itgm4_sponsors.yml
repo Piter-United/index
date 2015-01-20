@@ -1,9 +1,35 @@
 - title: Piter United 
   link: http://piter-united.ru/main.html
   desc: Объединение активистов ИТ сообществ Санкт-Петербурга
+  level: Организатор
   logo: /itgm/img/pu.png
 
-- title:  
-  link: 
+- title: SPb CIO Clob
+  link: http://www.spbcioclub.ru/
+  desc: Санкт-Петербургский клуб ИТ-директоров.
+  level: Со-организатор
+  logo: /itgm/img/spbcio.gif
+
+- title: DINO Systems
+  link: http://www.dins.ru/
   desc: 
-  logo: 
+  level:
+  logo: /itgm/img/dins.png
+
+- title: First Line Software
+  link: http://www.firstlinesoftware.com/
+  desc: 
+  level: 
+  logo: /itgm/img/firstline.png
+
+- title: Манн Иванов и Фербер
+  link: http://www.mann-ivanov-ferber.ru/
+  desc: 
+  level: Bronse Partner
+  logo: /itgm/img/mannivanovferber.gif
+
+- title: Новый партнер
+  link: mailto:piterunited@gmail.com
+  desc: 
+  level: Хотите стать партнером?
+  logo: /itgm/img/newpartner.png

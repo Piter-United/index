@@ -1,4 +1,19 @@
-- title: 
-  link: 
+- title: Ай-Ти События
+  link: http://it-sobytie.ru/
   desc: 
-  logo: 
+  logo: /itgm/img/itsob.png
+
+- title: IT talk
+  link: http://it-talk.dataart.ru/
+  desc: 
+  logo: /itgm/img/ittalk.png
+
+- title: Теплица Социальных Технологий
+  link: http://te-st.ru/
+  desc: 
+  logo: /itgm/img/hor.png
+
+- title: Новый инфопартнер
+  link: mailto:piterunited@gmail.com
+  desc: 
+  logo: /itgm/img/newpartner.png
