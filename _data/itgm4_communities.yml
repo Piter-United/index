@@ -1,61 +1,32 @@
 - title: SMART management
   link: https://plus.google.com/u/0/communities/108809460896106613736
-  schedule:
-    "19:00" : 
-      speaker : Дмитрий Галинский
-      work_place : CTO Vexor CI
-      theme : Ruby, SOA, логи
-    "20:00" :
-      speaker : Рыжиков Николай
-      work_place : TechLead HealthSamurail.io
-      theme : Архитектурные этюды
-    "21:00" : 
-      speaker : Илья Зыкин
-      work_place : IZITEQ B.V.
-      theme : Rails 4. Верстка и отладка HTML писем встроенными средствами
-    "22:00" : 
-      speaker : Рыжиков Николай
-      work_place : TechLead HealthSamurail.io
-      theme : Жизнь без рельс. Дискуссия о том что мы теряем когда отказываемся от Ruby On Rails и что приобретаем 
 
 - title: Agile Piter
   link: https://plus.google.com/u/0/communities/112264824472767454602
-  schedule:
-    "19:00" : 
-      speaker : Роман Друзягин и Денис Милованов
-      work_place : 404 Group
-      theme : Разработка приложений с помощью PostgreSQL
-    "20:00" : 
-      speaker : Роман Друзягин и Денис Милованов
-      work_place : 404 Group
-      theme : Миграция проектов на PostgreSQL с других хранилищ данных
-    "22:00" : 
-      speaker : Роман Друзягин и Денис Милованов
-      work_place : 404 Group
-      theme : Построение высоконагруженных проектов с помощью PostgreSQL
 
 - title: IT talk
   link: http://it-talk.dataart.ru/
 
 - title: SPb Community of Analysts
   link: http://vk.com/spb_analytics
-  schedule:
-    "19:00" : 
-      speaker : Роман Беляковский
-      work_place : Git in Sky 
-      theme : Введение в Ansible
-    "20:00" : 
-      speaker : Андрей Овчаров
-      work_place : am.ru
-      theme : Деплой приложений на сотни хостов
-    "21:00" : 
-      speaker : Александр Чистяков
-      work_place : Git in Sky
-      theme : "Ansible: восемь месяцев вместе"
-    "22:00" : 
-      speaker : Яков Сироткин
-      work_place : Sidenis AG
-      theme : Миграция с PL/SQL на Java
+  #schedule:
+  
+  #  "19:00" : 
+  #    speaker : Роман Беляковский
+  #    work_place : Git in Sky 
+  #    theme : Введение в Ansible
+  #  "20:00" : 
+  #    speaker : Андрей Овчаров
+  #    work_place : am.ru
+  #    theme : Деплой приложений на сотни хостов
+  #  "21:00" : 
+  #    speaker : Александр Чистяков
+  #    work_place : Git in Sky
+  #    theme : "Ansible: восемь месяцев вместе"
+  #  "22:00" : 
+  #    speaker : Яков Сироткин
+  #    work_place : Sidenis AG
+  #    theme : Миграция с PL/SQL на Java
 
 - title: IT HR
   link: /
