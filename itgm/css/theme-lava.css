@@ -2389,6 +2389,11 @@ footer.classic .social-profiles {
         width: 100%;
     }
 }
+@media only screen and (max-width : 768px) {
+    .row.schedule, .scheduleExpand{
+        display: none; 
+    }
+}
 
 
 .scheduleDetails .community:first-child{
