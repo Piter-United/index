@@ -322,5 +322,43 @@ $(window).load(function() {
     }, 10);
 */
     $('.social-link a').prettySocial();
+    
+    /* ---------------------------- */
+
+    var communityAffix = function(){
+        if($('.scheduleExpand').hasClass('expanded')) { 
+            if( $('.scheduleTable').offset().top < $(document).scrollTop() + 50 &&
+                $('.scheduleTable').offset().top + $('.scheduleTable').height() - 390 > $(document).scrollTop() ){
+                    $('.scheduleDetails .community:visible').css('top', $(document).scrollTop() - $('.scheduleTable').offset().top +70 +'px');
+            } else if($('.scheduleTable').offset().top > $(document).scrollTop()) {
+                   $('.scheduleDetails .community:visible').css('top', '0px');
+            }
+        }
+    }
+
+    $('.scheduleTable .community').hover( function(){
+        $('.scheduleDetails .community').hide().css('top', '0')
+            .parent().find('[data-community="'+$(this).attr('data-community')+'"]').show();
+        communityAffix();
+    });
+
+
+    $('.scheduleExpand').on('click', function(){
+        if($(this).hasClass('expanded')){
+            $(this).prev().css('height', '360px');
+            $("html, body").animate({
+                scrollTop: (($('.scheduleTable').offset().top)-100)+'px'
+            }, '500', 'swing');
+            $('.scheduleDetails .community').css('top', '0')
+        } else {
+            $(this).prev().css('height', 'auto');
+        }
+        $(this).toggleClass('expanded');
+    });
+
+    $(document).on('scroll', function(){
+        communityAffix();
+    });
+    
 
 }); 

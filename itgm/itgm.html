@@ -166,6 +166,13 @@ title: IT Global Meetup
 					</div>
 				</div>
 			{% endfor %}
+                <div class="col-md-4 col-sm-6">
+                    <div class="topic">
+                        <ul class="ruled-list text-white">
+                            <li> <a href=" mailto:piterunited@gmail.com " target="_blank">+ добавить свое сообщество</a></li>
+                        </ul>
+                    </div>
+                </div>
 			</div>
 			
 		</div>
@@ -287,7 +294,89 @@ title: IT Global Meetup
 				</div>
 				
 			</div><!--end of row-->
-		</div><!--end of container-->
+         <div class="row schedule">
+            {% assign timeFrames = "19:00|20:00|21:00|22:00" | split: "|" %}
+            <div class=" col-md-5 col-sm-6">
+                <table class="table table-hover scheduleTable">
+                  <thead>
+                    <tr>
+                        <th>Community</th>
+                        {% for frame in timeFrames %}
+                            <th class="frame">{{ frame }}</th>
+                        {% endfor %}
+                    </tr>
+                  </thead>
+
+                    <tbody>
+                    {% for community in site.data.itgm4_communities %}
+                        <tr class="community" data-community="{{ community.title }}">
+                            <td class="communityName"> 
+                                <b>{{ community.title }}</b> <br />{{ community.description }} 
+                            </td>
+                            {% for frame in timeFrames %}
+                                {% assign event = community.schedule[frame] %}
+                                <td class="frame">
+                                    {% if event %}
+                                        <span class="glyphicon glyphicon-ok green"></span>
+                                    {% else %}
+                                        <span class="glyphicon glyphicon-minus"></span>
+                                    {% endif %}
+                                </td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="scheduleDetails col-md-7 col-sm-6">
+                {% for community in site.data.itgm4_communities %}
+                    <div class="community" data-community="{{ community.title }}">
+                        <h3>{{ community.title }} <small> {{ community.description }} </small> </h3>
+                        <div class="timeline">
+                            <ul>
+                            {% for frame in timeFrames %}
+                                {% assign event = community.schedule[frame] %}
+                                <li>
+                                    <div class="row">
+                                         <div class="col-xs-1">
+                                            {{ frame }}
+                                         </div>
+                                         <div class="col-xs-11">
+                                            {% if event %}
+                                                <b> "{{ event.theme }}" </b><br />
+                                                {{ event.speaker }} <em> {{ event.work_place }} </em>
+                                            {% else %}
+                                                <span class="glyphicon glyphicon-minus"></span>
+                                            {% endif %}
+                                         </div>
+                                    </div>
+                                </li>
+                            {% endfor %}
+                            </ul>
+                        </div>
+                        <button class="btn" data-toggle="modal" data-target="#someModalForm">Подать заявку </button>
+                    </div>
+                {% endfor %}
+            </div>
+            <div id="someModalForm" class="modal">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <p>Modal Form header</p>
+                  </div>
+                  <div class="modal-body">
+                        <h1>Modal Form</h1>
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                </div>
+              </div>
+            </div>
+			</div><!--end of row-->
+            <div class="scheduleExpand">...</div>
+        </div><!--end of container-->
 	</section>
 	
 	<a id="speakers" class="in-page-link"></a>

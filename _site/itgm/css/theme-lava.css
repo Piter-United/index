@@ -2363,3 +2363,51 @@ footer.classic .social-profiles {
   color: #333333;
   font-size: 20px;
 }
+/* ------------------ */
+.green{
+    color: green;
+}
+.scheduleTable .frame{
+    width: 5%;
+    text-align: center;
+}
+.table.scheduleTable  td{
+    height: 60px;
+    vertical-align: middle;
+}
+.scheduleTable td.communityName{
+    width: 30%;
+}
+
+@media only screen and (min-width : 768px) {
+    .scheduleDetails {
+        position: relative;
+    }
+    .scheduleDetails .community{
+        display: none; 
+        position: absolute;
+        width: 100%;
+    }
+}
+
+
+.scheduleDetails .community:first-child{
+    display: block;
+}
+.community h3{
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+.row.schedule{
+    height: 360px;
+    overflow: hidden;
+}
+.scheduleExpand{
+    background: rgb(233, 233, 233);
+    height: 20px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 1px;
+    cursor: pointer;
+}
