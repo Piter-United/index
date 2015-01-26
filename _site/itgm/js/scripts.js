@@ -67,6 +67,51 @@ $(document).ready(function() {
             $('nav .container').toggleClass('reveal-sidebar');
         }
     });
+    /************** Schedule section ************/
+    
+    var $visibleCommunity = function(){
+        return $('.scheduleDetails .community:visible');
+    }
+
+    var $firsCommunity = $('.scheduleTable .community:first');
+        $firsCommunity.addClass('hover');
+    
+    var scheduleTop =  $('.scheduleTable').offset().top;
+
+    $('.row.schedule').prepend($('<div>',{
+        class : 'arrow' 
+    }));
+
+    var $arrow = $('.arrow');
+        $arrow.css('top',  $firsCommunity.offset().top - scheduleTop + 78)
+              .css('left', $firsCommunity.width() + 15);
+
+    var communityAffix = function(community){
+        $visibleCommunity().css('top', community.offset().top - scheduleTop - 50);
+        $arrow.css('top', community.offset().top - scheduleTop + 78);
+    }
+
+    $('.scheduleTable .community').hover( function(){
+        var self = $(this);
+        $('.scheduleTable .community').removeClass('hover');
+        self.addClass('hover');
+        $('.scheduleDetails .community').hide().css('top', 0)
+            .parent().find('[data-community="'+self.attr('data-community')+'"]').show();
+        communityAffix(self);
+    });
+
+    $('.scheduleExpand').on('click', function(){
+        var self = $(this);
+        if(self.hasClass('expanded')){
+            self.prev().css('height', '474px'); 
+            $("html, body").animate({
+                scrollTop: (scheduleTop-100)+'px'
+            }, '500', 'swing');
+        } else {
+            self.prev().css('height', 'auto');
+        }
+        self.toggleClass('expanded');
+    });
 
     /************** Slider Scripts **************/
 
@@ -322,46 +367,6 @@ $(window).load(function() {
     }, 10);
 */
     $('.social-link a').prettySocial();
-    
-    /* ---------------------------- */
-
-    var communityAffix = function(){
-        if($('.scheduleExpand').hasClass('expanded')) { 
-            if( $('.scheduleTable').offset().top < $(document).scrollTop() + 50 &&
-                $('.scheduleTable').offset().top + $('.scheduleTable').height() - 390 > $(document).scrollTop() ){
-                    $('.scheduleDetails .community:visible').css('top', $(document).scrollTop() - $('.scheduleTable').offset().top +70 +'px');
-            } else if($('.scheduleTable').offset().top > $(document).scrollTop()) {
-                   $('.scheduleDetails .community:visible').css('top', '0px');
-            }
-        }
-    }
-
-    $('.scheduleTable .community:first').addClass('hover');
-    $('.scheduleTable .community').hover( function(){
-        $('.scheduleTable .community').removeClass('hover');
-        $(this).addClass('hover');
-        $('.scheduleDetails .community').hide().css('top', '0')
-            .parent().find('[data-community="'+$(this).attr('data-community')+'"]').show();
-        communityAffix();
-    });
-
-
-    $('.scheduleExpand').on('click', function(){
-        if($(this).hasClass('expanded')){
-            $(this).prev().css('height', '355px');
-            $("html, body").animate({
-                scrollTop: (($('.scheduleTable').offset().top)-100)+'px'
-            }, '500', 'swing');
-            $('.scheduleDetails .community').css('top', '0')
-        } else {
-            $(this).prev().css('height', 'auto');
-        }
-        $(this).toggleClass('expanded');
-    });
-
-    $(document).on('scroll', function(){
-        communityAffix();
-    });
     
 
 }); 
