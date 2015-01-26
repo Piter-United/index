@@ -336,7 +336,10 @@ $(window).load(function() {
         }
     }
 
+    $('.scheduleTable .community:first').addClass('hover');
     $('.scheduleTable .community').hover( function(){
+        $('.scheduleTable .community').removeClass('hover');
+        $(this).addClass('hover');
         $('.scheduleDetails .community').hide().css('top', '0')
             .parent().find('[data-community="'+$(this).attr('data-community')+'"]').show();
         communityAffix();
@@ -345,7 +348,7 @@ $(window).load(function() {
 
     $('.scheduleExpand').on('click', function(){
         if($(this).hasClass('expanded')){
-            $(this).prev().css('height', '360px');
+            $(this).prev().css('height', '355px');
             $("html, body").animate({
                 scrollTop: (($('.scheduleTable').offset().top)-100)+'px'
             }, '500', 'swing');
