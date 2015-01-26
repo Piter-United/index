@@ -22,10 +22,16 @@
   level: 
   logo: /itgm/img/firstline.png
 
+- title: DataArt
+  link: http://www.dataart.com/
+  desc: 
+  level: Серебряный партнер
+  logo: /itgm/img/da.png
+
 - title: Манн Иванов и Фербер
   link: http://www.mann-ivanov-ferber.ru/
   desc: 
-  level: Bronse Partner
+  level: Бронзовый партнер
   logo: /itgm/img/mannivanovferber.gif
 
 - title: Новый партнер
