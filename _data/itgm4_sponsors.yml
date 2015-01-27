@@ -10,17 +10,17 @@
   level: Со-организатор
   logo: /itgm/img/spbcio.gif
 
-- title: DINO Systems
-  link: http://www.dins.ru/
-  desc: 
-  level:
-  logo: /itgm/img/dins.png
-
 - title: First Line Software
   link: http://www.firstlinesoftware.com/
   desc: 
-  level: 
+  level: Золотой партнер
   logo: /itgm/img/firstline.png
+
+- title: DINO Systems
+  link: http://www.dins.ru/
+  desc: 
+  level: Серебряный партнер
+  logo: /itgm/img/dins.png
 
 - title: DataArt
   link: http://www.dataart.com/
