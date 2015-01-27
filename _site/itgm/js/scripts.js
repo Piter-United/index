@@ -76,19 +76,19 @@ $(document).ready(function() {
     var $firsCommunity = $('.scheduleTable .community:first');
         $firsCommunity.addClass('hover');
     
-    var scheduleTop =  $('.scheduleTable').offset().top;
+    var scheduleTop = function(){ return $('.scheduleTable').offset().top };
 
     $('.row.schedule').prepend($('<div>',{
         class : 'arrow' 
     }));
 
     var $arrow = $('.arrow');
-        $arrow.css('top',  $firsCommunity.offset().top - scheduleTop + 78)
+        $arrow.css('top',  $firsCommunity.offset().top - scheduleTop() + 78)
               .css('left', $firsCommunity.width() + 15);
 
     var communityAffix = function(community){
-        $visibleCommunity().css('top', community.offset().top - scheduleTop - 50);
-        $arrow.css('top', community.offset().top - scheduleTop + 78);
+        $visibleCommunity().css('top', community.offset().top - scheduleTop() - 50);
+        $arrow.css('top', community.offset().top - scheduleTop() + 78);
     }
 
     $('.scheduleTable .community').hover( function(){
@@ -105,7 +105,7 @@ $(document).ready(function() {
         if(self.hasClass('expanded')){
             self.prev().css('height', '474px'); 
             $("html, body").animate({
-                scrollTop: (scheduleTop-100)+'px'
+                scrollTop: (scheduleTop()-100)+'px'
             }, '500', 'swing');
         } else {
             self.prev().css('height', 'auto');
