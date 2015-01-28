@@ -76,7 +76,9 @@ $(document).ready(function() {
     var $firsCommunity = $('.scheduleTable .community:first');
         $firsCommunity.addClass('hover');
     
-    var scheduleTop = function(){ return $('.scheduleTable').offset().top };
+    var scheduleTop    = function(){ return $('.scheduleTable').offset().top };
+    var scheduleBottom = function(){ return $('.row.schedule').offset().top  + $('.row.schedule').height();};
+    var scheduleHeight = function(){ return $('.row.schedule').height();};
 
     $('.row.schedule').prepend($('<div>',{
         class : 'arrow' 
@@ -87,7 +89,11 @@ $(document).ready(function() {
               .css('left', $firsCommunity.width() + 15);
 
     var communityAffix = function(community){
-        $visibleCommunity().css('top', community.offset().top - scheduleTop() - 50);
+        if(community.offset().top - scheduleTop() + $visibleCommunity().height() + 50 < scheduleHeight()){
+            $visibleCommunity().css('top', community.offset().top - scheduleTop() - 50);
+        } else {
+            $visibleCommunity().css('top',  scheduleHeight() - $visibleCommunity().height() - 110);
+        }
         $arrow.css('top', community.offset().top - scheduleTop() + 78);
     }
 
