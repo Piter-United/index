@@ -120,6 +120,24 @@
 
 - title: UXSpb
   link: http://ux-spb.ru/
+  schedule:
+
+    "19:00" :
+      speaker : Наталья Мануйлова
+      work_place :  
+      theme : User Stories
+    "20:00" :
+      speaker : Наталья Мануйлова
+      work_place : 
+      theme : User Stories (продолжение)
+  #  "21:00" :
+  #    speaker : 
+  #    work_place : 
+  #    theme : 
+    "22:00" :
+      speaker : 
+      work_place : 
+      theme : Круглый стол. UX-ы и тестировщики глазами друг друга.
 
 - title: SPb Startup
   link: https://www.facebook.com/groups/pitervc/
