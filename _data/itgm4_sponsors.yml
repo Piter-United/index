@@ -16,6 +16,12 @@
   level: Золотой партнер
   logo: /itgm/img/firstline.png
 
+- title: ФРИИ
+  link: http://www.iidf.ru/
+  desc: 
+  level: Золотой партнер
+  logo: /itgm/img/free.png
+
 - title: DINO Systems
   link: http://www.dins.ru/
   desc: 
@@ -27,6 +33,12 @@
   desc: 
   level: Серебряный партнер
   logo: /itgm/img/da.png
+
+- title: IT-Grad
+  link: http://www.it-grad.ru/
+  desc: 
+  level: Серебряный партнер
+  logo: /itgm/img/itgrad.png
 
 - title: Манн Иванов и Фербер
   link: http://www.mann-ivanov-ferber.ru/

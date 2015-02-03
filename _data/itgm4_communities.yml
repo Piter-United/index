@@ -1,5 +1,23 @@
 - title: SMART management
   link: https://plus.google.com/u/0/communities/108809460896106613736
+  schedule:
+
+    "19:00" :
+      speaker : Денис Мишарин
+      work_place :  
+      theme : Взаимоотношения с заказчиком. Ожидание и реальность.
+    "20:00" :
+      speaker : Захар Кириллов
+      work_place : КБ Собака Павлова
+      theme : Как быть ответственным за N проектов и не сойти с ума?
+  #  "21:00" :
+  #    speaker : Евгений Ефимов
+  #    work_place : DataArt
+  #    theme : Sick Systems. Как работа уничтожает нас
+  #  "22:00" :
+  #    speaker : 
+  #    work_place : 
+  #    theme : 
 
 - title: Agile Piter
   link: https://plus.google.com/u/0/communities/112264824472767454602
@@ -123,27 +141,45 @@
   schedule:
 
     "19:00" :
-      speaker : Наталья Мануйлова
+      speaker : Никита Ефимов и Анна Горбатенко (совместно с SPB Community of Analysts)
       work_place :  
-      theme : User Stories
+      theme : Работа с требованиями с точки зрения аналитиков и UX-ов (тема уточняется)
     "20:00" :
+      speaker : Екатерина Юлина
+      work_place :  КБ Собака Павлова
+      theme : От слов к делу. Как перейти от анализа к проектированию интерфейса.
+    "21:00" :
       speaker : Наталья Мануйлова
       work_place : 
-      theme : User Stories (продолжение)
-  #  "21:00" :
-  #    speaker : 
-  #    work_place : 
-  #    theme : 
+      theme : User Stories. UX-подход к проектированию продукта (интерактив)
     "22:00" :
-      speaker : 
+      speaker : Наталья Мануйлова
       work_place : 
-      theme : Круглый стол. UX-ы и тестировщики глазами друг друга.
+      theme : User Stories. UX-подход к проектированию продукта (интерактив - продолжение)
 
 - title: SPb Startup
   link: https://www.facebook.com/groups/pitervc/
 
 - title: SPb WordPress
   link: http://wpspb.org/
+  schedule:
+
+    "19:00" :
+      speaker : Юлия Крылова и Игорь Сазонов
+      work_place : Круглый стол
+      theme : WordPress в России и в мире. Проблемы. Перспективы. Развитие YeoPress.
+    "20:00" :
+      speaker : Антон Ерёмин
+      work_place : Veeam Software
+      theme : Wordpress 24/7. Построение высокодоступных надежных и масштабируемых решений.
+    "21:00" :
+      speaker : Игорь Сазонов
+      work_place : 
+      theme : Пишем плагин. Построение масштабируемой архитектуры.
+    "22:00" :
+      speaker : Игорь Сазонов
+      work_place : 
+      theme : Пишем плагин. Доводим до ума админку вместе с AngularJS 1.3
 
 - title: MODX Community
   link: http://community.modx-cms.ru/
