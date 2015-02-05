@@ -3,17 +3,17 @@
   schedule:
 
     "19:00" :
-      speaker : Денис Мишарин
-      work_place :  
-      theme : Взаимоотношения с заказчиком. Ожидание и реальность.
-    "20:00" :
       speaker : Захар Кириллов
       work_place : КБ Собака Павлова
       theme : Как быть ответственным за N проектов и не сойти с ума?
-  #  "21:00" :
-  #    speaker : Евгений Ефимов
-  #    work_place : DataArt
-  #    theme : Sick Systems. Как работа уничтожает нас
+    "20:00" :
+      speaker : Денис Мишарин
+      work_place :  
+      theme : Взаимоотношения с заказчиком. Ожидание и реальность.
+    "21:00" :
+      speaker : Александр Бындю
+      work_place : ByndyuSoft
+      theme : Impact Mapping на практике.
   #  "22:00" :
   #    speaker : 
   #    work_place : 
@@ -47,22 +47,22 @@
   link: http://vk.com/spb_analytics
   schedule:
   
-  #  "19:00" :
-  #    speaker : Александр Суевалов
-  #    work_place :  DataArt
-  #    theme : Frontend. Keep yourself up to date
+    "19:00" :
+      speaker : Алексей Шемис и Виталий Григораш
+      work_place :
+      theme : Управление продуктами (название предварительное)
     "20:00" :
       speaker : Михаил Рыжиков
       work_place : WaveAccess
       theme : Круглый стол. Бизнес и системный анализ в гибкой разработке.
-  #  "21:00" :
-  #    speaker : Евгений Ефимов
-  #    work_place : DataArt
-  #    theme : Sick Systems. Как работа уничтожает нас
-  #  "22:00" :
-  #    speaker : 
-  #    work_place : 
-  #    theme : 
+    "21:00" :
+      speaker : Александр Гусенко
+      work_place : Netrika
+      theme : От проблемы к требованиям.Теория принятия решений в разработке ПО.
+    "22:00" :
+      speaker : Евгения Атцик
+      work_place : DinoSystems
+      theme : Формирование требований в виде вариантов использования  (название предварительное)
 
 - title: IT HR
   link: /
@@ -85,7 +85,7 @@
       work_place : 
       theme : Система внутреннего обучения в IT - компании
 
-- title: DevOps-40
+- title: DevOps-40 <br> SPb Linux User Group
   link: http://www.meetup.com/DevOps-40/
 
 - title: SPb Frontend
@@ -97,23 +97,59 @@
 - title: SPb Python User Group
   link: https://plus.google.com/u/0/communities/107328406287050920928
 
-- title: Clojure Russia
+- title: FProg <br> (Clojure/Erlang/Haskell)
   link: https://plus.google.com/communities/114227952963737516047
+  schedule:
+
+    "19:00" :
+      speaker : Alexander Petrov
+      work_place : 
+      theme : Использование clojure для обработки 1MM req/min в virool.com при интеграции с торговой системой реального времени.
+    "20:00" :
+      speaker : Mariya Davydova
+      work_place : 
+      theme : "FRP (functional reactive programming) вообще и разные библиотеки в частности (zelkova для Clojure, reactive-banana для Haskell и так далее"
+    "21:00" :
+      speaker : Игнат Толчанов
+      work_place : 
+      theme : Дискуссия. Зачем сделали erlang и зачем он вам может пригодиться.
+  #  "22:00" :
+  #    speaker : Евгения Миклуш
+  #    work_place : 
+  #    theme : Система внутреннего обучения в IT - компании
 
 - title: SPb Lisp Users
   link: http://vk.com/lisp.users
 
 - title: SPb PostgreSQL User Group
   link: /
+  schedule:
 
-- title: SPb Linux User Group
-  link: https://plus.google.com/communities/109619119969254890213
+  #  "19:00" :
+  #    speaker : Ирина Матвеева
+  #    work_place : 
+  #    theme : Постановка целей 4D
+    "20:00" :
+      speaker : Михаил Хлуднев
+      work_place : Grid Dynamics
+      theme : Индексы Lucene
+  #  "21:00" :
+  #    speaker : Александр Зверев
+  #    work_place : 
+  #    theme : Performance Based Hiring. Эффективное взаимодействие IT и HR структур.
+  #  "22:00" :
+  #    speaker : Евгения Миклуш
+  #    work_place : 
+  #    theme : Система внутреннего обучения в IT - компании
 
-- title: Erlang Russia
-  link: https://groups.google.com/forum/#!forum/erlang-russian
+#- title: SPb Linux User Group
+#  link: https://plus.google.com/communities/109619119969254890213
 
-- title: SPb SQA Group
-  link: http://sqagroup.spb.ru/
+#- title: Erlang Russia
+#  link: https://groups.google.com/forum/#!forum/erlang-russian
+
+#- title: SPb SQA Group
+#  link: http://sqagroup.spb.ru/
 
 - title: SPb Technical Writers
   link: https://plus.google.com/u/0/communities/111110772662436773783
@@ -157,8 +193,8 @@
       work_place : 
       theme : User Stories. UX-подход к проектированию продукта (интерактив - продолжение)
 
-- title: SPb Startup
-  link: https://www.facebook.com/groups/pitervc/
+- title: MODX Community
+  link: http://community.modx-cms.ru/
 
 - title: SPb WordPress
   link: http://wpspb.org/
@@ -183,4 +219,7 @@
 
 - title: MODX Community
   link: http://community.modx-cms.ru/
+
+- title: SPb Startup
+  link: https://www.facebook.com/groups/pitervc/
 
