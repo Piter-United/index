@@ -292,6 +292,27 @@
 - title: "3D уголок <br> (Unity, VR & VA, 3D4WEB)"
   link: https://plus.google.com/u/0/communities/103652474826197512695
 
+- title: HackIoT
+  link: vk.com/hackIoT
+  schedule:
+
+    "19:00" :
+      speaker : Дмитрий Кривецков и Сергей Сильнов
+      work_place :
+      theme : "IPv6 через Bluetooth LE и Nordic IoT SDK."
+    "20:00" :
+      speaker : Иван Грохотков
+      work_place : SPB TV
+      theme : "Bonjour/zeroconf: находим IoT устройства в локальной сети."
+    "21:00" :
+      speaker : Сучков Виталий
+      work_place : KIbiLab
+      theme : "STM32 и его энергопотребление с FreeRTOS."
+  #  "22:00" :
+  #    speaker : 
+  #    work_place : 
+  #    theme : 
+
 - title: SPb Startup
   link: https://www.facebook.com/groups/pitervc/
 
