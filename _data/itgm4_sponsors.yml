@@ -22,6 +22,12 @@
   level: Золотой партнер
   logo: /itgm/img/free.png
 
+- title: Autodesk
+  link: http://www.autodesk.ru/
+  desc: 
+  level: Золотой партнер
+  logo: /itgm/img/autodesk.png
+
 - title: DINO Systems
   link: http://www.dins.ru/
   desc: 
@@ -35,7 +41,7 @@
   logo: /itgm/img/jetbrains.png
 
 - title: DataArt
-  link: http://www.dataart.com/
+  link: http://www.dataart.ru/
   desc: 
   level: Серебряный партнер
   logo: /itgm/img/da.png
