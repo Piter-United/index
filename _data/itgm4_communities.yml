@@ -3,24 +3,42 @@
   schedule:
 
     "19:00" :
+      speaker : Светлана Мухина
+      work_place : "Luxoft (Киев)"
+      theme : Техники для селф-коучинга.
+    "20:00" :
       speaker : Захар Кириллов
       work_place : КБ Собака Павлова
       theme : Как быть ответственным за N проектов и не сойти с ума?
-    "20:00" :
-      speaker : Денис Мишарин
-      work_place :  
-      theme : Взаимоотношения с заказчиком. Ожидание и реальность.
     "21:00" :
       speaker : Александр Бындю
       work_place : ByndyuSoft
       theme : Impact Mapping на практике.
-  #  "22:00" :
-  #    speaker : 
-  #    work_place : 
-  #    theme : 
+    "22:00" :
+      speaker : Денис Мишарин
+      work_place : Проектный центр ГиДИС
+      theme : Взаимоотношения с заказчиком. Ожидание и реальность.
 
 - title: Agile Piter
   link: https://plus.google.com/u/0/communities/112264824472767454602
+  schedule:
+
+    "19:00" :
+      speaker : Алексей Васильев
+      work_place : SigmaLab
+      theme : Применение инструментов критической цепи (TOC) и Agile для планирования проекта
+  #  "20:00" :
+  #    speaker : Захар Кириллов
+  #    work_place : КБ Собака Павлова
+  #    theme : Как быть ответственным за N проектов и не сойти с ума?
+  #  "21:00" :
+  #    speaker : Александр Бындю
+  #    work_place : ByndyuSoft
+  #    theme : Impact Mapping на практике.
+  #  "22:00" :
+  #    speaker : Денис Мишарин
+  #    work_place :  
+  #    theme : Взаимоотношения с заказчиком. Ожидание и реальность.
 
 - title: IT talk
   link: http://it-talk.dataart.ru/
@@ -29,19 +47,19 @@
     "19:00" :
       speaker : Александр Суевалов
       work_place :  DataArt
-      theme : Frontend. Keep yourself up to date
+      theme : Frontend. Keep yourself up to date.
     "20:00" :
       speaker : Максим Шульга
       work_place : Код безопасности
-      theme : Импотека или как перестать залезать в долги
+      theme : Импотека или как перестать залезать в долги.
     "21:00" :
       speaker : Евгений Ефимов
       work_place : DataArt
-      theme : Sick Systems. Как работа уничтожает нас
-  #  "22:00" :
-  #    speaker : 
-  #    work_place : 
-  #    theme : 
+      theme : Sick Systems. Как работа уничтожает нас.
+    "22:00" :
+      speaker : Кирилл Тимофеев
+      work_place : DataArt
+      theme : Как упорядочить свои задачи и при этом не перегореть.
 
 - title: SPb Community of Analysts
   link: http://vk.com/spb_analytics
@@ -79,7 +97,7 @@
     "21:00" :
       speaker : Александр Зверев
       work_place : 
-      theme : Performance Based Hiring. Эффективное взаимодействие IT и HR структур.
+      theme : PPerformance Based Hiring. Как перестать мучаться с HR и начать с ним работать.
     "22:00" :
       speaker : Евгения Миклуш
       work_place : 
@@ -90,9 +108,45 @@
 
 - title: SPb Frontend
   link: http://vk.com/spb_frontend
+  schedule:
+
+    "19:00" :
+      speaker : Андрей Вдовиченко
+      work_place :
+      theme : "Быстрый старт: Yeoman, Bower, gulp."
+    "20:00" :
+      speaker : Андрей Складчиков
+      work_place :
+      theme : "Переиспользуемые компоненты: технологии и приёмы разработки."
+    "21:00" :
+      speaker : 
+      work_place : 
+      theme : "Дискуссионные столы на темы io.js, ES6, PostCSS, React, тестирования"
+    "22:00" :
+      speaker :
+      work_place :  
+      theme : "Дискуссионные столы на темы io.js, ES6, PostCSS, React, тестирования"
 
 - title: SPb Ruby User Group
   link: https://plus.google.com/u/0/communities/117927540789820622012
+  schedule:
+
+    "19:00" :
+      speaker : Максим Чечель
+      work_place :
+      theme : "Разработка NFC сервисов. Многопоточное программирование с использованием (о ужас) ruby threads."
+    "20:00" :
+      speaker : Николай Нилов
+      work_place : 
+      theme : "Cloud APIs и как с ними работать. Фокус в некоторых местах на Ruby, но коснусь и других платформ."
+  #  "21:00" :
+  #    speaker : 
+  #    work_place : 
+  #    theme : 
+  #  "22:00" :
+  #    speaker : 
+  #    work_place :  
+  #    theme : 
 
 - title: SPb Python User Group
   link: https://plus.google.com/u/0/communities/107328406287050920928
@@ -102,21 +156,21 @@
   schedule:
 
     "19:00" :
-      speaker : Alexander Petrov
+      speaker : Игнат Толчанов
       work_place : 
-      theme : Использование clojure для обработки 1MM req/min в virool.com при интеграции с торговой системой реального времени.
+      theme : Дискуссия. Зачем сделали erlang и зачем он вам может пригодиться.
     "20:00" :
       speaker : Mariya Davydova
       work_place : 
       theme : "FRP (functional reactive programming) вообще и разные библиотеки в частности (zelkova для Clojure, reactive-banana для Haskell и так далее"
     "21:00" :
-      speaker : Игнат Толчанов
+      speaker : Alexander Petrov
       work_place : 
-      theme : Дискуссия. Зачем сделали erlang и зачем он вам может пригодиться.
-  #  "22:00" :
-  #    speaker : Евгения Миклуш
-  #    work_place : 
-  #    theme : Система внутреннего обучения в IT - компании
+      theme : Использование clojure для обработки 1MM req/min в virool.com при интеграции с торговой системой реального времени.
+    "22:00" :
+      speaker : Ильшад Хабибуллин
+      work_place : 
+      theme : Стратегии построения абстракций в Clojure.
 
 - title: SPb Lisp Users
   link: http://vk.com/lisp.users
@@ -156,45 +210,63 @@
   schedule:
 
     "19:00" :
+      speaker : 
+      work_place : 
+      theme : "Технический писатель → Techwriter. Собеседование 1.0"
+    "20:00" :
       speaker : Людмила Арцыбашева
       work_place :  
       theme : Разрабатываем документацию с помошью DITA
-    "20:00" :
+    "21:00" :
       speaker : Спиридонов Роман
       work_place : LoftBlog
-      theme : Мастер класс. Новые аудио-визуальные форматы технической документации.
-  #  "21:00" :
-  #    speaker : 
-  #    work_place : 
-  #    theme : 
+      theme : "Мастер класс. Живая документация: говорит и показывает техписатель."
     "22:00" :
       speaker : Станислав Салангин
       work_place : SPb Tecnical Writers Community
-      theme : Круглый стол. Мы писали, мы писали ... - Прошлое, настоящее и будущее документации в IT.
+      theme : "Круглый стол. Мы писали, мы писали... - Прошлое, настоящее и будущее документации в IT."
 
 - title: UXSpb
   link: http://ux-spb.ru/
   schedule:
 
     "19:00" :
-      speaker : Никита Ефимов и Анна Горбатенко (совместно с SPB Community of Analysts)
-      work_place :  
-      theme : Работа с требованиями с точки зрения аналитиков и UX-ов (тема уточняется)
+      speaker : "Никита Ефимов/Анна Горбатенко"
+      work_place :  "Селектел/НИПК Электрон"
+      theme : "Взаимозаменяемость и уникальность UX-специалиста и аналитика"
     "20:00" :
       speaker : Екатерина Юлина
       work_place :  КБ Собака Павлова
-      theme : От слов к делу. Как перейти от анализа к проектированию интерфейса.
+      theme : "От слов к делу: как перейти от анализа к проектированию интерфейса. Доклад-дискуссия"
     "21:00" :
       speaker : Наталья Мануйлова
-      work_place : 
-      theme : User Stories. UX-подход к проектированию продукта (интерактив)
+      work_place : Петер-Сервис
+      theme : "User Stories. UX-подход к проектированию продукта. Интерактив"
     "22:00" :
       speaker : Наталья Мануйлова
-      work_place : 
-      theme : User Stories. UX-подход к проектированию продукта (интерактив - продолжение)
+      work_place : Петер-Сервис
+      theme : "User Stories. UX-подход к проектированию продукта. Интерактив (продолжение)"
 
 - title: MODX Community
-  link: http://community.modx-cms.ru/
+  link: http://modx.pro/
+  schedule:
+
+    "19:00" :
+      speaker : Роман Ганин
+      work_place :  БалтГаз Групп
+      theme : "MODX Start. Что такое MODX, быстрый старт для новичков, good practise."
+    "20:00" :
+      speaker :
+      work_place :  JetBrains
+      theme : "MODX frontend. PhpStorm как среда разработки для MODX Revolution."
+    "21:00" :
+      speaker : Сергей Прохоров
+      work_place : modxclub.ru
+      theme : "MODX Inside. Псевдотестирование в MODX."
+    "22:00" :
+      speaker : Александр Пашкевич
+      work_place : "Internet-3D"
+      theme : "NoSQL и MODX на примере ElasticSearch."
 
 - title: SPb WordPress
   link: http://wpspb.org/
@@ -217,8 +289,8 @@
       work_place : 
       theme : Пишем плагин. Доводим до ума админку вместе с AngularJS 1.3
 
-- title: MODX Community
-  link: http://community.modx-cms.ru/
+- title: "3D уголок <br> (Unity, VR & VA, 3D4WEB)"
+  link: https://plus.google.com/u/0/communities/103652474826197512695
 
 - title: SPb Startup
   link: https://www.facebook.com/groups/pitervc/
