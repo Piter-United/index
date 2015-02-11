@@ -68,7 +68,7 @@
     "19:00" :
       speaker : Алексей Шемис и Виталий Григораш
       work_place :
-      theme : Управление продуктами (название предварительное)
+      theme : Управление продуктами.
     "20:00" :
       speaker : Михаил Рыжиков
       work_place : WaveAccess
@@ -78,9 +78,9 @@
       work_place : Netrika
       theme : От проблемы к требованиям.Теория принятия решений в разработке ПО.
     "22:00" :
-      speaker : Евгения Атцик
-      work_place : DinoSystems
-      theme : Формирование требований в виде вариантов использования  (название предварительное)
+      speaker : Евгения Чумачкова
+      work_place : DINS
+      theme : Формирование требований в виде вариантов использования.
 
 - title: IT HR
   link: /
@@ -138,7 +138,7 @@
     "20:00" :
       speaker : Николай Нилов
       work_place : 
-      theme : "Cloud APIs и как с ними работать. Фокус в некоторых местах на Ruby, но коснусь и других платформ."
+      theme : "Взаимодействие с Cloud API на основе REST и Web Services."
   #  "21:00" :
   #    speaker : 
   #    work_place : 
@@ -170,7 +170,7 @@
     "22:00" :
       speaker : Ильшад Хабибуллин
       work_place : 
-      theme : Стратегии построения абстракций в Clojure.
+      theme : Абстракции в Clojure.
 
 - title: SPb Lisp Users
   link: http://vk.com/lisp.users
