@@ -27,18 +27,18 @@
       speaker : Алексей Васильев
       work_place : SigmaLab
       theme : Применение инструментов критической цепи (TOC) и Agile для планирования проекта
-  #  "20:00" :
-  #    speaker : Захар Кириллов
-  #    work_place : КБ Собака Павлова
-  #    theme : Как быть ответственным за N проектов и не сойти с ума?
-  #  "21:00" :
-  #    speaker : Александр Бындю
-  #    work_place : ByndyuSoft
-  #    theme : Impact Mapping на практике.
-  #  "22:00" :
-  #    speaker : Денис Мишарин
-  #    work_place :  
-  #    theme : Взаимоотношения с заказчиком. Ожидание и реальность.
+    "20:00" :
+      speaker : Рыжиков Михаил
+      work_place : WaveAccess
+      theme : "Бизнес и системный анализ в гибкой разработке. (Круглый стол на островке аналитиков)"
+    "21:00" :
+      speaker : Семён Петков
+      work_place : Luxoft
+      theme : "User Story Maping и Paper Prototyping, как возможность лучше понять своих пользователей."
+    "22:00" :
+      speaker : Александр Атцик
+      work_place : DINS
+      theme : "Тестирование в гибкой разрабокте. Круглый стол с сообществом SQA."
 
 - title: IT talk
   link: http://it-talk.dataart.ru/
@@ -105,6 +105,24 @@
 
 - title: DevOps-40 <br> SPb Linux User Group
   link: http://www.meetup.com/DevOps-40/
+  schedule:
+
+    "19:00" :
+      speaker : Станислав Богатырёв
+      work_place :
+      theme : "Запуск Skype в Docker."
+    "20:00" :
+      speaker : Павел Семенец
+      work_place :
+      theme : "Построение отказоустойчивых кластеров на базе Ceph."
+    "21:00" :
+      speaker : Александр Чистяков и Павел Семенец
+      work_place : 
+      theme : "Круглый стол на тему отказоустойчивых кластеров, обсуждение."
+    "22:00" :
+      speaker : Станислав Богатырёв
+      work_place :  
+      theme : "Мониторинг наркомана (Riemann)."
 
 - title: SPb Frontend
   link: http://vk.com/spb_frontend
@@ -210,13 +228,13 @@
   schedule:
 
     "19:00" :
-      speaker : 
-      work_place : 
-      theme : "Технический писатель → Techwriter. Собеседование 1.0"
+      speaker : Jerry Byers
+      work_place : United English
+      theme : "Технический писатель → Techwriter. Собеседование 1.0."
     "20:00" :
       speaker : Людмила Арцыбашева
       work_place :  
-      theme : Разрабатываем документацию с помошью DITA
+      theme : "Разрабатываем документацию с помошью DITA."
     "21:00" :
       speaker : Спиридонов Роман
       work_place : LoftBlog
