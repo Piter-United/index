@@ -67,8 +67,8 @@
   
     "19:00" :
       speaker : Алексей Шемис и Виталий Григораш
-      work_place :
-      theme : Управление продуктами.
+      work_place : "АНТ-информ / Okko"
+      theme : "Повышение конверсии продукта: дизайн, метрики, сплит-тестирование. На примере Okko Фильмы HD."
     "20:00" :
       speaker : Михаил Рыжиков
       work_place : WaveAccess
@@ -291,6 +291,24 @@
 
 - title: "3D уголок <br> (Unity, VR & VA, 3D4WEB)"
   link: https://plus.google.com/u/0/communities/103652474826197512695
+  schedule:
+
+    "19:00" :
+      speaker : Денис Васильев
+      work_place : 
+      theme : Нестандартное использование Unity3d.
+    "20:00" :
+      speaker : Владимир Дихт
+      work_place : AE MiND iNDeNTiTy
+      theme : Виртуальная реальность как тренажер разума и тела.
+    "21:00" :
+      speaker : Тучкевич Владимир и Решетников Ярослав
+      work_place : "СПб Политехнический Университет / Autodesk Developer Network"
+      theme : "Визуализация 3D модели в Web. View and Data API."
+    "22:00" :
+      speaker : Михаил Рафиенко
+      work_place : ThrillaBit
+      theme : "Разработка игр для Google Cardboard: мифы и реалии."
 
 - title: HackIoT
   link: http://vk.com/hackIoT
