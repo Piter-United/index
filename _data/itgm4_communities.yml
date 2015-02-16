@@ -228,13 +228,13 @@
   schedule:
 
     "19:00" :
-      speaker : Jerry Byers
-      work_place : United English
-      theme : "Технический писатель → Techwriter. Собеседование 1.0."
-    "20:00" :
       speaker : Людмила Арцыбашева
       work_place :  
       theme : "Разрабатываем документацию с помошью DITA."
+    "20:00" :
+      speaker : Jerry Byers
+      work_place : United English
+      theme : "Технический писатель → Techwriter. Собеседование 1.0."
     "21:00" :
       speaker : Спиридонов Роман
       work_place : LoftBlog
