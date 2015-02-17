@@ -89,11 +89,11 @@
     "19:00" :
       speaker : Ирина Матвеева
       work_place : 
-      theme : Постановка целей 4D
+      theme : Постановка целей 4D.
     "20:00" :
       speaker : Ирина Матвеева
       work_place : 
-      theme : Постановка целей 4D
+      theme : Постановка целей 4D.
     "21:00" :
       speaker : Александр Зверев
       work_place : 
@@ -168,6 +168,24 @@
 
 - title: SPb Python User Group
   link: https://plus.google.com/u/0/communities/107328406287050920928
+  schedule:
+
+    "19:00" :
+      speaker : Сергей Матвеенко
+      work_place :
+      theme : "Mnj - удобный враппер для PyMongo."
+    "20:00" :
+      speaker : Александр Кошкин
+      work_place : 
+      theme : "Черная магия за гранью разумного в Pyhton."
+  #  "21:00" :
+  #    speaker : 
+  #    work_place : 
+  #    theme : 
+  #  "22:00" :
+  #    speaker : 
+  #    work_place :  
+  #    theme :
 
 - title: FProg <br> (Clojure/Erlang/Haskell)
   link: https://plus.google.com/communities/114227952963737516047
@@ -176,52 +194,82 @@
     "19:00" :
       speaker : Игнат Толчанов
       work_place : 
-      theme : Дискуссия. Зачем сделали erlang и зачем он вам может пригодиться.
+      theme : "Что было в голове у тех, кто придумал Erlang, и как это может сыграть вам на руку."
     "20:00" :
-      speaker : Mariya Davydova
+      speaker : Мария Давыдова
       work_place : 
-      theme : "FRP (functional reactive programming) вообще и разные библиотеки в частности (zelkova для Clojure, reactive-banana для Haskell и так далее"
+      theme : "Контролируя время и пространство: основы FRP."
     "21:00" :
-      speaker : Alexander Petrov
+      speaker : Александр Петров
       work_place : 
-      theme : Использование clojure для обработки 1MM req/min в virool.com при интеграции с торговой системой реального времени.
+      theme : "Как мы используем clojure  для обработки 1MM req/min."
     "22:00" :
       speaker : Ильшад Хабибуллин
       work_place : 
       theme : Абстракции в Clojure.
 
-- title: SPb Lisp Users
+- title: FProg 2 <br> (Lisp/Scala/OCaml)
   link: http://vk.com/lisp.users
+  schedule:
+
+    "19:00" :
+      speaker : Дмитрий Игнатьев
+      work_place : 
+      theme : "Практические (и не очень) применения метаобъектного протокола CLOS."
+    "20:00" :
+      speaker : Михаил Глухов
+      work_place : 
+      theme : "Литературное программирование."
+    "21:00" :
+      speaker : Алексей Фомкин
+      work_place : 
+      theme : "Scala.js в продакшн."
+    "22:00" :
+      speaker : Дмитрий Александров
+      work_place : 
+      theme : OCaml в gamedev.
 
 - title: SPb PostgreSQL User Group
   link: /
   schedule:
 
-  #  "19:00" :
-  #    speaker : Ирина Матвеева
-  #    work_place : 
-  #    theme : Постановка целей 4D
+    "19:00" :
+      speaker : Роман Друзягин
+      work_place : 404 Group
+      theme : Миграции БД на PostgreSQL на практике.
     "20:00" :
       speaker : Михаил Хлуднев
       work_place : Grid Dynamics
       theme : Индексы Lucene
-  #  "21:00" :
-  #    speaker : Александр Зверев
-  #    work_place : 
-  #    theme : Performance Based Hiring. Эффективное взаимодействие IT и HR структур.
-  #  "22:00" :
-  #    speaker : Евгения Миклуш
-  #    work_place : 
-  #    theme : Система внутреннего обучения в IT - компании
+    "21:00" :
+      speaker : Роман Друзягин
+      work_place : 404 Group
+      theme : "Импортозамещение и все-все-все. Круглый стол с Q&A по посгресу."
+    "22:00" :
+      speaker : Роман Друзягин
+      work_place : 404 Group
+      theme : "Импортозамещение и все-все-все. Круглый стол с Q&A по посгресу."
 
-#- title: SPb Linux User Group
-#  link: https://plus.google.com/communities/109619119969254890213
+- title: SPb Mobile
+  link: https://plus.google.com/u/0/communities/110822898858097256001
+  schedule:
 
-#- title: Erlang Russia
-#  link: https://groups.google.com/forum/#!forum/erlang-russian
-
-#- title: SPb SQA Group
-#  link: http://sqagroup.spb.ru/
+    "19:00" :
+      speaker : 
+      work_place : 
+      theme : "Доклад и обсуждение на тему Autolayout: трудные моменты, примеры решений."
+#    "20:00" :
+#      speaker : Михаил Хлуднев
+#      work_place : Grid Dynamics
+#      theme : Индексы Lucene
+#    "21:00" :
+#      speaker : Роман Друзягин
+#      work_place : 404 Group
+#      theme : "Импортозамещение и все-все-все. Круглый стол с Q&A по посгресу."
+#    "22:00" :
+#      speaker : Роман Друзягин
+#      work_place : 404 Group
+#      theme : "Импортозамещение и все-все-все. Круглый стол с Q&A по посгресу."
 
 - title: SPb Technical Writers
   link: https://plus.google.com/u/0/communities/111110772662436773783
@@ -344,11 +392,29 @@
       speaker : Сучков Виталий
       work_place : KIbiLab
       theme : "STM32 и его энергопотребление с FreeRTOS."
-  #  "22:00" :
-  #    speaker : 
-  #    work_place : 
-  #    theme : 
+    "22:00" :
+      speaker : "Модератор: Сергей Сильнов"
+      work_place : 
+      theme : "Круглый стол: Тренды развития систем умного дома."
 
 - title: SPb Startup
   link: https://www.facebook.com/groups/pitervc/
+  schedule:
+
+    "19:00" :
+      speaker : Николай Страх
+      work_place : Фонд развития интернет-инициатив
+      theme : "Как превратить свой проект в успешный бизнес – Акселератор ФРИИ и iDM в Петербурге."
+  #  "20:00" :
+  #    speaker : Иван Грохотков
+  #    work_place : SPB TV
+  #    theme : "Bonjour/zeroconf: находим IoT устройства в локальной сети."
+  #  "21:00" :
+  #    speaker : Сучков Виталий
+  #    work_place : KIbiLab
+  #    theme : "STM32 и его энергопотребление с FreeRTOS."
+  #  "22:00" :
+  #    speaker : "Модератор: Сергей Сильнов"
+  #    work_place : 
+  #    theme : "Круглый стол: Тренды развития систем умного дома."
 
