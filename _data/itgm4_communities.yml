@@ -145,8 +145,8 @@
       work_place :  
       theme : "Дискуссионные столы на темы io.js, ES6, PostCSS, React, тестирования"
 
-- title: SPb Ruby User Group
-  link: https://plus.google.com/u/0/communities/117927540789820622012
+- title: SPb Python Interest Group <br>SPb Ruby User Group
+  link: http://spbpython.guru/
   schedule:
 
     "19:00" :
@@ -154,38 +154,17 @@
       work_place :
       theme : "Разработка NFC сервисов. Многопоточное программирование с использованием (о ужас) ruby threads."
     "20:00" :
-      speaker : Николай Нилов
-      work_place : 
-      theme : "Взаимодействие с Cloud API на основе REST и Web Services."
-  #  "21:00" :
-  #    speaker : 
-  #    work_place : 
-  #    theme : 
-  #  "22:00" :
-  #    speaker : 
-  #    work_place :  
-  #    theme : 
-
-- title: SPb Python User Group
-  link: https://plus.google.com/u/0/communities/107328406287050920928
-  schedule:
-
-    "19:00" :
       speaker : Сергей Матвеенко
       work_place :
       theme : "Mnj - удобный враппер для PyMongo."
-    "20:00" :
+    "21:00" :
+      speaker : Николай Нилов
+      work_place : 
+      theme : "Взаимодействие с Cloud API на основе REST и Web Services."
+    "22:00" :
       speaker : Александр Кошкин
       work_place : 
       theme : "Черная магия за гранью разумного в Pyhton."
-  #  "21:00" :
-  #    speaker : 
-  #    work_place : 
-  #    theme : 
-  #  "22:00" :
-  #    speaker : 
-  #    work_place :  
-  #    theme :
 
 - title: FProg <br> (Clojure/Erlang/Haskell)
   link: https://plus.google.com/communities/114227952963737516047
@@ -258,14 +237,14 @@
       speaker : 
       work_place : 
       theme : "Доклад и обсуждение на тему Autolayout: трудные моменты, примеры решений."
-#    "20:00" :
-#      speaker : Михаил Хлуднев
-#      work_place : Grid Dynamics
-#      theme : Индексы Lucene
-#    "21:00" :
-#      speaker : Роман Друзягин
-#      work_place : 404 Group
-#      theme : "Импортозамещение и все-все-все. Круглый стол с Q&A по посгресу."
+    "20:00" :
+      speaker : Антон Геленава
+      work_place : First Line Software
+      theme : Разработка под Xamarin.
+    "21:00" :
+      speaker : Иван
+      work_place : WaveAccess
+      theme : "Обусждение  кроссплатформенной мобильной разработки. Проблемы и решения."
 #    "22:00" :
 #      speaker : Роман Друзягин
 #      work_place : 404 Group
@@ -280,8 +259,8 @@
       work_place :  
       theme : "Разрабатываем документацию с помошью DITA."
     "20:00" :
-      speaker : Jerry Byers
-      work_place : United English
+      speaker : Bordelon Kennon
+      work_place : "United English (USA)"
       theme : "Технический писатель → Techwriter. Собеседование 1.0."
     "21:00" :
       speaker : Спиридонов Роман
@@ -393,9 +372,9 @@
       work_place : KIbiLab
       theme : "STM32 и его энергопотребление с FreeRTOS."
     "22:00" :
-      speaker : "Модератор: Сергей Сильнов"
+      speaker : "Дмитрий Руденко"
       work_place : 
-      theme : "Круглый стол: Тренды развития систем умного дома."
+      theme : "Знакомство с openHAB."
 
 - title: SPb Startup
   link: https://www.facebook.com/groups/pitervc/
