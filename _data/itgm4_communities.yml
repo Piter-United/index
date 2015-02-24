@@ -245,10 +245,10 @@
       speaker : Иван Янчарук
       work_place : WaveAccess
       theme : "Обусждение  кроссплатформенной мобильной разработки. Проблемы и решения."
-#    "22:00" :
-#      speaker : Роман Друзягин
-#      work_place : 404 Group
-#      theme : "Импортозамещение и все-все-все. Круглый стол с Q&A по посгресу."
+    "22:00" :
+      speaker : Андраш Густи
+      work_place :
+      theme : "Тестирование дизайна мобильных приложений."
 
 - title: SPb Technical Writers
   link: https://plus.google.com/u/0/communities/111110772662436773783
@@ -384,10 +384,10 @@
       speaker : Николай Страх
       work_place : Фонд развития интернет-инициатив
       theme : "Как превратить свой проект в успешный бизнес – Акселератор ФРИИ и iDM в Петербурге."
-  #  "20:00" :
-  #    speaker : Иван Грохотков
-  #    work_place : SPB TV
-  #    theme : "Bonjour/zeroconf: находим IoT устройства в локальной сети."
+    "20:00" :
+      speaker : Даниил Павлючков
+      work_place : Mailburn
+      theme : "Опыт запуска стартапа Mailburn, Q&A с основателем компании."
   #  "21:00" :
   #    speaker : Сучков Виталий
   #    work_place : KIbiLab
