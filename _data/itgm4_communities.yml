@@ -235,7 +235,7 @@
 
     "19:00" :
       speaker : 
-      work_place : 
+      work_place : First Line Software
       theme : "Доклад и обсуждение на тему Autolayout: трудные моменты, примеры решений."
     "20:00" :
       speaker : Антон Геленава
@@ -249,6 +249,27 @@
       speaker : Андраш Густи
       work_place :
       theme : "Тестирование дизайна мобильных приложений."
+
+- title: SPb GO Community
+  link: "http://groups.google.com/forum/#!forum/golang-ru"
+  schedule:
+
+    "19:00" :
+      speaker : Антон Руднев
+      work_place : DataArt
+      theme : "BoltDB: встраиваемое хранилище."
+    "20:00" :
+      speaker : Александр Неганов
+      work_place : PropellerAds
+      theme : "Таймауты в высоконагруженных приложениях."
+    "21:00" :
+      speaker : Виталий Левченко
+      work_place : PropellerAds
+      theme : "Go generate: генерация кода как замена дженериков."
+    "22:00" :
+      speaker : "Круглый стол"
+      work_place : 
+      theme : "GO"
 
 - title: SPb Technical Writers
   link: https://plus.google.com/u/0/communities/111110772662436773783
@@ -381,19 +402,19 @@
   schedule:
 
     "19:00" :
-      speaker : Николай Страх
-      work_place : Фонд развития интернет-инициатив
-      theme : "Как превратить свой проект в успешный бизнес – Акселератор ФРИИ и iDM в Петербурге."
+      speaker : "Николай Страх / Кудинов Владислав"
+      work_place : "Фонд развития интернет-инициатив / CEO VeeRoute"
+      theme : "Как превратить свой проект в успешный бизнес – Акселератор ФРИИ и iDM в Петербурге. / Кейс VeeRoute, лучшего стартапа 2014 года. Зачем идти в акселераторы."
     "20:00" :
       speaker : Даниил Павлючков
       work_place : Mailburn
       theme : "Опыт запуска стартапа Mailburn, Q&A с основателем компании."
-  #  "21:00" :
-  #    speaker : Сучков Виталий
-  #    work_place : KIbiLab
-  #    theme : "STM32 и его энергопотребление с FreeRTOS."
-  #  "22:00" :
-  #    speaker : "Модератор: Сергей Сильнов"
-  #    work_place : 
-  #    theme : "Круглый стол: Тренды развития систем умного дома."
+    "21:00" :
+      speaker : Андрей Жеглов
+      work_place :
+      theme : "Что должен и чего не должен уметь маркетолог стартапа."
+    "22:00" :
+      speaker : "Андрей Таршин"
+      work_place : БИ Ингрия
+      theme : "Дискуссия: как сделать вузы эффективной площадкой для рождения стартапов?"
 
