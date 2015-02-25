@@ -130,7 +130,7 @@
 
     "19:00" :
       speaker : Андрей Вдовиченко
-      work_place :
+      work_place : First Line Software
       theme : "Быстрый старт: Yeoman, Bower, gulp."
     "20:00" :
       speaker : Андрей Складчиков
@@ -234,7 +234,7 @@
   schedule:
 
     "19:00" :
-      speaker : 
+      speaker : Виталий Дячков и Никита Мосяков
       work_place : First Line Software
       theme : "Доклад и обсуждение на тему Autolayout: трудные моменты, примеры решений."
     "20:00" :
@@ -355,7 +355,7 @@
       work_place : 
       theme : Пишем плагин. Доводим до ума админку вместе с AngularJS 1.3
 
-- title: "3D уголок <br> (Unity, VR & VA, 3D4WEB)"
+- title: "3D уголок <br> (Unity, VRLF, 3D4WEB)"
   link: https://plus.google.com/u/0/communities/103652474826197512695
   schedule:
 
