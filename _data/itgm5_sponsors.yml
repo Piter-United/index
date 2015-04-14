@@ -1,0 +1,101 @@
+- title: Piter United 
+  link: http://piter-united.ru/main.html
+  desc: Объединение активистов ИТ сообществ Санкт-Петербурга
+  level: Организатор
+  logo: /itgm/img/pu.png
+
+- title: SPb CIO Clob
+  link: http://www.spbcioclub.ru/
+  desc: Санкт-Петербургский клуб ИТ-директоров.
+  level: Со-организатор
+  logo: /itgm/img/spbcio.gif
+
+# - title: First Line Software
+#   link: http://www.firstlinesoftware.com/
+#   desc: 
+#   level: Золотой партнер
+#   logo: /itgm/img/firstline.png
+
+# - title: ФРИИ
+#   link: http://www.iidf.ru/
+#   desc: 
+#   level: Золотой партнер
+#   logo: /itgm/img/free.png
+
+- title: Autodesk
+  link: http://www.autodesk.ru/
+  desc: 
+  level: Золотой партнер
+  logo: /itgm/img/autodesk.png
+
+# - title: DINO Systems
+#   link: http://www.dins.ru/
+#   desc: 
+#   level: Серебряный партнер
+#   logo: /itgm/img/dins.png
+
+# - title: JetBrains
+#   link: https://www.jetbrains.com/
+#   desc: 
+#   level: Серебряный партнер
+#   logo: /itgm/img/jetbrains.png
+
+# - title: DataArt
+#   link: http://www.dataart.ru/
+#   desc: 
+#   level: Серебряный партнер
+#   logo: /itgm/img/da.png
+
+# - title: IT-Grad
+#   link: http://www.it-grad.ru/
+#   desc: 
+#   level: Серебряный партнер
+#   logo: /itgm/img/itgrad.png
+
+# - title: Elance-oDesc
+#   link: https://www.odesk.com/
+#   desc: 
+#   level: Серебряный партнер
+#   logo: /itgm/img/odesk.png
+
+# - title: ScrumTrek
+#   link: http://scrumtrek.ru/
+#   desc: 
+#   level: Серебряный партнер
+#   logo: /itgm/img/scrumtrek.png
+
+# - title: OSS Prime
+#   link: http://ossprime.ru/
+#   desc: 
+#   level: Бронзовый партнер
+#   logo: /itgm/img/ossprime.png
+
+# - title: Манн Иванов и Фербер
+#   link: http://www.mann-ivanov-ferber.ru/
+#   desc: 
+#   level: Бронзовый партнер
+#   logo: /itgm/img/mannivanovferber.gif
+
+# - title: A25
+#   link: http://a25.ru/
+#   desc: 
+#   level: Бронзовый партнер
+#   logo: /itgm/img/a25.png
+
+# - title: Peter Service
+#   link: www.billing.ru
+#   desc: 
+#   level: Бронзовый партнер
+#   logo: /itgm/img/ps.png
+
+# - title: Grid Dynamics
+#   link: http://www.griddynamics.com/
+#   desc: 
+#   level: Бронзовый партнер
+#   logo: /itgm/img/gd.png
+
+- title: Новый партнер
+  link: mailto:piterunited@gmail.com
+  desc: 
+  level: Хотите стать партнером?
+  logo: /itgm/img/newpartner.png

@@ -1,0 +1,426 @@
+- title: SPb SPM Club
+  link: https://plus.google.com/u/0/communities/108809460896106613736
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Светлана Мухина
+  #     work_place : "Luxoft (Киев)"
+  #     theme : Техники для селф-коучинга.
+  #   "20:00" :
+  #     speaker : Захар Кириллов
+  #     work_place : КБ Собака Павлова
+  #     theme : Как быть ответственным за N проектов и не сойти с ума?
+  #   "21:00" :
+  #     speaker : Александр Бындю
+  #     work_place : ByndyuSoft
+  #     theme : Impact Mapping на практике.
+  #   "22:00" :
+  #     speaker : Денис Мишарин
+  #     work_place : Проектный центр ГиДИС
+  #     theme : Взаимоотношения с заказчиком. Ожидание и реальность.
+
+- title: Agile Piter
+  link: https://plus.google.com/u/0/communities/112264824472767454602
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Алексей Васильев
+  #     work_place : SigmaLab
+  #     theme : Применение инструментов критической цепи (TOC) и Agile для планирования проекта
+  #   "20:00" :
+  #     speaker : Рыжиков Михаил
+  #     work_place : WaveAccess
+  #     theme : "Бизнес и системный анализ в гибкой разработке. (Круглый стол на островке аналитиков)"
+  #   "21:00" :
+  #     speaker : Семён Петков
+  #     work_place : Luxoft
+  #     theme : "User Story Maping и Paper Prototyping, как возможность лучше понять своих пользователей."
+  #   "22:00" :
+  #     speaker : Александр Атцик
+  #     work_place : DINS
+  #     theme : "Тестирование в гибкой разрабокте. Круглый стол с сообществом SQA."
+
+- title: IT talk
+  link: http://it-talk.dataart.ru/
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Александр Суевалов
+  #     work_place :  DataArt
+  #     theme : Frontend. Keep yourself up to date.
+  #   "20:00" :
+  #     speaker : Максим Шульга
+  #     work_place : Код безопасности
+  #     theme : Импотека или как перестать залезать в долги.
+  #   "21:00" :
+  #     speaker : Евгений Ефимов
+  #     work_place : DataArt
+  #     theme : Sick Systems. Как работа уничтожает нас.
+  #   "22:00" :
+  #     speaker : Кирилл Тимофеев
+  #     work_place : DataArt
+  #     theme : Как упорядочить свои задачи и при этом не перегореть.
+
+- title: SPb Community of Analysts
+  link: http://vk.com/spb_analytics
+  # schedule:
+  
+  #   "19:00" :
+  #     speaker : Алексей Шемис и Виталий Григораш
+  #     work_place : "АНТ-информ / Okko"
+  #     theme : "Повышение конверсии продукта: дизайн, метрики, сплит-тестирование. На примере Okko Фильмы HD."
+  #   "20:00" :
+  #     speaker : Михаил Рыжиков
+  #     work_place : WaveAccess
+  #     theme : Круглый стол. Бизнес и системный анализ в гибкой разработке.
+  #   "21:00" :
+  #     speaker : Александр Гусенко
+  #     work_place : Netrika
+  #     theme : От проблемы к требованиям.Теория принятия решений в разработке ПО.
+  #   "22:00" :
+  #     speaker : Евгения Чумачкова
+  #     work_place : DINS
+  #     theme : Формирование требований в виде вариантов использования.
+
+- title: IT HR
+  link: /
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Ирина Матвеева
+  #     work_place : 
+  #     theme : Постановка целей 4D.
+  #   "20:00" :
+  #     speaker : Ирина Матвеева
+  #     work_place : 
+  #     theme : Постановка целей 4D.
+  #   "21:00" :
+  #     speaker : Александр Зверев
+  #     work_place : 
+  #     theme : PPerformance Based Hiring. Как перестать мучаться с HR и начать с ним работать.
+  #   "22:00" :
+  #     speaker : Евгения Миклуш
+  #     work_place : 
+  #     theme : Система внутреннего обучения в IT - компании
+
+- title: DevOps-40
+  link: http://www.meetup.com/DevOps-40/
+
+- title: SPb Linux User Group
+  link: https://plus.google.com/communities/109619119969254890213
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Станислав Богатырёв
+  #     work_place :
+  #     theme : "Запуск Skype в Docker."
+  #   "20:00" :
+  #     speaker : Павел Семенец
+  #     work_place :
+  #     theme : "Построение отказоустойчивых кластеров на базе Ceph."
+  #   "21:00" :
+  #     speaker : Александр Чистяков и Павел Семенец
+  #     work_place : 
+  #     theme : "Круглый стол на тему отказоустойчивых кластеров, обсуждение."
+  #   "22:00" :
+  #     speaker : Станислав Богатырёв
+  #     work_place :  
+  #     theme : "Мониторинг наркомана (Riemann)."
+
+- title: SPb Frontend
+  link: http://vk.com/spb_frontend
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Андрей Вдовиченко
+  #     work_place : First Line Software
+  #     theme : "Быстрый старт: Yeoman, Bower, gulp."
+  #   "20:00" :
+  #     speaker : Андрей Складчиков
+  #     work_place :
+  #     theme : "Переиспользуемые компоненты: технологии и приёмы разработки."
+  #   "21:00" :
+  #     speaker : 
+  #     work_place : 
+  #     theme : "Дискуссионные столы на темы io.js, ES6, PostCSS, React, тестирования"
+  #   "22:00" :
+  #     speaker :
+  #     work_place :  
+  #     theme : "Дискуссионные столы на темы io.js, ES6, PostCSS, React, тестирования"
+
+- title: SPb Ruby User Group
+  link: https://plus.google.com/communities/117927540789820622012
+
+- title: SPb Python Interest Group
+  link: http://spbpython.guru/
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Максим Чечель
+  #     work_place :
+  #     theme : "Разработка NFC сервисов. Многопоточное программирование с использованием (о ужас) ruby threads."
+  #   "20:00" :
+  #     speaker : Сергей Матвеенко
+  #     work_place :
+  #     theme : "Mnj - удобный враппер для PyMongo."
+  #   "21:00" :
+  #     speaker : Николай Нилов
+  #     work_place : 
+  #     theme : "Взаимодействие с Cloud API на основе REST и Web Services."
+  #   "22:00" :
+  #     speaker : Александр Кошкин
+  #     work_place : 
+  #     theme : "Черная магия за гранью разумного в Pyhton."
+
+- title: FProg (Clojure/Erlang/Haskell)
+  link: https://plus.google.com/communities/114227952963737516047
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Игнат Толчанов
+  #     work_place : 
+  #     theme : "Что было в голове у тех, кто придумал Erlang, и как это может сыграть вам на руку."
+  #   "20:00" :
+  #     speaker : Мария Давыдова
+  #     work_place : 
+  #     theme : "Контролируя время и пространство: основы FRP."
+  #   "21:00" :
+  #     speaker : Александр Петров
+  #     work_place : 
+  #     theme : "Как мы используем clojure  для обработки 1MM req/min."
+  #   "22:00" :
+  #     speaker : Ильшад Хабибуллин
+  #     work_place : 
+  #     theme : Абстракции в Clojure.
+
+- title: SPb Lisp Users
+  link: http://vk.com/lisp.users
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Дмитрий Игнатьев
+  #     work_place : 
+  #     theme : "Практические (и не очень) применения метаобъектного протокола CLOS."
+  #   "20:00" :
+  #     speaker : Михаил Глухов
+  #     work_place : 
+  #     theme : "Литературное программирование."
+  #   "21:00" :
+  #     speaker : Алексей Фомкин
+  #     work_place : 
+  #     theme : "Scala.js в продакшн."
+  #   "22:00" :
+  #     speaker : Дмитрий Александров
+  #     work_place : 
+  #     theme : OCaml в gamedev.
+
+- title: SPb PostgreSQL User Group
+  link: /
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Роман Друзягин
+  #     work_place : 404 Group
+  #     theme : Миграции БД на PostgreSQL на практике.
+  #   "20:00" :
+  #     speaker : Михаил Хлуднев
+  #     work_place : Grid Dynamics
+  #     theme : Индексы Lucene
+  #   "21:00" :
+  #     speaker : Роман Друзягин
+  #     work_place : 404 Group
+  #     theme : "Импортозамещение и все-все-все. Круглый стол с Q&A по посгресу."
+  #   "22:00" :
+  #     speaker : Роман Друзягин
+  #     work_place : 404 Group
+  #     theme : "Импортозамещение и все-все-все. Круглый стол с Q&A по посгресу."
+
+- title: SPb Mobile
+  link: https://plus.google.com/u/0/communities/110822898858097256001
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Виталий Дячков и Никита Мосяков
+  #     work_place : First Line Software
+  #     theme : "Доклад и обсуждение на тему Autolayout: трудные моменты, примеры решений."
+  #   "20:00" :
+  #     speaker : Антон Геленава
+  #     work_place : First Line Software
+  #     theme : Разработка под Xamarin.
+  #   "21:00" :
+  #     speaker : Иван Янчарук
+  #     work_place : WaveAccess
+  #     theme : "Обусждение  кроссплатформенной мобильной разработки. Проблемы и решения."
+  #   "22:00" :
+  #     speaker : Андраш Густи
+  #     work_place :
+  #     theme : "Тестирование дизайна мобильных приложений."
+
+- title: SPb GO Community
+  link: "http://groups.google.com/forum/#!forum/golang-ru"
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Антон Руднев
+  #     work_place : DataArt
+  #     theme : "BoltDB: встраиваемое хранилище."
+  #   "20:00" :
+  #     speaker : Александр Неганов
+  #     work_place : PropellerAds
+  #     theme : "Таймауты в высоконагруженных приложениях."
+  #   "21:00" :
+  #     speaker : Виталий Левченко
+  #     work_place : PropellerAds
+  #     theme : "Go generate: генерация кода как замена дженериков."
+  #   "22:00" :
+  #     speaker : "Круглый стол"
+  #     work_place : 
+  #     theme : "GO"
+
+- title: SPb Technical Writers
+  link: https://plus.google.com/u/0/communities/111110772662436773783
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Людмила Арцыбашева
+  #     work_place :  
+  #     theme : "Разрабатываем документацию с помошью DITA."
+  #   "20:00" :
+  #     speaker : Bordelon Kennon
+  #     work_place : "United English (USA)"
+  #     theme : "Технический писатель → Techwriter. Собеседование 1.0."
+  #   "21:00" :
+  #     speaker : Спиридонов Роман
+  #     work_place : LoftBlog
+  #     theme : "Мастер класс. Живая документация: говорит и показывает техписатель."
+  #   "22:00" :
+  #     speaker : Станислав Салангин
+  #     work_place : SPb Tecnical Writers Community
+  #     theme : "Круглый стол. Мы писали, мы писали... - Прошлое, настоящее и будущее документации в IT."
+
+- title: UXSpb
+  link: http://ux-spb.ru/
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : "Никита Ефимов/Анна Горбатенко"
+  #     work_place :  "Селектел/НИПК Электрон"
+  #     theme : "Взаимозаменяемость и уникальность UX-специалиста и аналитика"
+  #   "20:00" :
+  #     speaker : Екатерина Юлина
+  #     work_place :  КБ Собака Павлова
+  #     theme : "От слов к делу: как перейти от анализа к проектированию интерфейса. Доклад-дискуссия"
+  #   "21:00" :
+  #     speaker : Наталья Мануйлова
+  #     work_place : Петер-Сервис
+  #     theme : "User Stories. UX-подход к проектированию продукта. Интерактив"
+  #   "22:00" :
+  #     speaker : Наталья Мануйлова
+  #     work_place : Петер-Сервис
+  #     theme : "User Stories. UX-подход к проектированию продукта. Интерактив (продолжение)"
+
+- title: MODX Community
+  link: http://modx.pro/
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Роман Ганин
+  #     work_place :  БалтГаз Групп
+  #     theme : "MODX Start. Что такое MODX, быстрый старт для новичков, good practise."
+  #   "20:00" :
+  #     speaker : Михаил Винк
+  #     work_place :  JetBrains
+  #     theme : "MODX frontend. PhpStorm как среда разработки для MODX Revolution."
+  #   "21:00" :
+  #     speaker : Сергей Прохоров
+  #     work_place : modxclub.ru
+  #     theme : "MODX Inside. Псевдотестирование в MODX."
+  #   "22:00" :
+  #     speaker : Александр Пашкевич
+  #     work_place : "Internet-3D"
+  #     theme : "NoSQL и MODX на примере ElasticSearch."
+
+- title: SPb WordPress
+  link: http://wpspb.org/
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Юлия Крылова и Игорь Сазонов
+  #     work_place : Круглый стол
+  #     theme : WordPress в России и в мире. Проблемы. Перспективы. Развитие YeoPress.
+  #   "20:00" :
+  #     speaker : Антон Ерёмин
+  #     work_place : Veeam Software
+  #     theme : Wordpress 24/7. Построение высокодоступных надежных и масштабируемых решений.
+  #   "21:00" :
+  #     speaker : Игорь Сазонов
+  #     work_place : 
+  #     theme : Пишем плагин. Построение масштабируемой архитектуры.
+  #   "22:00" :
+  #     speaker : Игорь Сазонов
+  #     work_place : 
+  #     theme : Пишем плагин. Доводим до ума админку вместе с AngularJS 1.3
+
+- title: "3D уголок (Unity, VRLF, 3D4WEB)"
+  link: https://plus.google.com/u/0/communities/103652474826197512695
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Денис Васильев
+  #     work_place : 
+  #     theme : Нестандартное использование Unity3d.
+  #   "20:00" :
+  #     speaker : Владимир Дихт
+  #     work_place : AE MiND iNDeNTiTy
+  #     theme : Виртуальная реальность как тренажер разума и тела.
+  #   "21:00" :
+  #     speaker : Тучкевич Владимир и Решетников Ярослав
+  #     work_place : "СПб Политехнический Университет / Autodesk Developer Network"
+  #     theme : "Визуализация 3D модели в Web. View and Data API."
+  #   "22:00" :
+  #     speaker : Михаил Рафиенко
+  #     work_place : ThrillaBit
+  #     theme : "Разработка игр для Google Cardboard: мифы и реалии."
+
+- title: HackIoT
+  link: http://vk.com/hackIoT
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Дмитрий Кривецков и Сергей Сильнов
+  #     work_place :
+  #     theme : "IPv6 через Bluetooth LE и Nordic IoT SDK."
+  #   "20:00" :
+  #     speaker : Иван Грохотков
+  #     work_place : SPB TV
+  #     theme : "Bonjour/zeroconf: находим IoT устройства в локальной сети."
+  #   "21:00" :
+  #     speaker : Сучков Виталий
+  #     work_place : KIbiLab
+  #     theme : "STM32 и его энергопотребление с FreeRTOS."
+  #   "22:00" :
+  #     speaker : "Дмитрий Руденко"
+  #     work_place : 
+  #     theme : "Знакомство с openHAB."
+
+- title: SPb Startup
+  link: https://www.facebook.com/groups/pitervc/
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : "Николай Страх / Кудинов Владислав"
+  #     work_place : "Фонд развития интернет-инициатив / CEO VeeRoute"
+  #     theme : "Как превратить свой проект в успешный бизнес – Акселератор ФРИИ и iDM в Петербурге. / Кейс VeeRoute, лучшего стартапа 2014 года. Зачем идти в акселераторы."
+  #   "20:00" :
+  #     speaker : Даниил Павлючков
+  #     work_place : Mailburn
+  #     theme : "Опыт запуска стартапа Mailburn, Q&A с основателем компании."
+  #   "21:00" :
+  #     speaker : Андрей Жеглов
+  #     work_place :
+  #     theme : "Что должен и чего не должен уметь маркетолог стартапа."
+  #   "22:00" :
+  #     speaker : "Андрей Таршин"
+  #     work_place : БИ Ингрия
+  #     theme : "Дискуссия: как сделать вузы эффективной площадкой для рождения стартапов?"
+
