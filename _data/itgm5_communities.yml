@@ -40,8 +40,8 @@
   #     work_place : DINS
   #     theme : "Тестирование в гибкой разрабокте. Круглый стол с сообществом SQA."
 
-- title: IT talk
-  link: http://it-talk.dataart.ru/
+# - title: IT talk
+#   link: http://it-talk.dataart.ru/
   # schedule:
 
   #   "19:00" :
@@ -127,8 +127,29 @@
   #     work_place :  
   #     theme : "Мониторинг наркомана (Riemann)."
 
-- title: SPb Frontend
-  link: http://vk.com/spb_frontend
+- title: Piter JS
+  link: https://vk.com/piterjs
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : Андрей Вдовиченко
+  #     work_place : First Line Software
+  #     theme : "Быстрый старт: Yeoman, Bower, gulp."
+  #   "20:00" :
+  #     speaker : Андрей Складчиков
+  #     work_place :
+  #     theme : "Переиспользуемые компоненты: технологии и приёмы разработки."
+  #   "21:00" :
+  #     speaker : 
+  #     work_place : 
+  #     theme : "Дискуссионные столы на темы io.js, ES6, PostCSS, React, тестирования"
+  #   "22:00" :
+  #     speaker :
+  #     work_place :  
+  #     theme : "Дискуссионные столы на темы io.js, ES6, PostCSS, React, тестирования"
+
+# - title: SPb Frontend
+#   link: http://vk.com/spb_frontend
   # schedule:
 
   #   "19:00" :
@@ -193,8 +214,8 @@
   #     work_place : 
   #     theme : Абстракции в Clojure.
 
-- title: SPb Lisp Users
-  link: http://vk.com/lisp.users
+# - title: SPb Lisp Users
+#   link: http://vk.com/lisp.users
   # schedule:
 
   #   "19:00" :
@@ -319,8 +340,8 @@
   #     work_place : Петер-Сервис
   #     theme : "User Stories. UX-подход к проектированию продукта. Интерактив (продолжение)"
 
-- title: MODX Community
-  link: http://modx.pro/
+# - title: MODX Community
+#   link: http://modx.pro/
   # schedule:
 
   #   "19:00" :
@@ -340,8 +361,8 @@
   #     work_place : "Internet-3D"
   #     theme : "NoSQL и MODX на примере ElasticSearch."
 
-- title: SPb WordPress
-  link: http://wpspb.org/
+- title: CMS уголок (WordPress/MODX)
+  link: http://modx.pro/
   # schedule:
 
   #   "19:00" :
@@ -361,7 +382,7 @@
   #     work_place : 
   #     theme : Пишем плагин. Доводим до ума админку вместе с AngularJS 1.3
 
-- title: "3D уголок (Unity, VRLF, 3D4WEB)"
+- title: "3D уголок (Unity/3D4WEB)"
   link: https://plus.google.com/u/0/communities/103652474826197512695
   # schedule:
 
@@ -424,3 +445,23 @@
   #     work_place : БИ Ингрия
   #     theme : "Дискуссия: как сделать вузы эффективной площадкой для рождения стартапов?"
 
+- title: SPb e-Learning
+  link: "https://www.linkedin.com/groups?home=&gid=8282289"
+  # schedule:
+
+  #   "19:00" :
+  #     speaker : "Николай Страх / Кудинов Владислав"
+  #     work_place : "Фонд развития интернет-инициатив / CEO VeeRoute"
+  #     theme : "Как превратить свой проект в успешный бизнес – Акселератор ФРИИ и iDM в Петербурге. / Кейс VeeRoute, лучшего стартапа 2014 года. Зачем идти в акселераторы."
+  #   "20:00" :
+  #     speaker : Даниил Павлючков
+  #     work_place : Mailburn
+  #     theme : "Опыт запуска стартапа Mailburn, Q&A с основателем компании."
+  #   "21:00" :
+  #     speaker : Андрей Жеглов
+  #     work_place :
+  #     theme : "Что должен и чего не должен уметь маркетолог стартапа."
+  #   "22:00" :
+  #     speaker : "Андрей Таршин"
+  #     work_place : БИ Ингрия
+  #     theme : "Дискуссия: как сделать вузы эффективной площадкой для рождения стартапов?"

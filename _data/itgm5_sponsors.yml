@@ -28,11 +28,17 @@
   level: Золотой партнер
   logo: /itgm/img/autodesk.png
 
-# - title: DINO Systems
-#   link: http://www.dins.ru/
-#   desc: 
-#   level: Серебряный партнер
-#   logo: /itgm/img/dins.png
+- title: DINO Systems
+  link: http://www.dins.ru/
+  desc: 
+  level: Серебряный партнер
+  logo: /itgm/img/dins.png
+
+- title: Петер Сервис
+  link: http://www.billing.ru/
+  desc: 
+  level: Золотой партнер
+  logo: /itgm/img/peterservice.png
 
 # - title: JetBrains
 #   link: https://www.jetbrains.com/
