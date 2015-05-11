@@ -2163,6 +2163,11 @@ input[type="submit"] {
 .subscribe-2 i:last-of-type {
   margin-right: 0px;
 }
+
+section.donate{
+  background-color: #fafafa;
+}
+
 input.error {
   color: #ff4532;
 }
