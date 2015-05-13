@@ -3,20 +3,25 @@
 #   desc: 
 #   logo: /itgm/img/itsob.png
 
-# - title: IT talk
-#   link: http://it-talk.dataart.ru/
-#   desc: 
-#   logo: /itgm/img/ittalk.png
+- title: DataArt
+  link: http://www.dataart.ru/
+  desc: 
+  logo: /itgm/img/da.png
+
+- title: IT talk
+  link: http://it-talk.dataart.ru/
+  desc: 
+  logo: /itgm/img/ittalk.png
 
 # - title: Теплица Социальных Технологий
 #   link: http://te-st.ru/
 #   desc: 
 #   logo: /itgm/img/hor.png
 
-# - title: LoftBlog
-#   link: http://loftblog.ru/
-#   desc: 
-#   logo: /itgm/img/loftblog.png
+- title: LoftBlog
+  link: http://loftblog.ru/
+  desc: 
+  logo: /itgm/img/loftblog.png
 
 # - title: ProfsoUX
 #   link: http://profsoux.ru/
@@ -28,10 +33,10 @@
 #   desc: 
 #   logo: /itgm/img/umicms.png
 
-# - title: Kechinov
-#   link: http://mkechinov.ru/
-#   desc: 
-#   logo: /itgm/img/kechinov.png
+- title: Kechinov
+  link: http://mkechinov.ru/
+  desc: 
+  logo: /itgm/img/kechinov.png
 
 # - title: Сын Программиста
 #   link: http://progerson.ru

@@ -2420,7 +2420,7 @@ footer.classic .social-profiles {
     margin-bottom: 10px;
 }
 .row.schedule{
-    height: 474px;  
+    /*height: 474px;*/  
     overflow: hidden;
     position: relative;
 }
