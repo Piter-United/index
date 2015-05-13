@@ -19,6 +19,48 @@
       work_place : "Total Objects / ALM Works"
       theme : "Как все устроено: обсуждаем жизненный цикл задач на примере TFS и Jira."
 
+- title: SPb e-Learning
+  link: "https://www.linkedin.com/groups?home=&gid=8282289"
+  schedule:
+
+    "13:00" :
+      speaker : "Ольга Куранова"
+      work_place : "Центр дистанционного обучения ПГУПС"
+      theme : "Опыт массового обучения в распределенной компании и проблемы СДО в вузе"
+    "14:00" :
+      speaker : Андрей Замулин
+      work_place : "Высшая школа менеджмента СПбГУ"
+      theme : "Использование переговорного онлайн-тренажера «Roundy» в дистанционном обучении."
+    "15:00" :
+      speaker : Лилия Смирнова
+      work_place : "Корпоративный институт ОАО Газпром"
+      theme : "Разработка интерактивных упражнений для электронных курсов."
+    "16:00" :
+      speaker : "Игорь Сазонов"
+      work_place : 
+      theme : "Moodle с точки зрения программиста и пользователя."
+
+- title: IT HR
+  link: /
+  schedule:
+
+    "13:00" :
+      speaker : Эльвира Рябыкина
+      work_place : SEMrush
+      theme : "Мотивация сотрудников на обучение и развитие при плоской организационной структуре. Миф или реальность?"
+    "14:00" :
+      speaker : Лилия Смирнова
+      work_place : "Корпоративный институт ОАО Газпром"
+      theme : "Облегчаем труд HRа: Автоматизированная оценка соискателей «текучих» профессий."
+    "15:00" :
+      speaker : Ирина Матвеева
+      work_place : "коуч, независимый HR и бизнес консультант"
+      theme : "Сервис: как понять заказчика и сделать его счастливым?"
+    "16:00" :
+      speaker : Анна Каменская
+      work_place : 
+      theme : "Круглый стол: кандидаты и HR. Стереотипы, которые нам мешают."
+
 - title: SPb SPM Club
   link: https://plus.google.com/u/0/communities/108809460896106613736
   # schedule:
@@ -103,32 +145,13 @@
   #     work_place : DINS
   #     theme : Формирование требований в виде вариантов использования.
 
-- title: IT HR
-  link: /
-  # schedule:
 
-  #   "13:00" :
-  #     speaker : Ирина Матвеева
-  #     work_place : 
-  #     theme : Постановка целей 4D.
-  #   "14:00" :
-  #     speaker : Ирина Матвеева
-  #     work_place : 
-  #     theme : Постановка целей 4D.
-  #   "15:00" :
-  #     speaker : Александр Зверев
-  #     work_place : 
-  #     theme : PPerformance Based Hiring. Как перестать мучаться с HR и начать с ним работать.
-  #   "16:00" :
-  #     speaker : Евгения Миклуш
-  #     work_place : 
-  #     theme : Система внутреннего обучения в IT - компании
 
-- title: DevOps-40
+- title: "DevOps-40 / SPb Linux User Group"
   link: http://www.meetup.com/DevOps-40/
 
-- title: SPb Linux User Group
-  link: https://plus.google.com/communities/109619119969254890213
+# - title: SPb Linux User Group
+#   link: https://plus.google.com/communities/109619119969254890213
   # schedule:
 
   #   "13:00" :
@@ -447,27 +470,6 @@
 
 - title: SPb Startup
   link: https://www.facebook.com/groups/pitervc/
-  # schedule:
-
-  #   "13:00" :
-  #     speaker : "Николай Страх / Кудинов Владислав"
-  #     work_place : "Фонд развития интернет-инициатив / CEO VeeRoute"
-  #     theme : "Как превратить свой проект в успешный бизнес – Акселератор ФРИИ и iDM в Петербурге. / Кейс VeeRoute, лучшего стартапа 2014 года. Зачем идти в акселераторы."
-  #   "14:00" :
-  #     speaker : Даниил Павлючков
-  #     work_place : Mailburn
-  #     theme : "Опыт запуска стартапа Mailburn, Q&A с основателем компании."
-  #   "15:00" :
-  #     speaker : Андрей Жеглов
-  #     work_place :
-  #     theme : "Что должен и чего не должен уметь маркетолог стартапа."
-  #   "16:00" :
-  #     speaker : "Андрей Таршин"
-  #     work_place : БИ Ингрия
-  #     theme : "Дискуссия: как сделать вузы эффективной площадкой для рождения стартапов?"
-
-- title: SPb e-Learning
-  link: "https://www.linkedin.com/groups?home=&gid=8282289"
   # schedule:
 
   #   "13:00" :
