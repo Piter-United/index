@@ -61,6 +61,27 @@
       work_place : 
       theme : "Круглый стол: кандидаты и HR. Стереотипы, которые нам мешают."
 
+- title: UXSpb
+  link: http://ux-spb.ru/
+  schedule:
+
+  #   "13:00" :
+  #     speaker : "Никита Ефимов/Анна Горбатенко"
+  #     work_place :  "Селектел/НИПК Электрон"
+  #     theme : "Взаимозаменяемость и уникальность UX-специалиста и аналитика"
+    "14:00" :
+      speaker : Артём Тиунов
+      work_place :  Jetbrains
+      theme : "UX for Geeks."
+    "15:00" :
+      speaker : Юрий Солоницын
+      work_place : ИСТ
+      theme : "Точка кипения мозга – защищаем пользователя от перегрузки информацией."
+  #   "16:00" :
+  #     speaker : Наталья Мануйлова
+  #     work_place : Петер-Сервис
+  #     theme : "User Stories. UX-подход к проектированию продукта. Интерактив (продолжение)"
+
 - title: SPb SPM Club
   link: https://plus.google.com/u/0/communities/108809460896106613736
   # schedule:
@@ -126,12 +147,12 @@
 
 - title: SPb Community of Analysts
   link: http://vk.com/spb_analytics
-  # schedule:
+  schedule:
   
-  #   "13:00" :
-  #     speaker : Алексей Шемис и Виталий Григораш
-  #     work_place : "АНТ-информ / Okko"
-  #     theme : "Повышение конверсии продукта: дизайн, метрики, сплит-тестирование. На примере Okko Фильмы HD."
+    "13:00" :
+      speaker : Алексей Петров
+      work_place : "MCTS"
+      theme : "Дуализм систем и его практическая польза для аналитика."
   #   "14:00" :
   #     speaker : Михаил Рыжиков
   #     work_place : WaveAccess
@@ -149,15 +170,12 @@
 
 - title: "DevOps-40 / SPb Linux User Group"
   link: http://www.meetup.com/DevOps-40/
+  schedule:
 
-# - title: SPb Linux User Group
-#   link: https://plus.google.com/communities/109619119969254890213
-  # schedule:
-
-  #   "13:00" :
-  #     speaker : Станислав Богатырёв
-  #     work_place :
-  #     theme : "Запуск Skype в Docker."
+    "13:00" :
+      speaker : Станислав Богатырёв
+      work_place : "realloc.spb.ru"
+      theme : "Секреты в Chef."
   #   "14:00" :
   #     speaker : Павел Семенец
   #     work_place :
@@ -363,26 +381,7 @@
   #     work_place : SPb Tecnical Writers Community
   #     theme : "Круглый стол. Мы писали, мы писали... - Прошлое, настоящее и будущее документации в IT."
 
-- title: UXSpb
-  link: http://ux-spb.ru/
-  # schedule:
 
-  #   "13:00" :
-  #     speaker : "Никита Ефимов/Анна Горбатенко"
-  #     work_place :  "Селектел/НИПК Электрон"
-  #     theme : "Взаимозаменяемость и уникальность UX-специалиста и аналитика"
-  #   "14:00" :
-  #     speaker : Екатерина Юлина
-  #     work_place :  КБ Собака Павлова
-  #     theme : "От слов к делу: как перейти от анализа к проектированию интерфейса. Доклад-дискуссия"
-  #   "15:00" :
-  #     speaker : Наталья Мануйлова
-  #     work_place : Петер-Сервис
-  #     theme : "User Stories. UX-подход к проектированию продукта. Интерактив"
-  #   "16:00" :
-  #     speaker : Наталья Мануйлова
-  #     work_place : Петер-Сервис
-  #     theme : "User Stories. UX-подход к проектированию продукта. Интерактив (продолжение)"
 
 # - title: MODX Community
 #   link: http://modx.pro/
@@ -470,21 +469,21 @@
 
 - title: SPb Startup
   link: https://www.facebook.com/groups/pitervc/
-  # schedule:
+  schedule:
 
-  #   "13:00" :
-  #     speaker : "Николай Страх / Кудинов Владислав"
-  #     work_place : "Фонд развития интернет-инициатив / CEO VeeRoute"
-  #     theme : "Как превратить свой проект в успешный бизнес – Акселератор ФРИИ и iDM в Петербурге. / Кейс VeeRoute, лучшего стартапа 2014 года. Зачем идти в акселераторы."
-  #   "14:00" :
-  #     speaker : Даниил Павлючков
-  #     work_place : Mailburn
-  #     theme : "Опыт запуска стартапа Mailburn, Q&A с основателем компании."
-  #   "15:00" :
-  #     speaker : Андрей Жеглов
-  #     work_place :
-  #     theme : "Что должен и чего не должен уметь маркетолог стартапа."
-  #   "16:00" :
-  #     speaker : "Андрей Таршин"
-  #     work_place : БИ Ингрия
-  #     theme : "Дискуссия: как сделать вузы эффективной площадкой для рождения стартапов?"
+    "13:00" :
+      speaker : 
+      work_place : 
+      theme : "Как правильно съездить в Долину и поднять инвестиции? Кейс."
+    "14:00" :
+      speaker :
+      work_place :
+      theme : "Чем процесс разработки в стартапе отличается от обычных Agile, Scrum? Кейс."
+    "15:00" :
+      speaker :
+      work_place :
+      theme : "Опыт комбинации оффлайн процессов и онлайн стартапа. Кейс GetTidy."
+    "16:00" :
+      speaker :
+      work_place :
+      theme : "Founder Institute SPB, открытие второго сезона."

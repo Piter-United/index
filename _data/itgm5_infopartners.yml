@@ -23,10 +23,15 @@
   desc: 
   logo: /itgm/img/loftblog.png
 
-# - title: ProfsoUX
-#   link: http://profsoux.ru/
-#   desc: 
-#   logo: /itgm/img/pux.png
+- title: ProfsoUX
+  link: http://profsoux.ru/
+  desc: 
+  logo: /itgm/img/profsoux.png
+
+- title: SECR-2015
+  link: http://2015.secr.ru/
+  desc: 
+  logo: /itgm/img/secr15.png
 
 # - title: UMI
 #   link: http://www.umi-cms.ru/
