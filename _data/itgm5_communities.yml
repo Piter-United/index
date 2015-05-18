@@ -84,16 +84,16 @@
 
 - title: SPb SPM Club
   link: https://plus.google.com/u/0/communities/108809460896106613736
-  # schedule:
+  schedule:
 
-  #   "13:00" :
-  #     speaker : Светлана Мухина
-  #     work_place : "Luxoft (Киев)"
-  #     theme : Техники для селф-коучинга.
-  #   "14:00" :
-  #     speaker : Захар Кириллов
-  #     work_place : КБ Собака Павлова
-  #     theme : Как быть ответственным за N проектов и не сойти с ума?
+    "13:00" :
+      speaker : Александр Бындю
+      work_place : "ByndyuSoft"
+      theme : Стендапы в стиле Kanban.
+    "14:00" :
+      speaker : Алексей Васильев
+      work_place : SigmaLab
+      theme : "Применение инструментов TOC. Решение конфликтов, поиск ключевых проблем при постановке процессов."
   #   "15:00" :
   #     speaker : Александр Бындю
   #     work_place : ByndyuSoft
@@ -404,8 +404,8 @@
   #     work_place : "Internet-3D"
   #     theme : "NoSQL и MODX на примере ElasticSearch."
 
-- title: CMS уголок (WordPress/MODX)
-  link: http://modx.pro/
+# - title: CMS уголок (WordPress/MODX)
+#   link: http://modx.pro/
   # schedule:
 
   #   "13:00" :
@@ -448,20 +448,20 @@
 
 - title: HackIoT
   link: http://vk.com/hackIoT
-  # schedule:
+  schedule:
 
-  #   "13:00" :
-  #     speaker : Дмитрий Кривецков и Сергей Сильнов
-  #     work_place :
-  #     theme : "IPv6 через Bluetooth LE и Nordic IoT SDK."
-  #   "14:00" :
-  #     speaker : Иван Грохотков
-  #     work_place : SPB TV
-  #     theme : "Bonjour/zeroconf: находим IoT устройства в локальной сети."
-  #   "15:00" :
-  #     speaker : Сучков Виталий
-  #     work_place : KIbiLab
-  #     theme : "STM32 и его энергопотребление с FreeRTOS."
+    "13:00" :
+      speaker : Сергей Сильнов
+      work_place : Croice
+      theme : "Платформа Intel для интернета вещей на примере Intel Galileo."
+    "14:00" :
+      speaker : Дмитрий Кривецков
+      work_place : Ультран
+      theme : "Уточняется..."
+    "15:00" :
+      speaker : Сергей Сильнов
+      work_place : Croice
+      theme : "Круглый стол: фреймворки интернета вещей AllJoyn, IOTivity."
   #   "16:00" :
   #     speaker : "Дмитрий Руденко"
   #     work_place : 

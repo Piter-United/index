@@ -53,10 +53,15 @@
 #   desc: 
 #   logo: /itgm/img/haker.png
 
-# - title: kl10tch
-#   link: http://kl10tch.ru/
-#   desc: 
-#   logo: /itgm/img/klutch.png
+- title: SPBITRU
+  link: http://spbit.ru
+  desc: 
+  logo: /itgm/img/spbitru.png
+
+- title: kl10tch
+  link: http://kl10tch.ru/
+  desc: 
+  logo: /itgm/img/klutch.png
 
 - title: Новый инфопартнер
   link: mailto:piterunited@gmail.com
