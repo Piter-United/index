@@ -82,11 +82,11 @@
 #   level: Бронзовый партнер
 #   logo: /itgm/img/mannivanovferber.gif
 
-# - title: A25
-#   link: http://a25.ru/
-#   desc: 
-#   level: Бронзовый партнер
-#   logo: /itgm/img/a25.png
+- title: A25
+  link: http://a25.ru/
+  desc: 
+  level: Бронзовый партнер
+  logo: /itgm/img/a25.png
 
 # - title: Peter Service
 #   link: www.billing.ru

@@ -33,10 +33,10 @@
   desc: 
   logo: /itgm/img/secr15.png
 
-# - title: UMI
-#   link: http://www.umi-cms.ru/
-#   desc: 
-#   logo: /itgm/img/umicms.png
+- title: UMI
+  link: http://www.umi-cms.ru/
+  desc: 
+  logo: /itgm/img/umicms.png
 
 - title: Kechinov
   link: http://mkechinov.ru/
