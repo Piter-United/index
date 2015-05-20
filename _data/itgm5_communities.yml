@@ -94,17 +94,17 @@
       speaker : Алексей Васильев
       work_place : SigmaLab
       theme : "Применение инструментов TOC. Решение конфликтов, поиск ключевых проблем при постановке процессов."
-  #   "15:00" :
-  #     speaker : Александр Бындю
-  #     work_place : ByndyuSoft
-  #     theme : Impact Mapping на практике.
+    "15:00" :
+      speaker : Андрей Толмачев
+      work_place : 
+      theme : "Как делать agile с неаджальными банками на примере конкретного проекта, инструментов."
   #   "16:00" :
   #     speaker : Денис Мишарин
   #     work_place : Проектный центр ГиДИС
   #     theme : Взаимоотношения с заказчиком. Ожидание и реальность.
 
-- title: Agile Piter
-  link: https://plus.google.com/u/0/communities/112264824472767454602
+# - title: Agile Piter
+#   link: https://plus.google.com/u/0/communities/112264824472767454602
   # schedule:
 
   #   "13:00" :
@@ -153,14 +153,14 @@
       speaker : Алексей Петров
       work_place : "MCTS"
       theme : "Дуализм систем и его практическая польза для аналитика."
-  #   "14:00" :
-  #     speaker : Михаил Рыжиков
-  #     work_place : WaveAccess
-  #     theme : Круглый стол. Бизнес и системный анализ в гибкой разработке.
-  #   "15:00" :
-  #     speaker : Александр Гусенко
-  #     work_place : Netrika
-  #     theme : От проблемы к требованиям.Теория принятия решений в разработке ПО.
+    "14:00" :
+      speaker : Раиса Гольденберг
+      work_place : 
+      theme : "Тема доклада уточняется..."
+    "15:00" :
+      speaker : Александр Овчаренко
+      work_place : ЗАО НИПК Электрон
+      theme : "Что делать аналитику без проектировщика интерфейсов?"
   #   "16:00" :
   #     speaker : Евгения Чумачкова
   #     work_place : DINS
@@ -191,12 +191,12 @@
 
 - title: Piter JS
   link: https://vk.com/piterjs
-  # schedule:
+  schedule:
 
-  #   "13:00" :
-  #     speaker : Андрей Вдовиченко
-  #     work_place : First Line Software
-  #     theme : "Быстрый старт: Yeoman, Bower, gulp."
+    "13:00" :
+      speaker : "... докладчик уточняется ..."
+      work_place : PonyORM
+      theme : "Разработка Single Page Applications с помощью Pony ORM."
   #   "14:00" :
   #     speaker : Андрей Складчиков
   #     work_place :
@@ -231,8 +231,29 @@
   #     work_place :  
   #     theme : "Дискуссионные столы на темы io.js, ES6, PostCSS, React, тестирования"
 
-- title: SPb Ruby User Group
-  link: https://plus.google.com/communities/117927540789820622012
+- title: "SPb .Net Community"
+  link: https://plus.google.com/u/0/communities/115643868183582812348
+  schedule:
+
+    "13:00" :
+      speaker : Андрей Акиньшин
+      work_place : Энтерра
+      theme : "Будущее .NET-разработки."
+    "14:00" :
+      speaker : Никита Козлов
+      work_place : MySale Group
+      theme : "Поговорим про DSL."
+    "15:00" :
+      speaker : Антон Шабанов
+      work_place : WaveAccess
+      theme : "ASP .Net vNext на Linux."
+    "16:00" :
+      speaker : "Михаил Щербаков / Дмитрий Нестерук"
+      work_place :  
+      theme : "...Уточняется..."
+
+# - title: SPb Ruby User Group
+#   link: https://plus.google.com/communities/117927540789820622012
 
 - title: SPb Python Interest Group
   link: http://spbpython.guru/
