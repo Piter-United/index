@@ -65,10 +65,10 @@
   link: http://ux-spb.ru/
   schedule:
 
-  #   "13:00" :
-  #     speaker : "Никита Ефимов/Анна Горбатенко"
-  #     work_place :  "Селектел/НИПК Электрон"
-  #     theme : "Взаимозаменяемость и уникальность UX-специалиста и аналитика"
+    "13:00" :
+      speaker : "Ольга Павлова/Екатерина Юлина"
+      work_place :  "КБ Собака Павлова"
+      theme : "... тема уточняется ..."
     "14:00" :
       speaker : Артём Тиунов
       work_place :  Jetbrains
@@ -77,10 +77,10 @@
       speaker : Юрий Солоницын
       work_place : ИСТ
       theme : "Точка кипения мозга – защищаем пользователя от перегрузки информацией."
-  #   "16:00" :
-  #     speaker : Наталья Мануйлова
-  #     work_place : Петер-Сервис
-  #     theme : "User Stories. UX-подход к проектированию продукта. Интерактив (продолжение)"
+    "16:00" :
+      speaker : НАлексей Гапонов
+      work_place : Devexperts
+      theme : "Орудия труда. (Не)предвзятый обзор инструментов проектировщика."
 
 - title: SPb SPM Club
   link: https://plus.google.com/u/0/communities/108809460896106613736
@@ -153,10 +153,10 @@
       speaker : Алексей Петров
       work_place : "MCTS"
       theme : "Дуализм систем и его практическая польза для аналитика."
-    "14:00" :
-      speaker : Раиса Гольденберг
-      work_place : 
-      theme : "Тема доклада уточняется..."
+    # "14:00" :
+    #   speaker : Раиса Гольденберг
+    #   work_place : 
+    #   theme : "Тема доклада уточняется..."
     "15:00" :
       speaker : Александр Овчаренко
       work_place : ЗАО НИПК Электрон
@@ -193,22 +193,22 @@
   link: https://vk.com/piterjs
   schedule:
 
-    "13:00" :
-      speaker : "... докладчик уточняется ..."
-      work_place : PonyORM
-      theme : "Разработка Single Page Applications с помощью Pony ORM."
-  #   "14:00" :
-  #     speaker : Андрей Складчиков
-  #     work_place :
-  #     theme : "Переиспользуемые компоненты: технологии и приёмы разработки."
+    # "13:00" :
+    #   speaker : "... докладчик уточняется ..."
+    #   work_place : PonyORM
+    #   theme : "Разработка Single Page Applications с помощью Pony ORM."
+    "14:00" :
+      speaker : Антон Плешивцев
+      work_place : Virool
+      theme : "Как победить различные браузерные ограничения и сделать крутое приложение. Рассказ про разработку мобильного видеоплеера Covér."
   #   "15:00" :
   #     speaker : 
   #     work_place : 
   #     theme : "Дискуссионные столы на темы io.js, ES6, PostCSS, React, тестирования"
-  #   "16:00" :
-  #     speaker :
-  #     work_place :  
-  #     theme : "Дискуссионные столы на темы io.js, ES6, PostCSS, React, тестирования"
+    "16:00" :
+      speaker : Олег Подсечин
+      work_place :  Toughbyte
+      theme : "Новые возможности EcmaScript 6 и 7: генераторы и async/await."
 
 # - title: SPb Frontend
 #   link: http://vk.com/spb_frontend
@@ -257,20 +257,20 @@
 
 - title: SPb Python Interest Group
   link: http://spbpython.guru/
-  # schedule:
+  schedule:
 
-  #   "13:00" :
-  #     speaker : Максим Чечель
-  #     work_place :
-  #     theme : "Разработка NFC сервисов. Многопоточное программирование с использованием (о ужас) ruby threads."
+    "13:00" :
+      speaker : Уточняется
+      work_place : PonyORM
+      theme : "Разработка Single Page Applications с помощью Pony ORM."
   #   "14:00" :
   #     speaker : Сергей Матвеенко
   #     work_place :
   #     theme : "Mnj - удобный враппер для PyMongo."
-  #   "15:00" :
-  #     speaker : Николай Нилов
-  #     work_place : 
-  #     theme : "Взаимодействие с Cloud API на основе REST и Web Services."
+    "15:00" :
+      speaker : Андрей Павлов
+      work_place : "C.Nord"
+      theme : "Пакетный менеджер Nix в качестве замены Virtualenv."
   #   "16:00" :
   #     speaker : Александр Кошкин
   #     work_place : 
@@ -318,8 +318,8 @@
   #     work_place : 
   #     theme : OCaml в gamedev.
 
-- title: SPb PostgreSQL User Group
-  link: /
+# - title: SPb PostgreSQL User Group
+#   link: /
   # schedule:
 
   #   "13:00" :
@@ -448,24 +448,24 @@
 
 - title: "3D уголок (Unity/3D4WEB)"
   link: https://plus.google.com/u/0/communities/103652474826197512695
-  # schedule:
+  schedule:
 
-  #   "13:00" :
-  #     speaker : Денис Васильев
-  #     work_place : 
-  #     theme : Нестандартное использование Unity3d.
-  #   "14:00" :
-  #     speaker : Владимир Дихт
-  #     work_place : AE MiND iNDeNTiTy
-  #     theme : Виртуальная реальность как тренажер разума и тела.
-  #   "15:00" :
-  #     speaker : Тучкевич Владимир и Решетников Ярослав
-  #     work_place : "СПб Политехнический Университет / Autodesk Developer Network"
-  #     theme : "Визуализация 3D модели в Web. View and Data API."
-  #   "16:00" :
-  #     speaker : Михаил Рафиенко
-  #     work_place : ThrillaBit
-  #     theme : "Разработка игр для Google Cardboard: мифы и реалии."
+    "13:00" :
+      speaker : Иван Мартынов
+      work_place : "VRLF.RU"
+      theme : Риски виртуальной реальности для социума и индивида.
+    "14:00" :
+      speaker : Дмитрий Булгаков
+      work_place : ГУАП
+      theme : Виртуальные 3D-реконструкции.
+    "15:00" :
+      speaker : Уточняется
+      work_place : "Autodesk Developer Network"
+      theme : "Уточняется."
+    "16:00" :
+      speaker : Уточняется
+      work_place : "Autodesk Developer Network"
+      theme : "Уточняется."
 
 - title: HackIoT
   link: http://vk.com/hackIoT
