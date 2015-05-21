@@ -260,13 +260,13 @@
   schedule:
 
     "13:00" :
-      speaker : Уточняется
+      speaker : "Александр Козловский / Алексей Малашкевич"
       work_place : PonyORM
       theme : "Разработка Single Page Applications с помощью Pony ORM."
-  #   "14:00" :
-  #     speaker : Сергей Матвеенко
-  #     work_place :
-  #     theme : "Mnj - удобный враппер для PyMongo."
+    "14:00" :
+      speaker : Сергей Матвеенко
+      work_place : DataArt
+      theme : "Развитие петербургского Python сообщества: форматы встреч, темы докладов (brainstorm)."
     "15:00" :
       speaker : Андрей Павлов
       work_place : "C.Nord"
