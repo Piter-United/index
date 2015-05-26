@@ -96,12 +96,12 @@
       theme : "Применение инструментов TOC. Решение конфликтов, поиск ключевых проблем при постановке процессов."
     "15:00" :
       speaker : Андрей Толмачев
-      work_place : 
+      work_place : Openway
       theme : "Как делать agile с неаджальными банками на примере конкретного проекта, инструментов."
-  #   "16:00" :
-  #     speaker : Денис Мишарин
-  #     work_place : Проектный центр ГиДИС
-  #     theme : Взаимоотношения с заказчиком. Ожидание и реальность.
+    "16:00" :
+      speaker : "модератор: Михаил Рыжиков"
+      work_place : WaveAccess
+      theme : "Круглый стол: Инициация проектов. Техники и инструменты."
 
 # - title: Agile Piter
 #   link: https://plus.google.com/u/0/communities/112264824472767454602
@@ -151,16 +151,16 @@
   
     "13:00" :
       speaker : Алексей Петров
-      work_place : "MCTS"
+      work_place : "Тренер и консультант, MCTS"
       theme : "Дуализм систем и его практическая польза для аналитика."
-    # "14:00" :
-    #   speaker : Раиса Гольденберг
-    #   work_place : 
-    #   theme : "Тема доклада уточняется..."
-    "15:00" :
+    "14:00" :
       speaker : Александр Овчаренко
       work_place : ЗАО НИПК Электрон
       theme : "Что делать аналитику без проектировщика интерфейсов?"
+    "15:00" :
+      speaker : Наталья Забежинская
+      work_place : "QA specialist, ГК Техносерв"
+      theme : "Когда нужна валидация тест-кейсов?"
   #   "16:00" :
   #     speaker : Евгения Чумачкова
   #     work_place : DINS
@@ -175,7 +175,7 @@
     "13:00" :
       speaker : Станислав Богатырёв
       work_place : "realloc.spb.ru"
-      theme : "Секреты в Chef."
+      theme : "Секреты в Chef. Один из возможных работающих методов обращения с секретами (пароли, сертификаты, лицензии) в условиях общего доступа к коду Ops и Dev команд. Инструменты: Chef, chef-vault, vault"
   #   "14:00" :
   #     speaker : Павел Семенец
   #     work_place :
@@ -242,15 +242,16 @@
     "14:00" :
       speaker : Никита Козлов
       work_place : MySale Group
-      theme : "Поговорим про DSL."
+      theme : "DSL без купюр."
     "15:00" :
+      speaker : "Дмитрий Нестерук"
+      work_place :  JetBrains
+      theme : "Динамическое Прототипирование."
+    "16:00" :
       speaker : Антон Шабанов
       work_place : WaveAccess
-      theme : "ASP .Net vNext на Linux."
-    "16:00" :
-      speaker : "Михаил Щербаков / Дмитрий Нестерук"
-      work_place :  
-      theme : "...Уточняется..."
+      theme : "Обзор технологических новинок в .Net с точки зрения Web-программиста."
+    
 
 # - title: SPb Ruby User Group
 #   link: https://plus.google.com/communities/117927540789820622012
@@ -318,8 +319,29 @@
   #     work_place : 
   #     theme : OCaml в gamedev.
 
-# - title: SPb PostgreSQL User Group
-#   link: /
+- title: "SPb Cloud & Virtualization Community"
+  link: https://vk.com/spb.cloud
+  schedule:
+
+    "13:00" :
+      speaker : Владимир Подзоров
+      work_place : WELLSERVICE
+      theme : "Персональные данные в облаке с технической и правовой стороны вопроса."
+    "14:00" :
+      speaker : "Виталий Грицай / Константин Кудряшов"
+      work_place : https://1cloud.ru/
+      theme : "Построение инфраструктуры облачного провайдера на примере компании 1cloud."
+    # "15:00" :
+    #   speaker : Алексей Фомкин
+    #   work_place : 
+    #   theme : "Scala.js в продакшн."
+    # "16:00" :
+    #   speaker : Дмитрий Александров
+    #   work_place : 
+    #   theme : OCaml в gamedev.
+
+- title: SPb PostgreSQL User Group
+  link: /
   # schedule:
 
   #   "13:00" :
@@ -339,8 +361,8 @@
   #     work_place : 404 Group
   #     theme : "Импортозамещение и все-все-все. Круглый стол с Q&A по посгресу."
 
-- title: SPb Mobile
-  link: https://plus.google.com/u/0/communities/110822898858097256001
+# - title: SPb Mobile
+#   link: https://plus.google.com/u/0/communities/110822898858097256001
   # schedule:
 
   #   "13:00" :
@@ -362,20 +384,20 @@
 
 - title: SPb GO Community
   link: "http://groups.google.com/forum/#!forum/golang-ru"
-  # schedule:
+  schedule:
 
-  #   "13:00" :
-  #     speaker : Антон Руднев
-  #     work_place : DataArt
-  #     theme : "BoltDB: встраиваемое хранилище."
-  #   "14:00" :
-  #     speaker : Александр Неганов
-  #     work_place : PropellerAds
-  #     theme : "Таймауты в высоконагруженных приложениях."
-  #   "15:00" :
-  #     speaker : Виталий Левченко
-  #     work_place : PropellerAds
-  #     theme : "Go generate: генерация кода как замена дженериков."
+    "13:00" :
+      speaker : Александр Неганов
+      work_place : 
+      theme : "Эффективный файловый IO: быстро и сложно."
+    "14:00" :
+      speaker : Виталий Левченко
+      work_place : 
+      theme : "NSQ: опыт использования в большой системе."
+    "15:00" :
+      speaker : "модератор: Виталий Левченко"
+      work_place : 
+      theme : "Круглый стол."
   #   "16:00" :
   #     speaker : "Круглый стол"
   #     work_place : 
@@ -478,7 +500,7 @@
     "14:00" :
       speaker : Дмитрий Кривецков
       work_place : Ультран
-      theme : "Уточняется..."
+      theme : "Протокол ANT для умного дома."
     "15:00" :
       speaker : Сергей Сильнов
       work_place : Croice
@@ -493,18 +515,18 @@
   schedule:
 
     "13:00" :
-      speaker : 
-      work_place : 
-      theme : "Как правильно съездить в Долину и поднять инвестиции? Кейс."
+      speaker : Даниил Павлючков
+      work_place : MailBurn
+      theme : "Как мы запускались на Product Hunt и как это помогло поднять инвестиции в Долине. Кейс MailBurn."
     "14:00" :
-      speaker :
-      work_place :
-      theme : "Чем процесс разработки в стартапе отличается от обычных Agile, Scrum? Кейс."
+      speaker : Евгения Смородникова
+      work_place : "CoffeeLab.vc"
+      theme : "Почему все, что вам говорят про стартапы - неправда?"
     "15:00" :
-      speaker :
-      work_place :
+      speaker : Дмитрий Анисимов
+      work_place : GetTidy
       theme : "Опыт комбинации оффлайн процессов и онлайн стартапа. Кейс GetTidy."
     "16:00" :
-      speaker :
-      work_place :
+      speaker : "Павел Правдин/Евгения Смородникова"
+      work_place : Founder Institute SPB
       theme : "Founder Institute SPB, открытие второго сезона."

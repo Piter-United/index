@@ -1,8 +1,3 @@
-# - title: Ай-Ти События
-#   link: http://it-sobytie.ru/
-#   desc: 
-#   logo: /itgm/img/itsob.png
-
 - title: DataArt
   link: http://www.dataart.ru/
   desc: 
@@ -42,6 +37,11 @@
   link: http://mkechinov.ru/
   desc: 
   logo: /itgm/img/kechinov.png
+
+- title: Ай-Ти События
+  link: http://it-sobytie.ru/
+  desc: 
+  logo: /itgm/img/itsob.png
 
 # - title: Сын Программиста
 #   link: http://progerson.ru
