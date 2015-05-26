@@ -66,9 +66,9 @@
   schedule:
 
     "13:00" :
-      speaker : "Ольга Павлова/Екатерина Юлина"
+      speaker : "Захар Кириллов"
       work_place :  "КБ Собака Павлова"
-      theme : "... тема уточняется ..."
+      theme : "Continuous UX: встраиваем IxD в процесс гибкой разработки."
     "14:00" :
       speaker : Артём Тиунов
       work_place :  Jetbrains
@@ -78,7 +78,7 @@
       work_place : ИСТ
       theme : "Точка кипения мозга – защищаем пользователя от перегрузки информацией."
     "16:00" :
-      speaker : НАлексей Гапонов
+      speaker : Алексей Гапонов
       work_place : Devexperts
       theme : "Орудия труда. (Не)предвзятый обзор инструментов проектировщика."
 
@@ -100,7 +100,7 @@
       theme : "Как делать agile с неаджальными банками на примере конкретного проекта, инструментов."
     "16:00" :
       speaker : "модератор: Михаил Рыжиков"
-      work_place : WaveAccess
+      work_place : Health Samurai Team
       theme : "Круглый стол: Инициация проектов. Техники и инструменты."
 
 # - title: Agile Piter
@@ -201,14 +201,14 @@
       speaker : Антон Плешивцев
       work_place : Virool
       theme : "Как победить различные браузерные ограничения и сделать крутое приложение. Рассказ про разработку мобильного видеоплеера Covér."
-  #   "15:00" :
-  #     speaker : 
-  #     work_place : 
-  #     theme : "Дискуссионные столы на темы io.js, ES6, PostCSS, React, тестирования"
-    "16:00" :
+    "15:00" :
       speaker : Олег Подсечин
       work_place :  Toughbyte
       theme : "Новые возможности EcmaScript 6 и 7: генераторы и async/await."
+    "16:00" :
+      speaker : Максим Рыжиков
+      work_place :  JetBrains
+      theme : "ПРОтестирование."
 
 # - title: SPb Frontend
 #   link: http://vk.com/spb_frontend
@@ -279,24 +279,24 @@
 
 - title: FProg (Clojure/Erlang/Haskell)
   link: https://plus.google.com/communities/114227952963737516047
-  # schedule:
+  schedule:
 
-  #   "13:00" :
-  #     speaker : Игнат Толчанов
-  #     work_place : 
-  #     theme : "Что было в голове у тех, кто придумал Erlang, и как это может сыграть вам на руку."
-  #   "14:00" :
-  #     speaker : Мария Давыдова
-  #     work_place : 
-  #     theme : "Контролируя время и пространство: основы FRP."
-  #   "15:00" :
-  #     speaker : Александр Петров
-  #     work_place : 
-  #     theme : "Как мы используем clojure  для обработки 1MM req/min."
-  #   "16:00" :
-  #     speaker : Ильшад Хабибуллин
-  #     work_place : 
-  #     theme : Абстракции в Clojure.
+    "13:00" :
+      speaker : Максим Велесюк
+      work_place : Areo Gaming
+      theme : "Разработка в Common Lisp с SLIME."
+    "14:00" :
+      speaker : Игнат Толчанов
+      work_place : 
+      theme : "...тема уточняется..."
+    "15:00" :
+      speaker : "модератор: Николай Рыжиков"
+      work_place : Health Samurai Team
+      theme : "... тема уточняется ..."
+    "16:00" :
+      speaker : Алексей Петров
+      work_place : "Тренер и консультант, MCTS"
+      theme : "... тема уточняется ..."
 
 # - title: SPb Lisp Users
 #   link: http://vk.com/lisp.users
@@ -397,14 +397,14 @@
     "15:00" :
       speaker : "модератор: Виталий Левченко"
       work_place : 
-      theme : "Круглый стол."
+      theme : "Круглый стол. Тема уточняется ..."
   #   "16:00" :
   #     speaker : "Круглый стол"
   #     work_place : 
   #     theme : "GO"
 
-- title: SPb Technical Writers
-  link: https://plus.google.com/u/0/communities/111110772662436773783
+# - title: SPb Technical Writers
+#   link: https://plus.google.com/u/0/communities/111110772662436773783
   # schedule:
 
   #   "13:00" :
@@ -485,9 +485,9 @@
       work_place : "Autodesk Developer Network"
       theme : "Уточняется."
     "16:00" :
-      speaker : Уточняется
-      work_place : "Autodesk Developer Network"
-      theme : "Уточняется."
+      speaker : Егор Петриленков
+      work_place : "Spiced Jackal"
+      theme : "Как мы на коленке в обед сделали онлайновую многопользовательскую игру."
 
 - title: HackIoT
   link: http://vk.com/hackIoT
