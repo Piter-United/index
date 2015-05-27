@@ -52,11 +52,11 @@
 #   level: Серебряный партнер
 #   logo: /itgm/img/da.png
 
-# - title: IT-Grad
-#   link: http://www.it-grad.ru/
-#   desc: 
-#   level: Серебряный партнер
-#   logo: /itgm/img/itgrad.png
+- title: IT-Grad
+  link: http://www.it-grad.ru/
+  desc: 
+  level: Серебряный партнер
+  logo: /itgm/img/itgrad.png
 
 # - title: Elance-oDesc
 #   link: https://www.odesk.com/
