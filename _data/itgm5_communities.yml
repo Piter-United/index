@@ -276,7 +276,7 @@
     "16:00" :
       speaker : Алексей Петров
       work_place : "Тренер и консультант, MCTS"
-      theme : "Что такое корпоративная архитектура? (ликбез)"
+      theme : "Что такое корпоративная архитектура?"
 
 - title: FProg (Clojure/Erlang/Haskell)
   link: https://plus.google.com/communities/114227952963737516047
