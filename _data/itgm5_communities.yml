@@ -66,21 +66,22 @@
   schedule:
 
     "13:00" :
-      speaker : "Захар Кириллов"
-      work_place :  "КБ Собака Павлова"
-      theme : "Continuous UX: встраиваем IxD в процесс гибкой разработки."
-    "14:00" :
-      speaker : Артём Тиунов
-      work_place :  Jetbrains
-      theme : "UX for Geeks."
-    "15:00" :
-      speaker : Юрий Солоницын
-      work_place : ИСТ
-      theme : "Точка кипения мозга – защищаем пользователя от перегрузки информацией."
-    "16:00" :
       speaker : Алексей Гапонов
       work_place : Devexperts
       theme : "Орудия труда. (Не)предвзятый обзор инструментов проектировщика."
+    "14:00" :
+      speaker : "Захар Кириллов"
+      work_place :  "КБ Собака Павлова"
+      theme : "Continuous UX: встраиваем IxD в процесс гибкой разработки."
+    "15:00" :
+      speaker : Артём Тиунов
+      work_place :  Jetbrains
+      theme : "UX for Geeks."
+    "16:00" :
+      speaker : Юрий Солоницын
+      work_place : ИСТ
+      theme : "Точка кипения мозга – защищаем пользователя от перегрузки информацией."
+
 
 - title: SPb SPM Club
   link: https://plus.google.com/u/0/communities/108809460896106613736
@@ -346,8 +347,8 @@
 
     "13:00" :
       speaker : Сергей Новиков
-      work_place : 
-      theme : "... тема уточняется ..."
+      work_place : RealWeb
+      theme : "Функциональный интерфейс в базе данных и другие хорошие практики."
   #   "14:00" :
   #     speaker : Михаил Хлуднев
   #     work_place : Grid Dynamics
