@@ -177,27 +177,27 @@
       speaker : Станислав Богатырёв
       work_place : "realloc.spb.ru"
       theme : "Секреты в Chef. Один из возможных работающих методов обращения с секретами (пароли, сертификаты, лицензии) в условиях общего доступа к коду Ops и Dev команд. Инструменты: Chef, chef-vault, vault"
-  #   "14:00" :
-  #     speaker : Павел Семенец
-  #     work_place :
-  #     theme : "Построение отказоустойчивых кластеров на базе Ceph."
-  #   "15:00" :
-  #     speaker : Александр Чистяков и Павел Семенец
-  #     work_place : 
-  #     theme : "Круглый стол на тему отказоустойчивых кластеров, обсуждение."
-  #   "16:00" :
-  #     speaker : Станислав Богатырёв
-  #     work_place :  
-  #     theme : "Мониторинг наркомана (Riemann)."
+    "14:00" :
+      speaker : Павел Курочкин
+      work_place : НТЦ "Метротек"
+      theme : "Разработка highload-системы мониторинга для 50000 (и более) видео-потоков RTP с применением 10G Ethernet пробников на базе FPGA."
+    "15:00" :
+      speaker : Роман Беляковский
+      work_place : Git in Sky
+      theme : "Девять месяцев с Ansible: опыт и надежды."
+    "16:00" :
+      speaker : Александр Тарасов
+      work_place : Альфа-Банк
+      theme : "Docker в банке."
 
 - title: Piter JS
   link: https://vk.com/piterjs
   schedule:
 
-    # "13:00" :
-    #   speaker : "... докладчик уточняется ..."
-    #   work_place : PonyORM
-    #   theme : "Разработка Single Page Applications с помощью Pony ORM."
+    "13:00" :
+      speaker : "Николай Рыжиков"
+      work_place : Health Samurai
+      theme : "JavaScript внутри PostgreSQL."
     "14:00" :
       speaker : Антон Плешивцев
       work_place : Virool
@@ -330,12 +330,12 @@
       theme : "Персональные данные в облаке с технической и правовой стороны вопроса."
     "14:00" :
       speaker : "Виталий Грицай / Константин Кудряшов"
-      work_place : https://1cloud.ru/
+      work_place : "https://1cloud.ru/"
       theme : "Построение инфраструктуры облачного провайдера на примере компании 1cloud."
-    # "15:00" :
-    #   speaker : Алексей Фомкин
-    #   work_place : 
-    #   theme : "Scala.js в продакшн."
+    "15:00" :
+      speaker : Юрий Сухов
+      work_place : Veeam Software
+      theme : "... тема уточняется ..."
     # "16:00" :
     #   speaker : Дмитрий Александров
     #   work_place : 
@@ -482,9 +482,9 @@
       work_place : ГУАП
       theme : Виртуальные 3D-реконструкции.
     "15:00" :
-      speaker : Уточняется
-      work_place : "Autodesk Developer Network"
-      theme : "Уточняется."
+      speaker : Ярослав Решетников
+      work_place : "Autodesk"
+      theme : "Отображение больших 3D моделей в веб. Опыт использования Autodesk View and Data API."
     "16:00" :
       speaker : Егор Петриленков
       work_place : "Spiced Jackal"
