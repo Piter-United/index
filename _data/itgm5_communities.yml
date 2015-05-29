@@ -506,10 +506,10 @@
       speaker : Сергей Сильнов
       work_place : Croice
       theme : "Круглый стол: фреймворки интернета вещей AllJoyn, IOTivity."
-  #   "16:00" :
-  #     speaker : "Дмитрий Руденко"
-  #     work_place : 
-  #     theme : "Знакомство с openHAB."
+    "16:00" :
+      speaker : "Кирилл Борисов"
+      work_place : Яндекс
+      theme : "Контроль за качеством кода."
 
 - title: SPb Startup
   link: https://www.facebook.com/groups/pitervc/
