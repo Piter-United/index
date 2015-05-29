@@ -209,7 +209,7 @@
     "16:00" :
       speaker : Максим Рыжиков
       work_place :  JetBrains
-      theme : "ПРОтестирование."
+      theme : "ПРОтестирование: как устроена Karma."
 
 # - title: SPb Frontend
 #   link: http://vk.com/spb_frontend
