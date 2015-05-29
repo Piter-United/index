@@ -58,11 +58,11 @@
   level: Серебряный партнер
   logo: /itgm/img/itgrad.png
 
-# - title: Elance-oDesc
-#   link: https://www.odesk.com/
-#   desc: 
-#   level: Серебряный партнер
-#   logo: /itgm/img/odesk.png
+- title: Upwork
+  link: https://www.upwork.com
+  desc: 
+  level: Бронзовый партнер
+  logo: /itgm/img/upwork.png
 
 # - title: ScrumTrek
 #   link: http://scrumtrek.ru/

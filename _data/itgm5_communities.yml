@@ -325,21 +325,21 @@
   schedule:
 
     "13:00" :
-      speaker : Владимир Подзоров
-      work_place : WELLSERVICE
-      theme : "Персональные данные в облаке с технической и правовой стороны вопроса."
+      speaker : Владимир Лужков
+      work_place : ИТ-ГРАД
+      theme : "... тема уточняется ..."
     "14:00" :
+      speaker : "Юрий Сухов"
+      work_place : "Veeam Software"
+      theme : "Защита данных в виртуальных средах."
+    "15:00" :
+      speaker : "Владимир Подзоров/Роман Скворцов"
+      work_place : "WELLSERVICE/AMBAHA IT-solutions"
+      theme : "Персональные данные в облаке с технической и правовой стороны вопроса. / Microsoft Azure. От теории к практике"
+    "16:00" :
       speaker : "Виталий Грицай / Константин Кудряшов"
       work_place : "https://1cloud.ru/"
       theme : "Построение инфраструктуры облачного провайдера на примере компании 1cloud."
-    "15:00" :
-      speaker : Юрий Сухов
-      work_place : Veeam Software
-      theme : "... тема уточняется ..."
-    # "16:00" :
-    #   speaker : Дмитрий Александров
-    #   work_place : 
-    #   theme : OCaml в gamedev.
 
 - title: SPb PostgreSQL User Group
   link: /
@@ -349,18 +349,18 @@
       speaker : Сергей Новиков
       work_place : RealWeb
       theme : "Функциональный интерфейс в базе данных и другие хорошие практики."
-  #   "14:00" :
-  #     speaker : Михаил Хлуднев
-  #     work_place : Grid Dynamics
-  #     theme : Индексы Lucene
-  #   "15:00" :
-  #     speaker : Роман Друзягин
-  #     work_place : 404 Group
-  #     theme : "Импортозамещение и все-все-все. Круглый стол с Q&A по посгресу."
-  #   "16:00" :
-  #     speaker : Роман Друзягин
-  #     work_place : 404 Group
-  #     theme : "Импортозамещение и все-все-все. Круглый стол с Q&A по посгресу."
+    "14:00" :
+      speaker : Роман Друзягин
+      work_place : 404 Group
+      theme : "Круглый стол: практика администрирования и troubleshooting PostgreSQL."
+    "15:00" :
+      speaker : Роман Друзягин
+      work_place : 404 Group
+      theme : "Круглый стол: работа с PG во фреймворках типа Rails и прочих, плюс и минусы подходов."
+    "16:00" :
+      speaker : Роман Друзягин
+      work_place : 404 Group
+      theme : "Круглый стол: практика безопасной разработки под PostgreSQL."
 
 # - title: SPb Mobile
 #   link: https://plus.google.com/u/0/communities/110822898858097256001
