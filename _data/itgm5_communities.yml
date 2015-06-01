@@ -325,9 +325,9 @@
   schedule:
 
     "13:00" :
-      speaker : Владимир Лужков
+      speaker : Михаил Новоселов
       work_place : ИТ-ГРАД
-      theme : "... тема уточняется ..."
+      theme : "Виртуальная схд в облаке."
     "14:00" :
       speaker : "Юрий Сухов"
       work_place : "Veeam Software"
@@ -398,11 +398,11 @@
     "15:00" :
       speaker : "модератор: Виталий Левченко"
       work_place : 
-      theme : "Круглый стол. Тема уточняется ..."
-  #   "16:00" :
-  #     speaker : "Круглый стол"
-  #     work_place : 
-  #     theme : "GO"
+      theme : "Круглый стол. Go в продакшене: логирование и сбор ошибок, мониторинг, обслуживание."
+    "16:00" :
+      speaker : "Кирилл Борисов"
+      work_place : Яндекс
+      theme : "Контроль за качеством кода."
 
 # - title: SPb Technical Writers
 #   link: https://plus.google.com/u/0/communities/111110772662436773783
