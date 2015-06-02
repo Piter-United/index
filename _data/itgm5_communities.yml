@@ -274,9 +274,9 @@
       work_place : "C.Nord"
       theme : "Пакетный менеджер Nix в качестве замены Virtualenv."
     "16:00" :
-      speaker : Алексей Петров
-      work_place : "Тренер и консультант, MCTS"
-      theme : "Что такое корпоративная архитектура?"
+      speaker : "Кирилл Борисов"
+      work_place : Яндекс
+      theme : "Контроль за качеством кода."
 
 - title: FProg (Clojure/Erlang/Haskell)
   link: https://plus.google.com/communities/114227952963737516047
@@ -400,9 +400,9 @@
       work_place : 
       theme : "Круглый стол. Go в продакшене: логирование и сбор ошибок, мониторинг, обслуживание."
     "16:00" :
-      speaker : "Кирилл Борисов"
-      work_place : Яндекс
-      theme : "Контроль за качеством кода."
+      speaker : Алексей Петров
+      work_place : "Тренер и консультант, MCTS"
+      theme : "Что такое корпоративная архитектура?"
 
 # - title: SPb Technical Writers
 #   link: https://plus.google.com/u/0/communities/111110772662436773783
@@ -506,10 +506,10 @@
       speaker : Сергей Сильнов
       work_place : Croice
       theme : "Круглый стол: фреймворки интернета вещей AllJoyn, IOTivity."
-    "16:00" :
-      speaker : "Кирилл Борисов"
-      work_place : Яндекс
-      theme : "Контроль за качеством кода."
+    # "16:00" :
+    #   speaker : "Кирилл Борисов"
+    #   work_place : Яндекс
+    #   theme : "Контроль за качеством кода."
 
 - title: SPb Startup
   link: https://www.facebook.com/groups/pitervc/
