@@ -4,23 +4,23 @@
   desc: Объединение активистов ИТ сообществ Санкт-Петербурга
   logo: img/piterunited.png
 
-- title: Agile Piter
-  members:
-  link: https://plus.google.com/u/0/communities/112264824472767454602
-  desc: Сообщество практикующих и интересующихся гибкими и бережливыми подходами
-  logo: img/agilepiter.png
-
-- title: SMART management
+- title: SPM Club
   members:
   link: https://plus.google.com/u/0/communities/108809460896106613736
-  desc: Сообщество ИТ менеджеров
-  logo: img/smart.png 
+  desc: Петербургский клуб менеджеров проектов в IT.
+  logo: img/spmclub.png
 
-- title: AngularJS
+- title: Сообщество аналитиков Санкт-Петербурга
+  members:  
+  link: http://vk.com/spb_analytics
+  desc: Сообщество системных и бизнес аналитиков
+  logo: img/spbcoa.png
+
+- title: Piter JS
   members:
-  link: https://plus.google.com/communities/109003572589840580141
-  desc: Сообщество программистов на AngularJS
-  logo: img/angular.png
+  link: https://vk.com/piterjs
+  desc: "Сообщество вокруг JavaScript, платформы node.js и все, что с ними связано."
+  logo: img/piterjs.jpg
 
 - title: SPb Frontend
   members:
@@ -31,12 +31,13 @@
 - title: DevOps-40
   members:
   link: http://www.meetup.com/DevOps-40/
+  desc: Системные администраторы и DevOps-инженеры.
   logo: img/devops.png
 
-- title: SPb Haskell User Group
-  members:
-  link: https://groups.google.com/forum/#!forum/spbhug
-  logo: img/haskell.png
+# - title: SPb Haskell User Group
+#   members:
+#   link: https://groups.google.com/forum/#!forum/spbhug
+#   logo: img/haskell.png
 
 - title: SPb Linux User Group
   members:
@@ -44,11 +45,11 @@
   desc: Группа пользователей GNU/Linux и других OpenSource систем
   logo: img/spblug.png
 
-- title: SPb SQA Group
+- title: SPb Cloud
   members:
-  link: http://sqagroup.spb.ru/
-  desc: Сообщество тестировщиков
-  logo: img/spbsqa.png
+  link: https://vk.com/spb.cloud
+  desc: Сообщество специалистов по облачным технологиями и виртуализации.
+  logo: img/cloud.jpg
 
 - title: SPb Ruby User Group
   members:
@@ -56,23 +57,35 @@
   desc: Сообщество пассионарных рубистов с берегов Невы и им сочувствующих
   logo: img/sprug.png
 
-- title: SPb Community of Analysts
-  members:	
-  link: http://vk.com/spb_analytics
-  desc: Сообщество системных и бизнес аналитиков
-  logo: img/spbcoa.png
-
-- title: IT Talk
+- title: SPb Python Interest Group
   members:
-  link: http://it-talk.dataart.ru/
-  desc: Сообщество компании DataArt
-  logo: img/ittalk.png 
+  link: https://plus.google.com/u/0/communities/107328406287050920928
+  desc: Сообщество Python-программистов Санкт-Петербурга. 
+  logo: img/python.png
 
-- title: SPb Technical Writers
+- title: "SPb .Net Community"
   members:
-  link: https://plus.google.com/u/0/communities/111110772662436773783
-  desc: Сообщество технических писателей
-  logo: img/techwriters.png
+  link: https://plus.google.com/u/0/communities/115643868183582812348
+  desc: Сообщество .NET разработчиков.
+  logo: img/netcommunity.png
+
+- title: "SPb GO Community"
+  members:
+  link: http://www.meetup.com/Golang-Peter/
+  desc: Сообщество программистов на GO.
+  logo: img/goland.png
+
+- title: "SPb Mobile"
+  members:
+  link: https://plus.google.com/u/0/communities/110822898858097256001
+  desc: Сообщество разработчиков под мобильные устройства.
+  logo: img/mobile.png
+
+- title: FProg SPb
+  members:
+  link: https://plus.google.com/u/0/communities/106931692847918217517
+  desc: Ценители функционального программирования из Питера. 
+  logo: img/clojure.png
 
 - title: Spb Lisp Users
   members:
@@ -80,17 +93,47 @@
   desc: Сообщество программистов на Lisp
   logo: img/lisp.png
 
-- title: Spb Python User Group
+- title: HackIoT
   members:
-  link: https://plus.google.com/u/0/communities/107328406287050920928
-  desc: Сообщество python-программистов Санкт-Петербурга 
-  logo: img/python.png
+  link: https://vk.com/hackiot
+  desc: Интернет вещей воплоти.
+  logo: img/hackiot.jpg
 
-- title: Clojure Russia (представители в СПб)
+- title: SPb Unity User Group
   members:
-  link: https://plus.google.com/communities/114227952963737516047
-  desc: Сообщество практикующих и интересующихся clojure 
-  logo: img/clojure.png
+  link: https://plus.google.com/u/0/communities/103652474826197512695
+  desc: Сообщество разработчиков на Unity3d в Санкт-Петербурге.
+  logo: img/uug.png
+
+- title: 3D4WEB
+  members:
+  link: http://www.meetup.com/3D4WEB/
+  desc: Специалисты по 3D-моделям в WEB.
+  logo: img/3d4web.jpeg
+
+- title: SPb SQA Group
+  members:
+  link: http://sqagroup.spb.ru/
+  desc: Сообщество тестировщиков
+  logo: img/spbsqa.png
+
+- title: Agile Piter
+  members:
+  link: https://plus.google.com/u/0/communities/112264824472767454602
+  desc: Сообщество практикующих и интересующихся гибкими подходами.
+  logo: img/agilepiter.png 
+
+- title: SPb Technical Writers
+  members:
+  link: https://plus.google.com/u/0/communities/111110772662436773783
+  desc: Сообщество технических писателей
+  logo: img/techwriters.png
+
+- title: SPb e-Learning
+  members:
+  link: http://www.meetup.com/e-Learning-Community-Meetups-in-Saint-Petersburg-Moodle-eLS/
+  desc: e-Learning сообщество Санкт-Петербурга.
+  logo: img/elearning.jpeg
 
 - title: SPb CIO Club
   members:
@@ -116,3 +159,8 @@
   desc: Сообщество неравнодушных к CMS WordPress 
   logo: img/wpspb.png
 
+- title: IT Talk
+  members:
+  link: http://it-talk.dataart.ru/
+  desc: Сообщество компании DataArt
+  logo: img/ittalk.png 
