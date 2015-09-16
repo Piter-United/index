@@ -99,6 +99,12 @@
       bottom: 0;
       left: 0;
     }
+    /*#people .column {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }*/
     @media only screen and (max-width: 700px) {
       .ui.fixed.menu {
         display: none !important;
@@ -171,12 +177,13 @@
 <body>
 
 <!-- Following Menu -->
-<div class="ui large top fixed hidden menu">
+<div class="ui large top fixed hidden borderless menu">
   <div class="ui container">
-    <a class="active item">О мероприятии</a>
-    <a class="item">Программа</a>
-    <a class="item">Люди</a>
-    <a class="item">Место</a>
+    <a class="item" href="#home_a"><i class="gamepad icon"></i></a>
+    <a class="active item" href="#about_a">О мероприятии</a>
+    <a class="item" href="#programme_a">Программа</a>
+    <a class="item" href="#people_a">Люди</a>
+    <a class="item" href="#map_a">Место</a>
     <div class="right menu">
       <div class="item">
         <a class="ui primary button">Зарегистрироваться</a>
@@ -198,6 +205,7 @@
 
   <!-- First Slide -->
   <div class="ui inverted vertical stripe firstslide segment">
+    <a class="anchor" id="home_a"></a> 
     <div class="ui middle aligned stackable grid container">
       <div class="row">
         <div class="eight wide center aligned column">
@@ -265,6 +273,7 @@
     <div class="ui center aligned container">
         <h1>
         О мероприятии
+        <a class="anchor" id="about_a"></a>
         </h1>      
     </div>      
 
@@ -339,6 +348,7 @@
     <div class="ui center aligned container">
         <h1>
         Программа мероприятия
+        <a class="anchor" id="programme_a"></a>
         </h1>      
     </div>
 
@@ -480,18 +490,54 @@
 
   <!-- endof Communities-->
 
-  <!-- Personal -->
+  <!-- People -->
 
-  <div class="ui vertical strip segment">
+  <div id="people" class="ui vertical strip segment">
     <div class="ui center aligned container">
         <h1>
         Персоналии
+        <a class="anchor" id="people_a"></a>
         </h1>      
     </div> 
-
+    <div class="ui stackable two column grid items">
+      
+      <div class="column item">
+        <div class="ui small image">
+          <img src="assets/images/avatar/nan.jpg">
+        </div>
+        <div class="content">
+          <div class="header">Никита Ефимов</div>
+          <div class="meta">
+            <span>Просто клевый парень, Selectel</span>          
+          </div>
+          <div class="description">
+            <p>
+              Не следует, однако забывать, что укрепление и развитие структуры требуют от нас анализа дальнейших направлений развития. Товарищи! дальнейшее развитие различных форм деятельности требуют определения и уточнения соответствующий условий активизации.
+            </p>
+          </div>
+        </div>
+      </div> 
+      <div class="item column">
+        <div class="ui small image">
+          <img src="assets/images/avatar/nan.jpg">
+        </div>
+        <div class="content">
+          <div class="header">Никита Ефимов</div>
+          <div class="meta">
+            <span>Просто клевый парень, Selectel</span>
+          </div>
+          <div class="description">
+            <p>
+              Не следует, однако забывать, что укрепление и развитие структуры требуют от нас анализа дальнейших направлений развития. Товарищи! дальнейшее развитие различных форм деятельности требуют определения и уточнения соответствующий условий активизации.
+            </p>
+          </div>
+        </div>
+      
+      </div>            
+    </div>
   </div>
 
-  <!-- endof Personal -->
+  <!-- endof People -->
 
   <!--Partners-->
 
@@ -619,7 +665,8 @@
   <!-- endof Spend money-->
 
   <!-- Map -->
-  <div id="map" class="ui vertical striped segment">   
+  <div id="map" class="ui vertical striped segment"> 
+      <a class="anchor" id="map_a"></a>  
       <div class="ui card">
         <div class="content">
           <div class="header">
