@@ -14,7 +14,10 @@
     .hidden.menu {
       display: none;
     }
-    .masthead.segment {
+    #share .sticky {
+      top: 150px;
+    }
+    .firstslide {
       min-height: 700px;
       padding: 1em 0em;
     }
@@ -40,7 +43,7 @@
     }
 
     .ui.vertical.stripe {
-      padding: 6em 0em;
+      padding: 4em 0em;
     }
     /*.ui.vertical.stripe h3 {
       font-size: 2em;
@@ -53,7 +56,7 @@
       clear: both;
     }
     .ui.vertical.stripe p {
-      font-size: 1.33em;
+      font-size: 1em;
     }
     .ui.vertical.stripe .horizontal.divider {
       margin: 3em 0em;
@@ -71,17 +74,7 @@
     .secondary.pointing.menu .toc.item {
       display: none;
     }
-    .overlay {
-      float: left;
-      margin: 0em 3em 1em 0em;
-    }    
-    .overlay.fixed .menu {
-      left: 800px;
-    }    
-    .overlay .menu {
-      position: relative;
-      left: 0;
-    }  
+    
     #map .ui.card {
       position: relative;
       z-index: 1;
@@ -131,9 +124,6 @@
   </style>
 
   <script src="./assets/library/jquery.min.js"></script>
-  <!--<script src="./dist/components/visibility.js"></script>
-  <script src="./dist/components/sidebar.js"></script>
-  <script src="./dist/components/transition.js"></script>-->
   <script>
   $(document)
     .ready(function() {
@@ -142,21 +132,13 @@
         .visibility({
           once: false,
           onBottomPassed: function() {
-            $('.fixed.menu').transition('fade in');
+            $('#topmenu').transition('fade in');
           },
           onBottomPassedReverse: function() {
-            $('.fixed.menu').transition('fade out');
+            $('#topmenu').transition('fade out');
           }
         })
-      ;
-      $('.overlay').visibility({
-        type: 'fixed',
-        offset: 80
-      });     
-      // create sidebar and attach to menu open
-      $('.ui.sidebar')
-        .sidebar('attach events', '.toc.item')
-      ;
+      ;    
 
       $('.communities.column').click(function() {
         $('.ui.modal')
@@ -169,7 +151,8 @@
         .modal('show')
         ;
       }); 
-      $('.ui.embed').embed();             
+      $('.ui.embed').embed(); 
+         
     })
   ;
   </script>
@@ -177,13 +160,17 @@
 <body>
 
 <!-- Following Menu -->
-<div class="ui large top fixed hidden borderless menu">
+<div id="topmenu" class="ui large top fixed hidden borderless menu">
   <div class="ui container">
     <a class="item" href="#home_a"><i class="gamepad icon"></i></a>
     <a class="active item" href="#about_a">О мероприятии</a>
     <a class="item" href="#programme_a">Программа</a>
     <a class="item" href="#people_a">Люди</a>
     <a class="item" href="#map_a">Место</a>
+
+    <a class="item"><i class="twitter icon"></i></a>
+    <a class="item"><i class="facebook icon"></i></a>
+    <a class="item"><i class="mail icon"></i></a>
     <div class="right menu">
       <div class="item">
         <a class="ui primary button">Зарегистрироваться</a>
@@ -194,14 +181,6 @@
 
 <!-- Page Contents -->
 <div class="pusher">
-
-  <div class="overlay">
-    <div class="ui labeled icon vertical menu">
-      <a class="item"><i class="twitter icon"></i> Tweet</a>
-      <a class="item"><i class="facebook icon"></i> Share</a>
-      <a class="item"><i class="mail icon"></i> E-mail</a>
-    </div>
-  </div>
 
   <!-- First Slide -->
   <div class="ui inverted vertical stripe firstslide segment">
@@ -547,13 +526,11 @@
         Партнеры мероприятия
         </h1>      
     </div> 
-      <div class="ui six column grid container">
+      <div class="ui six column center aligned stackable grid container">
         <div class="column">
           <div class="ui segment">
-            <div class="ui orange ribbon label">
-              Золотой партнер
-            </div>
             <img src="assets/images/wireframe/white-image.png" class="ui small bordered rounded image">
+            <p>Золотой партнер</p>
           </div>
         </div>
         <div class="column">
