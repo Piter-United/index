@@ -17,10 +17,35 @@
     #share .sticky {
       top: 150px;
     }
-    .firstslide {
+    #firstslide {
       min-height: 700px;
       padding: 1em 0em;
+      /*background: url('./assets/images/photos/bg_main.jpg') center center no-repeat; 
+      -webkit-background-size: cover; 
+      -moz-background-size: cover; 
+      -o-background-size: cover; 
+      background-size: cover; 
+      background-attachment: fixed;       
+      position: relative; 
+      overflow:hidden;    
+        -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);*/  
     }
+    #firstslide {
+      min-height: 700px;
+      background: url('./assets/images/photos/bg_main1.jpg') center center no-repeat; 
+      -webkit-background-size: cover; 
+      -moz-background-size: cover; 
+      -o-background-size: cover; 
+      background-size: cover; 
+      background-attachment: fixed;       
+      position: relative; 
+      overflow:hidden;  
+    }
+
     .masthead .logo.item img {
       margin-right: 1em;
     }
@@ -98,6 +123,7 @@
       display: -ms-flexbox;
       display: flex;
     }*/
+
     @media only screen and (max-width: 700px) {
       .ui.fixed.menu {
         display: none !important;
@@ -128,7 +154,7 @@
   $(document)
     .ready(function() {
       // fix menu when passed
-      $('.firstslide')
+      $('#firstslide')
         .visibility({
           once: false,
           onBottomPassed: function() {
@@ -183,7 +209,7 @@
 <div class="pusher">
 
   <!-- First Slide -->
-  <div class="ui inverted vertical stripe firstslide segment">
+  <div id="firstslide" class="ui inverted vertical stripe segment">
     <a class="anchor" id="home_a"></a> 
     <div class="ui middle aligned stackable grid container">
       <div class="row">
