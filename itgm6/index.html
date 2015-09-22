@@ -26,25 +26,30 @@
       -moz-background-size: cover; 
       -o-background-size: cover; 
       background-size: cover; 
-      background-attachment: fixed;       
-      position: relative; 
+      /*background-attachment: fixed;*/
+      position: relative;
       overflow:hidden;  
     }
 
-    .masthead .logo.item img {
-      margin-right: 1em;
+    #firstslide .container .info {
+      margin-top: 6em;
     }
-    /*.masthead .ui.menu .ui.button {
-      margin-left: 0.5em;
-    }*/
-    .masthead h1.ui.header {
-      margin-top: 3em;
-      margin-bottom: 0em;
+    #firstslide h1.ui.header {
       font-size: 4em;
-      font-weight: normal;
     }
-    .masthead h2 {
-      font-size: 1.7em;
+
+    /*#firstslide .container .info .column .logo {
+      background: url('./assets/images/logos/logo_white_full.png') center center no-repeat; 
+      height: 150px;
+    } */ 
+
+    #firstslide .cta {
+      margin-top: 4em;
+      margin-bottom: 4em;  
+    } 
+
+    #firstslide h2 {
+      font-size: 3em;
       font-weight: normal;
     }
 
@@ -84,18 +89,60 @@
     .secondary.pointing.menu .toc.item {
       display: none;
     }
-    
+
+    /*.ui.container h1 {
+      margin: 2em 0;
+    }*/
+
+    .ui.container .h-hero {
+      margin-bottom: 2em;
+    }
+
+    .ui.grid.photos {
+      margin: 2em 0;
+    }
+
+    .ui.grid.photos .column {
+      margin: 0;
+      padding: 0;
+    }
+    .ui.grid.photos .row {
+      padding:0;
+    }
+
+    #about .stat {
+      font-size: 3em;
+    }
+    #about .ui.grid .row {
+      /*margin-top: 2em;*/
+    }
+
+    #money {
+      background-color: #fafafa;
+    }
+
+    #money iframe {
+      margin-top: 2em;
+    }
+
     #map .ui.card {
-      position: relative;
+      position: absolute;
       z-index: 1;
       margin-top: 100px;
       margin-left: 100px;
       min-height: 350px;
 
     }  
+    
+    #map, #map .ui.segment {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
     #canvas-map {
-      position: absolute;
-      min-height: 500px;
+      position: relative;
+      min-height: 600px;
       width: 100%;
       top: 0;
       right: 0;
@@ -197,11 +244,11 @@
   <div id="firstslide" class="ui inverted vertical stripe segment">
     <a class="anchor" id="home_a"></a> 
     <div class="ui middle aligned stackable grid container">
-      <div class="row">
+      <div class="row info">
         <div class="eight wide center aligned column">
-          <img src="assets/images/logos/itgm_logo.png" class="ui small bordered center aligned rounded image">
+          <img class="ui centered small image" src="assets/images/logos/logo_white_full.png">          
           <h1 class="ui inverted header">
-            IT Global Meetup
+            IT Global Meetup #6
           </h1>
           <p>
             Слет IT-сообществ Санкт-Петербурга
@@ -211,11 +258,11 @@
           </p>          
         </div>
         <div class="eight wide center aligned column">
-          <h1 class="ui inverted header">
-            21 ноября 2015 (Сб)
-          </h1>
+          <h2 class="ui inverted header">
+            21 ноября 2015
+          </h2>
           <p>
-            с 12:00 до 19:00
+            с 12:00 до 19:00, Суббота
           </p>
           <div class="row countdown">  
             <h3 class="ui inverted header">
@@ -247,7 +294,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="center aligned column">
+        <div class="ui center aligned column cta">
           <div class="ui huge primary button">Зарегистрироваться</div>
           <a class="ui huge basic inverted button" href="#programme_a">Программа</a>
         </div>
@@ -259,32 +306,32 @@
 
   <!-- About -->
 
-  <div class="ui vertical stripe segment">
+  <div id="about" class="ui vertical stripe segment">
     <a class="anchor" id="about_a"></a>
     <div class="ui center aligned container">
-        <h1 class="header">
+        <h1 class="h-hero">
         О мероприятии      
         </h1>      
     </div>      
 
     <div class="ui middle aligned stackable centered grid container">
       <div class="eight wide column">
-        <div class="ui three column grid row">
+        <div class="ui three column grid">
           <div class="row">
             <div class="center aligned column">
-              <h3 class="ui header">
+              <h3 class="stat">
                 30+
               </h3>
               <p>сообществ</p>
             </div>
             <div class="center aligned column">
-                <h3 class="ui header">
+                <h3 class="stat">
                   800+
                 </h3>
                 <p>участников</p>
             </div>              
             <div class="center aligned column">
-                <h3 class="ui header">
+                <h3 class="stat">
                   7
                 </h3>
                 <p>часов общения</p>
@@ -300,33 +347,59 @@
         </div>      
       </div>
     </div>
-    <div class="ui eight column doubling grid container">
+    <div class="ui eight column doubling grid photos">
       <div class="row">
         <div class="column">
-          <img src="assets/images/wireframe/white-image.png" class="ui small bordered rounded image">
+          <img src="assets/images/photos/1.jpg" class="ui medium image">
         </div>
         <div class="column">
-          <img src="assets/images/wireframe/white-image.png" class="ui small bordered rounded image">
+          <img src="assets/images/photos/2.jpg" class="ui medium image">
         </div>
         <div class="column">
-          <img src="assets/images/wireframe/white-image.png" class="ui small bordered rounded image">
+          <img src="assets/images/photos/3.jpg" class="ui medium image">
         </div>
         <div class="column">
-          <img src="assets/images/wireframe/white-image.png" class="ui small bordered rounded image">
+          <img src="assets/images/photos/4.jpg" class="ui medium image">
         </div> 
         <div class="column">
-          <img src="assets/images/wireframe/white-image.png" class="ui small bordered rounded image">
+          <img src="assets/images/photos/5.jpg" class="ui medium image">
         </div>
         <div class="column">
-          <img src="assets/images/wireframe/white-image.png" class="ui small bordered rounded image">
+          <img src="assets/images/photos/6.jpg" class="ui medium image">
         </div>
         <div class="column">
-          <img src="assets/images/wireframe/white-image.png" class="ui small bordered rounded image">
+          <img src="assets/images/photos/7.jpg" class="ui medium image">
         </div>
         <div class="column">
-          <img src="assets/images/wireframe/white-image.png" class="ui small bordered rounded image">
+          <img src="assets/images/photos/8.jpg" class="ui medium image">
         </div>         
-      </div>              
+      </div>      
+      <div class="row">
+        <div class="column">
+          <img src="assets/images/photos/9.jpg" class="ui medium image">
+        </div>
+        <div class="column">
+          <img src="assets/images/photos/10.jpg" class="ui medium image">
+        </div>
+        <div class="column">
+          <img src="assets/images/photos/11.jpg" class="ui medium image">
+        </div>
+        <div class="column">
+          <img src="assets/images/photos/12.jpg" class="ui medium image">
+        </div> 
+        <div class="column">
+          <img src="assets/images/photos/13.jpg" class="ui medium image">
+        </div>
+        <div class="column">
+          <img src="assets/images/photos/14.jpg" class="ui medium image">
+        </div>
+        <div class="column">
+          <img src="assets/images/photos/15.jpg" class="ui medium image">
+        </div>
+        <div class="column">
+          <img src="assets/images/photos/16.jpg" class="ui medium image">
+        </div>         
+      </div>                 
     </div>      
   </div>
 
@@ -335,10 +408,10 @@
   <!-- Global programme -->
 
   <div class="ui vertical stripe segment">
+    <a class="anchor" id="programme_a"></a>
     <div class="ui center aligned container">
-        <h1>
-        Программа мероприятия
-        <a class="anchor" id="programme_a"></a>
+        <h1 class="h-hero">
+        Программа мероприятия      
         </h1>      
     </div>
 
@@ -400,7 +473,7 @@
   <!-- Communities -->
   <div class="ui vertical stripe segment">
     <div class="ui center aligned container">
-        <h1>
+        <h1 class="h-hero">
         Программа сообществ
         </h1>      
     </div> 
@@ -484,8 +557,8 @@
 
   <div id="people" class="ui vertical stripe segment">
     <a class="anchor" id="people_a"></a>
-    <div class="ui center aligned header container">
-        <h1>
+    <div class="ui center aligned container">
+        <h1 class="h-hero">
         Персоналии      
         </h1>      
     </div> 
@@ -539,7 +612,7 @@
 
   <div class="ui vertical stripe segment">
     <div class="ui center aligned container">
-        <h1>
+        <h1 class="h-hero">
         Партнеры мероприятия
         </h1>      
     </div> 
@@ -592,7 +665,7 @@
 
   <div class="ui vertical stripe segment">
     <div class="ui center aligned container">
-        <h1>
+        <h1 class="h-hero">
         Информационные партнеры
         </h1>      
     </div> 
@@ -635,7 +708,7 @@
 
   <!--Spend money-->
 
-  <div class="ui vertical stripe segment">
+  <div id="money" class="ui vertical stripe segment">
     <div class="ui center aligned container">
         <h1>
         Поддержите мероприятие и инициативу Piter United
