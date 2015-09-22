@@ -110,6 +110,11 @@
       padding:0;
     }
 
+    #topmenu .mini.image {
+      width: 24px;
+      height: 24px;
+    }
+
     #about .stat {
       font-size: 3em;
     }
@@ -149,12 +154,6 @@
       bottom: 0;
       left: 0;
     }
-    /*#people .column {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-    }*/
 
     @media only screen and (max-width: 700px) {
       .ui.fixed.menu {
@@ -220,16 +219,16 @@
 <!-- Following Menu -->
 <div id="topmenu" class="ui large top fixed hidden borderless menu">
   <div class="ui container">
-    <a class="item" href="#home_a"><i class="gamepad icon"></i></a>
+    <a class="item" href="#home_a"><img class="ui centered mini image" src="assets/images/logos/logo_black_full.png"></a>
     <a class="active item" href="#about_a">О мероприятии</a>
     <a class="item" href="#programme_a">Программа</a>
     <a class="item" href="#people_a">Люди</a>
     <a class="item" href="#map_a">Место</a>
 
-    <a class="item"><i class="twitter icon"></i></a>
-    <a class="item"><i class="facebook icon"></i></a>
-    <a class="item"><i class="mail icon"></i></a>
     <div class="right menu">
+      <a class="item"><i class="twitter icon"></i></a>
+      <a class="item"><i class="facebook icon"></i></a>
+      <a class="item"><i class="mail icon"></i></a>    
       <div class="item">
         <a class="ui primary button">Зарегистрироваться</a>
       </div>
