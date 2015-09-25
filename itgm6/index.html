@@ -126,6 +126,26 @@
       /*margin-top: 2em;*/
     }
 
+    #timeline .time {
+      color: #974508;
+    }
+
+    #timeline p {
+      color: #777777;
+    }
+
+    #partners {
+      border-bottom: none;
+    }
+
+    #partners .card {
+      box-shadow: none;
+    }
+
+    #infopartners .card {
+      box-shadow: none;
+    }    
+
     #money {
       background-color: #fafafa;
     }
@@ -565,7 +585,7 @@
 
   <!-- Global programme -->
 
-  <div class="ui vertical stripe segment">
+  <div id="timeline" class="ui vertical stripe segment">
     <a class="anchor" id="programme_a"></a>
     <div class="ui center aligned container">
         <h1 class="h-hero">
@@ -573,57 +593,57 @@
         </h1>      
     </div>
 
-    <div class="ui stackable grid container">
+    <div class="ui top aligned stackable grid container">
       <div class="row">
         <div class="right aligned six wide column">
-          <h2>11:00 - 12:00</h2>           
+          <h2 class="time">11:00 - 12:00</h2>           
         </div>
         <div class="nine wide column">
           <h3 class="ui header">Регистрация участников и приветственный кофе</h3>
-          <!--<p>IT Global Meetup - это ежеквартальный слет IT-сообществ Петербурга.  Собирает на одной площадке сотни IT-специалистов из из различных компаний города</p>-->
+          <p>Хороший день начинается с чашечки кофе (или чая). Не упустите возможность в непринужденной обстановке познакомиться с новыми людьми.</p>
         </div>
       </div>
       <div class="row">
         <div class="right aligned six wide column">
-          <h2>12:00 - 12:45</h2>           
+          <h2 class="time">12:00 - 12:45</h2>           
         </div>
         <div class="nine wide column">
           <h3 class="ui header">"Ярмарка сообществ"</h3>
-          <!--<p>IT Global Meetup - это ежеквартальный слет IT-сообществ Петербурга.  Собирает на одной площадке сотни IT-специалистов из из различных компаний города</p>-->
+          <p>На каждом островке будут присутствовать активисты сообществ, которые расскажут Вам о сообществе, регулярных встречах, он-лайн площадках для общения и программе на сегодня.</p>
         </div>
       </div>
       <div class="row">
         <div class="right aligned six wide column">
-          <h2>12:45 - 13:00</h2>           
+          <h2 class="time">12:45 - 13:00</h2>           
         </div>
         <div class="nine wide column">
           <h3 class="ui header">Официальное открытие мероприятия</h3>
-          <!--<p>IT Global Meetup - это ежеквартальный слет IT-сообществ Петербурга.  Собирает на одной площадке сотни IT-специалистов из из различных компаний города</p>-->
+          <p>Организаторы мероприятия поблагодарят партнеров, кратко расскажут о мероприятии, его целях и условиях конкурса, в котором будет участвовать каждый из вас.</p>
         </div>
       </div> 
       <div class="row">
         <div class="right aligned six wide column">
-          <h2>13:00 - 17:00</h2>           
+          <h2 class="time">13:00 - 17:00</h2>           
         </div>
         <div class="nine wide column">
           <h3 class="ui header">Общение на островках сообществ</h3>
-          <!--<p>IT Global Meetup - это ежеквартальный слет IT-сообществ Петербурга.  Собирает на одной площадке сотни IT-специалистов из из различных компаний города</p>-->
+          <p>Все общение на островках будет разбито на сорокаминутные (40 мин.) временные секции (13.00-14.40, 14.00-14.40 и т.д.) с двадцатиминутными (20 мин.) перерывами между ними.</p>
         </div>
       </div>  
       <div class="row">
         <div class="right aligned six wide column">
-          <h2>17:00 - 17:30</h2>           
+          <h2 class="time">17:00 - 17:30</h2>           
         </div>
         <div class="nine wide column">
           <h3 class="ui header">Закрытие мероприятия и награждение победителей конкурса</h3>
-          <!--<p>IT Global Meetup - это ежеквартальный слет IT-сообществ Петербурга.  Собирает на одной площадке сотни IT-специалистов из из различных компаний города</p>-->
+          <p>Завершим мы мероприятие подведением итогов и награждением победителей конкурса, который будет проходить в течение всего мероприятия.</p>
         </div>
       </div>                       
     </div>
 
-    <div class="ui center aligned container cta">
+    <!--<div class="ui center aligned container cta">
       <div class="ui huge primary button">Зарегистрироваться</div>
-    </div>    
+    </div>-->
   </div>
 
   <!-- endof Global programme -->
@@ -768,49 +788,73 @@
 
   <!--Partners-->
 
-  <div class="ui vertical stripe segment">
+  <div id="partners" class="ui vertical stripe segment">
     <div class="ui center aligned container">
         <h1 class="h-hero">
         Партнеры мероприятия
         </h1>      
     </div> 
-      <div class="ui six column center aligned doubling grid container">
-        <div class="column">
-          <div class="ui segment">          
-            <img class="ui image" src="assets/images/wireframe/white-image.png">          
-            <p>Золотой партнер</p>
+      <div class="ui six doubling cards center aligned container">
+        <div class="ui card">
+          <div class="ui middle aligned content">
+            <a class="ui image" href="http://piter-united.ru/main.html" target="_blank">
+              <img src="assets/images/logos/pu.png">
+            </a>
           </div>
-        </div>
-        <div class="column">
-          <div class="ui segment">
-            <img class="ui image" src="assets/images/wireframe/white-image.png">
-            <p>Золотой партнер</p>
-          </div> 
-        </div>
-        <div class="column">
-          <div class="ui segment">
-            <img class="ui image" src="assets/images/wireframe/white-image.png">
-            <p>Золотой партнер</p>
-          </div>            
+          <div class="ui bottom attached extra content">
+            <p class="meta">Организатор</p>
+          </div>                      
+        </div>           
+        <div class="ui card">
+          <div class="ui middle aligned content">
+            <a class="ui image" href="http://www.spbcioclub.ru/" target="_blank">
+              <img src="assets/images/logos/spbcio.gif">
+            </a>
+          </div>
+          <div class="ui bottom attached extra content">
+            <p class="meta">Со-организатор</p>
+          </div>                      
+        </div>          
+        <div class="ui card">
+          <div class="ui middle aligned content">
+            <a class="ui image" href="http://www.dins.ru/" target="_blank">
+              <img src="assets/images/logos/dins.png">
+            </a>
+          </div>
+          <div class="ui bottom attached extra content">
+            <p class="meta">Партнер</p>
+          </div>                      
         </div>   
-        <div class="column">
-          <div class="ui segment">
-            <img class="ui image" src="assets/images/wireframe/white-image.png">
-            <p>Золотой партнер</p>
+        <div class="ui card">
+          <div class="ui middle aligned content">
+            <a class="ui image" href="http://www.billing.ru/" target="_blank">
+              <img src="assets/images/logos/peterservice.png">
+            </a>
           </div>
-        </div>
-        <div class="column">
-          <div class="ui segment">
-            <img class="ui image" src="assets/images/wireframe/white-image.png">
-            <p>Золотой партнер</p>
-          </div> 
-        </div>
-        <div class="column">
-          <div class="ui segment">
-            <img class="ui image" src="assets/images/wireframe/white-image.png">
-            <p>Золотой партнер</p>
-          </div>            
-        </div>                     
+          <div class="ui bottom attached extra content">
+            <p class="meta">Партнер</p>
+          </div>                      
+        </div>  
+        <div class="ui card">
+          <div class="ui middle aligned content">
+            <a class="ui image" href="http://www.epam-group.ru/" target="_blank">
+              <img src="assets/images/logos/epam.png">
+            </a>
+          </div>
+          <div class="ui bottom attached extra content">
+            <p class="meta">Партнер</p>
+          </div>                      
+        </div>   
+        <div class="ui card">      
+          <div class="ui content">
+            <a class="ui middle aligned image" href="https://www.luxoft.ru/" target="_blank">
+              <img class="ui middle aligned image" src="assets/images/logos/luxoft.png">
+            </a>
+          </div>
+          <div class="ui bottom attached extra content">
+            <p class="meta">Партнер</p>
+          </div>                             
+        </div>                                             
       </div>
     <div class="ui center aligned container">  
         <a href="">Наше партнерское предложение</a>
@@ -821,44 +865,70 @@
 
  <!--Info Partners-->
 
-  <div class="ui vertical stripe segment">
+  <div id="infopartners" class="ui vertical stripe segment">
     <div class="ui center aligned container">
         <h1 class="h-hero">
         Информационные партнеры
         </h1>      
     </div> 
-      <div class="ui six column doubling grid container">
-        <div class="column">
-          <div class="ui segment">
-            <img class="ui image" src="assets/images/wireframe/white-image.png" class="ui small bordered rounded image">
-          </div>
-        </div>
-        <div class="column">
-          <div class="ui segment">
-            <img class="ui image" src="assets/images/wireframe/white-image.png" class="ui small bordered rounded image">
-          </div> 
-        </div>
-        <div class="column">
-          <div class="ui segment">
-            <img class="ui image" src="assets/images/wireframe/white-image.png" class="ui small bordered rounded image">
-          </div>            
+      <div class="ui six doubling cards center aligned container">
+        <div class="ui card">
+          <div class="ui middle aligned content">
+            <a class="ui image" href="http://piter-united.ru/main.html" target="_blank">
+              <img src="assets/images/logos/da.png">
+            </a>
+          </div>                   
+        </div>           
+        <div class="ui card">
+          <div class="ui middle aligned content">
+            <a class="ui image" href="http://www.spbcioclub.ru/" target="_blank">
+              <img src="assets/images/logos/spbcio.gif">
+            </a>
+          </div>                  
+        </div>          
+        <div class="ui card">
+          <div class="ui middle aligned content">
+            <a class="ui image" href="http://www.dins.ru/" target="_blank">
+              <img src="assets/images/logos/ittalk.png">
+            </a>
+          </div>                   
         </div>   
-        <div class="column">
-          <div class="ui segment">
-            <img class="ui image" src="assets/images/wireframe/white-image.png" class="ui small bordered rounded image">
-          </div>
-        </div>
-        <div class="column">
-          <div class="ui segment">
-            <img class="ui image" src="assets/images/wireframe/white-image.png" class="ui small bordered rounded image">
-          </div> 
-        </div>
-        <div class="column">
-          <div class="ui segment">
-            <img class="ui image" src="assets/images/wireframe/white-image.png" class="ui small bordered rounded image">
-          </div>            
-        </div>                     
-      </div>      
+        <div class="ui card">
+          <div class="ui middle aligned content">
+            <a class="ui image" href="http://www.billing.ru/" target="_blank">
+              <img src="assets/images/logos/loftblog.png">
+            </a>
+          </div>                     
+        </div>  
+        <div class="ui card">
+          <div class="ui middle aligned content">
+            <a class="ui image" href="http://www.epam-group.ru/" target="_blank">
+              <img src="assets/images/logos/profsoux.png">
+            </a>
+          </div>                     
+        </div>   
+        <div class="ui card">      
+          <div class="ui content">
+            <a class="ui middle aligned image" href="https://www.luxoft.ru/" target="_blank">
+              <img class="ui middle aligned image" src="assets/images/logos/secr15.png">
+            </a>
+          </div>                           
+        </div>   
+        <div class="ui card">      
+          <div class="ui content">
+            <a class="ui middle aligned image" href="https://www.luxoft.ru/" target="_blank">
+              <img class="ui middle aligned image" src="assets/images/logos/itsob.png">
+            </a>
+          </div>                           
+        </div>      
+        <div class="ui card">      
+          <div class="ui content">
+            <a class="ui middle aligned image" href="https://www.luxoft.ru/" target="_blank">
+              <img class="ui middle aligned image" src="assets/images/logos/spbitru.png">
+            </a>
+          </div>                           
+        </div>                                                      
+      </div>    
   </div>
 
   <!-- endof Info Partners-->  
