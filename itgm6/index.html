@@ -38,15 +38,15 @@
       font-size: 4em;
     }
 
-    /*#firstslide .container .info .column .logo {
-      background: url('./assets/images/logos/logo_white_full.png') center center no-repeat; 
-      height: 150px;
-    } */ 
-
     #firstslide .cta {
       margin-top: 4em;
       margin-bottom: 4em;  
     } 
+
+    .cta {
+      margin-top: 4em;
+      margin-bottom: 4em;       
+    }
 
     #firstslide h2 {
       font-size: 3em;
@@ -60,9 +60,7 @@
     .ui.vertical.stripe {
       padding: 2em 0em;
     }
-    /*.ui.vertical.stripe h3 {
-      font-size: 2em;
-    }*/
+
     .ui.vertical.stripe .button + h3,
     .ui.vertical.stripe p + h3 {
       margin-top: 3em;
@@ -106,7 +104,7 @@
 
     .ui.grid.photos .column {
       margin: 0;
-      padding: 0;
+      padding: 4px 0 0 4px;
     }
     .ui.grid.photos .row {
       padding:0;
@@ -215,7 +213,18 @@
         ;
       }); 
       $('.ui.embed').embed(); 
-         
+
+      $('.photos .image')
+        .dimmer({
+          on: 'hover'        
+        });  
+
+      $('.photos .image').click(function() {      
+        var src = $(this).find('img').attr('src');
+        $('#photo').find('img').attr('src', src);
+        $('#photo').modal('setting', 'transition', 'scale').modal('show');
+        return false;
+      });              
     })
   ;
   </script>
@@ -352,58 +361,202 @@
         </div>      
       </div>
     </div>
-    <div class="ui eight column doubling grid photos">
+    <div class="ui eight column special cards doubling grid photos">
       <div class="row">
-        <div class="column">
-          <img src="assets/images/photos/1.jpg" class="ui medium image">
-        </div>
-        <div class="column">
-          <img src="assets/images/photos/2.jpg" class="ui medium image">
-        </div>
-        <div class="column">
-          <img src="assets/images/photos/3.jpg" class="ui medium image">
-        </div>
-        <div class="column">
-          <img src="assets/images/photos/4.jpg" class="ui medium image">
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/1.jpg">  
+          </a>          
+        </div>       
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/2.jpg">  
+          </a>          
         </div> 
-        <div class="column">
-          <img src="assets/images/photos/5.jpg" class="ui medium image">
-        </div>
-        <div class="column">
-          <img src="assets/images/photos/6.jpg" class="ui medium image">
-        </div>
-        <div class="column">
-          <img src="assets/images/photos/7.jpg" class="ui medium image">
-        </div>
-        <div class="column">
-          <img src="assets/images/photos/8.jpg" class="ui medium image">
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/3.jpg">  
+          </a>          
+        </div> 
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/4.jpg">  
+          </a>          
+        </div> 
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/5.jpg">  
+          </a>          
+        </div> 
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/6.jpg">  
+          </a>          
         </div>         
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/7.jpg">  
+          </a>          
+        </div> 
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/8.jpg">  
+          </a>          
+        </div>        
       </div>      
       <div class="row">
-        <div class="column">
-          <img src="assets/images/photos/9.jpg" class="ui medium image">
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/9.jpg">  
+          </a>          
         </div>
-        <div class="column">
-          <img src="assets/images/photos/10.jpg" class="ui medium image">
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/10.jpg">  
+          </a>          
         </div>
-        <div class="column">
-          <img src="assets/images/photos/11.jpg" class="ui medium image">
-        </div>
-        <div class="column">
-          <img src="assets/images/photos/12.jpg" class="ui medium image">
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/11.jpg">  
+          </a>          
+        </div>  
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/12.jpg">  
+          </a>          
         </div> 
-        <div class="column">
-          <img src="assets/images/photos/13.jpg" class="ui medium image">
-        </div>
-        <div class="column">
-          <img src="assets/images/photos/14.jpg" class="ui medium image">
-        </div>
-        <div class="column">
-          <img src="assets/images/photos/15.jpg" class="ui medium image">
-        </div>
-        <div class="column">
-          <img src="assets/images/photos/16.jpg" class="ui medium image">
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/13.jpg">  
+          </a>          
+        </div>                                 
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/14.jpg">  
+          </a>          
+        </div> 
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/15.jpg">  
+          </a>          
         </div>         
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/16.jpg">  
+          </a>          
+        </div>                
       </div>                 
     </div>      
   </div>
@@ -427,7 +580,7 @@
         </div>
         <div class="nine wide column">
           <h3 class="ui header">Регистрация участников и приветственный кофе</h3>
-          <p>IT Global Meetup - это ежеквартальный слет IT-сообществ Петербурга.  Собирает на одной площадке сотни IT-специалистов из из различных компаний города</p>
+          <!--<p>IT Global Meetup - это ежеквартальный слет IT-сообществ Петербурга.  Собирает на одной площадке сотни IT-специалистов из из различных компаний города</p>-->
         </div>
       </div>
       <div class="row">
@@ -436,7 +589,7 @@
         </div>
         <div class="nine wide column">
           <h3 class="ui header">"Ярмарка сообществ"</h3>
-          <p>IT Global Meetup - это ежеквартальный слет IT-сообществ Петербурга.  Собирает на одной площадке сотни IT-специалистов из из различных компаний города</p>
+          <!--<p>IT Global Meetup - это ежеквартальный слет IT-сообществ Петербурга.  Собирает на одной площадке сотни IT-специалистов из из различных компаний города</p>-->
         </div>
       </div>
       <div class="row">
@@ -445,7 +598,7 @@
         </div>
         <div class="nine wide column">
           <h3 class="ui header">Официальное открытие мероприятия</h3>
-          <p>IT Global Meetup - это ежеквартальный слет IT-сообществ Петербурга.  Собирает на одной площадке сотни IT-специалистов из из различных компаний города</p>
+          <!--<p>IT Global Meetup - это ежеквартальный слет IT-сообществ Петербурга.  Собирает на одной площадке сотни IT-специалистов из из различных компаний города</p>-->
         </div>
       </div> 
       <div class="row">
@@ -454,7 +607,7 @@
         </div>
         <div class="nine wide column">
           <h3 class="ui header">Общение на островках сообществ</h3>
-          <p>IT Global Meetup - это ежеквартальный слет IT-сообществ Петербурга.  Собирает на одной площадке сотни IT-специалистов из из различных компаний города</p>
+          <!--<p>IT Global Meetup - это ежеквартальный слет IT-сообществ Петербурга.  Собирает на одной площадке сотни IT-специалистов из из различных компаний города</p>-->
         </div>
       </div>  
       <div class="row">
@@ -463,12 +616,12 @@
         </div>
         <div class="nine wide column">
           <h3 class="ui header">Закрытие мероприятия и награждение победителей конкурса</h3>
-          <p>IT Global Meetup - это ежеквартальный слет IT-сообществ Петербурга.  Собирает на одной площадке сотни IT-специалистов из из различных компаний города</p>
+          <!--<p>IT Global Meetup - это ежеквартальный слет IT-сообществ Петербурга.  Собирает на одной площадке сотни IT-специалистов из из различных компаний города</p>-->
         </div>
       </div>                       
     </div>
 
-    <div class="ui center aligned container">
+    <div class="ui center aligned container cta">
       <div class="ui huge primary button">Зарегистрироваться</div>
     </div>    
   </div>
@@ -760,6 +913,15 @@
   </div>
   <!--endof Footer -->
 
+</div>
+
+<div id="photo" class="ui basic small modal">
+  <i class="close icon"></i>
+  <div class="image content">
+    <div class="ui centered big image">
+      <img src="">
+    </div>
+  </div>
 </div>
 
 <div class="ui modal">
