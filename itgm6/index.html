@@ -9,8 +9,22 @@
   <!-- Site Properities -->
   <title>Homepage - Semantic</title>
   <link rel="stylesheet" type="text/css" href="./dist/semantic.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
   <style type="text/css">
+    body {
+      font-family: 'Open Sans';
+    }
+
+    .ui.button {
+      font-family: 'Open Sans';
+      font-weight: 400;
+    }
+
+    .ui.primary.button {
+      background-color: #ff8300;
+    }
+
     .hidden.menu {
       display: none;
     }
@@ -126,6 +140,10 @@
       /*margin-top: 2em;*/
     }
 
+    #timeline {
+      border-bottom: none;
+    }
+
     #timeline .time {
       color: #974508;
     }
@@ -179,6 +197,28 @@
       left: 0;
     }
 
+    #programme .ui.header {
+      margin-bottom: 10px;
+    }
+
+    #programme .start {
+      color: #974508;
+    }
+
+    #programme .circular.image {
+      width: 44px;
+      border-radius: 22px;
+    }
+
+    #programme .item .author {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    #programme .ui.items {
+      margin-top: 30px;
+    }
+
     @media only screen and (max-width: 700px) {
       .ui.fixed.menu {
         display: none !important;
@@ -222,16 +262,12 @@
       ;    
 
       $('.communities.column').click(function() {
-        $('.ui.modal')
+        $('#programme')
         .modal('show')
         ;
+        return false;
       });
 
-      $('.communities.card').click(function() {
-        $('.ui.modal')
-        .modal('show')
-        ;
-      }); 
       $('.ui.embed').embed(); 
 
       $('.photos .image')
@@ -640,10 +676,6 @@
         </div>
       </div>                       
     </div>
-
-    <!--<div class="ui center aligned container cta">
-      <div class="ui huge primary button">Зарегистрироваться</div>
-    </div>-->
   </div>
 
   <!-- endof Global programme -->
@@ -652,7 +684,7 @@
   <div class="ui vertical stripe segment">
     <div class="ui center aligned container">
         <h1 class="h-hero">
-        Программа сообществ
+        Сообщества
         </h1>      
     </div> 
 
@@ -660,14 +692,14 @@
       <div class="card">
         <div class="center aligned content">
           <div class="header">
-          SPb Cloud & Virtualization Community
+          SPM Club
           </div>
         </div>
-        <div class="center aligned doubling grid extra content">
-              <a class="ui basic label">13:00</a>  
-              <a class="ui basic label">14:00</a> 
-              <a class="ui basic label">15:00</a> 
-              <a class="ui basic label">16:00</a> 
+        <div class="center aligned extra content">          
+            <a class="ui basic label">13:00</a>                      
+            <a class="ui basic label">14:00</a>                   
+            <a class="ui basic label">15:00</a>           
+            <a class="ui basic label">16:00</a>       
         </div>        
       </div>
       <div class="card">
@@ -969,7 +1001,7 @@
           </div>
           <p><i class=""></i> piterunited@gmail.com</p> 
           <p><i class=""></i> +7 911 123-44-55</p>  
-          <div class="ui huge primary button">Зарегистрироваться</div>       
+          <div class="ui large primary button">Зарегистрироваться</div>       
         </div> 
       </div>   
     <div id="canvas-map" class="ui segment">
@@ -994,7 +1026,7 @@
   </div>
 </div>
 
-<div class="ui modal">
+<div id="programme" class="ui modal">
   <i class="close icon"></i>
   <div class="ui center aligned header">
     SPb Cloud & Virtualization Community
@@ -1002,19 +1034,20 @@
   <div class="ui vertically divided stackable grid container">
       <div class="row">
         <div class="center aligned three wide column">
-          <h1>11:00</h1> 
-          <p>11:40</p>          
+          <h1 class="start">13:00</h1> 
+          <p>13:40</p>          
         </div>
-        <div class="right floated thirteen wide column">
+        <div class="right floated thirteen wide column">          
           <h3 class="ui header">Персональные данные в облаке с технической и правовой стороны вопроса. / Microsoft Azure. От теории к практике</h3>
-          <div class="ui comments">
-            <div class="comment">
-              <a class="avatar">
+          <div class="ui tiny orange tag label">Круглый стол</div>      
+          <div class="ui items">
+            <div class="item">
+              <div class="ui circular image">
                 <img src="assets/images/avatar/nan.jpg">
-              </a>
+              </div>
               <div class="content">
-                <a class="author">Никита Ефимов</a>
-                <div class="text">
+                <div class="author">Никита Ефимов</div>
+                <div class="meta">
                   Руководитель отдела проектирования, Selectel
                 </div>
               </div>
@@ -1024,8 +1057,8 @@
       </div>
       <div class="row">
         <div class="center aligned three wide column">
-          <h1>11:00</h1> 
-          <p>11:40</p>            
+          <h1 class="start">14:00</h1> 
+          <p>14:40</p>            
         </div>
         <div class="right floated thirteen wide column">
           <h3 class="ui header">Персональные данные в облаке с технической и правовой стороны вопроса. / Microsoft Azure. От теории к практике</h3>
@@ -1043,7 +1076,51 @@
             </div>
           </div>        
         </div> 
-      </div>     
+      </div>   
+      <div class="row">
+        <div class="center aligned three wide column">
+          <h1 class="start">15:00</h1> 
+          <p>15:40</p>            
+        </div>
+        <div class="right floated thirteen wide column">
+          <h3 class="ui header">Персональные данные в облаке с технической и правовой стороны вопроса. / Microsoft Azure. От теории к практике</h3>
+          <div class="ui comments">
+            <div class="comment">
+              <a class="avatar">
+                <img src="assets/images/avatar/nan.jpg">
+              </a>
+              <div class="content">
+                <a class="author">Никита Ефимов</a>
+                <div class="text">
+                  Руководитель отдела проектирования, Selectel
+                </div>
+              </div>
+            </div>
+          </div>        
+        </div> 
+      </div>  
+      <div class="row">
+        <div class="center aligned three wide column">
+          <h1 class="start">16:00</h1> 
+          <p>16:40</p>            
+        </div>
+        <div class="right floated thirteen wide column">
+          <h3 class="ui header">Персональные данные в облаке с технической и правовой стороны вопроса. / Microsoft Azure. От теории к практике</h3>
+          <div class="ui comments">
+            <div class="comment">
+              <a class="avatar">
+                <img src="assets/images/avatar/nan.jpg">
+              </a>
+              <div class="content">
+                <a class="author">Никита Ефимов</a>
+                <div class="text">
+                  Руководитель отдела проектирования, Selectel
+                </div>
+              </div>
+            </div>
+          </div>        
+        </div> 
+      </div>                
   </div>
 </div>
 
