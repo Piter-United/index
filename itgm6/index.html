@@ -49,8 +49,7 @@
       -webkit-background-size: cover; 
       -moz-background-size: cover; 
       -o-background-size: cover; 
-      background-size: cover; 
-      /*background-attachment: fixed;*/
+      background-size: cover;       
       position: relative;
       overflow:hidden;  
     }
@@ -166,20 +165,42 @@
       border-bottom: none;
     }
 
-    #partners .card {
-      box-shadow: none;
-    }
-
-    #partners .helper {
-      content: "";
-      display: inline-block;
-      height: 100%;
-      vertical-align: middle;      
-    }
-
+    #partners .card,
     #infopartners .card {
-      box-shadow: none;
-    }    
+      box-shadow: none;      
+    }
+
+    #partners .content {
+      padding: 0;
+    }
+
+    .partners .frame,
+    #infopartners .frame {
+      height: 120px;      /* equals max image height */
+      width: 120px;      
+      white-space: nowrap;  
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;            
+    }
+
+    .partners .frame:before,
+    .partners .frame_before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }   
+
+    .partners .frame img {      
+      vertical-align: middle;
+      max-height: 120px;
+      max-width: 120px;    
+    } 
+
+    #partners .cards {
+      margin-bottom: 30px;
+    }  
 
     #money {
       background-color: #fafafa;
@@ -197,6 +218,10 @@
       min-height: 350px;
 
     }  
+
+    #map .ui.card .content {
+      border-top: none;
+    }
     
     #map, #map .ui.segment {
       margin: 0;
@@ -354,7 +379,7 @@
         </div>
         <div class="eight wide center aligned column">
           <h2 class="ui inverted header">
-            21 ноября 2015
+            28 ноября 2015
           </h2>
           <p>
             с 12:00 до 19:00, Суббота
@@ -851,71 +876,82 @@
         Партнеры мероприятия
         </h1>      
     </div> 
-      <div class="ui six doubling cards center aligned container">
-        <div class="ui card">
-          <div class="ui middle aligned content">
-            <a class="ui small image" href="http://piter-united.ru/main.html" target="_blank">
+    <div class="ui six doubling cards center aligned container partners">  
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="http://piter-united.ru/main.html" target="_blank">
               <img src="assets/images/logos/pu.png">
             </a>
           </div>
-          <div class="ui bottom attached extra content">
-            <p class="meta">Организатор</p>
-          </div>                      
-        </div>           
-        <div class="ui card">
-          <div class="ui middle aligned content">
-            <a class="ui small image" href="http://www.spbcioclub.ru/" target="_blank">
+        </div>
+        <div class="ui bottom attached extra content">
+          <p class="meta">Организатор</p>
+        </div>          
+      </div>
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="http://www.spbcioclub.ru/" target="_blank">
               <img src="assets/images/logos/spbcio.gif">
             </a>
           </div>
-          <div class="ui bottom attached extra content">
-            <p class="meta">Со-организатор</p>
-          </div>                      
+        </div>
+        <div class="ui bottom attached extra content">
+          <p class="meta">Со-организатор</p>
         </div>          
-        <div class="ui card">
-          <div class="ui middle aligned content">
-            <a class="ui small image" href="http://www.dins.ru/" target="_blank">
+      </div>
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="http://www.dins.ru/" target="_blank">
               <img src="assets/images/logos/dins.png">
             </a>
           </div>
-          <div class="ui bottom attached extra content">
-            <p class="meta">Партнер</p>
-          </div>                      
-        </div>   
-        <div class="ui card">
-          <div class="ui middle aligned content">
-            <a class="ui small image" href="http://www.billing.ru/" target="_blank">
+        </div>
+        <div class="ui bottom attached extra content">
+          <p class="meta">Партнер</p>
+        </div>          
+      </div>
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="http://www.billing.ru/" target="_blank">
               <img src="assets/images/logos/peterservice.png">
             </a>
           </div>
-          <div class="ui bottom attached extra content">
-            <p class="meta">Партнер</p>
-          </div>                      
-        </div>  
-        <div class="ui card">
-          <div class="ui middle aligned content">
-            <a class="ui small image" href="http://www.epam-group.ru/" target="_blank">
+        </div>
+        <div class="ui bottom attached extra content">
+          <p class="meta">Партнер</p>
+        </div>          
+      </div>
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="http://www.epam-group.ru/" target="_blank">
               <img src="assets/images/logos/epam.png">
             </a>
           </div>
-          <div class="ui bottom attached extra content">
-            <p class="meta">Партнер</p>
-          </div>                      
-        </div>   
-        <div class="ui card">      
-          <div class="ui content">
-            <a class="ui small image" href="https://www.luxoft.ru/" target="_blank">
-              <span class="helper"></span>
-              <img class="ui middle aligned image" src="assets/images/logos/luxoft.png">
+        </div>
+        <div class="ui bottom attached extra content">
+          <p class="meta">Партнер</p>
+        </div>          
+      </div>
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="https://www.luxoft.ru/" target="_blank">
+              <img src="assets/images/logos/luxoft.png">
             </a>
           </div>
-          <div class="ui bottom attached extra content">
-            <p class="meta">Партнер</p>
-          </div>                             
-        </div>                                             
-      </div>
+        </div>
+        <div class="ui bottom attached extra content">
+          <p class="meta">Партнер</p>
+        </div>          
+      </div>                        
+    </div> 
     <div class="ui center aligned container">  
-        <a href="">Наше партнерское предложение</a>
+        <a class="link" href="">Наше партнерское предложение</a>
     </div>       
   </div>
 
@@ -929,64 +965,71 @@
         Информационные партнеры
         </h1>      
     </div> 
-      <div class="ui six doubling cards center aligned container">
-        <div class="ui card">
-          <div class="ui middle aligned content">
-            <a class="ui small image" href="http://piter-united.ru/main.html" target="_blank">
+    <div class="ui six doubling cards center aligned container partners">  
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="#" target="_blank">
               <img src="assets/images/logos/da.png">
             </a>
-          </div>                   
-        </div>           
-        <div class="ui card">
-          <div class="ui middle aligned content">
-            <a class="ui small image" href="http://www.spbcioclub.ru/" target="_blank">
-              <img src="assets/images/logos/spbcio.gif">
-            </a>
-          </div>                  
-        </div>          
-        <div class="ui card">
-          <div class="ui middle aligned content">
-            <a class="ui small image" href="http://www.dins.ru/" target="_blank">
+          </div>
+        </div>       
+      </div>
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="#" target="_blank">
               <img src="assets/images/logos/ittalk.png">
             </a>
-          </div>                   
-        </div>   
-        <div class="ui card">
-          <div class="ui middle aligned content">
-            <a class="ui small image" href="http://www.billing.ru/" target="_blank">
+          </div>
+        </div>        
+      </div>
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="#" target="_blank">
               <img src="assets/images/logos/loftblog.png">
             </a>
-          </div>                     
-        </div>  
-        <div class="ui card">
-          <div class="ui middle aligned content">
-            <a class="ui small image" href="http://www.epam-group.ru/" target="_blank">
+          </div>
+        </div>         
+      </div>
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="#" target="_blank">
               <img src="assets/images/logos/profsoux.png">
             </a>
-          </div>                     
-        </div>   
-        <div class="ui card">      
-          <div class="ui content">
-            <a class="ui small middle aligned image" href="https://www.luxoft.ru/" target="_blank">
-              <img class="ui middle aligned image" src="assets/images/logos/secr15.png">
+          </div>
+        </div>        
+      </div>
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="#" target="_blank">
+              <img src="assets/images/logos/secr15.png">
             </a>
-          </div>                           
-        </div>   
-        <div class="ui card">      
-          <div class="ui content">
-            <a class="ui small middle aligned image" href="https://www.luxoft.ru/" target="_blank">
-              <img class="ui middle aligned image" src="assets/images/logos/itsob.png">
+          </div>
+        </div>         
+      </div>
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="#" target="_blank">
+              <img src="assets/images/logos/itsob.png">
             </a>
-          </div>                           
-        </div>      
-        <div class="ui card">      
-          <div class="ui content">
-            <a class="ui small middle aligned image" href="https://www.luxoft.ru/" target="_blank">
-              <img class="ui middle aligned image" src="assets/images/logos/spbitru.png">
+          </div>
+        </div>         
+      </div> 
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="#" target="_blank">
+              <img src="assets/images/logos/spbitru.png">
             </a>
-          </div>                           
-        </div>                                                      
-      </div>    
+          </div>
+        </div>         
+      </div>                              
+    </div>        
   </div>
 
   <!-- endof Info Partners-->  
@@ -1011,24 +1054,29 @@
   <div id="map" class="ui vertical striped segment"> 
       <a class="anchor" id="map_a"></a>  
       <div class="ui card">
-        <div class="content">
+        <div class="content"> 
           <div class="header">
           Когда
           </div>
-          <p><i class=""></i> 21 ноября 2015 (сб), с 12:00 до 19:00</p>
-
+          <p><i class=""></i> 28 ноября 2015 (сб), с 12:00 до 19:00</p>          
+        </div>
+        <div class="content">
           <div class="header">
           Место проведения
           </div>
           <p><i class=""></i> Санкт-Петербург, пр. Медиков д.3, КДЦ “Club House”</p>
-
+        </div>
+        <div class="content">
           <div class="header">
           Контакты
           </div>
           <p><i class=""></i> piterunited@gmail.com</p> 
           <p><i class=""></i> +7 911 123-44-55</p>  
-          <div class="ui large primary button">Зарегистрироваться</div>       
+          
         </div> 
+        <div class="ui bottom attached extra content">
+          <div class="ui large primary button">Зарегистрироваться</div>
+        </div>
       </div>   
     <div id="canvas-map" class="ui segment">
     </div>     
@@ -1163,7 +1211,7 @@
 <script type="text/javascript" src="./assets/js/jquery.plugin.js"></script>
 <script type="text/javascript" src="./assets/js/jquery.countdown.js"></script>
 <script type="text/javascript">
-  var futureDate = new Date("November 21, 2015 11:00:00");
+  var futureDate = new Date("November 28, 2015 11:00:00");
   $('.countdown').countdown({
     until       : futureDate, 
     compact     : true, 
