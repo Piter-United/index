@@ -24,6 +24,10 @@
     .ui.primary.button {
       background-color: #ff8300;
     }
+    .ui.primary.button:hover {
+      background-color: #974508;
+    }    
+
 
     a.link {
       color: #ff8300;
@@ -230,6 +234,11 @@
     #map .ui.card .content .description {
       margin-top: 10px;
     }
+
+    #map .ui.card .content .link {
+      font-size: 10px;
+      margin-left: 20px;
+    }
     
     #map, #map .ui.segment {
       margin: 0;
@@ -255,6 +264,21 @@
       margin-bottom: 10px;
     }
 
+    #programme .ui.dialog.header {
+      min-height: 100px;
+    }
+
+    #programme .ui.dialog.header .title {
+      font-size: 26px;
+      font-weight: 300;
+    }
+
+    #programme .ui.dialog.header .description {
+      font-size: 14px; 
+      font-weight: 400;  
+      margin-top: 10px;   
+    }    
+
     #programme .start {
       color: #974508;
       margin-bottom: 2px;
@@ -270,7 +294,7 @@
       font-weight: 600;
     }
 
-    #programme .ui.items {
+    #programme .row .ui.items {
       margin-top: 30px;
     }
 
@@ -1076,7 +1100,11 @@
           <div class="header">
           Место проведения
           </div>
-          <div class="description"><i class="tiny marker icon"></i> Санкт-Петербург, пр. Медиков д.3, КДЦ “Club House”</div>
+          <div class="description">
+            <i class="tiny marker icon"></i> 
+            Санкт-Петербург, пр. Медиков д.3, КДЦ “Club House”
+            <a class="link" href="http://piter-united.ru/itgm/map.html" target="_blank">подробный маршрут</a>
+          </div>
         </div>
         <div class="content">
           <div class="header">
@@ -1086,7 +1114,7 @@
           <div class="description"><i class="tiny phone icon"></i> +7 911 123-44-55</div>
           
         </div> 
-        <div class="ui bottom attached extra content">
+        <div class="ui center aligned bottom attached extra content">
           <div class="ui large primary button">Зарегистрироваться</div>
         </div>
       </div>   
@@ -1114,8 +1142,13 @@
 
 <div id="programme" class="ui modal">
   <i class="close icon"></i>
-  <div class="ui center aligned header">
-    SPb Cloud & Virtualization Community
+  <div class="ui center aligned dialog header">
+    <div class="ui title">
+      SPb Cloud & Virtualization Community
+    </div>
+    <div class="ui description"> 
+      <a class="link" href="#" target="_blank">сайт сообщества</a>
+    </div>
   </div>
   <div class="ui vertically divided stackable grid container">
       <div class="row">
