@@ -58,6 +58,33 @@
       overflow:hidden;  
     }
 
+    #firstslide.card {
+      width: 100%;
+      box-shadow: none;
+      padding-bottom: 0;
+      color: #ffffff;
+    }
+
+    #firstslide.card .content {
+      border-top: none;
+    }
+
+    #firstslide.card .top.content {
+      padding: 10px 50px;
+    }    
+
+    #firstslide.card .info.content h2 {
+      font-size: 44px;
+      font-weight: 300;
+    }
+    #firstslide.card .info.content h3 {
+      font-size: 32px;      
+    }   
+
+    #firstslide.card .info.content .description {
+      font-size: 18px;      
+    }       
+
     #firstslide .container .info {
       margin-top: 6em;
     }
@@ -70,6 +97,19 @@
       margin-bottom: 4em;  
     } 
 
+    #firstslide.card .info.content .header,
+    #firstslide.card .info.content .description {
+      color: #ffffff;
+    }
+
+    #firstslide.card .extra.content {
+      background-color: rgba(0, 0, 0, .4);
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 300;
+      padding: 20px 0;
+    }
+
     .cta {
       margin-top: 4em;
       margin-bottom: 4em;       
@@ -78,10 +118,6 @@
     #firstslide h2 {
       font-size: 3em;
       font-weight: normal;
-    }
-
-    .masthead .grid {
-      margin-top:3em;
     }
 
     .ui.vertical.stripe {
@@ -397,7 +433,50 @@
 <div class="pusher">
 
   <!-- First Slide -->
-  <div id="firstslide" class="ui inverted vertical stripe segment">
+  <div id="firstslide" class="ui inverted vertical stripe card segment">
+    <a class="anchor" id="home_a"></a> 
+
+    <div class="top content">
+      <div class="right floated meta">
+        <a class="link"><i class="small twitter icon"></i></a>
+        <a class="link"><i class="facebook icon"></i></a>
+        <a class="link"><i class="mail icon"></i></a>        
+      </div>
+      <img class="ui mini image" src="assets/images/logos/logo_white_full.png"> IT Global Meetup
+    </div>   
+
+    <div class="ui center aligned info content">
+      <h2 class="ui inverted header">
+        Слет IT-сообществ Санкт-Петербурга
+      </h2>      
+
+      <h3 class="ui inverted header">
+        28 ноября 2015 (сб), с 11:00 до 18:00
+      </h3>  
+
+      <div class="description">
+        СПб, пр. Медиков д.3, КДЦ "Club House"
+      </div>  
+    </div>
+
+    <div class="ui center aligned content">
+      <div class="ui center aligned column cta">
+        <div class="ui huge primary button">Зарегистрироваться</div>
+        <a class="ui huge basic inverted button" href="#programme_a">Программа</a>
+      </div>
+    </div>
+
+
+    <div class="ui center aligned countdown bottom attached extra content"> 
+      <span class="description">до слета осталось: </span>
+      <span class="stat value">{dnn}</span> <span class="stat-info">дней</span> 
+      <span class="stat value">{hnn}</span> <span class="stat-info">часов</span> 
+      <span class="stat value">{mnn}</span> <span class="stat-info">минут</span> 
+    </div>
+  </div>  
+
+
+  <!--<div id="firstslide" class="ui inverted vertical stripe segment">
     <a class="anchor" id="home_a"></a> 
     <div class="ui middle aligned stackable grid container">
       <div class="row info">
@@ -418,7 +497,7 @@
             28 ноября 2015
           </h2>
           <p>
-            с 12:00 до 19:00, Суббота
+            с 11:00 до 18:00, Суббота
           </p>
           <div class="row countdown">  
             <h3 class="ui inverted header">
@@ -456,7 +535,7 @@
         </div>
       </div>
     </div>
-  </div>  
+  </div> --> 
 
   <!-- endof First Slide -->
 
