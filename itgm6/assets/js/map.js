@@ -1,7 +1,6 @@
 (function(){	
 	// ****** GOOGLE MAP *******
 	var map;
-	var brooklyn = new google.maps.LatLng(59.9630562, 30.3163493);
 				
 	var MY_MAPTYPE_ID = 'custom_style';
 				
@@ -37,7 +36,7 @@
 			panControl: false,
 			mapTypeControl: false,
   			streetViewControl: false,
-			center: new google.maps.LatLng(59.934577, 30.433518),
+			center: new google.maps.LatLng(59.9687658, 30.3130385),
 			mapTypeControlOptions: {
 				mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
 			},
@@ -46,7 +45,7 @@
 				
 		map = new google.maps.Map(document.getElementById('canvas-map'),mapOptions);
 		var image = 'assets/images/pmarker.png';
-		var myLatLng = new google.maps.LatLng(59.935122, 30.435506);
+		var myLatLng = new google.maps.LatLng(59.969034, 30.316718);
 		var beachMarker = new google.maps.Marker({
 			position: myLatLng,
 			map: map,

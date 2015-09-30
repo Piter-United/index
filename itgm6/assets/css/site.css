@@ -1,27 +1,13 @@
-body {
-  font-family: 'Open Sans';
-}
 
 .ui.button {
-  font-family: 'Open Sans';
   font-weight: 400;
 }
-
-.ui.primary.button {
-  background-color: #ff8300;
-}
-.ui.primary.button:hover {
-  background-color: #974508;
-}    
-
-
-a.link {
-  color: #ff8300;
+  
+a.link {  
   border-bottom: 1px dotted #ff8300;
 }
 
 a.link:hover {
-  color: #974508;
   border-bottom: 1px dotted #974508;
 }
 
