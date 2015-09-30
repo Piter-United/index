@@ -8,15 +8,6 @@
 				
 		var featureOpts = [
 			{
-				stylers: [
-					{ saturation: -20 },
-					{ lightness: 40 },
-					{ visibility: 'simplified' },
-					{ gamma: 0.8 },
-					{ weight: 0.4 }
-				]
-			},
-			{
 				elementType: 'labels',
 				stylers: [
 					{ visibility: 'on' }
