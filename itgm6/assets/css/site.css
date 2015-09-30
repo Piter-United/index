@@ -11,6 +11,18 @@ a.link:hover {
   border-bottom: 1px dotted #974508;
 }
 
+.ui.inverted.label {
+  margin-top: 10px;
+  background: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.ui.inverted.label:hover {
+  color: #424149;
+}
+
 .hidden.menu {
   display: none;
 }
@@ -306,6 +318,10 @@ a.link:hover {
   font-size: 24px;
   color: #974508;
   margin-right: 20px;
+}
+
+#footer .content a i {
+  margin: 0;
 }
 
 @media only screen and (max-width: 700px) {
