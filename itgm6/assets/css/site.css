@@ -95,6 +95,17 @@ a.link:hover {
   padding: 20px 0;
 }
 
+#firstslide .countdown .stat-info {
+  font-weight: 400;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+#firstslide .countdown .stat.value {
+  font-weight: 300;
+  font-size: 30px;
+}
+
 .cta {
   margin-top: 4em;
   margin-bottom: 4em;       
@@ -162,10 +173,16 @@ a.link:hover {
 }
 
 #about .stat {
-  font-size: 3em;
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 0;
 }
-#about .ui.grid .row {
-  /*margin-top: 2em;*/
+#about .ui.grid .column .row {
+  margin-bottom: 2em;
+}
+
+#about .ui.grid .column .description {
+  font-size: 14px;
 }
 
 #timeline {
@@ -178,6 +195,22 @@ a.link:hover {
 
 #timeline p {
   color: #777777;
+}
+
+#communities .card .label {
+  margin-top: 10px;
+  background-color: #ffffff;
+}
+
+#communities .card .active.label {
+  border: 1px solid #7ED321;
+  color: #7ED321;
+}
+
+#communities .card .inactive.label {
+  border: none;
+  color: #8E8E8F;
+  font-weight: 400;
 }
 
 #partners {
@@ -322,6 +355,10 @@ a.link:hover {
 
 #footer .content a i {
   margin: 0;
+}
+
+#footer .social .inverted.label {
+  border: none;
 }
 
 @media only screen and (max-width: 700px) {

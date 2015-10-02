@@ -11,7 +11,10 @@ $(document)
           $('#topmenu').transition('fade out');
         }
       })
-    ;    
+    ; 
+
+
+       
 
     $('.communities.column').click(function() {
       $('#programme')
