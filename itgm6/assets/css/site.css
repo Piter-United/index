@@ -27,6 +27,10 @@ a.link:hover {
   display: none;
 }
 
+#topmenu .right.menu .ui.primary.button {
+  font-size: 13px;
+}
+
 #firstslide {
   min-height: 700px;
   padding: 1em 0em;
@@ -139,10 +143,6 @@ a.link:hover {
 .quote.stripe.segment .grid .column {
   padding-top: 5em;
   padding-bottom: 5em;
-}
-
-.secondary.pointing.menu .toc.item {
-  display: none;
 }
 
 .ui.container .h-hero {
@@ -361,26 +361,56 @@ a.link:hover {
   border: none;
 }
 
-@media only screen and (max-width: 700px) {
-  .ui.fixed.menu {
-    display: none !important;
+#topmenu .tablet.mobile.only.row img {
+  margin-top: 10px;
+}
+
+#topmenu .tablet.mobile.only.row .left.floated img {
+  margin-top: 10px;
+}
+
+#topmenu .tablet.mobile.only.row .right.floated i {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #000000;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  #topmenu .ui.container {
+    width: 100% !important;
+  }   
+}
+
+@media only screen and (max-width: 767px) {
+  #topmenu .ui.container {
+    width: 100% !important;
   }
-  .secondary.pointing.menu .item,
-  .secondary.pointing.menu .menu {
-    display: none;
+
+  #firstslide.card .info.content {
+    margin-top: 30px;
   }
-  .secondary.pointing.menu .toc.item {
-    display: block;
+
+  #firstslide.card .info.content h2 {
+    font-size: 30px;
+    font-weight: 300;
   }
-  .masthead.segment {
-    min-height: 350px;
+  #firstslide.card .info.content h3 {
+    font-size: 20px;      
+  }   
+
+  #firstslide.card .info.content .description {
+    font-size: 16px;      
+  }  
+
+  #firstslide .cta {
+    margin-top: 0;
   }
-  .masthead h1.ui.header {
-    font-size: 2em;
-    margin-top: 1.5em;
-  }
-  .masthead h2 {
-    margin-top: 0.5em;
-    font-size: 1.5em;
-  }
+
+  #firstslide .cta div {
+    margin-top: 20px;
+  }  
+
+  #firstslide .countdown .stat.value {    
+    font-size: 22px;
+  }  
 }

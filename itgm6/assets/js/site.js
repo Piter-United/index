@@ -13,8 +13,15 @@ $(document)
       })
     ; 
 
-
-       
+    $('#topmenu .ui.container a').click(function() {
+      var target_id = $(this).attr('href');
+      target_id = target_id.substring(1);      
+      var target_y = $('#'+target_id).offset().top;      
+      $('html, body').animate({
+          scrollTop: target_y - 70
+      }, 2000);
+      return false;
+    });
 
     $('.communities.column').click(function() {
       $('#programme')
