@@ -272,7 +272,6 @@ a.link:hover {
   margin-top: 100px;
   margin-left: 100px;
   min-height: 350px;
-
 }  
 
 #map .ui.card .content {
@@ -378,7 +377,8 @@ a.link:hover {
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   #topmenu .ui.container {
     width: 100% !important;
-  }   
+  } 
+   
 }
 
 @media only screen and (max-width: 767px) {
@@ -413,4 +413,13 @@ a.link:hover {
   #firstslide .countdown .stat.value {    
     font-size: 22px;
   }  
+
+  #canvas-map {
+    min-height: 400px;
+  }
+
+  #map .ui.card {
+    margin-top: 20px;
+    margin-left: 20px;    
+  } 
 }
