@@ -3,638 +3,779 @@ layout: itgm
 title: IT Global Meetup
 ---
 
-<a id="top"></a>
-		
-<div class="nav-container">
-				
-		<nav class="overlay-nav show-content">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-2">
-						<a href="/main.html">
-							<img alt="Logo" class="logo logo-light" src="/itgm/img/punited.png">
-							<img alt="Logo" class="logo logo-dark" src="/itgm/img/punited-dark.png">
-						</a>
-					</div>
-			
-					<div class="col-md-10 text-right">
-						<ul class="menu" style="margin-right: 32px;">
-							<li><a class="inner-link" href="#about" target="default">Формат</a></li>
-							<li><a class="inner-link" href="#participants" target="default">Участники</a></li>
-							<li><a class="inner-link" href="#schedule" target="default">Программа</a></li>
+<!-- Following Menu -->
+<div id="topmenu" class="ui large top fixed hidden borderless menu">
+  <div class="ui grid container">
+    <div class="computer only row">      
+        <a class="item" href="#home_a"><img class="ui centered mini image" src="assets/images/logos/logo_black_full.png"></a>
+        <a class="item" href="#about_a">О мероприятии</a>
+        <a class="item" href="#programme_a">Программа</a>
+        <a class="item" href="#communities_a">Сообщества</a>
+        <a class="item" href="#map_a">Место</a>
 
-							<li><a class="inner-link" href="#registration" target="default">Регистрация</a></li>
-							<li><a class="inner-link" href="#contacts" target="default">Контакты</a></li>
-
-							<li class="social-link"></li>
-
-							<!-- Social Links -->
-							<!--
-							<li class="social-link"><a href="" data-type="twitter" data-url="piter-united.ru/itgm/itgm.html" data-description="IT Global Meetup #5 в СПб. 6 июня 2015." data-media=""><i class="icon social_twitter"></i></a></li>
-
-							<li class="social-link"><a href="" data-type="facebook" data-href="piter-united.ru/itgm/itgm.html" data-layout="button" data-description="IT Global Meetup #5 в СПб. 6 июня 2015." data-media=""><i class="icon social_facebook"></i></a></li>
-
-							<li class="social-link"><a href="" data-type="googleplus" data-url="piter-united.ru/itgm/itgm.html" data-description="IT Global Meetup #5 в СПб. 6 июня 2015." data-media=""><i class="icon social_googleplus"></i></a></li>
-							-->
-							<li><script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script>
-								<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="small" data-yashareQuickServices="vkontakte,facebook,twitter,gplus" data-yashareTheme="counter" data-yashareTitle="IT Global Meetup #5" data-yashareDescription="6 июня 2015, с 11.00 до 19.00. Слет ИТ-сообществ Санкт-Петербурга. КДЦ Club House - пр. Медиков 3" data-yashareLink="http://piter-united.ru/itgm/itgm.html" data-yashareImage="/itgm/img/itgm_logo.png">
-								</div>
-							</li>
-
-						</ul>
-						<div class="sidebar-menu-toggle"><i class="icon icon_menu"></i></div>
-						<div class="mobile-menu-toggle"><i class="icon icon_menu"></i></div>
-					</div>
-				</div><!--end of row-->
-			</div><!--end of container-->
-
-			<div class="bottom-border"></div>
-	
-			<div class="sidebar-menu">
-				<img alt="Logo" class="logo" src="img/logo.png">
-				<div class="bottom-border"></div>
-				<div class="sidebar-content">
-			
-					<div class="widget">
-						<ul class="menu" style="margin-right: 32px;">
-							<li><a class="inner-link" href="#about" target="default">Формат</a></li>
-							<li><a class="inner-link" href="#participants" target="default">Участники</a></li>
-							<li><a class="inner-link" href="#schedule" target="default">Программа</a></li>
-							<li><a class="inner-link" href="#registration" target="default">Регистрация</a></li>
-							<li><a class="inner-link" href="#contacts" target="default">Контакты</a></li>
-						</ul>
-					</div>
-			
-					<div class="widget">
-						<ul class="social-profiles">
-							<li><script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script>
-								<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="small" data-yashareQuickServices="vkontakte,facebook,twitter,gplus" data-yashareTheme="counter" data-yashareTitle="IT Global Meetup #5" data-yashareDescription="6 июня 2015, с 11.00 до 19.00. Слет ИТ-сообществ Санкт-Петербурга. КДЦ Club House - пр. Медиков 3" data-yashareLink="http://piter-united.ru/itgm/itgm.html" data-yashareImage="/itgm/img/itgm_logo.png">
-								</div></li>
-						</ul>
-					</div>
-			
-					<div class="copy-text">
-						<span>© Copyright 2014 Meetup Inc.</span>
-					</div>
-				</div><!--end of sidebar content-->
-			</div><!--end of sidebar-->
-		</nav>
+        <div class="right menu">
+          <!--<a class="item"><i class="twitter icon"></i></a>
+          <a class="item"><i class="facebook icon"></i></a>
+          <a class="item"><i class="google plus icon"></i></a> 
+          <a class="item"><i class="vk icon"></i></a>-->
+          <div class="item">
+            <button id="reg" class="ui large primary button"> Регистрация </button>
+          </div>
+        </div>      
+    </div>
+    <div class="tablet mobile only row"> 
+      <div class="column"> 
+        <a href="#home_a"><img class="ui centered mini image" src="assets/images/logos/logo_black_full.png"></a>
+      </div>
+      <!--<div class="left floated three wide column">  
+        <a href="#home_a"><img class="ui mini image" src="assets/images/logos/logo_black_full.png"></a>
+      </div>
+      <div class="right floated two wide column">        
+        <div>
+          <i class="sidebar icon"></i>
+        </div>
+      </div> =-->
+    </div> 
+  </div>
 </div>
 
-<div class="main-container show-content"><a id="home" class="in-page-link"></a>
-	
-	<section class="hero-slider">
-		<ul class="slides">
-			<li class="countdown-header primary-overlay">
-				<div class="background-image-holder parallax-background">
-					<img class="background-image" alt="About Image" src="img/hero5.png">
-				</div>
-			
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-							<img alt="logo" class="logo" src="img/logo.png">
-							<span class="uppercase text-white">6 июня 2015 с 11.00 до 19.00 - Санкт-Петербург, пр. Медиков д.3, КДЦ "Club House"</span>
-							<h1 class="text-white large-h1">Слет ИТ-сообществ Санкт-Петербурга</h1>
-						</div>
-					</div><!--end of row-->
-				
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-							<div class="centered-title"><p class="text-white">до слета осталось...</p></div>
-							<div class="countdown" data-date="2015/06/06 11:00"></div>
-						</div>
-					</div>
-				</div><!--end of container-->
-			</li>
-		</ul>
-	</section>
-	
-	<a id="about" class="in-page-link"></a>
-	
-	<section class="inline-video">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<h1>О мероприятии&nbsp;</h1>
-				</div>
-			</div><!--end of row-->
-		
-			<div class="row">
-				<div class="col-md-6">
-					
-					
-					<p>IT Global Meetup - это ежеквартальный слет IT-сообществ Петербурга. <br> Собирает на одной площадке сотни IT-специалистов из различных компаний города: программистов, менеджеров, аналитиков, дизайнеров, проектировщиков интерфейсов, тестировщиков для открытого общения и обмена профессиональным опытом, знаниями и мнениями.</p>
+<!-- TimePad Form -->
+<div id="reg_form" class="ui basic modal">
+  <a href="https://piter-united.timepad.ru/event/251811/" data-twf-placeholder="yes">Перейти к заказу билетов</a><script type="text/javascript" defer="defer" charset="UTF-8" data-timepad-customized="2669" data-twf2s-event--id="251811" data-timepad-widget-v2="event_register" src="https://timepad.ru/js/tpwf/loader/min/loader.js"></script>
+</div>
 
-					<p>IT Global Meetup - это уникальное по своему формату и атмосфере мероприятие. 
-					Мы стараемся максимально отойти от формата конференций “один вещает, а остальные молча слушают” и дать возможность профессионалам своего дела вступить в активные дискуссии, рассказать о своем опыте, поспорить или совместно выработать решения. Для этого мы подбираем подходящие форматы и создаем атмосферу способствующую общению.</p>
+<!-- Page Contents -->
+<div class="pusher">
 
-					<button class="btn" data-toggle="modal" data-target="#myModal"> Регистрация </button>
-				</div>
-			
-				<div class="col-md-6">
-					<div class="embedded-video-holder">
-						<iframe width="560" height="315" src="//www.youtube.com/embed/Tp6jP5LFWkQ" frameborder="0" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div><!--end of row-->
-		</div><!--end of container-->
-	</section>
+  <!-- First Slide -->
+  <div id="firstslide" class="ui inverted vertical stripe card segment">
+    <a class="anchor" id="home_a"></a>
 
-	<a id="participants" class="in-page-link"></a>
-	
-	<section class="topics duplicatable-content overlay">
-	
-		<div class="background-image-holder parallax-background">
-			<img class="background-image" alt="About Image" src="">
-		</div>
-	
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<h1 class="text-white">Участники мероприятия</h1>
-				</div>
-			</div><!--end of row-->
-			
-			<div class="row" height="40 px">
-			{% for community in site.data.itgm5_communities %}
-				<div class="col-md-4 col-sm-6">
-					<div class="topic">
-						<ul class="ruled-list text-white">
-							<li> <a href=" {{ community.link }} " target="_blank" >{{ community.title }}</a></li>
-						</ul>
-					</div>
-				</div>
-			{% endfor %}
-                <div class="col-md-4 col-sm-6">
-                    <div class="topic">
-                        <ul class="ruled-list text-white">
-                            <li> <a href=" mailto:piterunited@gmail.com " target="_blank">+ добавить свое сообщество</a></li>
-                        </ul>
-                    </div>
+    <div class="top content">
+      <div class="right floated meta">
+        <a class="ui inverted label" href="#"><i class="twitter icon"></i></a>
+        <a class="ui inverted label" href="#"><i class="facebook icon"></i></a>
+        <a class="ui inverted label" href="#"><i class="google plus icon"></i></a>        
+        <a class="ui inverted label" href="#"><i class="vk icon"></i></a>
+      </div>
+      <img class="ui mini image" src="assets/images/logos/logo_white_full.png"> IT Global Meetup
+    </div> 
+
+    <div class="ui center aligned info content">
+      <h2 class="ui inverted header">
+        Слет IT-сообществ Санкт-Петербурга
+      </h2>      
+
+      <h4 class="ui inverted header">
+        28 ноября 2015, пр. Медиков д.3, КДЦ "Club House"
+      </h4>  
+
+      <!-- <div class="description">
+        28 ноября 2015, с 11.00 до 18.00
+        <br>
+        Санкт-Петербург, пр. Медиков д.3, КДЦ "Club House"
+      </div>   -->
+    </div>
+
+    <div class="ui center aligned content">
+      <div class="ui center aligned column cta">
+        <button id="reg" class="ui huge primary button"> Регистрация </button>
+        <div class="ui huge basic inverted button">
+          Программа
+        </div>
+      </div>
+    </div>
+
+
+    <div class="ui center aligned countdown bottom attached extra content"> 
+      <span class="stat-info">ДО СЛЕТА ОСТАЛОСЬ: </span>
+      <span class="stat value">{dnn}</span> <span class="stat-info">дней</span> 
+      <span class="stat value">{hnn}</span> <span class="stat-info">часов</span> 
+      <span class="stat value">{mnn}</span> <span class="stat-info">минут</span> 
+    </div>
+  </div>  
+
+  <!-- endof First Slide -->
+
+  <!-- About -->
+
+  <div id="about" class="ui vertical stripe segment">
+    <a class="anchor" id="about_a"></a>
+    <div class="ui center aligned container title">
+        <h1>О мероприятии</h1>
+        <p>Все IT-сообщества города в одно время в одном месте</p>
+    </div>      
+
+    <div class="ui middle aligned stackable centered grid container">
+      <div class="eight wide column">
+        <div class="row">
+          <p>Слет нацелен на обмен профессиональным опытом между IT-специалистами Санкт-Петербурга. Общение происходит на островках сообществ, где участники знакомятся, обсуждают различные профессиональные темы, высказывают мнения, спорят и ищут решения.</p>    
+        </div> 
+        <div class="row">
+          <div class="ui three column grid">
+            <div class="row">
+              <div class="aligned column">
+                <h3 class="stat">
+                  30+
+                </h3>
+                <p>сообществ</p>
+              </div>
+              <div class="aligned column">
+                  <h3 class="stat">
+                    800+
+                  </h3>
+                  <p>участников</p>
+              </div>              
+              <div class="aligned column">
+                  <h3 class="stat">
+                    7+
+                  </h3>
+                  <p>часов общения</p>
+              </div> 
+            </div>                                             
+          </div>
+        </div>
+      </div>
+      <div class="eight wide column">
+        <div class="ui embed" data-url="https://player.vimeo.com/video/138511320" data-placeholder="assets/images/photos/promo_preview.jpg" data-icon="right circle arrow">
+        </div>      
+      </div>
+    </div>
+    <div class="ui eight column special cards doubling grid photos">
+      <div class="computer tablet only row">
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
                 </div>
-			</div>
-			
-		</div>
-		
-	</section>
+              </div>
+            </div>            
+            <img src="assets/images/photos/1.jpg">  
+          </a>          
+        </div>       
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/2.jpg">  
+          </a>          
+        </div> 
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/3.jpg">  
+          </a>          
+        </div> 
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/4.jpg">  
+          </a>          
+        </div> 
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/5.jpg">  
+          </a>          
+        </div> 
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/6.jpg">  
+          </a>          
+        </div>         
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/7.jpg">  
+          </a>          
+        </div> 
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/8.jpg">  
+          </a>          
+        </div>        
+      </div>      
+      <div class="computer tablet only row">
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/9.jpg">  
+          </a>          
+        </div>
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/10.jpg">  
+          </a>          
+        </div>
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/11.jpg">  
+          </a>          
+        </div>  
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/12.jpg">  
+          </a>          
+        </div> 
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/13.jpg">  
+          </a>          
+        </div>                                 
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/14.jpg">  
+          </a>          
+        </div> 
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/15.jpg">  
+          </a>          
+        </div>         
+        <div class="column card">
+          <a class="ui blurring dimmable medium image" href="#">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">                  
+                  <i class="inverted search icon"></i>
+                </div>
+              </div>
+            </div>            
+            <img src="assets/images/photos/16.jpg">  
+          </a>          
+        </div>                
+      </div>                 
+    </div>      
+  </div>
 
-	<a id="schedule" class="in-page-link"></a>
-	
-	<section class="schedule schedule-with-text">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-5 col-sm-6">
-					<h1>Программа мероприятия</h1>
-					
-					<p>По традиции, мероприятие проводится в формате Open Space Technology, т.е. у каждого сообщества будет свой островок (пространство) в рамках которого Вы и другие IT-специалисты, объединенные областью профессиональных интересов, сможете рассказать друг-другу доклады, провести семинары, обсудить различные профессиональные задачи и их решения, поделиться опытом и мнениями.<p/>
-					
-					<p>Свободно перемещаясь от островка к островку, Вы сможете удовлетворить свою потребность в профессиональном общении, расширить кругозор по интересным Вам темам и найти единомышленников.<p/>
-					
-					<p>Мероприятие бесплатное. Регистрация обязательна.</p>
-					
-					<button class="btn" data-toggle="modal" data-target="#myModal"> Регистрация </button>
-					
-				</div>
-				
-				<div class="col-md-7 col-sm-6">
-					<ul class="schedule-overview">
-						
-						<li>
-							<div class="schedule-title">
-								<span class="time">11.00 - 12.00</span>
-								<span class="title">Регистрация участников и кофе-брейки</span>
-							</div>
-							
-							<div class="schedule-text">
-								<p> После регистрации на мероприятие Вам будет выслан билет, его вам необходимо взять с собой, т.к. он содержит штрих-код, а он в свою очередь поможет ускорить регистрацию. Регистрация на мероприятие - обязательна.
-								</p>
-							</div>
-							
-							<div class="marker-pin">
-								<div class="top"></div>
-								<div class="middle"></div>
-								<div class="bottom"></div>
-							</div>
-						</li><!--end of individual schedule item-->
-						
-						<li>
-							<div class="schedule-title">
-								<span class="time">12.00 - 12.45</span>
-								<span class="title">"Ярмарка сообществ"</span>
-							</div>
-							
-							<div class="schedule-text">
-								<p> После регистрации Вы сможете пройтись по всей территории мероприятия и познакомиться с сообществами-участниками. На каждом островке будут присутствовать активисты сообществ, которые расскажут Вам о сообществе, регулярных встречах, он-лайн площадках для общения и программе на сегодня.
-								</p>
-							</div>
-							
-							<div class="marker-pin">
-								<div class="top"></div>
-								<div class="middle"></div>
-								<div class="bottom"></div>
-							</div>
-						</li><!--end of individual schedule item-->
-						
-						<li>
-							<div class="schedule-title">
-								<span class="time">12.45 - 13.00</span>
-								<span class="title">Официальное открытие мероприятия.</span>
-							</div>
-							
-							<div class="schedule-text">
-								<p> Организаторы мероприятия поблагодарят партнеров, кратко расскажут о мероприятии, его целях и  условиях конкурса, в котором будет участвовать каждый из Вас и возможно, именно Вы станете его победителем! Победитель получит "образовательные" и просто полезные/приятные призы от организаторов и партнеров мероприятия.
-								</p>
-							</div>
-							
-							<div class="marker-pin">
-								<div class="top"></div>
-								<div class="middle"></div>
-								<div class="bottom"></div>
-							</div>
-						</li>
+  <!-- endof About -->
 
-						<li>
-							<div class="schedule-title">
-								<span class="time">13.00 - 17.00</span>
-								<span class="title">Общение на островках сообществ.</span>
-							</div>
-							
-							<div class="schedule-text">
-								<p> Проанализировав проблемы и предложения участников оставивших "обратную связь" после прошлого мероприятия, мы решили сделать четкую временную сетку активностей на островках. Все общение на островках будет разбито на сорокаминутные (40 мин.) временные секции (13.00-14.40, 14.00-14.40 и т.д.) с двадцатиминутными (20 мин.) перерывами между ними. В рамках этих 40-минутных секций будет происходить обмен опытом и мнениями по заранее подготовленным темам, которые предложены активистами, участниками и возможно Вами!
-								</p>
-							</div>
-							
-							<div class="marker-pin">
-								<div class="top"></div>
-								<div class="middle"></div>
-								<div class="bottom"></div>
-							</div>
-						</li>
+  <!-- Global programme -->
 
-						<li>
-							<div class="schedule-title">
-								<span class="time">17.00 - 17.30</span>
-								<span class="title">Закрытие мероприятия и награждение победителей конкурса.</span>
-							</div>
-							
-							<div class="schedule-text">
-								<p> Завершим мы мероприятие подведением итогов и награждением победителей конкурса, который будет проходить в течение всего мероприятия. Приходите, будет полезно!
-								</p>
-							</div>
-							
-							<div class="marker-pin">
-								<div class="top"></div>
-								<div class="middle"></div>
-								<div class="bottom"></div>
-							</div>
-						</li>
-						<!--end of individual schedule item-->
-					</ul>
-				</div>
-				
-			</div><!--end of row-->
-		 <br>
-         <div class="row schedule">
-         	<h1>Программа сообществ</h1>
-            {% assign timeFrames = "13:00|14:00|15:00|16:00" | split: "|" %}
-            <div class=" col-md-5 col-sm-6">
-                <table class="table table-hover scheduleTable">
-                  <thead>
-                    <tr>
-                        <th>Community</th>
-                        {% for frame in timeFrames %}
-                            <th class="frame">{{ frame }}</th>
-                        {% endfor %}
-                    </tr>
-                  </thead>
+  <div id="timeline" class="ui vertical stripe segment">
+    <a class="anchor" id="programme_a"></a>
+    <div class="ui center aligned container title">
+        <h1>
+        Программа мероприятия      
+        </h1>      
+    </div>
 
-                    <tbody>
-                    {% for community in site.data.itgm5_communities %}
-                        <tr class="community" data-community="{{ community.title }}">
-                            <td class="communityName"> 
-                                <b>{{ community.title }}</b> <br />{{ community.description }} 
-                            </td>
-                            {% for frame in timeFrames %}
-                                {% assign event = community.schedule[frame] %}
-                                <td class="frame">
-                                    {% if event %}
-                                        <span class="glyphicon glyphicon-ok green"></span>
-                                    {% else %}
-                                        <span class="glyphicon glyphicon-minus"></span>
-                                    {% endif %}
-                                </td>
-                            {% endfor %}
-                        </tr>
-                    {% endfor %}
-                    </tbody>
-                </table>
+    <div class="ui top aligned stackable grid container">
+      <div class="row">
+        <div class="right floated three wide column">                                     
+          <h2 class="time">11:00 - 12:00</h2>
+        </div>
+        <div class="nine wide column">
+          <h3 class="ui header">Регистрация участников и приветственный кофе</h3>
+          <p>Хороший день начинается с чашечки кофе (или чая). Не упустите возможность в непринужденной обстановке познакомиться с новыми людьми.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="right floated three wide column">
+          <h2 class="time">12:00 - 12:45</h2>           
+        </div>
+        <div class="nine wide column">
+          <h3 class="ui header">"Ярмарка сообществ"</h3>
+          <p>На каждом островке будут присутствовать активисты сообществ, которые расскажут Вам о сообществе, регулярных встречах, он-лайн площадках для общения и программе на сегодня.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="right floated three wide column">
+          <h2 class="time">12:45 - 13:00</h2>           
+        </div>
+        <div class="nine wide column">
+          <h3 class="ui header">Официальное открытие мероприятия</h3>
+          <p>Организаторы мероприятия поблагодарят партнеров, кратко расскажут о мероприятии, его целях и условиях конкурса, в котором будет участвовать каждый из вас.</p>
+        </div>
+      </div> 
+      <div class="row">
+        <div class="right floated three wide column">
+          <h2 class="time">13:00 - 17:00</h2>           
+        </div>
+        <div class="nine wide column">
+          <h3 class="ui header">Общение на островках сообществ</h3>
+          <p>Все общение на островках будет разбито на сорокаминутные (40 мин.) временные секции (13.00-14.40, 14.00-14.40 и т.д.) с двадцатиминутными (20 мин.) перерывами между ними.</p>
+        </div>
+      </div>  
+      <div class="row">
+        <div class="right floated three wide column">
+          <h2 class="time">17:00 - 17:30</h2>           
+        </div>
+        <div class="nine wide column">
+          <h3 class="ui header">Закрытие мероприятия и награждение победителей конкурса</h3>
+          <p>Завершим мы мероприятие подведением итогов и награждением победителей конкурса, который будет проходить в течение всего мероприятия.</p>
+        </div>
+      </div>                       
+    </div>
+  </div>
+
+  <!-- endof Global programme -->
+
+  <!-- Communities -->
+  <div id="communities" class="ui vertical stripe segment">
+    <a class="anchor" id="communities_a"></a>
+    <div class="ui center aligned container title">
+        <h1>
+        Сообщества
+        </h1>      
+    </div> 
+
+    <div class="ui four link cards column doubling grid container communities">
+      {% for community in site.data.itgm6_communities %}
+      <div class="card">
+        <div class="center aligned content">
+          <div class="header">
+          {{ community.title }}
+          </div>
+        </div>
+        <div class="center aligned extra content">          
+            <a class="ui basic active label">13:00</a>                      
+            <a class="ui basic inactive label">14:00</a>                   
+            <a class="ui basic active label">15:00</a>           
+            <a class="ui basic inactive label">16:00</a>       
+        </div>        
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="ui center aligned container cta">
+      <button id="reg" class="ui huge primary button"> Регистрация </button>
+    </div>      
+  </div>
+
+  <!-- endof Communities-->
+
+  <!-- People -->
+
+  <!--<div id="people" class="ui vertical stripe segment">
+    <a class="anchor" id="people_a"></a>
+    <div class="ui center aligned container">
+        <h1 class="h-hero">
+        Персоналии      
+        </h1>      
+    </div> 
+    <div class="ui stackable two column grid">
+      <div class="column">
+        <div class="ui items">
+          <div class="item">
+            <div class="ui small image">
+              <img src="assets/images/avatar/nan.jpg">
             </div>
-
-            <div class="scheduleDetails col-md-7 col-sm-6">
-                {% for community in site.data.itgm5_communities %}
-                    <div class="community" data-community="{{ community.title }}">
-                        <h3>{{ community.title }} <small> {{ community.description }} </small> </h3>
-                        <div class="timeline">
-                            <ul>
-                            {% for frame in timeFrames %}
-                                {% assign event = community.schedule[frame] %}
-                                <li>
-                                    <div class="row">
-                                         <div class="col-xs-1">
-                                            {{ frame }}
-                                         </div>
-                                         <div class="col-xs-11">
-                                            {% if event %}
-                                                <b> "{{ event.theme }}" </b><br />
-                                                {{ event.speaker }} <em> {{ event.work_place }} </em>
-                                            {% else %}
-                                                <span class="glyphicon glyphicon-minus"></span>
-                                            {% endif %}
-                                         </div>
-                                    </div>
-                                </li>
-                            {% endfor %}
-                            </ul>
-                        </div>
-                        <button class="btn" data-toggle="modal" data-target="#someModalForm">Хочу выступить!</button>
-                    </div>
-                {% endfor %}
+            <div class="content">
+              <div class="header">Никита Ефимов</div>
+              <div class="meta">
+                <span>Просто клевый парень, Selectel</span>          
+              </div>
+              <div class="description">
+                <p>
+                  Не следует, однако забывать, что укрепление и развитие структуры требуют от нас анализа дальнейших направлений развития. Товарищи! дальнейшее развитие различных форм деятельности требуют определения и уточнения соответствующий условий активизации.
+                </p>
+              </div>
             </div>
-            <div id="someModalForm" class="modal">
-                <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <p>Заявки на выступления/дискуссии</p>
-                  </div>
-                  <div class="modal-body">
-                        <iframe src="https://docs.google.com/forms/d/1ARTb-OiNNzQBq9YmoBeS1o4e3tFlj4ydRNARN0eDGxY/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                  </div>
-                  <div class="modal-footer">
-                  </div>
+          </div>  
+        </div>       
+      </div>
+      <div class="column">
+        <div class="ui items">
+          <div class="item">
+            <div class="ui small image">
+              <img src="assets/images/avatar/nan.jpg">
+            </div>
+            <div class="content">
+              <div class="header">Никита Ефимов</div>
+              <div class="meta">
+                <span>Просто клевый парень, Selectel</span>          
+              </div>
+              <div class="description">
+                <p>
+                  Не следует, однако забывать, что укрепление и развитие структуры требуют от нас анализа дальнейших направлений развития. Товарищи! дальнейшее развитие различных форм деятельности требуют определения и уточнения соответствующий условий активизации.
+                </p>
+              </div>
+            </div>
+          </div>  
+        </div>       
+      </div>              
+    </div>
+  </div>-->
+
+  <!-- endof People -->
+
+  <!--Partners-->
+
+  <div id="partners" class="ui vertical stripe segment">
+    <div class="ui center aligned container">
+        <h1 class="h-hero">
+        Партнеры мероприятия
+        </h1>      
+    </div> 
+    <div class="ui six doubling cards center aligned container partners"> 
+      {% for sponsor in site.data.itgm6_sponsors %} 
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="{{sponsor.link}}" target="_blank">
+              <img src=" {{sponsor.logo}} ">
+            </a>
+          </div>
+        </div>
+        <div class="ui bottom attached extra content">
+          <p class="meta">{{sponsor.level}}</p>
+        </div>         
+      </div>
+      {% endfor %}
+    </div> 
+    <div class="ui center aligned container">  
+        <a class="link" href="">Наше партнерское предложение</a>
+    </div>       
+  </div>
+
+  <!-- endof Partners-->
+
+ <!--Info Partners-->
+
+  <div id="infopartners" class="ui vertical stripe segment">
+    <div class="ui center aligned container">
+        <h1 class="h-hero">
+        Информационные партнеры
+        </h1>      
+    </div> 
+    <div class="ui six doubling cards center aligned container partners">
+      {% for infopartner in site.data.itgm6_infopartners %}  
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="{{infopartner.link}}" target="_blank">
+              <img src=" {{infopartner.logo}} ">
+            </a>
+          </div>
+        </div>       
+      </div>
+      {% endfor %}
+    </div>        
+  </div>
+
+  <!-- endof Info Partners-->  
+
+
+  <!--Spend money-->
+
+  <div id="money" class="ui vertical stripe segment">
+    <div class="ui center aligned container">
+        <h1>
+        Поддержите мероприятие и инициативу Piter United
+        </h1>     
+      <p>Все собранные деньги пойдут на покрытие орг. расходов на мероприятие,
+либо на закупку инвентаря необходимого сообществам (флипчарты, ролл-апы и т.д.).</p>   
+      <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=410011943203218&quickpay=shop&payment-type-choice=on&writer=seller&targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0+%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%D0%B3%D0%BE+%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F&targets-hint=&default-sum=500&button-text=03&fio=on&successURL=http%3A%2F%2Fpiter-united.ru" width="450" height="198"></iframe>
+    </div> 
+  </div>
+
+  <!-- endof Spend money-->
+
+  <!-- Map -->
+  <div id="map" class="ui vertical striped segment"> 
+      <a class="anchor" id="map_a"></a>  
+      <div class="ui card">
+        <div class="content"> 
+          <div class="header">
+          Когда
+          </div>
+          <div class="description"><i class="tiny calendar icon"></i> 28 ноября 2015 (сб), 11:00-18:00</div>      
+        </div>
+        <div class="content">
+          <div class="header">
+          Место проведения
+          </div>
+          <div class="description">
+            <i class="tiny marker icon"></i> 
+            Санкт-Петербург, пр. Медиков д.3, КДЦ “Club House”
+            <a class="link" href="http://piter-united.ru/itgm/map.html" target="_blank">подробный маршрут</a>
+          </div>
+        </div>
+        <div class="content">
+          <div class="header">
+          Контакты
+          </div>
+          <div class="description"><i class="tiny mail outline icon"></i> piterunited@gmail.com</div> 
+          <div class="description"><i class="tiny phone icon"></i> +7 911 123-44-55</div>
+          
+        </div> 
+        <div class="ui center aligned bottom attached extra content">
+          <button id="reg" class="ui large primary button"> Регистрация </button>
+        </div>
+      </div>   
+    <div id="canvas-map" class="ui segment">
+    </div>     
+  </div>
+  <!-- endof Map -->
+
+  <!-- Footer -->
+  <div id="footer" class="ui inverted vertical stripe segment">
+    <div class="ui doubling stackable grid container">
+      <div class="five wide column">
+        <div class="header">
+          Предыдущие мероприятия
+        </div>
+        <div class="content">
+          <a class="ui inverted label">itgm#5</a>
+          <a class="ui inverted label">itgm#4</a>
+          <a class="ui inverted label">itgm#3</a>
+          <a class="ui inverted label">itgm#2</a>
+          <a class="ui inverted label">itgm#1</a>
+        </div>
+      </div>
+      <div class="ui center aligned six wide column">
+        <h2>piterunited@gmail.com</h2>
+        <a class="link" href="http://piter-united.ru/main.html" target="_blank">IT-сообщества Санкт-Петербурга</a>
+      </div>
+      <div class="ui right aligned five wide column social">
+        <div class="header">
+          Мы в социальных сетях
+        </div>   
+        <div class="content">     
+          <a class="ui inverted label"><i class="large google plus icon"></i></a>
+          <a class="ui inverted label"><i class="large twitter icon"></i></a>
+          <a class="ui inverted label"><i class="large medium icon"></i></a>
+          <a class="ui inverted label"><i class="large facebook icon"></i></a>
+          <a class="ui inverted label"><i class="large vk icon"></i></a>
+          <a class="ui inverted label"><i class="large linkedin icon"></i></a>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--endof Footer -->
+
+</div>
+
+<div id="photo" class="ui basic small modal">
+  <i class="close icon"></i>
+  <div class="image content">
+    <div class="ui centered big image">
+      <img src="">
+    </div>
+  </div>
+</div>
+
+<div id="programme" class="ui modal">
+  <i class="close icon"></i>
+  <div class="ui center aligned dialog header">
+    <div class="ui title">
+      SPb Cloud & Virtualization Community
+    </div>
+    <div class="ui description"> 
+      <a class="link" href="#" target="_blank">сайт сообщества</a>
+    </div>
+  </div>
+  <div class="ui vertically divided stackable grid container">
+      <div class="row">
+        <div class="center aligned three wide column">
+          <h1 class="start">13:00</h1> 
+          <p>13:40</p>          
+        </div>
+        <div class="right floated thirteen wide column">          
+          <h3 class="ui header">Персональные данные в облаке с технической и правовой стороны вопроса. / Microsoft Azure. От теории к практике</h3>
+          <div class="ui tiny orange tag label">Круглый стол</div>      
+          <div class="ui items">
+            <div class="item">
+              <div class="ui circular image">
+                <img src="assets/images/avatar/nan.jpg">
+              </div>
+              <div class="content">
+                <div class="author">Никита Ефимов</div>
+                <div class="meta">
+                  Руководитель отдела проектирования, Selectel
                 </div>
               </div>
             </div>
-			</div><!--end of row-->
-            <!-- <a class="scheduleExpand" title="Показать программы всех сообществ" href="#">Просмотреть всю программу...</a> -->
-        </div><!--end of container-->
-	</section>
-	
-	<a id="speakers" class="in-page-link"></a>
-	
-	<!--
-	<section class="speakers">
-	
-		<div class="container">
-
-			<div class="row">
-				<div class="col-sm-12">
-					<h1></h1>
-				</div>
-			</div>
-
-			<div class="row">
-		
-				<div class="col-md-12 col-sm-12">
-					<div class="speaker-with-bio">
-						<div class="speaker">
-							<div class="image-holder">
-								<img class="background-image" alt="" src="">
-								<div class="hover-state text-center preserve3d">
-									<div class="social-links vertical-align">
-										<a href="" target="_blank"><i class="icon social_linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="speaker-description">
-							<h2></h2>
-							<span class="sub"></span>
-							<h3></h3>
-							<p></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
--->
-
-	<section class="sponsors">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 text-center">
-					<h1>Организаторы и партнеры</h1>
-				</div>
-			</div>
-		
-			<div class="row">
-				<div class="col-sm-10 col-sm-offset-1">
-				
-				{% for sponsor in site.data.itgm5_sponsors %}
-					<div class="col-md-3 col-sm-6 sponsor-column">
-						<div class="sponsor text-center">
-							<p> {{sponsor.level}} </p>
-							<a href=" {{sponsor.link}} " target="_blank">
-								<img alt="" src=" {{sponsor.logo}} ">
-							</a>
-						</div>
-					</div>
-				{% endfor %}
-
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-sm-12 text-center">
-					<span> Хотите стать партнером мероприятия? <a href="mailto:piterunited@gmail.com">Пишите нам</a></span>
-				</div>
-			</div>
-
-			<br><br><br>
-
-			<div class="row">
-				<div class="col-sm-12 text-center">
-					<h1>Информационные партнеры</h1>
-				</div>
-			</div>
-		
-			<div class="row">
-				<div class="col-sm-10 col-sm-offset-1">
-
-				{% for infopartner in site.data.itgm5_infopartners %}
-					<div class="col-md-3 col-sm-6 sponsor-column">
-						<div class="sponsor text-center">
-							<a href=" {{infopartner.link}} " target="_blank">
-								<img alt="" src=" {{infopartner.logo}} ">
-							</a>
-						</div>
-					</div>
-				{% endfor %}
-
-				</div>
-			</div>
-
-			<!--end of row-->
-
-		</div><!--end of container-->
-	</section>
-	
-	<a id="registration" class="in-page-link"></a>
-	
-	<section class="contact-tweets">
-		<div class="container vertical-align">
-			<div class="row">
-				<div class="col-md-5 col-sm-6">
-					<h1> IT Global Meetup #5</h1>
-					<ul>
-						<li> г. Санкт-Петербург</li>
-						<li> 6 июня 2015 (суббота)</li>
-						<li> с 11.00 до 19.00</li>
-						<li> пр. Медиков д.3</li>
-						<li> <a href="http://www.club-house.org" target="_blank">КДЦ "Club House"</a></li>
-						<br>
-						<li>Мероприятие бесплатное. <br>Регистрация обязательная.</li>
-					</ul>
-					<br>
-					<button class="btn" data-toggle="modal" data-target="#myModal"> Регистрация </button>
-					<a class="btn btn-hollow" href="/itgm/map.html" target="_blank"> Подробный маршрут! </a>
-				</div>
-			</div><!--end of row-->
-		</div><!--end of container-->
-	
-		<div class="map-holder col-md-6 col-sm-4">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d1996.8289479975892!2d30.31388756495208!3d59.96816082472542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!1i0!3e6!4m0!4m3!3m2!1d59.969107799999996!2d30.316469599999998!5e0!3m2!1sen!2sru!4v1414663022043" width="800" height="600" frameborder="0" style="border:0"></iframe>
-		</div>
-	</section>
-
-	<!-- TimePad Form -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Отмена</span></button>
-	        <h4 class="modal-title" id="myModalLabel">Регистрация</h4>
-	        <a href="https://piter-united.timepad.ru/event/200821/" data-twf-placeholder="yes">Перейти к заказу билетов</a><script type="text/javascript" defer="defer" charset="UTF-8" data-timepad-customized="2669" data-twf2s-event--id="200821" data-timepad-widget-v2="event_register" src="https://timepad.ru/js/tpwf/loader/min/loader.js"></script>
-
-	      </div>
-	      <!--
-	      <div class="modal-body">
-	        <a href="http://piter-united.timepad.ru/event/174241/" data-twf-placeholder="yes">Перейти к заказу билетов</a>
-	        <script type="text/javascript" defer="defer" data-timepad-customized="2669" data-twf2s-event--id="174241" data-timepad-widget-v2="event_register" src="//timepad.ru/js/tpwf/loader/min/loader.js"></script>
-	      </div>
-	      <div class="modal-footer">
-	      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Отмена</span></button>
-	      </div>
-	  -->
-	    </div>
-	  </div>
-	</div>
-	
-	<a id="contacts" class="in-page-link"></a>
-
-	<section class="subscribe-2 donate">
-
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 text-center">
-					<h1>Поддержать мероприятие и инициативу Piter United!</h1>
-					<p>Все собранные деньги пойдут на покрытие орг. расходов на мероприятие,<br> либо на закупку инвентаря необходимого сообществам (флипчарты, ролл-апы и т.д.).</p>
-					<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=410011943203218&quickpay=shop&payment-type-choice=on&writer=seller&targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0+IT+Global+Meetup+%235&targets-hint=&default-sum=500&button-text=03&successURL=http%3A%2F%2Fpiter-united.ru" width="450" height="198"></iframe>
-				</div>
-			</div>
-		</div>
-	
-	</section>
-	
-	<section class="subscribe-2">
-
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 text-center">
-					<i class="icon pe-7s-pen"></i>
-					<i class="icon pe-7s-mail-open-file"></i>
-					<i class="icon pe-7s-paper-plane"></i>
-					<h1 class="large-h1">Есть вопросы?</h1>
-					<a href="mailto:piterunited@gmail.com" class="btn btn-hollow"> Напиши! </a>
-				</div>
-			</div>
-		</div>
-	
-	</section>
-
-	<section class="lightbox-gallery preserve-3d">
-
-		<div class="gallery-holder">
-			<ul>
-			{% for photo in site.data.itgm3_photos %}
-				<li>
-					<a href=" {{ photo.link }} " class="lightbox-link-mrv" data-lightbox="true" data-title="Meetup 2013">
-						<div class="background-image-holder">
-							<img class="background-image" alt="Lightbox Image" src=" {{ photo.link }} ">
-						</div>
-					</a>
-				</li>
-			{% endfor %}	
-			</ul>
-		</div>
-
-		
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<div>
-						<i class="icon pe-7s-camera text-white"></i>
-						<h1 class="text-white">Фото-архив IT Global Meetup</h1>
-						<span class="lead text-white">Мы ждем Вас снова! <strong></strong></span>	
-					</div>
-				</div>
-			</div><!--end of row-->
-		</div><!--end of container-->
-	</section>
+          </div>        
+        </div>
+      </div>
+      <div class="row">
+        <div class="center aligned three wide column">
+          <h1 class="start">14:00</h1> 
+          <p>14:40</p>            
+        </div>
+        <div class="right floated thirteen wide column">
+          <h3 class="ui header">Персональные данные в облаке с технической и правовой стороны вопроса. / Microsoft Azure. От теории к практике</h3>
+          <div class="ui items">
+            <div class="item">
+              <div class="ui circular image">
+                <img src="assets/images/avatar/nan.jpg">
+              </div>
+              <div class="content">
+                <div class="author">Никита Ефимов</div>
+                <div class="meta">
+                  Руководитель отдела проектирования, Selectel
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="ui circular image">
+                <img src="assets/images/avatar/nan.jpg">
+              </div>
+              <div class="content">
+                <div class="author">Никита Ефимов</div>
+                <div class="meta">
+                  Руководитель отдела проектирования, Selectel
+                </div>
+              </div>
+            </div>            
+          </div>          
+        </div> 
+      </div>   
+      <div class="row">
+        <div class="center aligned three wide column">
+          <h1 class="start">15:00</h1> 
+          <p>15:40</p>            
+        </div>
+        <div class="right floated middle aligned thirteen wide column">
+          <div class="ui items">
+            <div class="item">
+              <div class="empty content">
+                <h3 class="header">Тема не определена</h3>
+                <a class="link" href="#">хочу предложить тему!</a>
+              </div>
+              
+            </div>
+          </div>         
+        </div> 
+      </div>  
+      <div class="row">
+        <div class="center aligned three wide column">
+          <h1 class="start">16:00</h1> 
+          <p>16:40</p>            
+        </div>
+        <div class="right floated thirteen wide column">
+          <h3 class="ui header">Персональные данные в облаке с технической и правовой стороны вопроса. / Microsoft Azure. От теории к практике</h3>
+          <div class="ui items">
+            <div class="item">
+              <div class="ui circular image">
+                <img src="assets/images/avatar/nan.jpg">
+              </div>
+              <div class="content">
+                <div class="author">Никита Ефимов</div>
+                <div class="meta">
+                  Руководитель отдела проектирования, Selectel
+                </div>
+              </div>
+            </div>
+          </div>         
+        </div> 
+      </div>                
+  </div>
 </div>
-<div class="footer-container">			
-	<footer class="classic">
-		<div class="container">
-			<div class="row">
-				<!--
-				<div class="col-sm-3">
-					<ul class="menu">
-						<li><a href="#">Press</a></li>
-						<li><a href="#">Terms of service</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a class="inner-link back-to-top" href="#top">Back To Top</a></li>
-					</ul>
-				</div>
-			-->
-				<div class="col-sm-6">
-					<ul class="contact-methods">
-						<li><i class="icon pe-7s-mail"></i><span>piterunited@gmail.com</span></li>
-						<li><i class="icon pe-7s-phone"></i><span></span></li>
-						<li><i class="icon pe-7s-map-marker"></i><span>Санкт-Петербург</span></li>
-					</ul>
-				</div>
 
-				<div class="col-sm-6">
-					<span class="lead color-heading">IT Global Meetup</span>
-					<p>Организовывается в рамках общественно-профессионального движения Piter United, силами активистов сообществ и при поддержке партнеров. Целью Piter United является формирование благоприятной экосистемы для появления и развития IT-сообществ в нашем городе!</p>
-				</div>
-			
-				
-			</div><!--end of row-->
-		
-			<div class="row">
-				<div class="col-sm-12 text-center">
-
-					<script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script>
-					<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="small" data-yashareQuickServices="vkontakte,facebook,twitter,gplus" data-yashareTheme="counter" data-yashareTitle="IT Global Meetup #5" data-yashareDescription="6 июня 2015, с 11.00 до 19.00. Слет ИТ-сообществ Санкт-Петербурга. КДЦ Club House - пр. Медиков 3" data-yashareLink="http://piter-united.ru/itgm/itgm.html" data-yashareImage="/itgm/img/itgm_logo.png">
-					</div>
-
-				</div>
-			</div><!--end of row-->
-		</div><!--end of container-->
-	</footer>
-</div>
+<script src="./assets/js/vendor/jquery.min.js"></script>
+<script src="./dist/semantic.min.js"></script>
+<script src="./assets/js/site.js"></script>
+<script type="text/javascript" src="./assets/js/vendor/jquery.plugin.js"></script>
+<script type="text/javascript" src="./assets/js/vendor/jquery.countdown.js"></script>
+<script type="text/javascript">
+  var futureDate = new Date("November 28, 2015 11:00:00");
+  $('.countdown').countdown({
+    until       : futureDate, 
+    compact     : true, 
+    padZeroes   : true,
+    layout      : $('.countdown').html()
+  });
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+<script src="./assets/js/map.js"></script>
+<script type="text/javascript">
+  $("#reg").click(function(){
+    $('#reg_form').modal('show');
+  });
+</script>
