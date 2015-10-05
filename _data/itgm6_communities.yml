@@ -1,108 +1,108 @@
-- title: SPb SQA Group
-  link: http://sqagroup.spb.ru/
-  schedule:
+# - title: SPb SQA Group
+#   link: http://sqagroup.spb.ru/
+  # schedule:
 
-    "13:00" :
-      speaker : Юля Атлыгина
-      work_place : "ALM Works"
-      theme : "Т-радар: какие техники тест дизайна используете вы?"
-    "14:00" :
-      speaker : Ян Алексеенко
-      work_place : Технологии Радиоконтроля
-      theme : "Для чего тестировщикам уметь программировать?"
-    "15:00" :
-      speaker : Надежда Минчева
-      work_place : Novardis
-      theme : "Особенности тестирования E-commerce."
-    "16:00" :
-      speaker : Наталия Узенцова и Юля Атлыгина
-      work_place : "Total Objects / ALM Works"
-      theme : "Как все устроено: обсуждаем жизненный цикл задач на примере TFS и Jira."
+  #   "13:00" :
+  #     speaker : Юля Атлыгина
+  #     work_place : "ALM Works"
+  #     theme : "Т-радар: какие техники тест дизайна используете вы?"
+  #   "14:00" :
+  #     speaker : Ян Алексеенко
+  #     work_place : Технологии Радиоконтроля
+  #     theme : "Для чего тестировщикам уметь программировать?"
+  #   "15:00" :
+  #     speaker : Надежда Минчева
+  #     work_place : Novardis
+  #     theme : "Особенности тестирования E-commerce."
+  #   "16:00" :
+  #     speaker : Наталия Узенцова и Юля Атлыгина
+  #     work_place : "Total Objects / ALM Works"
+  #     theme : "Как все устроено: обсуждаем жизненный цикл задач на примере TFS и Jira."
 
-- title: SPb e-Learning
-  link: "https://www.linkedin.com/groups?home=&gid=8282289"
-  schedule:
+# - title: SPb e-Learning
+#   link: "https://www.linkedin.com/groups?home=&gid=8282289"
+  # schedule:
 
-    "13:00" :
-      speaker : "Ольга Куранова"
-      work_place : "Центр дистанционного обучения ПГУПС"
-      theme : "Опыт массового обучения в распределенной компании и проблемы СДО в вузе"
-    "14:00" :
-      speaker : Андрей Замулин
-      work_place : "Высшая школа менеджмента СПбГУ"
-      theme : "Использование переговорного онлайн-тренажера «Roundy» в дистанционном обучении."
-    "15:00" :
-      speaker : Лилия Смирнова
-      work_place : "Корпоративный институт ОАО Газпром"
-      theme : "Разработка интерактивных упражнений для электронных курсов."
-    "16:00" :
-      speaker : "Игорь Сазонов"
-      work_place : 
-      theme : "Moodle с точки зрения программиста и пользователя."
+  #   "13:00" :
+  #     speaker : "Ольга Куранова"
+  #     work_place : "Центр дистанционного обучения ПГУПС"
+  #     theme : "Опыт массового обучения в распределенной компании и проблемы СДО в вузе"
+  #   "14:00" :
+  #     speaker : Андрей Замулин
+  #     work_place : "Высшая школа менеджмента СПбГУ"
+  #     theme : "Использование переговорного онлайн-тренажера «Roundy» в дистанционном обучении."
+  #   "15:00" :
+  #     speaker : Лилия Смирнова
+  #     work_place : "Корпоративный институт ОАО Газпром"
+  #     theme : "Разработка интерактивных упражнений для электронных курсов."
+  #   "16:00" :
+  #     speaker : "Игорь Сазонов"
+  #     work_place : 
+  #     theme : "Moodle с точки зрения программиста и пользователя."
 
 - title: IT HR
   link: /
-  schedule:
+  # schedule:
 
-    "13:00" :
-      speaker : Эльвира Рябыкина
-      work_place : SEMrush
-      theme : "Мотивация сотрудников на обучение и развитие при плоской организационной структуре. Миф или реальность?"
-    "14:00" :
-      speaker : Лилия Смирнова
-      work_place : "Корпоративный институт ОАО Газпром"
-      theme : "Облегчаем труд HRа: Автоматизированная оценка соискателей «текучих» профессий."
-    "15:00" :
-      speaker : Ирина Матвеева
-      work_place : "коуч, независимый HR и бизнес консультант"
-      theme : "Сервис: как понять заказчика и сделать его счастливым?"
-    "16:00" :
-      speaker : Анна Каменская
-      work_place : 
-      theme : "Круглый стол: кандидаты и HR. Стереотипы, которые нам мешают."
+  #   "13:00" :
+  #     speaker : Эльвира Рябыкина
+  #     work_place : SEMrush
+  #     theme : "Мотивация сотрудников на обучение и развитие при плоской организационной структуре. Миф или реальность?"
+  #   "14:00" :
+  #     speaker : Лилия Смирнова
+  #     work_place : "Корпоративный институт ОАО Газпром"
+  #     theme : "Облегчаем труд HRа: Автоматизированная оценка соискателей «текучих» профессий."
+  #   "15:00" :
+  #     speaker : Ирина Матвеева
+  #     work_place : "коуч, независимый HR и бизнес консультант"
+  #     theme : "Сервис: как понять заказчика и сделать его счастливым?"
+  #   "16:00" :
+  #     speaker : Анна Каменская
+  #     work_place : 
+  #     theme : "Круглый стол: кандидаты и HR. Стереотипы, которые нам мешают."
 
 - title: UXSpb
   link: http://ux-spb.ru/
-  schedule:
+  # schedule:
 
-    "13:00" :
-      speaker : Алексей Гапонов
-      work_place : Devexperts
-      theme : "Орудия труда. (Не)предвзятый обзор инструментов проектировщика."
-    "14:00" :
-      speaker : "Захар Кириллов"
-      work_place :  "КБ Собака Павлова"
-      theme : "Continuous UX: встраиваем IxD в процесс гибкой разработки."
-    "15:00" :
-      speaker : Артём Тиунов
-      work_place :  Jetbrains
-      theme : "UX for Geeks."
-    "16:00" :
-      speaker : Юрий Солоницын
-      work_place : ИСТ
-      theme : "Точка кипения мозга – защищаем пользователя от перегрузки информацией."
+  #   "13:00" :
+  #     speaker : Алексей Гапонов
+  #     work_place : Devexperts
+  #     theme : "Орудия труда. (Не)предвзятый обзор инструментов проектировщика."
+  #   "14:00" :
+  #     speaker : "Захар Кириллов"
+  #     work_place :  "КБ Собака Павлова"
+  #     theme : "Continuous UX: встраиваем IxD в процесс гибкой разработки."
+  #   "15:00" :
+  #     speaker : Артём Тиунов
+  #     work_place :  Jetbrains
+  #     theme : "UX for Geeks."
+  #   "16:00" :
+  #     speaker : Юрий Солоницын
+  #     work_place : ИСТ
+  #     theme : "Точка кипения мозга – защищаем пользователя от перегрузки информацией."
 
 
 - title: SPb SPM Club
   link: https://plus.google.com/u/0/communities/108809460896106613736
-  schedule:
+  # schedule:
 
-    "13:00" :
-      speaker : Александр Бындю
-      work_place : "ByndyuSoft"
-      theme : Стендапы в стиле Kanban.
-    "14:00" :
-      speaker : Алексей Васильев
-      work_place : SigmaLab
-      theme : "Применение инструментов TOC. Решение конфликтов, поиск ключевых проблем при постановке процессов."
-    "15:00" :
-      speaker : Андрей Толмачев
-      work_place : Openway
-      theme : "Как делать agile с неаджальными банками на примере конкретного проекта, инструментов."
-    "16:00" :
-      speaker : "модератор: Михаил Рыжиков"
-      work_place : Health Samurai Team
-      theme : "Круглый стол: Инициация проектов. Техники и инструменты."
+  #   "13:00" :
+  #     speaker : Александр Бындю
+  #     work_place : "ByndyuSoft"
+  #     theme : Стендапы в стиле Kanban.
+  #   "14:00" :
+  #     speaker : Алексей Васильев
+  #     work_place : SigmaLab
+  #     theme : "Применение инструментов TOC. Решение конфликтов, поиск ключевых проблем при постановке процессов."
+  #   "15:00" :
+  #     speaker : Андрей Толмачев
+  #     work_place : Openway
+  #     theme : "Как делать agile с неаджальными банками на примере конкретного проекта, инструментов."
+  #   "16:00" :
+  #     speaker : "модератор: Михаил Рыжиков"
+  #     work_place : Health Samurai Team
+  #     theme : "Круглый стол: Инициация проектов. Техники и инструменты."
 
 # - title: Agile Piter
 #   link: https://plus.google.com/u/0/communities/112264824472767454602
@@ -148,68 +148,68 @@
 
 - title: SPb Community of Analysts
   link: http://vk.com/spb_analytics
-  schedule:
+  # schedule:
   
-    "13:00" :
-      speaker : Алексей Петров
-      work_place : "Тренер и консультант, MCTS"
-      theme : "Дуализм систем и его практическая польза для аналитика."
-    "14:00" :
-      speaker : Александр Овчаренко
-      work_place : ЗАО НИПК Электрон
-      theme : "Что делать аналитику без проектировщика интерфейсов?"
-    "15:00" :
-      speaker : Наталья Забежинская
-      work_place : "QA specialist, ГК Техносерв"
-      theme : "Когда нужна валидация тест-кейсов?"
-    "16:00" :
-      speaker : "Модератор: Анна Абрамова"
-      work_place : 
-      theme : "Круглый стол: карта компетенций аналитика."
+  #   "13:00" :
+  #     speaker : Алексей Петров
+  #     work_place : "Тренер и консультант, MCTS"
+  #     theme : "Дуализм систем и его практическая польза для аналитика."
+  #   "14:00" :
+  #     speaker : Александр Овчаренко
+  #     work_place : ЗАО НИПК Электрон
+  #     theme : "Что делать аналитику без проектировщика интерфейсов?"
+  #   "15:00" :
+  #     speaker : Наталья Забежинская
+  #     work_place : "QA specialist, ГК Техносерв"
+  #     theme : "Когда нужна валидация тест-кейсов?"
+  #   "16:00" :
+  #     speaker : "Модератор: Анна Абрамова"
+  #     work_place : 
+  #     theme : "Круглый стол: карта компетенций аналитика."
 
 
 
 - title: "DevOps-40 / SPb Linux User Group"
   link: http://www.meetup.com/DevOps-40/
-  schedule:
+  # schedule:
 
-    "13:00" :
-      speaker : Станислав Богатырёв
-      work_place : "realloc.spb.ru"
-      theme : "Секреты в Chef. Один из возможных работающих методов обращения с секретами (пароли, сертификаты, лицензии) в условиях общего доступа к коду Ops и Dev команд. Инструменты: Chef, chef-vault, vault"
-    "14:00" :
-      speaker : Павел Курочкин
-      work_place : НТЦ "Метротек"
-      theme : "Разработка highload-системы мониторинга для 50000 (и более) видео-потоков RTP с применением 10G Ethernet пробников на базе FPGA."
-    "15:00" :
-      speaker : Роман Беляковский
-      work_place : Git in Sky
-      theme : "Девять месяцев с Ansible: опыт и надежды."
-    "16:00" :
-      speaker : Александр Тарасов
-      work_place : Альфа-Банк
-      theme : "Docker в банке."
+  #   "13:00" :
+  #     speaker : Станислав Богатырёв
+  #     work_place : "realloc.spb.ru"
+  #     theme : "Секреты в Chef. Один из возможных работающих методов обращения с секретами (пароли, сертификаты, лицензии) в условиях общего доступа к коду Ops и Dev команд. Инструменты: Chef, chef-vault, vault"
+  #   "14:00" :
+  #     speaker : Павел Курочкин
+  #     work_place : НТЦ "Метротек"
+  #     theme : "Разработка highload-системы мониторинга для 50000 (и более) видео-потоков RTP с применением 10G Ethernet пробников на базе FPGA."
+  #   "15:00" :
+  #     speaker : Роман Беляковский
+  #     work_place : Git in Sky
+  #     theme : "Девять месяцев с Ansible: опыт и надежды."
+  #   "16:00" :
+  #     speaker : Александр Тарасов
+  #     work_place : Альфа-Банк
+  #     theme : "Docker в банке."
 
 - title: Piter JS
   link: https://vk.com/piterjs
-  schedule:
+  # schedule:
 
-    "13:00" :
-      speaker : "Николай Рыжиков"
-      work_place : Health Samurai
-      theme : "JavaScript внутри PostgreSQL."
-    "14:00" :
-      speaker : Антон Плешивцев
-      work_place : Virool
-      theme : "Как победить различные браузерные ограничения и сделать крутое приложение. Рассказ про разработку мобильного видеоплеера Covér."
-    "15:00" :
-      speaker : Олег Подсечин
-      work_place :  Toughbyte
-      theme : "Новые возможности EcmaScript 6 и 7: генераторы и async/await."
-    "16:00" :
-      speaker : Максим Рыжиков
-      work_place :  JetBrains
-      theme : "ПРОтестирование: как устроена Karma."
+  #   "13:00" :
+  #     speaker : "Николай Рыжиков"
+  #     work_place : Health Samurai
+  #     theme : "JavaScript внутри PostgreSQL."
+  #   "14:00" :
+  #     speaker : Антон Плешивцев
+  #     work_place : Virool
+  #     theme : "Как победить различные браузерные ограничения и сделать крутое приложение. Рассказ про разработку мобильного видеоплеера Covér."
+  #   "15:00" :
+  #     speaker : Олег Подсечин
+  #     work_place :  Toughbyte
+  #     theme : "Новые возможности EcmaScript 6 и 7: генераторы и async/await."
+  #   "16:00" :
+  #     speaker : Максим Рыжиков
+  #     work_place :  JetBrains
+  #     theme : "ПРОтестирование: как устроена Karma."
 
 # - title: SPb Frontend
 #   link: http://vk.com/spb_frontend
@@ -234,24 +234,24 @@
 
 - title: "SPb .Net Community"
   link: https://plus.google.com/u/0/communities/115643868183582812348
-  schedule:
+  # schedule:
 
-    "13:00" :
-      speaker : Андрей Акиньшин
-      work_place : Энтерра
-      theme : "Будущее .NET-разработки."
-    "14:00" :
-      speaker : Никита Козлов
-      work_place : MySale Group
-      theme : "DSL без купюр."
-    "15:00" :
-      speaker : "Дмитрий Нестерук"
-      work_place :  JetBrains
-      theme : "Динамическое Прототипирование."
-    "16:00" :
-      speaker : Антон Шабанов
-      work_place : WaveAccess
-      theme : "Обзор технологических новинок в .Net с точки зрения Web-программиста."
+  #   "13:00" :
+  #     speaker : Андрей Акиньшин
+  #     work_place : Энтерра
+  #     theme : "Будущее .NET-разработки."
+  #   "14:00" :
+  #     speaker : Никита Козлов
+  #     work_place : MySale Group
+  #     theme : "DSL без купюр."
+  #   "15:00" :
+  #     speaker : "Дмитрий Нестерук"
+  #     work_place :  JetBrains
+  #     theme : "Динамическое Прототипирование."
+  #   "16:00" :
+  #     speaker : Антон Шабанов
+  #     work_place : WaveAccess
+  #     theme : "Обзор технологических новинок в .Net с точки зрения Web-программиста."
     
 
 # - title: SPb Ruby User Group
@@ -259,45 +259,45 @@
 
 - title: SPb Python Interest Group
   link: http://spbpython.guru/
-  schedule:
+  # schedule:
 
-    "13:00" :
-      speaker : "Александр Козловский / Алексей Малашкевич"
-      work_place : PonyORM
-      theme : "Разработка Single Page Applications с помощью Pony ORM."
-    "14:00" :
-      speaker : Сергей Матвеенко
-      work_place : DataArt
-      theme : "Развитие петербургского Python сообщества: форматы встреч, темы докладов (brainstorm)."
-    "15:00" :
-      speaker : Андрей Павлов
-      work_place : "C.Nord"
-      theme : "Пакетный менеджер Nix в качестве замены Virtualenv."
-    "16:00" :
-      speaker : "Кирилл Борисов"
-      work_place : Яндекс
-      theme : "Контроль за качеством кода."
+  #   "13:00" :
+  #     speaker : "Александр Козловский / Алексей Малашкевич"
+  #     work_place : PonyORM
+  #     theme : "Разработка Single Page Applications с помощью Pony ORM."
+  #   "14:00" :
+  #     speaker : Сергей Матвеенко
+  #     work_place : DataArt
+  #     theme : "Развитие петербургского Python сообщества: форматы встреч, темы докладов (brainstorm)."
+  #   "15:00" :
+  #     speaker : Андрей Павлов
+  #     work_place : "C.Nord"
+  #     theme : "Пакетный менеджер Nix в качестве замены Virtualenv."
+  #   "16:00" :
+  #     speaker : "Кирилл Борисов"
+  #     work_place : Яндекс
+  #     theme : "Контроль за качеством кода."
 
 - title: FProg (Clojure/Erlang/Haskell)
   link: https://plus.google.com/communities/114227952963737516047
-  schedule:
+  # schedule:
 
-    "13:00" :
-      speaker : Максим Велесюк
-      work_place : Areo Gaming
-      theme : "Разработка в Common Lisp с SLIME."
-    "14:00" :
-      speaker : Игнат Толчанов
-      work_place : 
-      theme : "Про формализмы, описывающие взаимодействия процессов, с примерами на Erlang + еще чем-нибудь (Cloud Haskell, Scala)."
-    "15:00" :
-      speaker : "Ильшад Хабибуллин"
-      work_place : Health Samurai Team
-      theme : "Опыт разработки в Clojure: генерация компонент и пользовательские интерфейсы на паттерн-матчинге."
-    "16:00" :
-      speaker : "модератор: Николай Рыжиков"
-      work_place : "Health Samurai Team"
-      theme : "Круглый стол: вопросы и ответы про функциональное программирование."
+  #   "13:00" :
+  #     speaker : Максим Велесюк
+  #     work_place : Areo Gaming
+  #     theme : "Разработка в Common Lisp с SLIME."
+  #   "14:00" :
+  #     speaker : Игнат Толчанов
+  #     work_place : 
+  #     theme : "Про формализмы, описывающие взаимодействия процессов, с примерами на Erlang + еще чем-нибудь (Cloud Haskell, Scala)."
+  #   "15:00" :
+  #     speaker : "Ильшад Хабибуллин"
+  #     work_place : Health Samurai Team
+  #     theme : "Опыт разработки в Clojure: генерация компонент и пользовательские интерфейсы на паттерн-матчинге."
+  #   "16:00" :
+  #     speaker : "модератор: Николай Рыжиков"
+  #     work_place : "Health Samurai Team"
+  #     theme : "Круглый стол: вопросы и ответы про функциональное программирование."
 
 # - title: SPb Lisp Users
 #   link: http://vk.com/lisp.users
@@ -322,45 +322,45 @@
 
 - title: "SPb Cloud & Virtualization Community"
   link: https://vk.com/spb.cloud
-  schedule:
+  # schedule:
 
-    "13:00" :
-      speaker : Михаил Новоселов
-      work_place : ИТ-ГРАД
-      theme : "Виртуальная схд в облаке."
-    "14:00" :
-      speaker : "Юрий Сухов"
-      work_place : "Veeam Software"
-      theme : "Защита данных в виртуальных средах."
-    "15:00" :
-      speaker : "Владимир Подзоров/Роман Скворцов"
-      work_place : "WELLSERVICE/AMBAHA IT-solutions"
-      theme : "Персональные данные в облаке с технической и правовой стороны вопроса. / Microsoft Azure. От теории к практике"
-    "16:00" :
-      speaker : "Виталий Грицай / Константин Кудряшов"
-      work_place : "https://1cloud.ru/"
-      theme : "Построение инфраструктуры облачного провайдера на примере компании 1cloud."
+  #   "13:00" :
+  #     speaker : Михаил Новоселов
+  #     work_place : ИТ-ГРАД
+  #     theme : "Виртуальная схд в облаке."
+  #   "14:00" :
+  #     speaker : "Юрий Сухов"
+  #     work_place : "Veeam Software"
+  #     theme : "Защита данных в виртуальных средах."
+  #   "15:00" :
+  #     speaker : "Владимир Подзоров/Роман Скворцов"
+  #     work_place : "WELLSERVICE/AMBAHA IT-solutions"
+  #     theme : "Персональные данные в облаке с технической и правовой стороны вопроса. / Microsoft Azure. От теории к практике"
+  #   "16:00" :
+  #     speaker : "Виталий Грицай / Константин Кудряшов"
+  #     work_place : "https://1cloud.ru/"
+  #     theme : "Построение инфраструктуры облачного провайдера на примере компании 1cloud."
 
 - title: SPb PostgreSQL User Group
   link: /
-  schedule:
+  # schedule:
 
-    "13:00" :
-      speaker : Сергей Новиков
-      work_place : RealWeb
-      theme : "Функциональный интерфейс в базе данных и другие хорошие практики."
-    "14:00" :
-      speaker : Роман Друзягин
-      work_place : 404 Group
-      theme : "Круглый стол: практика администрирования и troubleshooting PostgreSQL."
-    "15:00" :
-      speaker : Роман Друзягин
-      work_place : 404 Group
-      theme : "Круглый стол: работа с PG во фреймворках типа Rails и прочих, плюс и минусы подходов."
-    "16:00" :
-      speaker : Роман Друзягин
-      work_place : 404 Group
-      theme : "Круглый стол: практика безопасной разработки под PostgreSQL."
+  #   "13:00" :
+  #     speaker : Сергей Новиков
+  #     work_place : RealWeb
+  #     theme : "Функциональный интерфейс в базе данных и другие хорошие практики."
+  #   "14:00" :
+  #     speaker : Роман Друзягин
+  #     work_place : 404 Group
+  #     theme : "Круглый стол: практика администрирования и troubleshooting PostgreSQL."
+  #   "15:00" :
+  #     speaker : Роман Друзягин
+  #     work_place : 404 Group
+  #     theme : "Круглый стол: работа с PG во фреймворках типа Rails и прочих, плюс и минусы подходов."
+  #   "16:00" :
+  #     speaker : Роман Друзягин
+  #     work_place : 404 Group
+  #     theme : "Круглый стол: практика безопасной разработки под PostgreSQL."
 
 # - title: SPb Mobile
 #   link: https://plus.google.com/u/0/communities/110822898858097256001
@@ -385,24 +385,24 @@
 
 - title: SPb GO Community
   link: "http://groups.google.com/forum/#!forum/golang-ru"
-  schedule:
+  # schedule:
 
-    "13:00" :
-      speaker : Александр Неганов
-      work_place : 
-      theme : "Эффективный файловый IO: быстро и сложно."
-    "14:00" :
-      speaker : Виталий Левченко
-      work_place : 
-      theme : "NSQ: опыт использования в большой системе."
-    "15:00" :
-      speaker : "модератор: Виталий Левченко"
-      work_place : 
-      theme : "Круглый стол. Go в продакшене: логирование и сбор ошибок, мониторинг, обслуживание."
-    "16:00" :
-      speaker : Алексей Петров
-      work_place : "Тренер и консультант, MCTS"
-      theme : "Что такое корпоративная архитектура?"
+  #   "13:00" :
+  #     speaker : Александр Неганов
+  #     work_place : 
+  #     theme : "Эффективный файловый IO: быстро и сложно."
+  #   "14:00" :
+  #     speaker : Виталий Левченко
+  #     work_place : 
+  #     theme : "NSQ: опыт использования в большой системе."
+  #   "15:00" :
+  #     speaker : "модератор: Виталий Левченко"
+  #     work_place : 
+  #     theme : "Круглый стол. Go в продакшене: логирование и сбор ошибок, мониторинг, обслуживание."
+  #   "16:00" :
+  #     speaker : Алексей Петров
+  #     work_place : "Тренер и консультант, MCTS"
+  #     theme : "Что такое корпоративная архитектура?"
 
 # - title: SPb Technical Writers
 #   link: https://plus.google.com/u/0/communities/111110772662436773783
@@ -471,41 +471,41 @@
 
 - title: "3D уголок (Unity/3D4WEB)"
   link: https://plus.google.com/u/0/communities/103652474826197512695
-  schedule:
+  # schedule:
 
-    "13:00" :
-      speaker : Иван Мартынов
-      work_place : "VRLF.RU"
-      theme : Риски виртуальной реальности для социума и индивида.
-    "14:00" :
-      speaker : Дмитрий Булгаков
-      work_place : ГУАП
-      theme : Виртуальные 3D-реконструкции.
-    "15:00" :
-      speaker : Ярослав Решетников
-      work_place : "Autodesk"
-      theme : "Отображение больших 3D моделей в веб. Опыт использования Autodesk View and Data API."
-    "16:00" :
-      speaker : Егор Петриленков
-      work_place : "Spiced Jackal"
-      theme : "Как мы на коленке в обед сделали онлайновую многопользовательскую игру."
+  #   "13:00" :
+  #     speaker : Иван Мартынов
+  #     work_place : "VRLF.RU"
+  #     theme : Риски виртуальной реальности для социума и индивида.
+  #   "14:00" :
+  #     speaker : Дмитрий Булгаков
+  #     work_place : ГУАП
+  #     theme : Виртуальные 3D-реконструкции.
+  #   "15:00" :
+  #     speaker : Ярослав Решетников
+  #     work_place : "Autodesk"
+  #     theme : "Отображение больших 3D моделей в веб. Опыт использования Autodesk View and Data API."
+  #   "16:00" :
+  #     speaker : Егор Петриленков
+  #     work_place : "Spiced Jackal"
+  #     theme : "Как мы на коленке в обед сделали онлайновую многопользовательскую игру."
 
 - title: HackIoT
   link: http://vk.com/hackIoT
-  schedule:
+  # schedule:
 
-    "13:00" :
-      speaker : Сергей Сильнов
-      work_place : Croice
-      theme : "Платформа Intel для интернета вещей на примере Intel Galileo."
-    "14:00" :
-      speaker : Дмитрий Кривецков
-      work_place : Ультран
-      theme : "Протокол ANT для умного дома."
-    "15:00" :
-      speaker : Сергей Сильнов
-      work_place : Croice
-      theme : "Круглый стол: фреймворки интернета вещей AllJoyn, IOTivity."
+  #   "13:00" :
+  #     speaker : Сергей Сильнов
+  #     work_place : Croice
+  #     theme : "Платформа Intel для интернета вещей на примере Intel Galileo."
+  #   "14:00" :
+  #     speaker : Дмитрий Кривецков
+  #     work_place : Ультран
+  #     theme : "Протокол ANT для умного дома."
+  #   "15:00" :
+  #     speaker : Сергей Сильнов
+  #     work_place : Croice
+  #     theme : "Круглый стол: фреймворки интернета вещей AllJoyn, IOTivity."
     # "16:00" :
     #   speaker : "Кирилл Борисов"
     #   work_place : Яндекс
@@ -513,21 +513,21 @@
 
 - title: SPb Startup
   link: https://www.facebook.com/groups/pitervc/
-  schedule:
+  # schedule:
 
-    "13:00" :
-      speaker : Даниил Павлючков
-      work_place : MailBurn
-      theme : "Как мы запускались на Product Hunt и как это помогло поднять инвестиции в Долине. Кейс MailBurn."
-    "14:00" :
-      speaker : Евгения Смородникова
-      work_place : "CoffeeLab.vc"
-      theme : "Почему все, что вам говорят про стартапы - неправда?"
-    "15:00" :
-      speaker : Дмитрий Анисимов
-      work_place : GetTidy
-      theme : "Опыт комбинации оффлайн процессов и онлайн стартапа. Кейс GetTidy."
-    "16:00" :
-      speaker : "Павел Правдин/Евгения Смородникова"
-      work_place : Founder Institute SPB
-      theme : "Founder Institute SPB, открытие второго сезона."
+  #   "13:00" :
+  #     speaker : Даниил Павлючков
+  #     work_place : MailBurn
+  #     theme : "Как мы запускались на Product Hunt и как это помогло поднять инвестиции в Долине. Кейс MailBurn."
+  #   "14:00" :
+  #     speaker : Евгения Смородникова
+  #     work_place : "CoffeeLab.vc"
+  #     theme : "Почему все, что вам говорят про стартапы - неправда?"
+  #   "15:00" :
+  #     speaker : Дмитрий Анисимов
+  #     work_place : GetTidy
+  #     theme : "Опыт комбинации оффлайн процессов и онлайн стартапа. Кейс GetTidy."
+  #   "16:00" :
+  #     speaker : "Павел Правдин/Евгения Смородникова"
+  #     work_place : Founder Institute SPB
+  #     theme : "Founder Institute SPB, открытие второго сезона."
