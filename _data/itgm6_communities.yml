@@ -19,29 +19,8 @@
   #     work_place : "Total Objects / ALM Works"
   #     theme : "Как все устроено: обсуждаем жизненный цикл задач на примере TFS и Jira."
 
-# - title: SPb e-Learning
-#   link: "https://www.linkedin.com/groups?home=&gid=8282289"
-  # schedule:
-
-  #   "13:00" :
-  #     speaker : "Ольга Куранова"
-  #     work_place : "Центр дистанционного обучения ПГУПС"
-  #     theme : "Опыт массового обучения в распределенной компании и проблемы СДО в вузе"
-  #   "14:00" :
-  #     speaker : Андрей Замулин
-  #     work_place : "Высшая школа менеджмента СПбГУ"
-  #     theme : "Использование переговорного онлайн-тренажера «Roundy» в дистанционном обучении."
-  #   "15:00" :
-  #     speaker : Лилия Смирнова
-  #     work_place : "Корпоративный институт ОАО Газпром"
-  #     theme : "Разработка интерактивных упражнений для электронных курсов."
-  #   "16:00" :
-  #     speaker : "Игорь Сазонов"
-  #     work_place : 
-  #     theme : "Moodle с точки зрения программиста и пользователя."
-
-- title: IT HR
-  link: /
+# - title: IT HR
+#   link: /
   # schedule:
 
   #   "13:00" :
@@ -125,8 +104,8 @@
   #     work_place : DINS
   #     theme : "Тестирование в гибкой разрабокте. Круглый стол с сообществом SQA."
 
-# - title: IT talk
-#   link: http://it-talk.dataart.ru/
+- title: IT talk
+  link: http://it-talk.dataart.ru/
   # schedule:
 
   #   "13:00" :
@@ -404,8 +383,8 @@
   #     work_place : "Тренер и консультант, MCTS"
   #     theme : "Что такое корпоративная архитектура?"
 
-# - title: SPb Technical Writers
-#   link: https://plus.google.com/u/0/communities/111110772662436773783
+- title: SPb Technical Writers
+  link: https://plus.google.com/u/0/communities/111110772662436773783
   # schedule:
 
   #   "13:00" :
@@ -469,8 +448,8 @@
   #     work_place : 
   #     theme : Пишем плагин. Доводим до ума админку вместе с AngularJS 1.3
 
-- title: "3D уголок (Unity/3D4WEB)"
-  link: https://plus.google.com/u/0/communities/103652474826197512695
+# - title: "3D уголок (Unity/3D4WEB)"
+#   link: https://plus.google.com/u/0/communities/103652474826197512695
   # schedule:
 
   #   "13:00" :
@@ -490,8 +469,8 @@
   #     work_place : "Spiced Jackal"
   #     theme : "Как мы на коленке в обед сделали онлайновую многопользовательскую игру."
 
-- title: HackIoT
-  link: http://vk.com/hackIoT
+# - title: HackIoT
+#   link: http://vk.com/hackIoT
   # schedule:
 
   #   "13:00" :
@@ -511,8 +490,8 @@
     #   work_place : Яндекс
     #   theme : "Контроль за качеством кода."
 
-- title: SPb Startup
-  link: https://www.facebook.com/groups/pitervc/
+# - title: SPb Startup
+#   link: https://www.facebook.com/groups/pitervc/
   # schedule:
 
   #   "13:00" :
@@ -531,3 +510,24 @@
   #     speaker : "Павел Правдин/Евгения Смородникова"
   #     work_place : Founder Institute SPB
   #     theme : "Founder Institute SPB, открытие второго сезона."
+
+- title: SPb e-Learning
+  link: "https://www.linkedin.com/groups?home=&gid=8282289"
+  # schedule:
+
+  #   "13:00" :
+  #     speaker : "Ольга Куранова"
+  #     work_place : "Центр дистанционного обучения ПГУПС"
+  #     theme : "Опыт массового обучения в распределенной компании и проблемы СДО в вузе"
+  #   "14:00" :
+  #     speaker : Андрей Замулин
+  #     work_place : "Высшая школа менеджмента СПбГУ"
+  #     theme : "Использование переговорного онлайн-тренажера «Roundy» в дистанционном обучении."
+  #   "15:00" :
+  #     speaker : Лилия Смирнова
+  #     work_place : "Корпоративный институт ОАО Газпром"
+  #     theme : "Разработка интерактивных упражнений для электронных курсов."
+  #   "16:00" :
+  #     speaker : "Игорь Сазонов"
+  #     work_place : 
+  #     theme : "Moodle с точки зрения программиста и пользователя."

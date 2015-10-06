@@ -58,17 +58,17 @@
 #   level: Серебряный партнер
 #   logo: /itgm/assets/images/logos/da.png
 
-# - title: IT-Grad
-#   link: http://www.it-grad.ru/
-#   desc: 
-#   level: Серебряный партнер
-#   logo: /itgm/assets/images/logos/itgrad.png
+- title: IT-Grad
+  link: http://www.it-grad.ru/
+  desc: 
+  level: Серебряный партнер
+  logo: /itgm/assets/images/logos/itgrad.png
 
-# - title: Upwork
-#   link: https://www.upwork.com
-#   desc: 
-#   level: Бронзовый партнер
-#   logo: /itgm/assets/images/logos/upwork.png
+- title: Luxoft
+  link: https://www.luxoft.ru/
+  desc: 
+  level: Бронзовый партнер
+  logo: /itgm/assets/images/logos/luxoft.png
 
 # - title: ScrumTrek
 #   link: http://scrumtrek.ru/

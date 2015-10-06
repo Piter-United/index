@@ -13,30 +13,30 @@
 #   desc: 
 #   logo: /itgm/assets/images/logos/hor.png
 
-# - title: LoftBlog
-#   link: http://loftblog.ru/
-#   desc: 
-#   logo: /itgm/assets/images/logos/loftblog.png
+- title: LoftBlog
+  link: http://loftblog.ru/
+  desc: 
+  logo: /itgm/assets/images/logos/loftblog.png
 
-# - title: ProfsoUX
-#   link: http://profsoux.ru/
-#   desc: 
-#   logo: /itgm/assets/images/logos/profsoux.png
+- title: ProfsoUX
+  link: http://profsoux.ru/
+  desc: 
+  logo: /itgm/assets/images/logos/profsoux.png
 
-# - title: SECR-2015
-#   link: http://2015.secr.ru/
-#   desc: 
-#   logo: /itgm/assets/images/logos/secr15.png
+- title: SECR-2015
+  link: http://2015.secr.ru/
+  desc: 
+  logo: /itgm/assets/images/logos/secr15.png
 
 # - title: UMI
 #   link: http://www.umi-cms.ru/
 #   desc: 
 #   logo: /itgm/assets/images/logos/umicms.png
 
-# - title: Kechinov
-#   link: http://mkechinov.ru/
-#   desc: 
-#   logo: /itgm/assets/images/logos/kechinov.png
+- title: Kechinov
+  link: http://mkechinov.ru/
+  desc: 
+  logo: /itgm/assets/images/logos/kechinov.png
 
 # - title: Ай-Ти События
 #   link: http://it-sobytie.ru/
@@ -73,10 +73,10 @@
 #   desc: 
 #   logo: /itgm/assets/images/logos/kudago.png
 
-# - title: LevelUp
-#   link: http://levelp.ru
-#   desc: 
-#   logo: /itgm/assets/images/logos/levelup.png
+- title: LevelUp
+  link: http://levelp.ru
+  desc: 
+  logo: /itgm/assets/images/logos/levelup.png
 
 # - title: Uransoft
 #   link: http://uransoft.ru

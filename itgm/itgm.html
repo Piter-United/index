@@ -41,7 +41,9 @@ title: IT Global Meetup
 
 <!-- TimePad Form -->
 <div id="reg_form" class="ui modal">
-  <div class="header">Регистрация на IT Global Meetup #6</div>
+  <div class="header">
+    Регистрация на IT Global Meetup #6
+  </div>
   <div class="content">
     <a href="https://piter-united.timepad.ru/event/251811/" data-twf-placeholder="yes">Перейти к заказу билетов</a><script type="text/javascript" defer="defer" charset="UTF-8" data-timepad-customized="2669" data-twf2s-event--id="251811" data-timepad-widget-v2="event_register" src="https://timepad.ru/js/tpwf/loader/min/loader.js"></script>
   </div>
@@ -83,9 +85,9 @@ title: IT Global Meetup
     <div class="ui center aligned content">
       <div class="ui center aligned column cta">
         <button class="ui huge primary button"> Регистрация </button>
-        <div class="ui huge basic inverted button">
+        <!-- <div class="ui huge basic inverted button">
           Программа
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -351,9 +353,7 @@ title: IT Global Meetup
   <div id="timeline" class="ui vertical stripe segment">
     <a class="anchor" id="programme_a"></a>
     <div class="ui center aligned container title">
-        <h1>
-        Программа мероприятия      
-        </h1>      
+        <h1> Программа мероприятия </h1>      
     </div>
 
     <div class="ui top aligned stackable grid container">
@@ -500,9 +500,9 @@ title: IT Global Meetup
 
   <div id="partners" class="ui vertical stripe segment">
     <div class="ui center aligned container">
-        <h1 class="h-hero">
-        Партнеры мероприятия
-        </h1>      
+        <br>
+        <h1>Партнеры мероприятия</h1>
+        <br>      
     </div> 
     <div class="ui six doubling cards center aligned container partners"> 
       {% for sponsor in site.data.itgm6_sponsors %} 
@@ -521,7 +521,7 @@ title: IT Global Meetup
       {% endfor %}
     </div> 
     <div class="ui center aligned container">  
-        <a class="link" href="">Наше партнерское предложение</a>
+        <a class="link" href="https://drive.google.com/file/d/0BxYRcMd8bdbdZy1KNDQtT2wzUms" target="_blank">Наше партнерское предложение</a>
     </div>       
   </div>
 
@@ -531,9 +531,10 @@ title: IT Global Meetup
 
   <div id="infopartners" class="ui vertical stripe segment">
     <div class="ui center aligned container">
-        <h1 class="h-hero">
+        <h1>
         Информационные партнеры
         </h1>      
+        <br>
     </div> 
     <div class="ui six doubling cards center aligned container partners">
       {% for infopartner in site.data.itgm6_infopartners %}  
@@ -557,13 +558,15 @@ title: IT Global Meetup
 
   <div id="money" class="ui vertical stripe segment">
     <div class="ui center aligned container">
+        <br>
         <h1>
-        Поддержите мероприятие и инициативу Piter United
+        Поддержка мероприятия
         </h1>     
-      <p>Все собранные деньги пойдут на покрытие орг. расходов на мероприятие,
-либо на закупку инвентаря необходимого сообществам (флипчарты, ролл-апы и т.д.).</p>   
+      <p>Все собранные деньги пойдут на покрытие орг. расходов на мероприятие,<br>
+либо на закупку инвентаря необходимого сообществам (флипчарты, ролл-апы и т.д.).</p>
       <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=410011943203218&quickpay=shop&payment-type-choice=on&writer=seller&targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0+%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%D0%B3%D0%BE+%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F&targets-hint=&default-sum=500&button-text=03&fio=on&successURL=http%3A%2F%2Fpiter-united.ru" width="450" height="198"></iframe>
-    </div> 
+    </div>
+    <br><br> 
   </div>
 
   <!-- endof Spend money-->
@@ -585,7 +588,7 @@ title: IT Global Meetup
           <div class="description">
             <i class="tiny marker icon"></i> 
             Санкт-Петербург, пр. Медиков д.3, КДЦ “Club House”
-            <a class="link" href="http://piter-united.ru/itgm/map.html" target="_blank">подробный маршрут</a>
+            <a class="link" href="http://piter-united.ru/itgm5/map.html" target="_blank">подробный маршрут</a>
           </div>
         </div>
         <div class="content">
@@ -593,7 +596,7 @@ title: IT Global Meetup
           Контакты
           </div>
           <div class="description"><i class="tiny mail outline icon"></i> piterunited@gmail.com</div> 
-          <div class="description"><i class="tiny phone icon"></i> +7 911 123-44-55</div>
+          <!-- <div class="description"><i class="tiny phone icon"></i> +7 911 123-44-55</div> -->
           
         </div> 
         <div class="ui center aligned bottom attached extra content">
@@ -653,7 +656,8 @@ title: IT Global Meetup
 </div>
 
 <div id="programme" class="ui modal">
-  <i class="close icon"></i>
+  <p>Программа на стадии согласования! Скоро!</p>
+  <!-- <i class="close icon"></i>
   <div class="ui center aligned dialog header">
     <div class="ui title">
       SPb Cloud & Virtualization Community
@@ -758,7 +762,7 @@ title: IT Global Meetup
           </div>         
         </div> 
       </div>                
-  </div>
+  </div> -->
 </div>
 
 <script src="./assets/js/vendor/jquery.min.js"></script>
