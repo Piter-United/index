@@ -416,6 +416,7 @@ title: IT Global Meetup
         </h1>      
     </div> 
 
+    {% assign timeFrames = "13:00|14:00|15:00|16:00" | split: "|" %}
     <div class="ui four link cards column doubling grid container communities">
       {% for community in site.data.itgm6_communities %}
       <div class="card">
@@ -424,12 +425,19 @@ title: IT Global Meetup
           {{ community.title }}
           </div>
         </div>
-        <div class="center aligned extra content">          
-            <a class="ui basic inactive label">13:00</a>                      
-            <a class="ui basic inactive label">14:00</a>                   
-            <a class="ui basic inactive label">15:00</a>           
-            <a class="ui basic inactive label">16:00</a>       
-        </div>        
+        <div class="center aligned extra content">  
+            {% for frame in timeFrames %}
+              {% assign event = community.schedule[frame] %}
+              {% if event %}
+                <a class="ui basic active label">{{frame}}</a>  
+              {% else %}
+                <a class="ui basic inactive label">{{frame}}</a>  
+              {% endif %}
+            {% endfor %}                         
+        </div> 
+        <div class="additional">
+          <p class="c_id">{{community.id}}</p>         
+        </div>       
       </div>
       {% endfor %}
     </div>
@@ -655,115 +663,69 @@ title: IT Global Meetup
   </div>
 </div>
 
-<div id="programme" class="ui modal">
-  <p>Программа на стадии согласования! Скоро!</p>
-  <!-- <i class="close icon"></i>
-  <div class="ui center aligned dialog header">
-    <div class="ui title">
-      SPb Cloud & Virtualization Community
-    </div>
-    <div class="ui description"> 
-      <a class="link" href="#" target="_blank">сайт сообщества</a>
-    </div>
-  </div>
-  <div class="ui vertically divided stackable grid container">
-      <div class="row">
-        <div class="center aligned three wide column">
-          <h1 class="start">13:00</h1> 
-          <p>13:40</p>          
-        </div>
-        <div class="right floated thirteen wide column">          
-          <h3 class="ui header">Персональные данные в облаке с технической и правовой стороны вопроса. / Microsoft Azure. От теории к практике</h3>
-          <div class="ui tiny orange tag label">Круглый стол</div>      
-          <div class="ui items">
-            <div class="item">
-              <div class="ui circular image">
-                <img src="assets/images/avatar/nan.jpg">
-              </div>
-              <div class="content">
-                <div class="author">Никита Ефимов</div>
-                <div class="meta">
-                  Руководитель отдела проектирования, Selectel
-                </div>
-              </div>
-            </div>
-          </div>        
-        </div>
+{% for community in site.data.itgm6_communities %}
+
+  <div id="programme_{{community.id}}" class="programme ui modal">    
+    <i class="close icon"></i>
+    <div class="ui center aligned dialog header">
+      <div class="ui title">
+        {{ community.title }}
       </div>
-      <div class="row">
-        <div class="center aligned three wide column">
-          <h1 class="start">14:00</h1> 
-          <p>14:40</p>            
-        </div>
-        <div class="right floated thirteen wide column">
-          <h3 class="ui header">Персональные данные в облаке с технической и правовой стороны вопроса. / Microsoft Azure. От теории к практике</h3>
-          <div class="ui items">
-            <div class="item">
-              <div class="ui circular image">
-                <img src="assets/images/avatar/nan.jpg">
-              </div>
-              <div class="content">
-                <div class="author">Никита Ефимов</div>
-                <div class="meta">
-                  Руководитель отдела проектирования, Selectel
-                </div>
-              </div>
+      <div class="ui description"> 
+        <a class="link" href="{{ community.link }}" target="_blank">сайт сообщества</a>
+      </div>
+    </div>
+    <div class="ui vertically divided stackable grid container">
+
+      {% for frame in timeFrames %}
+        <div class="row">
+        {% assign event = community.schedule[frame] %}
+        {% assign time = frame | split: ":" %}
+            <div class="center aligned three wide column">
+              <h1 class="start">{{time[0]}}:00</h1> 
+              <p>{{time[0]}}:40</p>          
             </div>
-            <div class="item">
-              <div class="ui circular image">
-                <img src="assets/images/avatar/nan.jpg">
-              </div>
-              <div class="content">
-                <div class="author">Никита Ефимов</div>
-                <div class="meta">
-                  Руководитель отдела проектирования, Selectel
+            
+          {% if event %}
+
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">{{event.theme}}</h3>
+
+              {% if event.is_discussion == 1 %}
+              <div class="ui tiny orange tag label">Круглый стол</div>      
+              {% endif %}
+              <div class="ui items">
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/{{event.speaker_ava}}">
+                  </div>
+                  <div class="content">
+                    <div class="author">{{event.speaker}}</div>
+                    <div class="meta">
+                      {{event.work_place}}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>            
-          </div>          
-        </div> 
-      </div>   
-      <div class="row">
-        <div class="center aligned three wide column">
-          <h1 class="start">15:00</h1> 
-          <p>15:40</p>            
-        </div>
-        <div class="right floated middle aligned thirteen wide column">
-          <div class="ui items">
-            <div class="item">
-              <div class="empty content">
-                <h3 class="header">Тема не определена</h3>
-                <a class="link" href="#">хочу предложить тему!</a>
-              </div>
-              
+              </div>        
             </div>
-          </div>         
-        </div> 
-      </div>  
-      <div class="row">
-        <div class="center aligned three wide column">
-          <h1 class="start">16:00</h1> 
-          <p>16:40</p>            
-        </div>
-        <div class="right floated thirteen wide column">
-          <h3 class="ui header">Персональные данные в облаке с технической и правовой стороны вопроса. / Microsoft Azure. От теории к практике</h3>
-          <div class="ui items">
-            <div class="item">
-              <div class="ui circular image">
-                <img src="assets/images/avatar/nan.jpg">
-              </div>
-              <div class="content">
-                <div class="author">Никита Ефимов</div>
-                <div class="meta">
-                  Руководитель отдела проектирования, Selectel
+          {% else %}
+          <div class="right floated middle aligned thirteen wide column">
+            <div class="ui items">
+              <div class="item">
+                <div class="empty content">
+                  <h3 class="header">Тема не определена</h3>
+                  <a class="link" href="#">хочу предложить тему!</a>
                 </div>
+                
               </div>
-            </div>
-          </div>         
-        </div> 
-      </div>                
-  </div> -->
-</div>
+            </div>         
+          </div> 
+          {% endif %}
+        </div>
+      {% endfor %}                  
+    </div>
+  </div> 
+{% endfor %} 
 
 <script src="./assets/js/vendor/jquery.min.js"></script>
 <script src="./dist/semantic.min.js"></script>

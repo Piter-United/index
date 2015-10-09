@@ -23,8 +23,11 @@ $(document)
       return false;
     });
 
-    $('.communities.column').click(function() {
-      $('#programme')
+    $('.communities.column .card').click(function() {
+      var additional_info = $(this).find('.additional')[0];      
+      var id = $(additional_info).find('.c_id').first().text();
+
+      $('#programme_'+id)
       .modal('show')
       ;
       return false;
