@@ -1,7 +1,7 @@
 - title: DataArt
   link: http://www.dataart.ru/
   desc: 
-  logo: /itgm/assets/images/logos/da.png
+  logo: da.png
 
 # - title: IT talk
 #   link: http://it-talk.dataart.ru/
@@ -16,17 +16,17 @@
 - title: LoftBlog
   link: http://loftblog.ru/
   desc: 
-  logo: /itgm/assets/images/logos/loftblog.png
+  logo: loftblog.png
 
 - title: ProfsoUX
   link: http://profsoux.ru/
   desc: 
-  logo: /itgm/assets/images/logos/profsoux.png
+  logo: profsoux.png
 
 - title: SECR-2015
   link: http://2015.secr.ru/
   desc: 
-  logo: /itgm/assets/images/logos/secr15.png
+  logo: secr15.png
 
 # - title: UMI
 #   link: http://www.umi-cms.ru/
@@ -36,7 +36,7 @@
 - title: Kechinov
   link: http://mkechinov.ru/
   desc: 
-  logo: /itgm/assets/images/logos/kechinov.png
+  logo: kechinov.png
 
 # - title: Ай-Ти События
 #   link: http://it-sobytie.ru/
@@ -76,7 +76,7 @@
 - title: LevelUp
   link: http://levelp.ru
   desc: 
-  logo: /itgm/assets/images/logos/levelup.png
+  logo: levelup.png
 
 # - title: Uransoft
 #   link: http://uransoft.ru
@@ -91,4 +91,4 @@
 - title: Новый инфопартнер
   link: mailto:piterunited@gmail.com
   desc: 
-  logo: /itgm/assets/images/logos/newpartner.png
+  logo: newpartner.png
