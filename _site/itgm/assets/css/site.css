@@ -213,6 +213,10 @@ h1{
   color: #777777;
 }
 
+#communities .card {
+  min-height: 130px;
+}
+
 #communities .card .label {
   margin-top: 10px;
   background-color: #ffffff;
@@ -227,6 +231,10 @@ h1{
   border: none;
   color: #8E8E8F;
   font-weight: 400;
+}
+
+#communities .card .additional {
+  display: none;
 }
 
 #partners {
@@ -323,49 +331,58 @@ h1{
   left: 0;
 }
 
-#programme .ui.header {
+.programme .ui.header {
   margin-bottom: 10px;
 }
 
-#programme .ui.dialog.header {
+.programme .ui.header .ui.title {
+  padding-bottom: 10px;
+}
+
+.programme .ui.dialog.header {
   min-height: 100px;
 }
 
-#programme .ui.dialog.header .title {
+.programme .ui.dialog.header .title {
   font-size: 26px;
   font-weight: 300;
 }
 
-#programme .ui.dialog.header .description {
+.programme .ui.dialog.header .ui.description {
   font-size: 14px; 
   font-weight: 400;  
   margin-top: 10px;   
 }    
 
-#programme .start {
+.programme .row .column .start {
   color: #974508;
   margin-bottom: 2px;
 }
 
-#programme .circular.image {
+.programme .row .column .circular.image {
   width: 44px;
   border-radius: 22px;
 }
 
-#programme .item .author {
+.programme .item .author {
   font-size: 16px;
   font-weight: 600;
 }
 
-#programme .row .ui.items {
+.programme .row .ui.items {
   margin-top: 30px;
 }
 
-#programme .empty.content .header {
+.programme .row .column .ui.items .item .empty.content .header {
   font-weight: 300;
   font-size: 24px;
   color: #974508;
   margin-right: 20px;
+}
+
+.programme .row .column .ui.items .item .empty.content .link {
+    font-weight: 300;
+    font-size: 12px;
 }
 
 #footer .content a i {
@@ -441,6 +458,6 @@ h1{
 }
 
 /* Временные стили */
-.ui.modal p{
+/*.ui.modal p{
   padding: 60px;
-}
+}*/
