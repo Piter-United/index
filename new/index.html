@@ -1,0 +1,45 @@
+---
+layout: new_layout
+title: Piter United
+---
+
+<div class="moto text-center">
+	<h1>Объединение IT-сообществ Санкт-Петерубрга</h1>
+	<h4>Обучение через общение</h4>
+	<br>
+	<a class="btn btn-default" id="registration" href="#" role="button">ПРИСОЕДИНИТЬСЯ</a>
+</div>
+
+<div class="landing_row">
+	<div class="container">
+		<h3>Ближайшие митапы&nbsp&nbsp<a class="label label-danger" id="custom_label" href="/new/meetups.html">Все 14</a></h3>
+		
+		<div class="container-flex">
+			{% for meetup in site.data.meetups %}
+			<div class="item-flex meetup">
+				<div class="afa"></div>
+				<h4> {{meetup.title}} </h4>
+				<p> {{meetup.desc}} </p>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+<div class="landing_row">
+	<div class="container">
+		<h3>Сообщества &nbsp&nbsp<a class="label label-danger" id="custom_label" href="/new/communities.html">Все 31</a></h3>
+	
+		{% for meetup in site.data.meetups %}
+		<div class="container-flex community">
+			<div class="item-flex logo"></div>
+			<div class="item-flex description">
+				<h4> {{meetup.title}} </h4>
+				<p> {{meetup.desc}} </p>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
+

@@ -1,0 +1,23 @@
+---
+layout: new_layout
+title: Piter United
+---
+
+<div class="container search_row">
+	<input type="text" class="form-control custom_search" placeholder="Поиск сообщества по названию и ключевым словам">
+</div>
+
+<div class="border">
+	<div class="container">
+		<h3>Сообщества</h3>
+		{% for community in site.data.communities %}
+		<div class="container-flex community">
+			<div class="item-flex logo"></div>
+			<div class="item-flex description">
+				<h4> {{community.title}} </h4>
+				<p> {{community.desc}} </p>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>

@@ -1,0 +1,182 @@
+body{
+	background-color: white;
+	font-size: 16px;
+}
+
+h3{
+	margin-top: 0px !important;
+	margin-bottom: 20px;
+}
+
+a.brand{
+	color: #d9534f;
+	text-decoration: none;
+}
+
+.nav-pills li a{
+	color: #7f8c8d !important;
+}
+
+/* Styles for Primary Navigation*/
+
+.primary_navigation{
+	width: 100%;
+	height: 80px;
+	border-bottom: 1px solid #ddd;
+}
+
+.primary_navigation h3{
+	padding-top: 28px;
+	display: inline-block;
+	font-weight: 600;
+	color: #D0021B;
+}
+
+a#custom_label{
+	background-color: white;
+	color: #d9534f;
+	font-weight: 200;
+	border: 1px solid #d9534f;
+	padding-top: 7px;
+}
+
+.primary_navigation ul{
+	padding-top: 20px;
+	float: right;
+	display: inline-block;
+}
+
+.primary_navigation ul li{
+	padding-right: 20px;
+}
+
+/* Styles for Landing Page */
+
+.moto{
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	padding: 140px 0px;
+}
+
+.moto a{
+	font-size: 16px;
+	padding: 10px 20px;
+}
+
+a#registration{
+	border: 1px solid #d9534f;
+	color: #d9534f;
+}
+
+a#registration:hover{
+	border: 1px solid #d9534f;
+	background-color: #d9534f;
+	color: white;
+}
+
+.landing_row{
+	padding-top: 60px;
+	padding-bottom: 80px;
+	border-bottom: 1px solid #ddd;
+}
+
+.container-flex{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.item-flex{
+	flex-grow: 1;
+	width: 300px;
+	text-align: left;
+	margin: 4px;
+}
+
+.item-flex h4{
+	padding-top: 10px;
+	padding-left: 10px;
+	font-weight: 600;
+}
+
+.item-flex p{
+	color: #bbb;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+.item-flex .afa{
+	width: 100%;
+	height: 200px;
+	background-color: #ddd;
+}
+
+.logo{
+	width: 19%;
+	height: 150px;
+	background-color: #ddd;
+	display: inline-block;
+}
+
+.description{
+	width: 79%;
+	margin-left: 2px;
+	height: 150px;
+	display: inline-block;
+}
+
+.meetup:hover{
+	border: 1px solid #D0021B;
+}
+
+.meetup:hover h4{
+	color: #D0021B;
+}
+
+.community:hover{
+	border: 1px solid #D0021B;
+}
+
+.community:hover h4{
+	color: #D0021B;
+}
+
+/* Styles for Footer */
+
+.footer{
+	height: 300px;
+	padding-top: 60px;
+}
+
+.footer li a{
+	color: #7f8c8d !important;
+	text-decoration: none !important;
+}
+
+/* Styles for Community Page */
+
+.search_row{
+	padding: 60px 16px;
+}
+
+input.custom_search{
+	height: 41px;
+	border-radius: 0px !important;
+	box-shadow: none !important;
+	font-size: 16px;
+	font-weight: 200 !important;
+	color: #bbb !important;
+}
+
+.border{
+	padding-bottom: 60px;
+	border-bottom: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+

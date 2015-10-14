@@ -1,0 +1,22 @@
+---
+layout: new_layout
+title: Piter United
+---
+<div class="container search_row">
+	<input type="text" class="form-control custom_search" placeholder="Поиск сообщества по названию и ключевым словам">
+</div>
+
+<div class="border">
+	<div class="container">
+		<h3>Митапы</h3>
+		<div class="container-flex">
+			{% for meetup in site.data.meetups %}
+			<div class="item-flex meetup">
+				<div class="afa"></div>
+				<h4> {{meetup.title}} </h4>
+				<p> {{meetup.desc}} </p>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
