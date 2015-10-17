@@ -76,11 +76,11 @@
 #   level: Бронзовый партнер
 #   logo: /itgm/assets/images/logos/ossprime.png
 
-# - title: Манн Иванов и Фербер
-#   link: http://www.mann-ivanov-ferber.ru/
-#   desc: 
-#   level: Бронзовый партнер
-#   logo: /itgm/assets/images/logos/mannivanovferber.gif
+- title: Манн Иванов и Фербер
+  link: http://www.mann-ivanov-ferber.ru/
+  desc: 
+  level: Бронзовый партнер
+  logo: mannivanovferber.gif
 
 # - title: A25
 #   link: http://a25.ru/

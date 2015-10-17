@@ -83,10 +83,10 @@
 #   desc: 
 #   logo: /itgm/assets/images/logos/uransoft.png
 
-# - title: Бизнес Портрет
-#   link: http://бизнеспортрет.рф
-#   desc: 
-#   logo: /itgm/assets/images/logos/businessportret.png
+- title: Бизнес Портрет
+  link: http://бизнеспортрет.рф
+  desc: 
+  logo: businessportret.png
 
 - title: Новый инфопартнер
   link: mailto:piterunited@gmail.com
