@@ -319,7 +319,7 @@
      #  speaker_ava: nan.jpg    
      "16:00" :
        speaker : Илья Зыкин
-       work_place : -
+       work_place : "-"
        theme : "Chef, Vagrant: От Dev окружения до развертки Rails приложения."
        is_discussion: 0     
        speaker_ava: nan.jpg 
