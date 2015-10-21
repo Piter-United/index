@@ -301,14 +301,14 @@
 - title: SPb Python Interest Group
   id: 8
   link: http://spbpython.guru/
-  # schedule:
+  schedule:
 
-  #   "13:00" :
-  #     speaker : "Александр Козловский / Алексей Малашкевич"
-  #     work_place : PonyORM
-  #     theme : "Разработка Single Page Applications с помощью Pony ORM."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
+     "13:00" :
+       speaker : Александр Шорин
+       work_place : TicketsCloud
+       theme : "QuickCheck в Python: проверка гипотез и поиск ошибок."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
   #   "14:00" :
   #     speaker : Сергей Матвеенко
   #     work_place : DataArt
@@ -321,12 +321,12 @@
   #     theme : "Пакетный менеджер Nix в качестве замены Virtualenv."
      #  is_discussion: 1     
      #  speaker_ava: nan.jpg    
-  #   "16:00" :
-  #     speaker : "Кирилл Борисов"
-  #     work_place : Яндекс
-  #     theme : "Контроль за качеством кода."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
+     "16:00" :
+       speaker : Сергей Матвеенко
+       work_place : DataArt
+       theme : "Mnj - пристройка к PyMongo, которая облегчает жизнь."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
 
 - title: FProg (Clojure/Erlang/Haskell)
   id: 9
