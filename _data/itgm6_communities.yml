@@ -73,14 +73,14 @@
 - title: SPb SPM Club
   id: 2
   link: https://plus.google.com/u/0/communities/108809460896106613736
-  # schedule:
+  schedule:
 
-  #   "13:00" :
-  #     speaker : Александр Бындю
-  #     work_place : "ByndyuSoft"
-  #     theme : Стендапы в стиле Kanban.
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
+     "13:00" :
+       speaker : Евгений Сачек
+       work_place : "Return On Intelligence (ROI), team-leader"
+       theme : "Имитационная модель в среде Anylogic для прогнозирования коэффициента сосредоточенности Cкрам команды."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
   #   "14:00" :
   #     speaker : Алексей Васильев
   #     work_place : SigmaLab
@@ -294,9 +294,35 @@
      #  is_discussion: 1     
      #  speaker_ava: nan.jpg    
     
+- title: SPb Ruby User Group
+  id: 15
+  link: https://plus.google.com/communities/117927540789820622012
+  schedule:
 
-# - title: SPb Ruby User Group
-#   link: https://plus.google.com/communities/117927540789820622012
+  #   "13:00" :
+  #     speaker : Андрей Акиньшин
+  #     work_place : Энтерра
+  #     theme : "Будущее .NET-разработки."
+     #  is_discussion: 1     
+     #  speaker_ava: nan.jpg    
+     "14:00" :
+       speaker : Ольга Резникова
+       work_place : SPB TV
+       theme : "RSpec: Best practices, читабельность и здравый смысл."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
+  #   "15:00" :
+  #     speaker : "Дмитрий Нестерук"
+  #     work_place :  JetBrains
+  #     theme : "Динамическое Прототипирование."
+     #  is_discussion: 1     
+     #  speaker_ava: nan.jpg    
+     "16:00" :
+       speaker : Илья Зыкин
+       work_place : -
+       theme : "Chef, Vagrant: От Dev окружения до развертки Rails приложения."
+       is_discussion: 0     
+       speaker_ava: nan.jpg 
 
 - title: SPb Python Interest Group
   id: 8
@@ -382,14 +408,14 @@
 - title: "SPb Cloud & Virtualization Community"
   id: 10
   link: https://vk.com/spb.cloud
-  # schedule:
+  schedule:
 
-  #   "13:00" :
-  #     speaker : Михаил Новоселов
-  #     work_place : ИТ-ГРАД
-  #     theme : "Виртуальная схд в облаке."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
+     "13:00" :
+       speaker : Андрей Маркелов
+       work_place : Ericsson
+       theme : "Использование облачной инфраструктуры OpenStack для телеком и NFV."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
   #   "14:00" :
   #     speaker : "Юрий Сухов"
   #     work_place : "Veeam Software"
