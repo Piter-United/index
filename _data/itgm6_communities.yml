@@ -312,7 +312,7 @@
        work_place : SPB TV
        theme : "RSpec: Best practices, читабельность и здравый смысл."
        is_discussion: 0     
-       speaker_ava: nan.jpg    
+       speaker_ava: sprug_reznikova.jpeg    
   #   "15:00" :
   #     speaker : "Дмитрий Нестерук"
   #     work_place :  JetBrains
@@ -324,7 +324,7 @@
        work_place : "-"
        theme : "Chef, Vagrant: От Dev окружения до развертки Rails приложения."
        is_discussion: 0     
-       speaker_ava: nan.jpg 
+       speaker_ava: sprug_zikin.jpeg 
 
 - title: SPb Python Interest Group
   id: 8
