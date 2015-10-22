@@ -213,12 +213,12 @@
   link: https://plus.google.com/communities/117927540789820622012
   schedule:
 
-  #   "13:00" :
-  #     speaker : Андрей Акиньшин
-  #     work_place : Энтерра
-  #     theme : "Будущее .NET-разработки."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
+     "13:00" :
+       speaker : Максим Чечель
+       work_place : Breeze Technology Solutions
+       theme : "Бесконтактный Ruby. Разработка и тестирование NFC-приложений."
+       is_discussion: 0     
+       speaker_ava: sprug_chechel.jpg    
      "14:00" :
        speaker : Ольга Резникова
        work_place : SPB TV

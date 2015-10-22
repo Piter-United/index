@@ -217,6 +217,10 @@ h1{
   color: #777777;
 }
 
+#communities {
+  border-bottom: none;
+}
+
 #communities .card {
   min-height: 130px;
 }
@@ -239,6 +243,40 @@ h1{
 
 #communities .card .additional {
   display: none;
+}
+
+
+#guest_speakers .ui.items {
+  max-width: 900px;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 50px;
+}
+
+#guest_speakers .ui.items .item .image img {
+  width: 160px;
+  border-radius: 80px;
+}
+
+#guest_speakers .ui.items .item .content {
+  margin-left: 30px;
+}
+
+#guest_speakers .ui.items .item .content .header {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+#guest_speakers .ui.items .item .content .description {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+#guest_speakers .ui.items .item .content .extra {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, .6);
 }
 
 #partners {
@@ -449,6 +487,11 @@ h1{
 
   #firstslide .countdown .stat.value {    
     font-size: 22px;
+  }  
+
+  #guest_speakers .ui.items .item .image img {
+    width: 200px !important;
+    border-radius: 100px;
   }  
 
   #canvas-map {

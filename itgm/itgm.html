@@ -426,69 +426,49 @@ title: IT Global Meetup
         </div>       
       </div>
       {% endfor %}
-    </div>
-
-    <div class="ui center aligned container cta">
-      <button class="ui huge primary button"> Регистрация </button>
-    </div>      
+    </div>    
   </div>
 
   <!-- endof Communities-->
 
-  <!-- People -->
+  <!-- Guest speakers -->
 
-  <!--<div id="people" class="ui vertical stripe segment">
-    <a class="anchor" id="people_a"></a>
-    <div class="ui center aligned container">
-        <h1 class="h-hero">
-        Персоналии      
+  <div id="guest_speakers" class="ui vertical stripe segment">
+    <div class="ui center aligned container title">
+        <h1>
+        Приглашенные докладчики
         </h1>      
-    </div> 
-    <div class="ui stackable two column grid">
-      <div class="column">
-        <div class="ui items">
-          <div class="item">
-            <div class="ui small image">
-              <img src="assets/images/avatar/nan.jpg">
-            </div>
-            <div class="content">
-              <div class="header">Никита Ефимов</div>
-              <div class="meta">
-                <span>Просто клевый парень, Selectel</span>          
-              </div>
-              <div class="description">
-                <p>
-                  Не следует, однако забывать, что укрепление и развитие структуры требуют от нас анализа дальнейших направлений развития. Товарищи! дальнейшее развитие различных форм деятельности требуют определения и уточнения соответствующий условий активизации.
-                </p>
-              </div>
-            </div>
-          </div>  
-        </div>       
-      </div>
-      <div class="column">
-        <div class="ui items">
-          <div class="item">
-            <div class="ui small image">
-              <img src="assets/images/avatar/nan.jpg">
-            </div>
-            <div class="content">
-              <div class="header">Никита Ефимов</div>
-              <div class="meta">
-                <span>Просто клевый парень, Selectel</span>          
-              </div>
-              <div class="description">
-                <p>
-                  Не следует, однако забывать, что укрепление и развитие структуры требуют от нас анализа дальнейших направлений развития. Товарищи! дальнейшее развитие различных форм деятельности требуют определения и уточнения соответствующий условий активизации.
-                </p>
-              </div>
-            </div>
-          </div>  
-        </div>       
-      </div>              
     </div>
-  </div>-->
 
-  <!-- endof People -->
+    <div class="ui divided items">
+      {% for guest_speaker in site.data.itgm6_guest_speakers %}
+      <div class="item">
+        <div class="image">
+          <img src="assets/images/avatar/{{guest_speaker.avatar}}">
+        </div>
+        <div class="content">
+          <a class="header">{{guest_speaker.name}}</a>
+          <div class="meta">
+            <span>{{guest_speaker.work_place}}</span>
+          </div>
+          <div class="description">
+            "{{guest_speaker.theme}}"
+          </div>
+          <div class="extra">
+            {{guest_speaker.description}}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="ui center aligned container cta">
+      <button class="ui huge primary button"> Регистрация </button>
+    </div>  
+
+  </div>
+
+  <!-- endof Guest speakers -->
 
   <!--Partners-->
 
