@@ -38,13 +38,13 @@
        work_place : TicketsCloud
        theme : "QuickCheck в Python: проверка гипотез и поиск ошибок."
        is_discussion: 0     
+       speaker_ava: python_shorin.jpeg    
+     "14:00" :
+       speaker : Иван Михайлюков
+       work_place : Яндекс
+       theme : "Мессенджеры - Next Big Thing."
+       is_discussion: 0     
        speaker_ava: nan.jpg    
-  #   "14:00" :
-  #     speaker : Сергей Матвеенко
-  #     work_place : DataArt
-  #     theme : "Развитие петербургского Python сообщества: форматы встреч, темы докладов (brainstorm)."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
   #   "15:00" :
   #     speaker : Андрей Павлов
   #     work_place : "C.Nord"
@@ -56,7 +56,7 @@
        work_place : DataArt
        theme : "Mnj - пристройка к PyMongo, которая облегчает жизнь."
        is_discussion: 0     
-       speaker_ava: nan.jpg 
+       speaker_ava: python_matveenko.jpeg 
 
 - title: FProg (Clojure/Erlang/Haskell)
   id: 3
@@ -248,13 +248,13 @@
        work_place : "Return On Intelligence (ROI), team-leader"
        theme : "Имитационная модель в среде Anylogic для прогнозирования коэффициента сосредоточенности Cкрам команды."
        is_discussion: 0     
-       speaker_ava: nan.jpg    
-  #   "14:00" :
-  #     speaker : Алексей Васильев
-  #     work_place : SigmaLab
-  #     theme : "Применение инструментов TOC. Решение конфликтов, поиск ключевых проблем при постановке процессов."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
+       speaker_ava: spm_sachek.png
+     "14:00" :
+       speaker : Пикулев Алексей
+       work_place : Luxoft Agile Practice
+       theme : "Развиваем доверие в команде."
+       is_discussion: 0     
+       speaker_ava: spm_pikulev.png    
   #   "15:00" :
   #     speaker : Андрей Толмачев
   #     work_place : Openway
