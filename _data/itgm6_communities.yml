@@ -134,13 +134,13 @@
        work_place : JetBrains
        theme : "Распространённые ошибки оценки производительности .NET-приложений."
        is_discussion: 0     
-       speaker_ava: nan.jpg    
+       speaker_ava: net_akinshin.jpg    
      "15:00" :
        speaker : Антон Шабанов
        work_place :  WaveAccess
        theme : "Использование Visual Studio Tools for Apache Cordova в реальном проекте."
        is_discussion: 0     
-       speaker_ava: nan.jpg    
+       speaker_ava: net_shabanov.png    
   #   "16:00" :
   #     speaker : Антон Шабанов
   #     work_place : WaveAccess
