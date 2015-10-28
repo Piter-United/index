@@ -271,8 +271,8 @@
 - title: SPb Community of Analysts
   id: 10
   link: http://vk.com/spb_analytics
-   schedule:
-  
+  schedule:
+
      "13:00" :
        speaker : Наталья Желнова
        work_place : Москва
