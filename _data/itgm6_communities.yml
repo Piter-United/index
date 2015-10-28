@@ -61,20 +61,20 @@
 - title: FProg (Clojure/Erlang/Haskell)
   id: 3
   link: https://plus.google.com/communities/114227952963737516047
-  # schedule:
+  schedule:
 
-  #   "13:00" :
-  #     speaker : Максим Велесюк
-  #     work_place : Areo Gaming
-  #     theme : "Разработка в Common Lisp с SLIME."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
-  #   "14:00" :
-  #     speaker : Игнат Толчанов
-  #     work_place : 
-  #     theme : "Про формализмы, описывающие взаимодействия процессов, с примерами на Erlang + еще чем-нибудь (Cloud Haskell, Scala)."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
+     "13:00" :
+       speaker : Мария Давыдова
+       work_place : JetBrains
+       theme : "Agda - молодой функциональный язык программирования."
+       is_discussion: 0  
+       speaker_ava: fprog_davidova.jpg    
+     "14:00" :
+       speaker : Игнат Толчанов
+       work_place : Umisoft
+       theme : "Блеск и нищета erlang."
+       is_discussion: 0     
+       speaker_ava: fprog_tolchanov.jpg    
   #   "15:00" :
   #     speaker : "Ильшад Хабибуллин"
   #     work_place : Health Samurai Team
@@ -121,7 +121,7 @@
 - title: "SPb .Net Community"
   id: 5
   link: https://plus.google.com/u/0/communities/115643868183582812348
-  # schedule:
+  schedule:
 
   #   "13:00" :
   #     speaker : Андрей Акиньшин
@@ -129,18 +129,18 @@
   #     theme : "Будущее .NET-разработки."
      #  is_discussion: 1     
      #  speaker_ava: nan.jpg    
-  #   "14:00" :
-  #     speaker : Никита Козлов
-  #     work_place : MySale Group
-  #     theme : "DSL без купюр."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
-  #   "15:00" :
-  #     speaker : "Дмитрий Нестерук"
-  #     work_place :  JetBrains
-  #     theme : "Динамическое Прототипирование."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
+     "14:00" :
+       speaker : Андрей Акиньшин
+       work_place : JetBrains
+       theme : "Распространённые ошибки оценки производительности .NET-приложений."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
+     "15:00" :
+       speaker : Антон Шабанов
+       work_place :  WaveAccess
+       theme : "Использование Visual Studio Tools for Apache Cordova в реальном проекте."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
   #   "16:00" :
   #     speaker : Антон Шабанов
   #     work_place : WaveAccess
@@ -181,20 +181,20 @@
 - title: SPb GO Community
   id: 7
   link: "http://groups.google.com/forum/#!forum/golang-ru"
-  # schedule:
+  schedule:
 
-  #   "13:00" :
-  #     speaker : Александр Неганов
-  #     work_place : 
-  #     theme : "Эффективный файловый IO: быстро и сложно."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
-  #   "14:00" :
-  #     speaker : Виталий Левченко
-  #     work_place : 
-  #     theme : "NSQ: опыт использования в большой системе."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
+     "13:00" :
+       speaker : Алексей Акулович
+       work_place : VK
+       theme : "Тема уточняется."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
+     "14:00" :
+       speaker : Виталий Симирнин
+       work_place : "-"
+       theme : "Тема уточняется."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
   #   "15:00" :
   #     speaker : "модератор: Виталий Левченко"
   #     work_place : 
@@ -255,12 +255,12 @@
        theme : "Развиваем доверие в команде."
        is_discussion: 0     
        speaker_ava: spm_pikulev.png    
-  #   "15:00" :
-  #     speaker : Андрей Толмачев
-  #     work_place : Openway
-  #     theme : "Как делать agile с неаджальными банками на примере конкретного проекта, инструментов."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
+     "15:00" :
+       speaker : Александр Мартюшев
+       work_place : SEMrush
+       theme : "Тема уточняется."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
   #   "16:00" :
   #     speaker : "модератор: Михаил Рыжиков"
   #     work_place : Health Samurai Team
@@ -271,32 +271,32 @@
 - title: SPb Community of Analysts
   id: 10
   link: http://vk.com/spb_analytics
-  # schedule:
+   schedule:
   
-  #   "13:00" :
-  #     speaker : Алексей Петров
-  #     work_place : "Тренер и консультант, MCTS"
-  #     theme : "Дуализм систем и его практическая польза для аналитика."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
-  #   "14:00" :
-  #     speaker : Александр Овчаренко
-  #     work_place : ЗАО НИПК Электрон
-  #     theme : "Что делать аналитику без проектировщика интерфейсов?"
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
-  #   "15:00" :
-  #     speaker : Наталья Забежинская
-  #     work_place : "QA specialist, ГК Техносерв"
-  #     theme : "Когда нужна валидация тест-кейсов?"
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
-  #   "16:00" :
-  #     speaker : "Модератор: Анна Абрамова"
-  #     work_place : 
-  #     theme : "Круглый стол: карта компетенций аналитика."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg  
+     "13:00" :
+       speaker : Наталья Желнова
+       work_place : Москва
+       theme : "Метрики оценки IT-Проектов."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
+     "14:00" :
+       speaker : Наталья Желнова
+       work_place : Москва
+       theme : "Документация по ГОСТ 34."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
+     "15:00" :
+       speaker : Павел Цытович
+       work_place : "Luxoft"
+       theme : "Тема уточняется."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
+     "16:00" :
+       speaker : "Анна Абрамова"
+       work_place : "-"
+       theme : "Тема уточняется."
+       is_discussion: 0     
+       speaker_ava: nan.jpg  
 
 - title: SPb Technical Writers
   id: 11
