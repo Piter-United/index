@@ -66,7 +66,7 @@
      "13:00" :
        speaker : Мария Давыдова
        work_place : JetBrains
-       theme : "Agda - молодой функциональный язык программирования."
+       theme : "Введение в Agda."
        is_discussion: 0  
        speaker_ava: fprog_davidova.jpg    
      "14:00" :
