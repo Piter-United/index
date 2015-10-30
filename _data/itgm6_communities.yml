@@ -91,14 +91,14 @@
 - title: Piter JS
   id: 4
   link: https://vk.com/piterjs
-  # schedule:
+  schedule:
 
-  #   "13:00" :
-  #     speaker : "Николай Рыжиков"
-  #     work_place : Health Samurai
-  #     theme : "JavaScript внутри PostgreSQL."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
+     "13:00" :
+       speaker : "Виктор Грищенко"
+       work_place : Solu
+       theme : "Upside-down database: real-time sync and offline work with Swarm.js."
+       is_discussion: 0     
+       speaker_ava: js_grishenko.png
   #   "14:00" :
   #     speaker : Антон Плешивцев
   #     work_place : Virool
@@ -258,15 +258,15 @@
      "15:00" :
        speaker : Александр Мартюшев
        work_place : SEMrush
-       theme : "Тема уточняется."
+       theme : "Игра/интерактив: Канбан-симуляция. (уточняется)"
        is_discussion: 0     
        speaker_ava: nan.jpg    
-  #   "16:00" :
-  #     speaker : "модератор: Михаил Рыжиков"
-  #     work_place : Health Samurai Team
-  #     theme : "Круглый стол: Инициация проектов. Техники и инструменты."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg  
+     "16:00" :
+       speaker : "Влад Лехелт"
+       work_place : "-"
+       theme : "Модернизация бизнесс-процессов. (уточняется)"
+       is_discussion: 0     
+       speaker_ava: nan.jpg  
 
 - title: SPb Community of Analysts
   id: 10
