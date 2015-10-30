@@ -413,21 +413,23 @@
 - title: SPb SQA Group
   id: 15
   link: http://sqagroup.spb.ru/
-  #schedule:
-  #   "13:00" :
-  #     speaker : Мария Макарова
-  #     work_place : "-"
-  #     theme : "Откуда берутся плохие HR и куда их надо девать"
-  #     is_discussion: 1     
-  #     speaker_ava: nan.jpg        
+  schedule:
+     "13:00" :
+       speaker : Антон Шапин
+       work_place : "EPAM"
+       theme : "BDD подход с точки зрения QA."
+       is_discussion: 0     
+       speaker_ava: nan.jpg        
   #   "14:00" :
   #     speaker : Лилия Смирнова
   #     work_place : "Корпоративный институт ОАО Газпром"
   #     theme : "Облегчаем труд HRа: Автоматизированная оценка соискателей «текучих» профессий."
-  #   "15:00" :
-  #     speaker : Ирина Матвеева
-  #     work_place : "коуч, независимый HR и бизнес консультант"
-  #     theme : "Сервис: как понять заказчика и сделать его счастливым?"
+     "15:00" :
+       speaker : Полина Острова
+       work_place : "EPAM"
+       theme : "Accessability testing."
+       is_discussion: 0     
+       speaker_ava: nan.jpg 
   #   "16:00" :
   #     speaker : Анна Каменская
   #     work_place : 
