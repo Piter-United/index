@@ -99,12 +99,12 @@
        theme : "Upside-down database: real-time sync and offline work with Swarm.js."
        is_discussion: 0     
        speaker_ava: js_grishenko.png
-  #   "14:00" :
-  #     speaker : Антон Плешивцев
-  #     work_place : Virool
-  #     theme : "Как победить различные браузерные ограничения и сделать крутое приложение. Рассказ про разработку мобильного видеоплеера Covér."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
+     "14:00" :
+       speaker : "Михаил Полубояринов"
+       work_place : "Параграф (ГК Мегамейд)"
+       theme : "NW.js"
+       is_discussion: 0     
+       speaker_ava: js_poluboyarinov.jpg    
   #   "15:00" :
   #     speaker : Олег Подсечин
   #     work_place :  Toughbyte
@@ -159,12 +159,12 @@
        theme : "Использование облачной инфраструктуры OpenStack для телеком и NFV."
        is_discussion: 0     
        speaker_ava: nan.jpg    
-  #   "14:00" :
-  #     speaker : "Юрий Сухов"
-  #     work_place : "Veeam Software"
-  #     theme : "Защита данных в виртуальных средах."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
+     "14:00" :
+       speaker : "Сергей Чуканов"
+       work_place : "ИТ-ГРАД"
+       theme : "Как создать облачный SaaS-сервис из своего приложения."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
   #   "15:00" :
   #     speaker : "Владимир Подзоров/Роман Скворцов"
   #     work_place : "WELLSERVICE/AMBAHA IT-solutions"
@@ -332,12 +332,12 @@
   id: 12
   link: http://ux-spb.ru/
   schedule:
-     #"13:00" :
-     #  speaker : Алексей Гапонов
-     #  work_place : Devexperts
-     #  theme : "Орудия труда. (Не)предвзятый обзор инструментов проектировщика."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg  
+     "13:00" :
+       speaker : "Плотников Павел"
+       work_place : "Dr. Web"
+       theme : "О чём вы никогда не догадаетесь пока не протестируете."
+       is_discussion: 0     
+       speaker_ava: nan.jpg  
      #"14:00" :
      #  speaker : "Захар Кириллов"
      #  work_place :  "КБ Собака Павлова"
@@ -367,14 +367,18 @@
        theme : "Откуда берутся плохие HR и куда их надо девать"
        is_discussion: 1     
        speaker_ava: nan.jpg        
-  #   "14:00" :
-  #     speaker : Лилия Смирнова
-  #     work_place : "Корпоративный институт ОАО Газпром"
-  #     theme : "Облегчаем труд HRа: Автоматизированная оценка соискателей «текучих» профессий."
-  #   "15:00" :
-  #     speaker : Ирина Матвеева
-  #     work_place : "коуч, независимый HR и бизнес консультант"
-  #     theme : "Сервис: как понять заказчика и сделать его счастливым?"
+     "14:00" :
+       speaker : "Ирина Матвеева"
+       work_place : "-"
+       theme : "Внутренние коммуникации."
+       is_discussion: 0     
+       speaker_ava: nan.jpg         
+     "15:00" :
+       speaker : "Юлия Саландаева"
+       work_place : "-"
+       theme : "Коучинг."
+       is_discussion: 0     
+       speaker_ava: nan.jpg        
   #   "16:00" :
   #     speaker : Анна Каменская
   #     work_place : 
@@ -420,10 +424,12 @@
        theme : "BDD подход с точки зрения QA."
        is_discussion: 0     
        speaker_ava: nan.jpg        
-  #   "14:00" :
-  #     speaker : Лилия Смирнова
-  #     work_place : "Корпоративный институт ОАО Газпром"
-  #     theme : "Облегчаем труд HRа: Автоматизированная оценка соискателей «текучих» профессий."
+     "14:00" :
+       speaker : "Николай Бабич"
+       work_place : "Dino Systems"
+       theme : "Dino Systems: Автоматизация тестирования телефонии: не как решение проблемы, а как построение процесса."
+       is_discussion: 0     
+       speaker_ava: nan.jpg         
      "15:00" :
        speaker : Полина Острова
        work_place : "EPAM"
