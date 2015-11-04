@@ -22,11 +22,11 @@
   level: Золотой партнер
   logo: epam.png
 
- - title: DINO Systems
-   link: http://www.dins.ru/
-   desc: 
-   level: Серебряный партнер
-   logo: dins.png
+- title: DINO Systems
+  link: http://www.dins.ru/
+  desc: 
+  level: Серебряный партнер
+  logo: dins.png
 
 # - title: First Line Software
 #   link: http://www.firstlinesoftware.com/
