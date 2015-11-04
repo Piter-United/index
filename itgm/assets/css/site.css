@@ -131,6 +131,7 @@ h1{
   font-weight: 400;
   font-size: 14px;
   margin-right: 10px;
+  text-transform: lowercase;
 }
 
 #firstslide .countdown .stat.value {
