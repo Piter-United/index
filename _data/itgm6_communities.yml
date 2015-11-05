@@ -123,30 +123,30 @@
   link: https://plus.google.com/u/0/communities/115643868183582812348
   schedule:
 
-  #   "13:00" :
-  #     speaker : Андрей Акиньшин
-  #     work_place : Энтерра
-  #     theme : "Будущее .NET-разработки."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
-     "14:00" :
-       speaker : Андрей Акиньшин
-       work_place : JetBrains
-       theme : "Распространённые ошибки оценки производительности .NET-приложений."
+     "13:00" :
+       speaker : "Сергей Балтийский"
+       work_place : "JetBrains"
+       theme : "Когда в C# не хватает C++. Продолжение."
        is_discussion: 0     
-       speaker_ava: net_akinshin.jpg    
+       speaker_ava: net_baltic.jpeg    
+     "14:00" :
+       speaker : "Михаил Щербаков"
+       work_place : "IntelliEgg"
+       theme : "Sandboxing in .NET CLR."
+       is_discussion: 0     
+       speaker_ava: net_shcherbakov.jpg    
      "15:00" :
        speaker : Антон Шабанов
        work_place :  WaveAccess
-       theme : "Использование Visual Studio Tools for Apache Cordova в реальном проекте."
+       theme : "Использование Apache Cordova в реальном проекте."
        is_discussion: 0     
        speaker_ava: net_shabanov.png    
-  #   "16:00" :
-  #     speaker : Антон Шабанов
-  #     work_place : WaveAccess
-  #     theme : "Обзор технологических новинок в .Net с точки зрения Web-программиста."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg 
+     "16:00" :
+       speaker : "Александр Иванов, Роман Правук"
+       work_place : "EPAM"
+       theme : "Простой и кросс-платформенный Web-сервер на базе .NET Framework."
+       is_discussion: 0     
+       speaker_ava: nan.jpg 
 
 - title: "SPb Cloud & Virtualization Community"
   id: 6
@@ -195,18 +195,18 @@
        theme : "Тема уточняется."
        is_discussion: 0     
        speaker_ava: nan.jpg    
-  #   "15:00" :
-  #     speaker : "модератор: Виталий Левченко"
-  #     work_place : 
-  #     theme : "Круглый стол. Go в продакшене: логирование и сбор ошибок, мониторинг, обслуживание."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
-  #   "16:00" :
-  #     speaker : Алексей Петров
-  #     work_place : "Тренер и консультант, MCTS"
-  #     theme : "Что такое корпоративная архитектура?"
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg  
+     "15:00" :
+       speaker : "Антон Плешивцев"
+       work_place : "Spiced Jackal"
+       theme : "Как мы перевели игровой сервер с питона на Go."
+       is_discussion: 0     
+       speaker_ava: go_pleshivcev.png    
+     "16:00" :
+       speaker : "Даниил Подольский"
+       work_place : "-"
+       theme : "Тема уточняется."
+       is_discussion: 0     
+       speaker_ava: nan.jpg  
 
 - title: SPb Ruby User Group
   id: 8
@@ -258,15 +258,15 @@
      "15:00" :
        speaker : Александр Мартюшев
        work_place : SEMrush
-       theme : "Игра/интерактив: Канбан-симуляция. (уточняется)"
+       theme : "Учимся на играх: Kanban в действии. Игра/интерактив."
        is_discussion: 0     
-       speaker_ava: nan.jpg    
+       speaker_ava: spm_martyushev.jpg    
      "16:00" :
        speaker : "Влад Лехелт"
        work_place : "-"
        theme : "Модернизация бизнесс-процессов. (уточняется)"
        is_discussion: 0     
-       speaker_ava: nan.jpg  
+       speaker_ava: spm_lehelt.jpg  
 
 - title: SPb Community of Analysts
   id: 10
@@ -275,13 +275,13 @@
 
      "13:00" :
        speaker : Наталья Желнова
-       work_place : Москва
+       work_place : "Performance Lab"
        theme : "Метрики оценки IT-Проектов."
        is_discussion: 0     
        speaker_ava: nan.jpg    
      "14:00" :
        speaker : Наталья Желнова
-       work_place : Москва
+       work_place : "Performance Lab"
        theme : "Документация по ГОСТ 34."
        is_discussion: 0     
        speaker_ava: nan.jpg    
@@ -419,9 +419,9 @@
   link: http://sqagroup.spb.ru/
   schedule:
      "13:00" :
-       speaker : Антон Шапин
-       work_place : "EPAM"
-       theme : "BDD подход с точки зрения QA."
+       speaker : "Дмитрий Гуменюк"
+       work_place : "EPAM Minsk"
+       theme : "Report Portal – эффективность вашей автоматизации."
        is_discussion: 0     
        speaker_ava: nan.jpg        
      "14:00" :
@@ -436,7 +436,9 @@
        theme : "Accessability testing."
        is_discussion: 0     
        speaker_ava: nan.jpg 
-  #   "16:00" :
-  #     speaker : Анна Каменская
-  #     work_place : 
-  #     theme : "Круглый стол: кандидаты и HR. Стереотипы, которые нам мешают."
+     "16:00" :
+       speaker : "Антон Шапин"
+       work_place : "EPAM"
+       theme : "BDD подход с точки зрения QA ."
+       is_discussion: 0     
+       speaker_ava: nan.jpg 
