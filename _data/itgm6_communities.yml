@@ -184,29 +184,29 @@
   schedule:
 
      "13:00" :
-       speaker : Алексей Акулович
+       speaker : "Алексей Акулович"
        work_place : VK
-       theme : "Тема уточняется."
+       theme : "Go и аудиоотпечатки."
        is_discussion: 0     
-       speaker_ava: nan.jpg    
+       speaker_ava: go_akulovich.jpeg      
      "14:00" :
-       speaker : Виталий Симирнин
-       work_place : "-"
-       theme : "Тема уточняется."
-       is_discussion: 0     
-       speaker_ava: nan.jpg    
-     "15:00" :
        speaker : "Антон Плешивцев"
        work_place : "Spiced Jackal"
        theme : "Как мы перевели игровой сервер с питона на Go."
        is_discussion: 0     
        speaker_ava: go_pleshivcev.png    
-     "16:00" :
+     "15:00" :
        speaker : "Даниил Подольский"
        work_place : "-"
        theme : "Тема уточняется."
        is_discussion: 0     
-       speaker_ava: nan.jpg  
+       speaker_ava: go_podolski.jpeg  
+     #"16:00" :
+     #  speaker : Виталий Симирнин
+     #  work_place : "-"
+     #  theme : "Тема уточняется."
+     #  is_discussion: 0     
+     #  speaker_ava: nan.jpg         
 
 - title: SPb Ruby User Group
   id: 8
@@ -262,9 +262,9 @@
        is_discussion: 0     
        speaker_ava: spm_martyushev.jpg    
      "16:00" :
-       speaker : "Влад Лехелт"
+       speaker : "Владислав Лехельт"
        work_place : "-"
-       theme : "Модернизация бизнесс-процессов. (уточняется)"
+       theme : "Управление изменениями"
        is_discussion: 0     
        speaker_ava: spm_lehelt.jpg  
 
@@ -338,18 +338,18 @@
        theme : "О чём вы никогда не догадаетесь пока не протестируете."
        is_discussion: 0     
        speaker_ava: nan.jpg  
-     #"14:00" :
-     #  speaker : "Захар Кириллов"
-     #  work_place :  "КБ Собака Павлова"
-     #  theme : "Continuous UX: встраиваем IxD в процесс гибкой разработки."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg       
-     #"15:00" :
-     #  speaker : Артём Тиунов
-     #  work_place :  Jetbrains
-     #  theme : "UX for Geeks."
-     #  is_discussion: 0
-     #  speaker_ava: nan.jpg
+     "14:00" :
+       speaker : "Екатерина Юлина"
+       work_place :  "SEMRush"
+       theme : "[предварительная тема] Сватовство продукта с проектировщиком."
+       is_discussion: 0     
+       speaker_ava: nan.jpg       
+     "15:00" :
+       speaker : "Виктор Ерофеев"
+       work_place :  "-"
+       theme : "[предварительная тема] Accessibility (Доступность)."
+       is_discussion: 0
+       speaker_ava: nan.jpg
      #"16:00" :
      #  speaker : Юрий Солоницын
      #  work_place : ИСТ
@@ -433,12 +433,12 @@
      "15:00" :
        speaker : Полина Острова
        work_place : "EPAM"
-       theme : "Accessability testing."
+       theme : "Accessibility: from the development challenge to human rights."
        is_discussion: 0     
        speaker_ava: nan.jpg 
      "16:00" :
        speaker : "Антон Шапин"
        work_place : "EPAM"
-       theme : "BDD подход с точки зрения QA ."
+       theme : "BDD подход с точки зрения QA."
        is_discussion: 0     
        speaker_ava: nan.jpg 
