@@ -90,7 +90,7 @@
 
 - title: Piter JS
   id: 4
-  link: https://vk.com/piterjs
+  link: https://meetabit.com/communities/1
   schedule:
 
      "13:00" :
@@ -100,23 +100,23 @@
        is_discussion: 0     
        speaker_ava: js_grishenko.png
      "14:00" :
+       speaker : "Tero Parviainen"
+       work_place : "Self employed"
+       theme : "Refactoring AngularJS Apps to Components."
+       is_discussion: 0     
+       speaker_ava: js_parviainen.jpeg    
+     "15:00" :
+       speaker : "Mike Bradshaw"
+       work_place :  "Solu"
+       theme : "Building apps for Solu platform using JavaScript."
+       is_discussion: 0     
+       speaker_ava: js_bradshaw.jpeg    
+     "16:00" :
        speaker : "Михаил Полубояринов"
-       work_place : "Параграф (ГК Мегамейд)"
+       work_place :  "Параграф (ГК Мегамейд)"
        theme : "NW.js"
        is_discussion: 0     
-       speaker_ava: js_poluboyarinov.jpg    
-  #   "15:00" :
-  #     speaker : Олег Подсечин
-  #     work_place :  Toughbyte
-  #     theme : "Новые возможности EcmaScript 6 и 7: генераторы и async/await."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
-  #   "16:00" :
-  #     speaker : Максим Рыжиков
-  #     work_place :  JetBrains
-  #     theme : "ПРОтестирование: как устроена Karma."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg 
+       speaker_ava: js_poluboyarinov.jpg
 
 - title: "SPb .Net Community"
   id: 5
