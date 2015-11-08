@@ -40,11 +40,11 @@
        is_discussion: 0     
        speaker_ava: python_shorin.jpeg    
      "14:00" :
-       speaker : Иван Михайлюков
-       work_place : Яндекс
-       theme : "Мессенджеры - Next Big Thing."
+       speaker : "Роман Тимофеев"
+       work_place : "Lightvision TV"
+       theme : "Почему I/O - боль."
        is_discussion: 0     
-       speaker_ava: nan.jpg    
+       speaker_ava: python_timofeev.png    
   #   "15:00" :
   #     speaker : Андрей Павлов
   #     work_place : "C.Nord"
@@ -276,13 +276,13 @@
      "13:00" :
        speaker : Наталья Желнова
        work_place : "Performance Lab"
-       theme : "Метрики оценки IT-Проектов."
+       theme : "Опыт BA-консалтинга: метрики процесса бизнес-анализа."
        is_discussion: 0     
        speaker_ava: coa_zelnova.jpg    
      "14:00" :
        speaker : Наталья Желнова
        work_place : "Performance Lab"
-       theme : "Документация по ГОСТ 34 (соместно с SPb Technical Writers)."
+       theme : "Этапы разработки и документация по ГОСТ 34 (соместно с SPb Technical Writers)."
        is_discussion: 0     
        speaker_ava: coa_zelnova.jpg    
      "15:00" :
@@ -395,24 +395,24 @@
        theme : "Искуственный интеллект и электронное обучение."
        is_discussion: 0     
        speaker_ava: nan.jpg    
-  #   "14:00" :
-  #     speaker : Андрей Замулин
-  #     work_place : "Высшая школа менеджмента СПбГУ"
-  #     theme : "Использование переговорного онлайн-тренажера «Roundy» в дистанционном обучении."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
+     "14:00" :
+       speaker : "Александр Лопарь"
+       work_place : "-"
+       theme : "Игрофикация процесса обучения в СДО (Кейс)."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
      "15:00" :
        speaker : Игорь Сазонов
        work_place : "LMS-Tech"
        theme : "Структура БД Moodle и особенности работы с Moodle Data API."
        is_discussion: 0     
        speaker_ava: nan.jpg    
-  #   "16:00" :
-  #     speaker : "Игорь Сазонов"
-  #     work_place : 
-  #     theme : "Moodle с точки зрения программиста и пользователя."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg  
+     "16:00" :
+       speaker : "-"
+       work_place : "-"
+       theme : "Круглый стол."
+       is_discussion: 1     
+       speaker_ava: nan.jpg  
 
 - title: SPb SQA Group
   id: 15
