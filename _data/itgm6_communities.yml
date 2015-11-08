@@ -278,55 +278,55 @@
        work_place : "Performance Lab"
        theme : "Метрики оценки IT-Проектов."
        is_discussion: 0     
-       speaker_ava: nan.jpg    
+       speaker_ava: coa_zelnova.jpg    
      "14:00" :
        speaker : Наталья Желнова
        work_place : "Performance Lab"
-       theme : "Документация по ГОСТ 34."
+       theme : "Документация по ГОСТ 34 (соместно с SPb Technical Writers)."
        is_discussion: 0     
-       speaker_ava: nan.jpg    
+       speaker_ava: coa_zelnova.jpg    
      "15:00" :
-       speaker : Павел Цытович
+       speaker : "Светлана Мухина"
        work_place : "Luxoft"
-       theme : "Тема уточняется."
+       theme : "Фасилитации встреч по работе с требованиями."
        is_discussion: 0     
-       speaker_ava: nan.jpg    
+       speaker_ava: coa_mukhina.jpg    
      "16:00" :
-       speaker : "Анна Абрамова"
+       speaker : "Раиса Гольденберг"
        work_place : "-"
-       theme : "Тема уточняется."
+       theme : "Кто отвечает за качество? (блиц)"
        is_discussion: 0     
        speaker_ava: nan.jpg  
 
 - title: SPb Technical Writers
   id: 11
   link: https://plus.google.com/u/0/communities/111110772662436773783
-  # schedule:
+  schedule:
 
-  #   "13:00" :
-  #     speaker : Людмила Арцыбашева
-  #     work_place :  
-  #     theme : "Разрабатываем документацию с помошью DITA."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
-  #   "14:00" :
-  #     speaker : Bordelon Kennon
-  #     work_place : "United English (USA)"
-  #     theme : "Технический писатель → Techwriter. Собеседование 1.0."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
-  #   "15:00" :
-  #     speaker : Спиридонов Роман
-  #     work_place : LoftBlog
-  #     theme : "Мастер класс. Живая документация: говорит и показывает техписатель."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
-  #   "16:00" :
-  #     speaker : Станислав Салангин
-  #     work_place : SPb Tecnical Writers Community
-  #     theme : "Круглый стол. Мы писали, мы писали... - Прошлое, настоящее и будущее документации в IT."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg  
+     "13:00" :
+       speaker : "Захар Кириллов"
+       work_place :  "КБ «Собака Павлова»"
+       theme : "Документы, которые читают."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
+     "14:00" :
+       speaker : "Наталия Желнова"
+       work_place : "Performance Lab"
+       theme : "Документация по ГОСТ 34 для профессионалов (совместно с SPb Community of Analysts)."
+       is_discussion: 0     
+       speaker_ava: coa_zelnova.jpg    
+     "15:00" :
+       speaker : "Евгений Андреев"
+       work_place : "юрисконсульт"
+       theme : "Есть ли в интернете место авторскому праву?"
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
+     "16:00" :
+       speaker : Станислав Салангин
+       work_place : "координатор СПб сообщества технических писателей"
+       theme : "Три пути технического писателя."
+       is_discussion: 1     
+       speaker_ava: nan.jpg  
 
 - title: UXSpb
   id: 12
@@ -337,19 +337,19 @@
        work_place : "Dr. Web"
        theme : "О чём вы никогда не догадаетесь пока не протестируете."
        is_discussion: 0     
-       speaker_ava: nan.jpg  
+       speaker_ava: ux_plotnikov.jpg  
      "14:00" :
        speaker : "Екатерина Юлина"
        work_place :  "SEMRush"
        theme : "[предварительная тема] Сватовство продукта с проектировщиком."
        is_discussion: 0     
-       speaker_ava: nan.jpg       
+       speaker_ava: ux_julina.jpg       
      "15:00" :
        speaker : "Виктор Ерофеев"
-       work_place :  "-"
-       theme : "[предварительная тема] Accessibility (Доступность)."
+       work_place :  "CG Projects Group"
+       theme : "Зачем проектировать доступный интерфейс. Взгляд из бизнеса."
        is_discussion: 0
-       speaker_ava: nan.jpg
+       speaker_ava: ux_erofeev.png
      #"16:00" :
      #  speaker : Юрий Солоницын
      #  work_place : ИСТ
