@@ -1,7 +1,7 @@
 - title: "DevOps-40 / SPb Linux User Group"
   id: 1
   link: http://www.meetup.com/DevOps-40/
-  # schedule:
+  schedule:
 
   #   "13:00" :
   #     speaker : Станислав Богатырёв
@@ -9,12 +9,12 @@
   #     theme : "Секреты в Chef. Один из возможных работающих методов обращения с секретами (пароли, сертификаты, лицензии) в условиях общего доступа к коду Ops и Dev команд. Инструменты: Chef, chef-vault, vault"
      #  is_discussion: 1     
      #  speaker_ava: nan.jpg    
-  #   "14:00" :
-  #     speaker : Павел Курочкин
-  #     work_place : НТЦ "Метротек"
-  #     theme : "Разработка highload-системы мониторинга для 50000 (и более) видео-потоков RTP с применением 10G Ethernet пробников на базе FPGA."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
+     "14:00" :
+       speaker : "Константин Новаковский"
+       work_place : "Selectel"
+       theme : "РDNS в хостинг-провайдере."
+       is_discussion: 0     
+       speaker_ava: linux_novakovski.png    
   #   "15:00" :
   #     speaker : Роман Беляковский
   #     work_place : Git in Sky
@@ -340,7 +340,7 @@
        speaker_ava: ux_plotnikov.jpg  
      "14:00" :
        speaker : "Екатерина Юлина"
-       work_place :  "SEMRush"
+       work_place :  "SEMrush"
        theme : "[предварительная тема] Сватовство продукта с проектировщиком."
        is_discussion: 0     
        speaker_ava: ux_julina.jpg       
@@ -363,26 +363,28 @@
   schedule:
      "13:00" :
        speaker : Мария Макарова
-       work_place : "-"
+       work_place : "EPAM"
        theme : "Откуда берутся плохие HR и куда их надо девать"
        is_discussion: 1     
-       speaker_ava: nan.jpg        
+       speaker_ava: hr_makarova.png
      "14:00" :
        speaker : "Ирина Матвеева"
-       work_place : "-"
-       theme : "Внутренние коммуникации."
-       is_discussion: 0     
+       work_place : "In.Praktika"
+       theme : "Внутренние коммуникации: системный подход"
+       is_discussion: 2     
        speaker_ava: nan.jpg         
      "15:00" :
        speaker : "Юлия Саландаева"
-       work_place : "-"
-       theme : "Коучинг."
+       work_place : "Sprinthost.ru"
+       theme : "Чтобы создать успешную компанию/команду — задайте гениальный вопрос!"
        is_discussion: 0     
        speaker_ava: nan.jpg        
-  #   "16:00" :
-  #     speaker : Анна Каменская
-  #     work_place : 
-  #     theme : "Круглый стол: кандидаты и HR. Стереотипы, которые нам мешают."
+     "16:00" :
+       speaker : "Виктория Последова"
+       work_place : "iChar"
+       theme : "Почему кандидаты не проходят испытательный срок."
+       is_discussion: 0     
+       speaker_ava: nan.jpg  
 
 - title: SPb e-Learning
   id: 14
@@ -423,7 +425,7 @@
        work_place : "EPAM Minsk"
        theme : "Report Portal – эффективность вашей автоматизации."
        is_discussion: 0     
-       speaker_ava: nan.jpg        
+       speaker_ava: sqa_gumenyuk.png        
      "14:00" :
        speaker : "Николай Бабич"
        work_place : "Dino Systems"
@@ -441,4 +443,4 @@
        work_place : "EPAM"
        theme : "BDD подход с точки зрения QA."
        is_discussion: 0     
-       speaker_ava: nan.jpg 
+       speaker_ava: sqa_shapin.png 
