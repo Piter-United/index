@@ -12,15 +12,15 @@
      "14:00" :
        speaker : "Константин Новаковский"
        work_place : "Selectel"
-       theme : "РDNS в хостинг-провайдере."
+       theme : "DNS в хостинг-провайдере."
        is_discussion: 0     
        speaker_ava: linux_novakovski.png    
-  #   "15:00" :
-  #     speaker : Роман Беляковский
-  #     work_place : Git in Sky
-  #     theme : "Девять месяцев с Ansible: опыт и надежды."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
+     "15:00" :
+       speaker : "Павел Курочкин, Денис Габбидулин"
+       work_place : "-"
+       theme : "Поднимаем Linux на SoC: грабли и трюки."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
   #   "16:00" :
   #     speaker : Александр Тарасов
   #     work_place : Альфа-Банк
@@ -75,18 +75,18 @@
        theme : "Блеск и нищета erlang."
        is_discussion: 0     
        speaker_ava: fprog_tolchanov.jpg    
-  #   "15:00" :
-  #     speaker : "Ильшад Хабибуллин"
-  #     work_place : Health Samurai Team
-  #     theme : "Опыт разработки в Clojure: генерация компонент и пользовательские интерфейсы на паттерн-матчинге."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
-  #   "16:00" :
-  #     speaker : "модератор: Николай Рыжиков"
-  #     work_place : "Health Samurai Team"
-  #     theme : "Круглый стол: вопросы и ответы про функциональное программирование."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg  
+     "15:00" :
+       speaker : "Ильшад Хабибуллин"
+       work_place : "-"
+       theme : "Тема учтоняется..."
+       is_discussion: 0     
+       speaker_ava: nan.jpg    
+     "16:00" :
+       speaker : "Михаил Муцянко"
+       work_place : "-"
+       theme : "Введение в Scala."
+       is_discussion: 0     
+       speaker_ava: nan.jpg  
 
 - title: Piter JS
   id: 4
@@ -296,7 +296,7 @@
        work_place : "-"
        theme : "Кто отвечает за качество? (блиц)"
        is_discussion: 0     
-       speaker_ava: nan.jpg  
+       speaker_ava: coa_goldenberg.png
 
 - title: SPb Technical Writers
   id: 11
@@ -308,7 +308,7 @@
        work_place :  "КБ «Собака Павлова»"
        theme : "Документы, которые читают."
        is_discussion: 0     
-       speaker_ava: nan.jpg    
+       speaker_ava: tw_kirillov.jpg    
      "14:00" :
        speaker : "Наталия Желнова"
        work_place : "Performance Lab"
@@ -326,7 +326,7 @@
        work_place : "координатор СПб сообщества технических писателей"
        theme : "Три пути технического писателя."
        is_discussion: 1     
-       speaker_ava: nan.jpg  
+       speaker_ava: tw_salangin.png  
 
 - title: UXSpb
   id: 12
@@ -338,24 +338,24 @@
        theme : "О чём вы никогда не догадаетесь пока не протестируете."
        is_discussion: 0     
        speaker_ava: ux_plotnikov.jpg  
-     "14:00" :
-       speaker : "Екатерина Юлина"
-       work_place :  "SEMrush"
-       theme : "[предварительная тема] Сватовство продукта с проектировщиком."
-       is_discussion: 0     
-       speaker_ava: ux_julina.jpg       
-     "15:00" :
-       speaker : "Виктор Ерофеев"
-       work_place :  "CG Projects Group"
-       theme : "Зачем проектировать доступный интерфейс. Взгляд из бизнеса."
-       is_discussion: 0
-       speaker_ava: ux_erofeev.png
      #"16:00" :
      #  speaker : Юрий Солоницын
      #  work_place : ИСТ
      #  theme : "Точка кипения мозга – защищаем пользователя от перегрузки информацией."
      #  is_discussion: 1     
      #  speaker_ava: nan.jpg 
+     "15:00" :
+       speaker : "Виктор Ерофеев"
+       work_place :  "CG Projects Group"
+       theme : "Зачем проектировать доступный интерфейс. Взгляд из бизнеса."
+       is_discussion: 0
+       speaker_ava: ux_erofeev.png
+     "16:00" :
+       speaker : "Екатерина Юлина"
+       work_place :  "SEMrush"
+       theme : "Сватовство продукта с проектировщиком."
+       is_discussion: 0     
+       speaker_ava: ux_julina.jpg       
 
 - title: SPb IT HR
   id: 13
@@ -372,13 +372,13 @@
        work_place : "In.Praktika"
        theme : "Внутренние коммуникации: системный подход"
        is_discussion: 2     
-       speaker_ava: nan.jpg         
+       speaker_ava: hr_matveeva.png         
      "15:00" :
        speaker : "Юлия Саландаева"
        work_place : "Sprinthost.ru"
        theme : "Чтобы создать успешную компанию/команду — задайте гениальный вопрос!"
        is_discussion: 0     
-       speaker_ava: nan.jpg        
+       speaker_ava: hr_salandaeva.jpg
      "16:00" :
        speaker : "Виктория Последова"
        work_place : "iChar"
@@ -394,7 +394,7 @@
      "13:00" :
        speaker : "Лилия Смирнова"
        work_place : "Корпоративный институт ПАО «Газпром»"
-       theme : "Искуственный интеллект и электронное обучение."
+       theme : "Использование интеллектуальных агентов в электронном обучении."
        is_discussion: 0     
        speaker_ava: nan.jpg    
      "14:00" :
@@ -402,19 +402,19 @@
        work_place : "-"
        theme : "Игрофикация процесса обучения в СДО (Кейс)."
        is_discussion: 0     
-       speaker_ava: nan.jpg    
+       speaker_ava: nan.jpg 
      "15:00" :
+       speaker : "Мария Ваганова"
+       work_place : "Veeam Software"
+       theme : "Строим идеальную LMS."
+       is_discussion: 2     
+       speaker_ava: nan.jpg  
+     "16:00" :
        speaker : Игорь Сазонов
        work_place : "LMS-Tech"
        theme : "Структура БД Moodle и особенности работы с Moodle Data API."
        is_discussion: 0     
        speaker_ava: nan.jpg    
-     "16:00" :
-       speaker : "-"
-       work_place : "-"
-       theme : "Круглый стол."
-       is_discussion: 1     
-       speaker_ava: nan.jpg  
 
 - title: SPb SQA Group
   id: 15
