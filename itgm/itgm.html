@@ -78,11 +78,11 @@ title: IT Global Meetup
     </div>
 
 
-    <div class="ui center aligned countdown bottom attached extra content"> 
+     <div class="ui center aligned countdown bottom attached extra content">
       <span class="stat-info">до слета осталось: </span>
-      <span class="stat value">{dnn}</span> <span class="stat-info">дней</span> 
-      <span class="stat value">{hnn}</span> <span class="stat-info">часов</span> 
-      <span class="stat value">{mnn}</span> <span class="stat-info">минут</span> 
+      {d<}<span class="stat value">{dnn}</span> <span class="stat-info">{dl}</span>{d>}
+      <span class="stat value">{hnn}</span> <span class="stat-info">{hl}</span>
+      <span class="stat value">{mnn}</span> <span class="stat-info">{ml}</span>
     </div>
   </div>  
 
@@ -705,16 +705,21 @@ title: IT Global Meetup
 <script src="./assets/js/site.js"></script>
 <script type="text/javascript" src="./assets/js/vendor/jquery.plugin.js"></script>
 <script type="text/javascript" src="./assets/js/vendor/jquery.countdown.js"></script>
+<script type="text/javascript" src="./assets/js/vendor/jquery.countdown-ru.js"></script>
 <script type="text/javascript">
   $('#reg_form').modal('attach events', '.primary.button', 'show');
 </script>
 <script type="text/javascript">
   var futureDate = new Date("November 28, 2015 11:00:00");
   $('.countdown').countdown({
-    until       : futureDate, 
-    compact     : true, 
-    padZeroes   : true,
-    layout      : $('.countdown').html()
+    until: futureDate,
+    padZeroes: true,
+    layout: $('.countdown').html(),
+    alwaysExpire: true,
+    onExpiry: function() {
+      $('.countdown').remove();
+      $('#firstslide .primary.button').remove();
+    }
   });
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
