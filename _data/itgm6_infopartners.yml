@@ -1,12 +1,12 @@
 - title: DataArt
   link: http://www.dataart.ru/
   desc: 
-  logo: da.png
+  logo: dataart-logo-black.png
 
-# - title: IT talk
-#   link: http://it-talk.dataart.ru/
-#   desc: 
-#   logo: /itgm/assets/images/logos/ittalk.png
+- title: IT talk
+  link: http://it-talk.dataart.ru/
+  desc: 
+  logo: ittalk_logo.jpg
 
 # - title: Теплица Социальных Технологий
 #   link: http://te-st.ru/
