@@ -261,7 +261,7 @@
       speakers:
         - name: "Даниил Подольский"
           work_place: "-"
-          avatar: go_podolski.jpeg  
+          avatar: go_podolski.jpg  
     - start: "16:00"
       end: "16:45"      
       theme : ""
