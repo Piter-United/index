@@ -2,445 +2,579 @@
   id: 1
   link: http://www.meetup.com/DevOps-40/
   schedule:
-
-  #   "13:00" :
-  #     speaker : Станислав Богатырёв
-  #     work_place : "realloc.spb.ru"
-  #     theme : "Секреты в Chef. Один из возможных работающих методов обращения с секретами (пароли, сертификаты, лицензии) в условиях общего доступа к коду Ops и Dev команд. Инструменты: Chef, chef-vault, vault"
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
-     "14:00" :
-       speaker : "Константин Новаковский"
-       work_place : "Selectel"
-       theme : "DNS в хостинг-провайдере."
-       is_discussion: 0     
-       speaker_ava: linux_novakovski.png    
-     "15:00" :
-       speaker : "Павел Курочкин, Денис Габбидулин"
-       work_place : "-"
-       theme : "Поднимаем Linux на SoC: грабли и трюки."
-       is_discussion: 0     
-       speaker_ava: nan.jpg    
-  #   "16:00" :
-  #     speaker : Александр Тарасов
-  #     work_place : Альфа-Банк
-  #     theme : "Docker в банке."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg  
+    - start: "13:00"
+      end: "13:45"
+      theme : ""
+      is_discussion: 0      
+      speakers:
+        - name: ""
+          work_place: ""
+          avatar: nan.jpg         
+    - start: "14:00"
+      end: "14:45"                 
+      theme : "DNS в хостинг-провайдере."
+      is_discussion: 0      
+      speakers:
+        - name: "Константин Новаковский"
+          work_place: "Selectel"
+          avatar: linux_novakovski.png 
+    - start: "15:00"
+      end: "15:45"     
+      theme : "Поднимаем Linux на SoC: грабли и трюки."
+      is_discussion: 0     
+      speakers:
+        - name: "Павел Курочкин"
+          work_place: "-"
+          avatar: nan.jpg    
+        - name: "Денис Габбидулин"
+          work_place: "-"
+          avatar: nan.jpg                       
+    - start: "16:00"
+      end: "16:45"           
+      theme : ""
+      is_discussion: 0           
+      speakers:
+        - name: ""
+          work_place: ""
+          avatar: nan.jpg         
 
 - title: SPb Python Interest Group
   id: 2
   link: http://spbpython.guru/
   schedule:
-
-     "13:00" :
-       speaker : "Александр Шорин"
-       work_place : "TicketsCloud"
-       theme : "QuickCheck в Python: проверка гипотез и поиск ошибок."
-       is_discussion: 0     
-       speaker_ava: python_shorin.jpeg    
-     "14:00" :
-       speaker : "Роман Тимофеев"
-       work_place : "Lightvision TV"
-       theme : "Почему I/O - боль."
-       is_discussion: 0     
-       speaker_ava: python_timofeev.png    
-     "15:00" :
-       speaker : "Максим Леонов"
-       work_place : "KudaGo"
-       theme : "Асинхронное программирование в python, как это было и что с этим стало."
-       is_discussion: 0     
-       speaker_ava: py_leonov.jpg    
-     "16:00" :
-       speaker : Сергей Матвеенко
-       work_place : DataArt
-       theme : "Mnj - пристройка к PyMongo, которая облегчает жизнь."
-       is_discussion: 0     
-       speaker_ava: python_matveenko.jpeg 
+    - start: "13:00"
+      end: "13:45"                   
+      theme : "QuickCheck в Python: проверка гипотез и поиск ошибок."
+      is_discussion: 0       
+      speakers:
+        - name: "Александр Шорин"
+          work_place: "TicketsCloud"
+          avatar: python_shorin.jpeg       
+    - start: "14:00"
+      end: "14:45"               
+      theme : "Почему I/O - боль."
+      is_discussion: 0     
+      speakers:
+        - name: "Роман Тимофеев"
+          work_place: "Lightvision TV"
+          avatar: python_timofeev.png          
+    - start: "15:00"
+      end: "15:45"     
+      theme : "Асинхронное программирование в python: как это было и что с этим стало."
+      is_discussion: 0     
+      speakers:
+        - name: "МаксимKudaGo Леонов"
+          work_place: ""
+          avatar: py_leonov.jpg         
+    - start: "16:00"
+      end: "16:45"     
+      theme : "Mnj - пристройка к PyMongo, которая облегчает жизнь."
+      is_discussion: 0     
+      speakers:
+        - name: "Сергей Матвеенко"
+          work_place: "DataArt"
+          avatar: python_matveenko.jpeg        
 
 - title: FProg (Clojure/Erlang/Haskell)
   id: 3
   link: https://plus.google.com/communities/114227952963737516047
   schedule:
-
-     "13:00" :
-       speaker : Мария Давыдова
-       work_place : JetBrains
-       theme : "Введение в Agda."
-       is_discussion: 0  
-       speaker_ava: fprog_davidova.jpg    
-     "14:00" :
-       speaker : Игнат Толчанов
-       work_place : Umisoft
-       theme : "Блеск и нищета erlang."
-       is_discussion: 0     
-       speaker_ava: fprog_tolchanov.jpg    
-     "15:00" :
-       speaker : "Ильшад Хабибуллин"
-       work_place : "-"
-       theme : "Тема уточняется..."
-       is_discussion: 0     
-       speaker_ava: nan.jpg    
-     "16:00" :
-       speaker : "Михаил Муцянко"
-       work_place : "-"
-       theme : "Введение в Scala."
-       is_discussion: 0     
-       speaker_ava: nan.jpg  
+    - start: "13:00"
+      end: "13:45"  
+      theme : "Введение в Agda."
+      is_discussion: 0  
+      speakers:
+        - name: "Мария Давыдова"
+          work_place: "JetBrains"
+          avatar: fprog_davidova.jpg         
+    - start: "14:00"
+      end: "14:45"       
+      theme : "Блеск и нищета erlang."
+      is_discussion: 0     
+      speakers:
+        - name: "Игнат Толчанов"
+          work_place: "Umisoft"
+          avatar: fprog_tolchanov.jpg
+    - start: "15:00"
+      end: "15:45"       
+      theme : "Тема уточняется..."
+      is_discussion: 0     
+      speakers:
+        - name: "Ильшад Хабибуллин"
+          work_place: "-"
+          avatar: nan.jpg       
+    - start: "16:00"
+      end: "16:45"       
+      theme : "Введение в Scala."
+      is_discussion: 0     
+      speakers:
+        - name: "Михаил Муцянко"
+          work_place: "-"
+          avatar: nan.jpg       
 
 - title: Piter JS
   id: 4
   link: https://meetabit.com/communities/1
   schedule:
-
-     "13:00" :
-       speaker : "Виктор Грищенко"
-       work_place : Solu
-       theme : "Upside-down database: real-time sync and offline work with Swarm.js."
-       is_discussion: 0     
-       speaker_ava: js_grishenko.png
-     "14:00" :
-       speaker : "Tero Parviainen"
-       work_place : "Self employed"
-       theme : "Refactoring AngularJS Apps to Components."
-       is_discussion: 0     
-       speaker_ava: js_parviainen.jpeg    
-     "15:00" :
-       speaker : "Mike Bradshaw"
-       work_place :  "Solu"
-       theme : "Building apps for Solu platform using JavaScript."
-       is_discussion: 0     
-       speaker_ava: js_bradshaw.jpeg    
-     "16:00" :
-       speaker : "Михаил Полубояринов"
-       work_place :  "Параграф (ГК Мегамейд)"
-       theme : "NW.js"
-       is_discussion: 0     
-       speaker_ava: js_poluboyarinov.jpg
+    - start: "13:00"
+      end: "13:45"  
+      theme : "Upside-down database: real-time sync and offline work with Swarm.js."
+      is_discussion: 0     
+      speakers:
+        - name: "Виктор Грищенко"
+          work_place: "Solu"
+          avatar: js_grishenko.png
+    - start: "14:00"
+      end: "14:45"       
+      theme : "Refactoring AngularJS Apps to Components."
+      is_discussion: 0     
+      speakers:
+        - name: "Tero Parviainen"
+          work_place: "Self employed"
+          avatar: js_parviainen.jpeg  
+    - start: "15:00"
+      end: "15:45"       
+      theme : "Building apps for Solu platform using JavaScript."
+      is_discussion: 0      
+      speakers:
+        - name: "Mike Bradshaw"
+          work_place: "Solu"
+          avatar: js_bradshaw.jpeg    
+    - start: "16:00"
+      end: "16:45"       
+      theme : "NW.js"
+      is_discussion: 0     
+      speakers:
+        - name: "Михаил Полубояринов"
+          work_place: "Параграф (ГК Мегамейд)"
+          avatar: js_poluboyarinov.jpg
 
 - title: "SPb .Net Community"
   id: 5
   link: https://plus.google.com/u/0/communities/115643868183582812348
   schedule:
-
-     "13:00" :
-       speaker : "Сергей Балтийский"
-       work_place : "JetBrains"
-       theme : "Когда в C# не хватает C++. Продолжение."
-       is_discussion: 0     
-       speaker_ava: net_baltic.jpeg    
-     "14:00" :
-       speaker : "Михаил Щербаков"
-       work_place : "IntelliEgg"
-       theme : "Sandboxing in .NET CLR."
-       is_discussion: 0     
-       speaker_ava: net_shcherbakov.jpg    
-     "15:00" :
-       speaker : Антон Шабанов
-       work_place :  WaveAccess
-       theme : "Использование Apache Cordova в реальном проекте."
-       is_discussion: 0     
-       speaker_ava: net_shabanov.png    
-     "16:00" :
-       speaker : "Александр Иванов, Роман Правук"
-       work_place : "EPAM"
-       theme : "Простой и кросс-платформенный Web-сервер на базе .NET Framework."
-       is_discussion: 0     
-       speaker_ava: nan.jpg 
+    - start: "13:00"
+      end: "13:45"  
+      theme : "Когда в C# не хватает C++. Продолжение."
+      is_discussion: 0      
+      speakers:
+        - name: "Сергей Балтийский"
+          work_place: "JetBrains"
+          avatar: net_baltic.jpeg    
+    - start: "14:00"
+      end: "14:45"       
+      theme : "Sandboxing in .NET CLR."
+      is_discussion: 0     
+      speakers:
+        - name: "Михаил Щербаков"
+          work_place: "IntelliEgg"
+          avatar: net_shcherbakov.jpg    
+    - start: "15:00"
+      end: "15:45"       
+      theme : "Использование Apache Cordova в реальном проекте."
+      is_discussion: 0     
+      speakers:
+        - name: "Антон Шабанов"
+          work_place: "WaveAccess"
+          avatar: net_shabanov.png  
+    - start: "16:00"
+      end: "16:45"       
+      theme : "Простой и кросс-платформенный Web-сервер на базе .NET Framework."
+      is_discussion: 0     
+      speakers:
+        - name: "Александр Иванов"
+          work_place: "EPAM"
+          avatar: nan.jpg  
+        - name: "Роман Правук"
+          work_place: "EPAM"
+          avatar: nan.jpg                
 
 - title: "SPb Cloud & Virtualization Community"
   id: 6
   link: https://vk.com/spb.cloud
   schedule:
-
-     "13:00" :
-       speaker : Андрей Маркелов
-       work_place : Ericsson
-       theme : "Использование облачной инфраструктуры OpenStack для телеком и NFV."
-       is_discussion: 0     
-       speaker_ava: nan.jpg    
-     "14:00" :
-       speaker : "Сергей Чуканов"
-       work_place : "ИТ-ГРАД"
-       theme : "Как создать облачный SaaS-сервис из своего приложения."
-       is_discussion: 0     
-       speaker_ava: nan.jpg    
-  #   "15:00" :
-  #     speaker : "Владимир Подзоров/Роман Скворцов"
-  #     work_place : "WELLSERVICE/AMBAHA IT-solutions"
-  #     theme : "Персональные данные в облаке с технической и правовой стороны вопроса. / Microsoft Azure. От теории к практике"
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg   
-  #   "16:00" :
-  #     speaker : "Виталий Грицай / Константин Кудряшов"
-  #     work_place : "https://1cloud.ru/"
-  #     theme : "Построение инфраструктуры облачного провайдера на примере компании 1cloud."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg  
+    - start: "13:00"
+      end: "13:45"  
+      theme : "Использование облачной инфраструктуры OpenStack для телеком и NFV."
+      is_discussion: 0        
+      speakers:
+        - name: "Андрей Маркелов"
+          work_place: "Ericsson"
+          avatar: nan.jpg       
+    - start: "14:00"
+      end: "14:45"       
+      theme : "Как создать облачный SaaS-сервис из своего приложения."
+      is_discussion: 0     
+      speakers:
+        - name: "Сергей Чуканов"
+          work_place: "ИТ-ГРАД"
+          avatar: nan.jpg        
+    - start: "15:00"
+      end: "15:45"  
+      speaker : ""
+      work_place : ""
+      theme : ""
+      is_discussion: 0     
+      speaker_ava: nan.jpg  
+      speakers:
+        - name: ""
+          work_place: ""
+          avatar: nan.jpg       
+    - start: "16:00"
+      end: "16:45"         
+      speaker : ""
+      work_place : ""
+      theme : ""
+      is_discussion: 1     
+      speaker_ava: nan.jpg  
+      speakers:
+        - name: ""
+          work_place: ""
+          avatar: nan.jpg       
 
 - title: SPb GO Community
   id: 7
   link: "http://groups.google.com/forum/#!forum/golang-ru"
   schedule:
-
-     "13:00" :
-       speaker : "Алексей Акулович"
-       work_place : VK
-       theme : "Go и аудиоотпечатки."
-       is_discussion: 0     
-       speaker_ava: go_akulovich.jpeg      
-     "14:00" :
-       speaker : "Антон Плешивцев"
-       work_place : "Spiced Jackal"
-       theme : "Как мы перевели игровой сервер с питона на Go."
-       is_discussion: 0     
-       speaker_ava: go_pleshivcev.png    
-     "15:00" :
-       speaker : "Даниил Подольский"
-       work_place : "-"
-       theme : "Тема уточняется."
-       is_discussion: 0     
-       speaker_ava: go_podolski.jpeg  
-     #"16:00" :
-     #  speaker : Виталий Симирнин
-     #  work_place : "-"
-     #  theme : "Тема уточняется."
-     #  is_discussion: 0     
-     #  speaker_ava: nan.jpg         
+    - start: "13:00"
+      end: "13:45"       
+      theme : "Go и аудиоотпечатки."
+      is_discussion: 0      
+      speakers:
+        - name: "Алексей Акулович"
+          work_place: "VK"
+          avatar: go_akulovich.jpeg    
+    - start: "14:00"
+      end: "14:45"  
+      theme : "Как мы перевели игровой сервер с питона на Go."
+      is_discussion: 0      
+      speakers:
+        - name: "Антон Плешивцев"
+          work_place: "Spiced Jackal"
+          avatar: go_pleshivcev.png 
+    - start: "15:00"
+      end: "15:45"       
+      theme : "Тема уточняется."
+      is_discussion: 0      
+      speakers:
+        - name: "Даниил Подольский"
+          work_place: "-"
+          avatar: go_podolski.jpeg  
+    - start: "16:00"
+      end: "16:45"       
+      speaker : ""
+      work_place : ""
+      theme : ""
+      is_discussion: 0     
+      speaker_ava: nan.jpg   
+      speakers:
+        - name: ""
+          work_place: ""
+          avatar: nan.jpg             
 
 - title: SPb Ruby User Group
   id: 8
   link: https://plus.google.com/communities/117927540789820622012
   schedule:
-
-     "13:00" :
-       speaker : Максим Чечель
-       work_place : Breeze Technology Solutions
-       theme : "Бесконтактный Ruby. Разработка и тестирование NFC-приложений."
-       is_discussion: 0     
-       speaker_ava: sprug_chechel.jpg    
-     "14:00" :
-       speaker : Ольга Резникова
-       work_place : SPB TV
-       theme : "RSpec: Best practices, читабельность и здравый смысл."
-       is_discussion: 0     
-       speaker_ava: sprug_reznikova.jpeg    
-  #   "15:00" :
-  #     speaker : "Дмитрий Нестерук"
-  #     work_place :  JetBrains
-  #     theme : "Динамическое Прототипирование."
-     #  is_discussion: 1     
-     #  speaker_ava: nan.jpg    
-     "16:00" :
-       speaker : Илья Зыкин
-       work_place : "-"
-       theme : "Chef, Vagrant: От Dev окружения до развертки Rails приложения."
-       is_discussion: 0     
-       speaker_ava: sprug_zikin.jpeg 
+    - start: "13:00"
+      end: "13:45"  
+      theme : "Бесконтактный Ruby. Разработка и тестирование NFC-приложений."
+      is_discussion: 0      
+      speakers:
+        - name: "Максим Чечель"
+          work_place: "Breeze Technology Solutions"
+          avatar: sprug_chechel.jpg 
+    - start: "14:00"
+      end: "14:45"  
+      theme : "RSpec: Best practices, читабельность и здравый смысл."
+      is_discussion: 0      
+      speakers:
+        - name: "Ольга Резникова"
+          work_place: "SPB TV"
+          avatar: sprug_reznikova.jpeg 
+    - start: "15:00"
+      end: "15:45"  
+      speaker : ""
+      work_place :  ""
+      theme : ""
+      is_discussion: 0
+      speaker_ava: nan.jpg    
+      speakers:
+        - name: ""
+          work_place: ""
+          avatar: nan.jpg       
+    - start: "16:00"
+      end: "16:45"       
+      theme : "Chef, Vagrant: От Dev окружения до развертки Rails приложения."
+      is_discussion: 0      
+      speakers:
+        - name: "Илья Зыкин"
+          work_place: "-"
+          avatar: sprug_zikin.jpeg 
 
 - title: SPb SPM Club
   id: 9
   link: https://plus.google.com/u/0/communities/108809460896106613736
   schedule:
-
-     "13:00" :
-       speaker : Евгений Сачек
-       work_place : "Return On Intelligence (ROI), team-leader"
-       theme : "Имитационная модель в среде Anylogic для прогнозирования коэффициента сосредоточенности Cкрам команды."
-       is_discussion: 0     
-       speaker_ava: spm_sachek.png
-     "14:00" :
-       speaker : Пикулев Алексей
-       work_place : Luxoft Agile Practice
-       theme : "Развиваем доверие в команде."
-       is_discussion: 0     
-       speaker_ava: spm_pikulev.png    
-     "15:00" :
-       speaker : Александр Мартюшев
-       work_place : SEMrush
-       theme : "Учимся на играх: Kanban в действии. Игра/интерактив."
-       is_discussion: 0     
-       speaker_ava: spm_martyushev.jpg    
-     "16:00" :
-       speaker : "Владислав Лехельт"
-       work_place : "-"
-       theme : "Управление изменениями"
-       is_discussion: 0     
-       speaker_ava: spm_lehelt.jpg  
+    - start: "13:00"
+      end: "13:45"        
+      theme : "Имитационная модель в среде Anylogic для прогнозирования коэффициента сосредоточенности Cкрам команды."
+      is_discussion: 0           
+      speakers:
+        - name: "Евгений Сачек"
+          work_place: "Return On Intelligence (ROI), team-leader"
+          avatar: spm_sachek.png
+    - start: "14:00"
+      end: "14:45"             
+      theme : "Развиваем доверие в команде."
+      is_discussion: 0     
+      speakers:
+        - name: "Пикулев Алексей"
+          work_place: "Luxoft Agile Practice"
+          avatar: spm_pikulev.png         
+    - start: "15:00"
+      end: "15:45"                 
+      theme : "Учимся на играх: Kanban в действии. Игра/интерактив."
+      is_discussion: 0     
+      speakers:
+        - name: "Александр Мартюшев"
+          work_place: "SEMrush"
+          avatar: spm_martyushev.jpg  
+    - start: "16:00"
+      end: "16:45"       
+      theme : "Управление изменениями"
+      is_discussion: 0     
+      speakers:
+        - name: "Владислав Лехельт"
+          work_place: "-"
+          avatar: spm_lehelt.jpg       
 
 - title: SPb Community of Analysts
   id: 10
   link: http://vk.com/spb_analytics
   schedule:
-
-     "13:00" :
-       speaker : Наталья Желнова
-       work_place : "Performance Lab"
-       theme : "Опыт BA-консалтинга: метрики процесса бизнес-анализа."
-       is_discussion: 0     
-       speaker_ava: coa_zelnova.jpg    
-     "14:00" :
-       speaker : Наталья Желнова
-       work_place : "Performance Lab"
-       theme : "Этапы разработки и документация по ГОСТ 34 (соместно с SPb Technical Writers)."
-       is_discussion: 0     
-       speaker_ava: coa_zelnova.jpg    
-     "15:00" :
-       speaker : "Светлана Мухина"
-       work_place : "Luxoft"
-       theme : "Фасилитации встреч по работе с требованиями."
-       is_discussion: 0     
-       speaker_ava: coa_mukhina.jpg    
-     "16:00" :
-       speaker : "Раиса Гольденберг"
-       work_place : "-"
-       theme : "Кто отвечает за качество? (блиц)"
-       is_discussion: 0     
-       speaker_ava: coa_goldenberg.png
+    - start: "13:00"
+      end: "13:45"  
+      theme : "Опыт BA-консалтинга: метрики процесса бизнес-анализа."
+      is_discussion: 0      
+      speakers:
+        - name: "Наталья Желнова"
+          work_place: "Performance Lab"
+          avatar: coa_zelnova.jpg  
+    - start: "14:00"
+      end: "14:45"       
+      theme : "Этапы разработки и документация по ГОСТ 34 (соместно с SPb Technical Writers)."
+      is_discussion: 0     
+      speakers:
+        - name: "Наталья Желнова"
+          work_place: "Performance Lab"
+          avatar: coa_zelnova.jpg         
+    - start: "15:00"
+      end: "15:45"  
+      theme : "Фасилитации встреч по работе с требованиями."
+      is_discussion: 0      
+      speakers:
+        - name: "Светлана Мухина"
+          work_place: "Luxoft"
+          avatar: coa_mukhina.jpg 
+    - start: "16:00"
+      end: "16:20"       
+      theme : "Кто отвечает за качество? (блиц)"
+      is_discussion: 0     
+      speakers:
+        - name: "Раиса Гольденберг"
+          work_place: "-"
+          avatar: coa_goldenberg.png
+    - start: "16:25"
+      end: "16:45"       
+      theme : "Ты - аналитик? Результаты тестирования участиков ITGM."
+      is_discussion: 0      
+      speakers:
+        - name: "Артём Митропольский"
+          work_place: "-"
+          avatar: coa_mitropolskiy.png  
 
 - title: SPb Technical Writers
   id: 11
   link: https://plus.google.com/u/0/communities/111110772662436773783
   schedule:
-
-     "13:00" :
-       speaker : "Захар Кириллов"
-       work_place :  "КБ «Собака Павлова»"
+     - start: "13:00"
+       end: "13:45" 
        theme : "Документы, которые читают."
        is_discussion: 0     
-       speaker_ava: tw_kirillov.jpg    
-     "14:00" :
-       speaker : "Наталия Желнова"
-       work_place : "Performance Lab"
+       speakers:
+         - name: "Захар Кириллов"
+           work_place: "КБ «Собака Павлова»"
+           avatar: tw_kirillov.jpg   
+     - start: "14:00"
+       end: "14:45" 
        theme : "Документация по ГОСТ 34 для профессионалов (совместно с SPb Community of Analysts)."
        is_discussion: 0     
-       speaker_ava: coa_zelnova.jpg    
-     "15:00" :
-       speaker : "Евгений Андреев"
-       work_place : "юрисконсульт"
+       speakers:
+        - name: "Наталья Желнова"
+          work_place: "Performance Lab"
+          avatar: coa_zelnova.jpg           
+     - start: "15:00"
+       end: "15:45" 
        theme : "Есть ли в интернете место авторскому праву?"
        is_discussion: 0     
-       speaker_ava: tw_andreev.png
-     "16:00" :
-       speaker : Станислав Салангин
-       work_place : "координатор СПб сообщества технических писателей"
+       speakers:
+         - name: "Евгений Андреев"
+           work_place: "юрисконсульт"
+           avatar: tw_andreev.png
+     - start: "16:00"
+       end: "16:45" 
        theme : "Три пути технического писателя."
-       is_discussion: 1     
-       speaker_ava: tw_salangin.png  
+       is_discussion: 1      
+       speakers:
+         - name: "Станислав Салангин"
+           work_place: "координатор СПб сообщества технических писателей"
+           avatar: tw_salangin.png  
 
 - title: UXSpb
   id: 12
   link: http://ux-spb.ru/
   schedule:
-     "13:00" :
-       speaker : "Плотников Павел"
-       work_place : "Dr. Web"
+     - start: "13:00"
+       end: "13:45"      
        theme : "О чём вы никогда не догадаетесь пока не протестируете."
-       is_discussion: 0     
-       speaker_ava: ux_plotnikov.jpg  
-     "14:00" :
-       speaker : "Никита Ефимов"
-       work_place : "Selectel"
+       is_discussion: 0      
+       speakers:
+         - name: "Плотников Павел"
+           work_place: "Dr. Web"
+           avatar: ux_plotnikov.jpg  
+     - start: "14:00"
+       end: "14:45"      
        theme : "Информационные персоны, ч.2: С чего начать?"
        is_discussion: 0     
-       speaker_ava: ux_efimov.png
-     "15:00" :
-       speaker : "Виктор Ерофеев"
-       work_place :  "CG Projects Group"
+       speakers:
+         - name: "Никита Ефимов"
+           work_place: "Selectel"
+           avatar: ux_efimov.png
+     - start: "15:00"
+       end: "15:45" 
        theme : "Зачем проектировать доступный интерфейс. Взгляд из бизнеса."
        is_discussion: 0
-       speaker_ava: ux_erofeev.png
-     "16:00" :
-       speaker : "Екатерина Юлина"
-       work_place :  "-"
+       speakers:
+         - name: "Виктор Ерофеев"
+           work_place: "CG Projects Group"
+           avatar: ux_erofeev.png
+     - start: "16:00"
+       end: "16:45"      
        theme : "Сватовство продукта с проектировщиком."
-       is_discussion: 0     
-       speaker_ava: ux_julina.jpg       
+       is_discussion: 0      
+       speakers:
+         - name: "Екатерина Юлина"
+           work_place: "-"
+           avatar: ux_julina.jpg     
 
 - title: SPb IT HR
   id: 13
   link: https://vk.com/spbithrteam
   schedule:
-     "13:00" :
-       speaker : Мария Макарова
-       work_place : "EPAM"
+     - start: "13:00"
+       end: "13:45" 
        theme : "Откуда берутся плохие HR и куда их надо девать"
        is_discussion: 1     
-       speaker_ava: hr_makarova.png
-     "14:00" :
-       speaker : "Ирина Матвеева"
-       work_place : "In.Praktika"
+       speakers:
+         - name: "Мария Макарова"
+           work_place: "EPAM"
+           avatar: hr_makarova.png
+     - start: "14:00"
+       end: "14:45" 
        theme : "Внутренние коммуникации: системный подход"
-       is_discussion: 2     
-       speaker_ava: hr_matveeva.png         
-     "15:00" :
-       speaker : "Юлия Саландаева"
-       work_place : "Sprinthost.ru"
+       is_discussion: 2      
+       speakers:
+         - name: "Ирина Матвеева"
+           work_place: "In.Praktika"
+           avatar: hr_matveeva.png  
+     - start: "15:00"
+       end: "15:45"      
        theme : "Чтобы создать успешную компанию/команду — задайте гениальный вопрос!"
        is_discussion: 0     
-       speaker_ava: hr_salandaeva.jpg
-     "16:00" :
-       speaker : "Виктория Последова"
-       work_place : "iChar"
+       speakers:
+         - name: "Юлия Саландаева"
+           work_place: "Sprinthost.ru"
+           avatar: hr_salandaeva.jpg
+     - start: "16:00"
+       end: "16:45"      
        theme : "Почему кандидаты не проходят испытательный срок."
        is_discussion: 0     
-       speaker_ava: hr_posledova.jpg
+       speakers:
+         - name: "Виктория Последова"
+           work_place: "iChar"
+           avatar: hr_posledova.jpg
 
 - title: SPb e-Learning
   id: 14
   link: "https://www.linkedin.com/groups?home=&gid=8282289"
   schedule:
-
-     "13:00" :
-       speaker : "Лилия Смирнова"
-       work_place : "Корпоративный институт ПАО «Газпром»"
+     - start: "13:00"
+       end: "13:45" 
        theme : "Использование интеллектуальных агентов в электронном обучении."
        is_discussion: 0     
-       speaker_ava: nan.jpg    
-     "14:00" :
-       speaker : "Александр Лопарь"
-       work_place : "FunJet"
+       speakers:
+         - name: "Лилия Смирнова"
+           work_place: "Корпоративный институт ПАО «Газпром»"
+           avatar: nan.jpg        
+     - start: "14:00"
+       end: "14:45"      
        theme : "Игрофикация процесса обучения в СДО (Кейс)."
        is_discussion: 0     
-       speaker_ava: nan.jpg 
-     "15:00" :
-       speaker : "Мария Ваганова"
-       work_place : "Veeam Software"
+       speakers:
+         - name: "Александр Лопарь"
+           work_place: "FunJet"
+           avatar: nan.jpg        
+     - start: "15:00"
+       end: "15:45"      
        theme : "Строим идеальную LMS."
        is_discussion: 2     
-       speaker_ava: nan.jpg  
-     "16:00" :
-       speaker : Игорь Сазонов
-       work_place : "LMS-Tech"
+       speakers:
+         - name: "Мария Ваганова"
+           work_place: "Veeam Software"
+           avatar: nan.jpg        
+     - start: "16:00"
+       end: "16:45"      
        theme : "Структура БД Moodle и особенности работы с Moodle Data API."
        is_discussion: 0     
-       speaker_ava: elearning_sazonov.jpeg
+       speakers:
+         - name: "Игорь Сазонов"
+           work_place: "LMS-Tech"
+           avatar: elearning_sazonov.jpeg
 
 - title: SPb SQA Group
   id: 15
   link: http://sqagroup.spb.ru/
   schedule:
-     "13:00" :
-       speaker : "Дмитрий Гуменюк"
-       work_place : "EPAM Minsk"
+     - start: "13:00"
+       end: "13:45" 
        theme : "Report Portal – эффективность вашей автоматизации."
-       is_discussion: 0     
-       speaker_ava: sqa_gumenyuk.png        
-     "14:00" :
-       speaker : "Николай Бабич"
-       work_place : "Dino Systems"
+       is_discussion: 0      
+       speakers:
+         - name: "Дмитрий Гуменюк"
+           work_place: "EPAM Minsk"
+           avatar: sqa_gumenyuk.png    
+     - start: "14:00"
+       end: "14:45"      
        theme : "Dino Systems: Автоматизация тестирования телефонии: не как решение проблемы, а как построение процесса."
        is_discussion: 0     
-       speaker_ava: sqa_babich.png
-     "15:00" :
-       speaker : Полина Острова
-       work_place : "EPAM"
+       speakers:
+         - name: "Николай Бабич"
+           work_place: "Dino Systems"
+           avatar: sqa_babich.png
+     - start: "15:00"
+       end: "15:45" 
        theme : "Accessibility: from the development challenge to human rights."
        is_discussion: 0     
-       speaker_ava: sqa_ostrova.png
-     "16:00" :
-       speaker : "Антон Шапин"
-       work_place : "EPAM"
+       speakers:
+         - name: "Полина Острова"
+           work_place: "EPAM"
+           avatar: sqa_ostrova.png
+     - start: "16:00"
+       end: "16:45" 
        theme : "BDD подход с точки зрения QA."
-       is_discussion: 0     
-       speaker_ava: sqa_shapin.png 
+       is_discussion: 0      
+       speakers:
+         - name: "Антон Шапин"
+           work_place: "EPAM"
+           avatar: sqa_shapin.png 

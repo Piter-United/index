@@ -401,8 +401,6 @@ title: IT Global Meetup
         Сообщества
         </h1>      
     </div> 
-
-    {% assign timeFrames = "13:00|14:00|15:00|16:00" | split: "|" %}
     <div class="ui four link cards column doubling grid container communities">
       {% for community in site.data.itgm6_communities %}
       <div class="card">
@@ -411,13 +409,16 @@ title: IT Global Meetup
           {{ community.title }}
           </div>
         </div>
-        <div class="center aligned extra content">  
-            {% for frame in timeFrames %}
-              {% assign event = community.schedule[frame] %}
-              {% if event %}
-                <a class="ui basic active label">{{frame}}</a>  
-              {% else %}
-                <a class="ui basic inactive label">{{frame}}</a>  
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
+              <!-- dirty hack -->
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
               {% endif %}
             {% endfor %}                         
         </div> 
@@ -434,45 +435,6 @@ title: IT Global Meetup
   </div>
 
   <!-- endof Communities-->
-
-  <!-- Guest speakers -->
-
-  <!--<div id="guest_speakers" class="ui vertical stripe segment">
-    <div class="ui center aligned container title">
-        <h1>
-        Приглашенные докладчики
-        </h1>      
-    </div>
-
-    <div class="ui divided items">
-      {% for guest_speaker in site.data.itgm6_guest_speakers %}
-      <div class="item">
-        <div class="image">
-          <img src="assets/images/avatar/{{guest_speaker.avatar}}">
-        </div>
-        <div class="content">
-          <a class="header">{{guest_speaker.name}}</a>
-          <div class="meta">
-            <span>{{guest_speaker.work_place}}</span>
-          </div>
-          <div class="description">
-            "{{guest_speaker.theme}}"
-          </div>
-          <div class="extra">
-            {{guest_speaker.description}}
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-
-    <div class="ui center aligned container cta">
-      <button class="ui huge primary button"> Регистрация </button>
-    </div>  
-
-  </div>-->
-
-  <!-- endof Guest speakers -->
 
   <!--Partners-->
 
@@ -647,17 +609,24 @@ title: IT Global Meetup
     </div>
     <div class="ui vertically divided stackable grid container">
 
-      {% for frame in timeFrames %}
+      {% for event in community.schedule %}
         <div class="row">
-        {% assign event = community.schedule[frame] %}
-        {% assign time = frame | split: ":" %}
             <div class="center aligned three wide column">
-              <h1 class="start">{{time[0]}}:00</h1> 
-              <p>{{time[0]}}:45</p>          
+              <h1 class="start">{{event.start}}</h1> 
+              <p>{{event.end}}</p>          
             </div>
-            
-          {% if event %}
-
+            {% if event.theme == empty %}
+            <div class="right floated middle aligned thirteen wide column">
+              <div class="ui items">
+                <div class="item">
+                  <div class="empty content">
+                    <h3 class="header">Тема не определена</h3>                  
+                  </div>
+                  
+                </div>
+              </div>         
+            </div> 
+            {% else %}
             <div class="right floated thirteen wide column">          
               <h3 class="ui header">{{event.theme}}</h3>
 
@@ -668,34 +637,24 @@ title: IT Global Meetup
               <div class="ui tiny orange tag label">Воркшоп</div>      
               {% endif %}              
               <div class="ui items">
+                {% for speaker in event.speakers %}
                 <div class="item">
                   <div class="ui circular image">
-                    <img src="assets/images/avatar/{{event.speaker_ava}}">
+                    <img src="assets/images/avatar/{{speaker.avatar}}">
                   </div>
                   <div class="content">
-                    <div class="author">{{event.speaker}}</div>
+                    <div class="author">{{speaker.name}}</div>
                     <div class="meta">
-                      {{event.work_place}}
+                      {{speaker.work_place}}
                     </div>
                   </div>
                 </div>
+                {% endfor %}
               </div>        
-            </div>
-          {% else %}
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          {% endif %}
+            </div>            
+            {% endif %}            
         </div>
-      {% endfor %}                  
+      {% endfor %}               
     </div>
   </div> 
 {% endfor %} 
