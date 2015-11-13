@@ -24,10 +24,10 @@
       is_discussion: 0     
       speakers:
         - name: "Павел Курочкин"
-          work_place: "-"
+          work_place: "НТЦ Метротек"
           avatar: nan.jpg    
         - name: "Денис Габбидулин"
-          work_place: "-"
+          work_place: "НТЦ Метротек"
           avatar: nan.jpg                       
     - start: "16:00"
       end: "16:45"           
@@ -80,37 +80,45 @@
   link: https://plus.google.com/communities/114227952963737516047
   schedule:
     - start: "13:00"
-      end: "13:45"  
+      end: "13:45"       
+      theme : "Блеск и нищета erlang."
+      is_discussion: 0     
+      speakers:
+        - name: "Игнат Толчанов"
+          work_place: "Umisoft"
+          avatar: fprog_tolchanov.jpg  
+    - start: "14:00"
+      end: "14:45"       
+      theme : "Макросы Scala или как заставить компилятор писать код за вас."
+      is_discussion: 0     
+      speakers:
+        - name: "Михаил Муцянко"
+          work_place: "JetBrains"
+          avatar: fprog_mucyanko.jpg            
+    - start: "15:00"
+      end: "15:45"  
       theme : "Введение в Agda."
       is_discussion: 0  
       speakers:
         - name: "Мария Давыдова"
           work_place: "JetBrains"
           avatar: fprog_davidova.jpg         
-    - start: "14:00"
-      end: "14:45"       
-      theme : "Блеск и нищета erlang."
-      is_discussion: 0     
-      speakers:
-        - name: "Игнат Толчанов"
-          work_place: "Umisoft"
-          avatar: fprog_tolchanov.jpg
-    - start: "15:00"
-      end: "15:45"       
-      theme : "Тема уточняется..."
-      is_discussion: 0     
-      speakers:
-        - name: "Ильшад Хабибуллин"
-          work_place: "-"
-          avatar: nan.jpg       
     - start: "16:00"
-      end: "16:45"       
-      theme : "Введение в Scala."
+      end: "16:25"       
+      theme : "Необычные применения макросов."
       is_discussion: 0     
       speakers:
-        - name: "Михаил Муцянко"
+        - name: "Дмитрий Игнатьев"
           work_place: "-"
-          avatar: nan.jpg       
+          avatar: fprog_ignatiev.png
+    - start: "16:25"
+      end: "17:00"       
+      theme : "Состояние Clojure на сегодняшний день. Параллелизм и ленивые вычисления на рабочем примере."
+      is_discussion: 0     
+      speakers:
+        - name: "Ильшад Хабибулин"
+          work_place: "-"
+          avatar: pfrog_habibulin.jpeg
 
 - title: Piter JS
   id: 4
@@ -184,10 +192,10 @@
       speakers:
         - name: "Александр Иванов"
           work_place: "EPAM"
-          avatar: nan.jpg  
+          avatar: net_ivanov.jpg
         - name: "Роман Правук"
           work_place: "EPAM"
-          avatar: nan.jpg                
+          avatar: net_pravuk.jpg
 
 - title: "SPb Cloud & Virtualization Community"
   id: 6
@@ -200,7 +208,7 @@
       speakers:
         - name: "Андрей Маркелов"
           work_place: "Ericsson"
-          avatar: nan.jpg       
+          avatar: cloud_markelov.png
     - start: "14:00"
       end: "14:45"       
       theme : "Как создать облачный SaaS-сервис из своего приложения."
@@ -208,25 +216,19 @@
       speakers:
         - name: "Сергей Чуканов"
           work_place: "ИТ-ГРАД"
-          avatar: nan.jpg        
+          avatar: cloud_chukanov.jpg        
     - start: "15:00"
       end: "15:45"  
-      speaker : ""
-      work_place : ""
-      theme : ""
+      theme : "Backup as a Service как новый облачный тренд"
       is_discussion: 0     
-      speaker_ava: nan.jpg  
       speakers:
-        - name: ""
-          work_place: ""
+        - name: "Дмитрий Иванюк"
+          work_place: "Монт"
           avatar: nan.jpg       
     - start: "16:00"
       end: "16:45"         
-      speaker : ""
-      work_place : ""
       theme : ""
-      is_discussion: 1     
-      speaker_ava: nan.jpg  
+      is_discussion: 0 
       speakers:
         - name: ""
           work_place: ""
@@ -261,12 +263,9 @@
           work_place: "-"
           avatar: go_podolski.jpeg  
     - start: "16:00"
-      end: "16:45"       
-      speaker : ""
-      work_place : ""
+      end: "16:45"      
       theme : ""
       is_discussion: 0     
-      speaker_ava: nan.jpg   
       speakers:
         - name: ""
           work_place: ""
@@ -294,15 +293,12 @@
           avatar: sprug_reznikova.jpeg 
     - start: "15:00"
       end: "15:45"  
-      speaker : ""
-      work_place :  ""
-      theme : ""
+      theme : "Lotus.rb"
       is_discussion: 0
-      speaker_ava: nan.jpg    
       speakers:
-        - name: ""
-          work_place: ""
-          avatar: nan.jpg       
+        - name: "Андрей Дерябин"
+          work_place: "Evil Martians"
+          avatar: srpug_deryabin.jpg       
     - start: "16:00"
       end: "16:45"       
       theme : "Chef, Vagrant: От Dev окружения до развертки Rails приложения."
