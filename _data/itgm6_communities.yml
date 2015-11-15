@@ -25,17 +25,17 @@
       speakers:
         - name: "Павел Курочкин"
           work_place: "НТЦ Метротек"
-          avatar: nan.jpg    
+          avatar: linux_kurochkin.jpg    
         - name: "Денис Габбидулин"
           work_place: "НТЦ Метротек"
-          avatar: nan.jpg                       
+          avatar: linux_gabbidulin.jpg                       
     - start: "16:00"
       end: "16:45"           
-      theme : ""
+      theme : "Что нам стоит ад построить?! Централизованное управление посредством Kerberos и NIS без ldap и питонов."
       is_discussion: 0           
       speakers:
-        - name: ""
-          work_place: ""
+        - name: "Вячеслав Ольховченков"
+          work_place: "SPbLUG"
           avatar: nan.jpg         
 
 - title: SPb Python Interest Group
@@ -256,7 +256,7 @@
           avatar: go_pleshivcev.png 
     - start: "15:00"
       end: "15:45"       
-      theme : "Тема уточняется."
+      theme : "Go как duct tape для крупного проекта - метрики, логи, синхронизация, проблемы и решения."
       is_discussion: 0      
       speakers:
         - name: "Даниил Подольский"
