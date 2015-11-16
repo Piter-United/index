@@ -1,6 +1,6 @@
-- title: "DevOps-40 / SPb Linux User Group"
+- title: "SPb Linux User Group / DevOps-40"
   id: 1
-  link: http://www.meetup.com/DevOps-40/
+  link: http://spblug.org/
   schedule:
     - start: "13:00"
       end: "13:45"
@@ -77,7 +77,7 @@
 
 - title: FProg (Clojure/Erlang/Haskell)
   id: 3
-  link: https://plus.google.com/communities/114227952963737516047
+  link: https://plus.google.com/communities/106931692847918217517
   schedule:
     - start: "13:00"
       end: "13:45"       
