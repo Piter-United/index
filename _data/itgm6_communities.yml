@@ -512,7 +512,7 @@
        speakers:
          - name: "Лилия Смирнова"
            work_place: "Корпоративный институт ПАО «Газпром»"
-           avatar: nan.jpg        
+           avatar: elearning_smirnova.jpg        
      - start: "14:00"
        end: "14:45"      
        theme : "Игрофикация процесса обучения в СДО (Кейс)."
@@ -520,7 +520,7 @@
        speakers:
          - name: "Александр Лопарь"
            work_place: "FunJet"
-           avatar: nan.jpg        
+           avatar: elearning_lopar.jpg        
      - start: "15:00"
        end: "15:45"      
        theme : "Строим идеальную LMS."
@@ -528,7 +528,7 @@
        speakers:
          - name: "Мария Ваганова"
            work_place: "Veeam Software"
-           avatar: nan.jpg        
+           avatar: elearning_vaganova.jpg        
      - start: "16:00"
        end: "16:45"      
        theme : "Структура БД Moodle и особенности работы с Moodle Data API."
