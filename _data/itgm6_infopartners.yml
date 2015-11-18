@@ -98,10 +98,15 @@
   desc: 
   logo: ichar.png
 
-- title: "Reg.ru"
+- title: "PGDay 16"
   link: https://www.reg.ru/
   desc: 
   logo: regru_logo.png  
+
+- title: "Reg.ru"
+  link: http://pgday.ru/ru/2016
+  desc: 
+  logo: pgday16-logo.png 
 
 - title: Новый инфопартнер
   link: mailto:piterunited@gmail.com
