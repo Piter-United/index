@@ -4,12 +4,12 @@
   schedule:
     - start: "13:00"
       end: "13:45"
-      theme : ""
+      theme : "Kubernetes: хотели как лучше"
       is_discussion: 0      
       speakers:
-        - name: ""
-          work_place: ""
-          avatar: nan.jpg         
+        - name: "Глеб Помыкалов"
+          work_place: "cubic.ai"
+          avatar: linux_pomikalov.png         
     - start: "14:00"
       end: "14:45"                 
       theme : "DNS в хостинг-провайдере."
