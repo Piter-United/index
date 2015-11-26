@@ -219,11 +219,11 @@
           avatar: cloud_chukanov.jpg        
     - start: "15:00"
       end: "15:45"  
-      theme : "Backup as a Service как новый облачный тренд"
+      theme : ""
       is_discussion: 0     
       speakers:
-        - name: "Дмитрий Иванюк"
-          work_place: "Монт"
+        - name: ""
+          work_place: ""
           avatar: nan.jpg       
     - start: "16:00"
       end: "16:45"         
@@ -358,21 +358,21 @@
           work_place: "Performance Lab"
           avatar: coa_zelnova.jpg  
     - start: "14:00"
-      end: "14:45"       
-      theme : "Этапы разработки и документация по ГОСТ 34 (соместно с SPb Technical Writers)."
-      is_discussion: 0     
-      speakers:
-        - name: "Наталья Желнова"
-          work_place: "Performance Lab"
-          avatar: coa_zelnova.jpg         
-    - start: "15:00"
-      end: "15:45"  
+      end: "14:45"  
       theme : "Фасилитации встреч по работе с требованиями."
       is_discussion: 0      
       speakers:
         - name: "Светлана Мухина"
           work_place: "Luxoft"
-          avatar: coa_mukhina.jpg 
+          avatar: coa_mukhina.jpg           
+    - start: "15:00"
+      end: "15:45"       
+      theme : "Аналитик на пути приближающегося поезда. Как снизить влияние когнитивных искажений с помощью практик риск-менеджмента - разбор кейсов."
+      is_discussion: 0     
+      speakers:
+        - name: "Анатолий Суздальцев"
+          work_place: "CEO KdZen, Inc."
+          avatar: nan.jpg         
     - start: "16:00"
       end: "16:20"       
       theme : "Кто отвечает за качество? (блиц)"
