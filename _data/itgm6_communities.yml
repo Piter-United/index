@@ -211,12 +211,12 @@
           avatar: cloud_markelov.png
     - start: "14:00"
       end: "14:45"       
-      theme : "Как создать облачный SaaS-сервис из своего приложения."
+      theme : "Backup as a Service как новый облачный тренд."
       is_discussion: 0     
       speakers:
-        - name: "Сергей Чуканов"
-          work_place: "ИТ-ГРАД"
-          avatar: cloud_chukanov.jpg        
+        - name: "Дмитрий Иванюк"
+          work_place: "Монт"
+          avatar: cloud_ivanuk.png        
     - start: "15:00"
       end: "15:45"  
       theme : ""
