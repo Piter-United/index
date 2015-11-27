@@ -70,11 +70,11 @@
   level: Серебряный партнер
   logo: selectel.png
 
-# - title: Luxoft
-#   link: https://www.luxoft.ru/
-#   desc: 
-#   level: Бронзовый партнер
-#   logo: luxoft.png
+- title: KudaGo
+  link: http://kudago.com/
+  desc: 
+  level: Бронзовый партнер
+  logo: kudago_logo.png
 
 # - title: OSS Prime
 #   link: http://ossprime.ru/
