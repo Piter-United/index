@@ -441,12 +441,12 @@
            avatar: ux_plotnikov.jpg  
      - start: "14:00"
        end: "14:45"      
-       theme : "Информационные персоны, ч.2: С чего начать?"
+       theme : ""
        is_discussion: 0     
        speakers:
-         - name: "Никита Ефимов"
-           work_place: "Selectel"
-           avatar: ux_efimov.png
+         - name: ""
+           work_place: ""
+           avatar: nan.jpg
      - start: "15:00"
        end: "15:45" 
        theme : "Зачем проектировать доступный интерфейс. Взгляд из бизнеса."
