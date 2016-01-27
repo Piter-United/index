@@ -114,8 +114,15 @@ a#registration:hover{
 .logo{
 	width: 19%;
 	height: 150px;
-	background-color: #ddd;
+	background-color: #f1c40f;
 	display: inline-block;
+}
+
+.logo img{
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
 }
 
 .description{

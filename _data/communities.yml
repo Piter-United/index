@@ -2,37 +2,38 @@
   members:
   link: https://plus.google.com/u/0/communities/108851235934496354072
   desc: Объединение активистов ИТ сообществ Санкт-Петербурга
-  logo: img/piterunited.png
+  logo: /img/piterunited.png
 
 - title: SPM Club
   members:
   link: https://plus.google.com/u/0/communities/108809460896106613736
   desc: Петербургский клуб менеджеров проектов в IT.
-  logo: img/spmclub.png
+  # logo: img/spmclub.png
+  logo: /new/img/spm.png
 
 - title: SPb CoA
   members:  
   link: http://vk.com/spb_analytics
   desc: Сообщество системных и бизнес аналитиков Петербурга.
-  logo: img/spbcoa.png
+  logo: /img/spbcoa.png
 
 - title: Piter JS
   members:
   link: https://twitter.com/gopiterjs
   desc: "Сообщество вокруг JavaScript, платформы node.js и все, что с ними связано."
-  logo: img/piterjs.jpg
+  logo: /img/piterjs.jpg
 
 - title: SPb Frontend
   members:
   link: http://vk.com/spb_frontend
   desc: Сообщество front-end разработчиков
-  logo: img/frontend.jpg 
+  logo: /img/frontend.jpg 
 
 - title: DevOps-40
   members:
   link: http://www.meetup.com/DevOps-40/
   desc: Системные администраторы и DevOps-инженеры.
-  logo: img/devops.png
+  logo: /img/devops.png
 
 # - title: SPb Haskell User Group
 #   members:

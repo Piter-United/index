@@ -12,7 +12,9 @@ title: Piter United
 		<h3>Сообщества</h3>
 		{% for community in site.data.communities %}
 		<div class="container-flex community">
-			<div class="item-flex logo"></div>
+			<div class="item-flex logo">
+				<img src="/new/img/spm.png" class="img-responsive">
+			</div>
 			<div class="item-flex description">
 				<h4> {{community.title}} </h4>
 				<p> {{community.desc}} </p>
