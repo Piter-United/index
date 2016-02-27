@@ -1,12 +1,12 @@
 - title: DataArt
   link: http://www.dataart.ru/
   desc: 
-  logo: da.png
+  logo: dataart-logo-black.png
 
-# - title: IT talk
-#   link: http://it-talk.dataart.ru/
-#   desc: 
-#   logo: /itgm/assets/images/logos/ittalk.png
+- title: IT talk
+  link: http://it-talk.dataart.ru/
+  desc: 
+  logo: ittalk_logo.jpg
 
 # - title: Теплица Социальных Технологий
 #   link: http://te-st.ru/
@@ -38,15 +38,15 @@
   desc: 
   logo: kechinov.png
 
-# - title: Ай-Ти События
-#   link: http://it-sobytie.ru/
-#   desc: 
-#   logo: /itgm/assets/images/logos/itsob.png
+- title: RubyNoName
+  link: http://rubynoname.ru/
+  desc: 
+  logo: rubynoname.jpg
 
-# - title: Сын Программиста
-#   link: http://progerson.ru
-#   desc: 
-#   logo: /itgm/assets/images/logos/progson.png
+- title: "Сын Программиста"
+  link: https://vk.com/proger_baby
+  desc: 
+  logo: progson.png
 
 # - title: Haker
 #   link: https://xakep.ru/
@@ -88,10 +88,32 @@
   desc: 
   logo: businessportret.png
 
+
 - title: PG Day 2016
   link: http://pgday.ru/ru/2016
   desc: 
   logo: pgday16.png
+
+- title: "Первый городской бизнес-инкубатор"
+  link: http://www.start-business.ru/
+  desc: 
+  logo: pgbi.jpg
+
+- title: "iChar"
+  link: http://ichar.ru/
+  desc: 
+  logo: ichar.png
+
+- title: "PGDay 16"
+  link: https://www.reg.ru/
+  desc: 
+  logo: regru_logo.png  
+
+- title: "Reg.ru"
+  link: http://pgday.ru/ru/2016
+  desc: 
+  logo: pgday16-logo.png 
+
 
 - title: Новый инфопартнер
   link: mailto:piterunited@gmail.com

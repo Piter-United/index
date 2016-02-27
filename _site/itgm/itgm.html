@@ -106,11 +106,11 @@
     </div>
 
 
-    <div class="ui center aligned countdown bottom attached extra content"> 
+     <div class="ui center aligned countdown bottom attached extra content">
       <span class="stat-info">до слета осталось: </span>
-      <span class="stat value">{dnn}</span> <span class="stat-info">дней</span> 
-      <span class="stat value">{hnn}</span> <span class="stat-info">часов</span> 
-      <span class="stat value">{mnn}</span> <span class="stat-info">минут</span> 
+      {d<}<span class="stat value">{dnn}</span> <span class="stat-info">{dl}</span>{d>}
+      <span class="stat value">{hnn}</span> <span class="stat-info">{hl}</span>
+      <span class="stat value">{mnn}</span> <span class="stat-info">{ml}</span>
     </div>
   </div>  
 
@@ -404,7 +404,7 @@
         </div>
         <div class="nine wide column">
           <h3 class="ui header">Общение на островках сообществ</h3>
-          <p>Все общение на островках будет разбито на сорокаминутные (40 мин.) временные секции (13.00-14.40, 14.00-14.40 и т.д.) с двадцатиминутными (20 мин.) перерывами между ними.</p>
+          <p>Все общение на островках будет разбито на сорокапятиминутные (45 мин.) временные секции (13.00-13.45, 14.00-14.45 и т.д.) с пятнадцатиминутными (15 мин.) перерывами между ними.</p>
         </div>
       </div>  
       <div class="row">
@@ -429,245 +429,31 @@
         Сообщества
         </h1>      
     </div> 
-
-    
     <div class="ui four link cards column doubling grid container communities">
       
       <div class="card">
         <div class="center aligned content">
           <div class="header">
-          UXSpb
+          SPb Linux User Group / DevOps-40
           </div>
         </div>
-        <div class="center aligned extra content">  
-            
+        
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
               
-              
-                <a class="ui basic inactive label">13:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">14:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">15:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">16:00</a>  
-              
-                                     
-        </div> 
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
+              {% endif %}
+            {% endfor %}                         
+        </div>
+         
         <div class="additional">
           <p class="c_id">1</p>         
-        </div>       
-      </div>
-      
-      <div class="card">
-        <div class="center aligned content">
-          <div class="header">
-          SPb SPM Club
-          </div>
-        </div>
-        <div class="center aligned extra content">  
-            
-              
-              
-                <a class="ui basic inactive label">13:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">14:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">15:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">16:00</a>  
-              
-                                     
-        </div> 
-        <div class="additional">
-          <p class="c_id">2</p>         
-        </div>       
-      </div>
-      
-      <div class="card">
-        <div class="center aligned content">
-          <div class="header">
-          IT talk
-          </div>
-        </div>
-        <div class="center aligned extra content">  
-            
-              
-              
-                <a class="ui basic inactive label">13:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">14:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">15:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">16:00</a>  
-              
-                                     
-        </div> 
-        <div class="additional">
-          <p class="c_id">3</p>         
-        </div>       
-      </div>
-      
-      <div class="card">
-        <div class="center aligned content">
-          <div class="header">
-          SPb Community of Analysts
-          </div>
-        </div>
-        <div class="center aligned extra content">  
-            
-              
-              
-                <a class="ui basic inactive label">13:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">14:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">15:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">16:00</a>  
-              
-                                     
-        </div> 
-        <div class="additional">
-          <p class="c_id">4</p>         
-        </div>       
-      </div>
-      
-      <div class="card">
-        <div class="center aligned content">
-          <div class="header">
-          DevOps-40 / SPb Linux User Group
-          </div>
-        </div>
-        <div class="center aligned extra content">  
-            
-              
-              
-                <a class="ui basic inactive label">13:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">14:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">15:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">16:00</a>  
-              
-                                     
-        </div> 
-        <div class="additional">
-          <p class="c_id">5</p>         
-        </div>       
-      </div>
-      
-      <div class="card">
-        <div class="center aligned content">
-          <div class="header">
-          Piter JS
-          </div>
-        </div>
-        <div class="center aligned extra content">  
-            
-              
-              
-                <a class="ui basic inactive label">13:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">14:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">15:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">16:00</a>  
-              
-                                     
-        </div> 
-        <div class="additional">
-          <p class="c_id">6</p>         
-        </div>       
-      </div>
-      
-      <div class="card">
-        <div class="center aligned content">
-          <div class="header">
-          SPb .Net Community
-          </div>
-        </div>
-        <div class="center aligned extra content">  
-            
-              
-              
-                <a class="ui basic inactive label">13:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">14:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">15:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">16:00</a>  
-              
-                                     
-        </div> 
-        <div class="additional">
-          <p class="c_id">7</p>         
         </div>       
       </div>
       
@@ -677,31 +463,23 @@
           SPb Python Interest Group
           </div>
         </div>
-        <div class="center aligned extra content">  
-            
+        
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
               
-              
-                <a class="ui basic inactive label">13:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">14:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">15:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">16:00</a>  
-              
-                                     
-        </div> 
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
+              {% endif %}
+            {% endfor %}                         
+        </div>
+         
         <div class="additional">
-          <p class="c_id">8</p>         
+          <p class="c_id">2</p>         
         </div>       
       </div>
       
@@ -711,31 +489,75 @@
           FProg (Clojure/Erlang/Haskell)
           </div>
         </div>
-        <div class="center aligned extra content">  
-            
+        
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
               
-              
-                <a class="ui basic inactive label">13:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">14:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">15:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">16:00</a>  
-              
-                                     
-        </div> 
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
+              {% endif %}
+            {% endfor %}                         
+        </div>
+         
         <div class="additional">
-          <p class="c_id">9</p>         
+          <p class="c_id">3</p>         
+        </div>       
+      </div>
+      
+      <div class="card">
+        <div class="center aligned content">
+          <div class="header">
+          Piter JS
+          </div>
+        </div>
+        
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
+              
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
+              {% endif %}
+            {% endfor %}                         
+        </div>
+         
+        <div class="additional">
+          <p class="c_id">4</p>         
+        </div>       
+      </div>
+      
+      <div class="card">
+        <div class="center aligned content">
+          <div class="header">
+          SPb .Net Community
+          </div>
+        </div>
+        
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
+              
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
+              {% endif %}
+            {% endfor %}                         
+        </div>
+         
+        <div class="additional">
+          <p class="c_id">5</p>         
         </div>       
       </div>
       
@@ -745,65 +567,23 @@
           SPb Cloud & Virtualization Community
           </div>
         </div>
-        <div class="center aligned extra content">  
-            
+        
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
               
-              
-                <a class="ui basic inactive label">13:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">14:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">15:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">16:00</a>  
-              
-                                     
-        </div> 
-        <div class="additional">
-          <p class="c_id">10</p>         
-        </div>       
-      </div>
-      
-      <div class="card">
-        <div class="center aligned content">
-          <div class="header">
-          SPb PostgreSQL User Group
-          </div>
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
+              {% endif %}
+            {% endfor %}                         
         </div>
-        <div class="center aligned extra content">  
-            
-              
-              
-                <a class="ui basic inactive label">13:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">14:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">15:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">16:00</a>  
-              
-                                     
-        </div> 
+         
         <div class="additional">
-          <p class="c_id">11</p>         
+          <p class="c_id">6</p>         
         </div>       
       </div>
       
@@ -813,31 +593,101 @@
           SPb GO Community
           </div>
         </div>
-        <div class="center aligned extra content">  
-            
+        
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
               
-              
-                <a class="ui basic inactive label">13:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">14:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">15:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">16:00</a>  
-              
-                                     
-        </div> 
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
+              {% endif %}
+            {% endfor %}                         
+        </div>
+         
         <div class="additional">
-          <p class="c_id">12</p>         
+          <p class="c_id">7</p>         
+        </div>       
+      </div>
+      
+      <div class="card">
+        <div class="center aligned content">
+          <div class="header">
+          SPb Ruby User Group
+          </div>
+        </div>
+        
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
+              
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
+              {% endif %}
+            {% endfor %}                         
+        </div>
+         
+        <div class="additional">
+          <p class="c_id">8</p>         
+        </div>       
+      </div>
+      
+      <div class="card">
+        <div class="center aligned content">
+          <div class="header">
+          SPb SPM Club
+          </div>
+        </div>
+        
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
+              
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
+              {% endif %}
+            {% endfor %}                         
+        </div>
+         
+        <div class="additional">
+          <p class="c_id">9</p>         
+        </div>       
+      </div>
+      
+      <div class="card">
+        <div class="center aligned content">
+          <div class="header">
+          SPb Community of Analysts
+          </div>
+        </div>
+        
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
+              
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
+              {% endif %}
+            {% endfor %}                         
+        </div>
+         
+        <div class="additional">
+          <p class="c_id">10</p>         
         </div>       
       </div>
       
@@ -847,29 +697,73 @@
           SPb Technical Writers
           </div>
         </div>
-        <div class="center aligned extra content">  
-            
+        
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
               
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
+              {% endif %}
+            {% endfor %}                         
+        </div>
+         
+        <div class="additional">
+          <p class="c_id">11</p>         
+        </div>       
+      </div>
+      
+      <div class="card">
+        <div class="center aligned content">
+          <div class="header">
+          UXSpb
+          </div>
+        </div>
+        
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
               
-                <a class="ui basic inactive label">13:00</a>  
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
+              {% endif %}
+            {% endfor %}                         
+        </div>
+         
+        <div class="additional">
+          <p class="c_id">12</p>         
+        </div>       
+      </div>
+      
+      <div class="card">
+        <div class="center aligned content">
+          <div class="header">
+          SPb IT HR
+          </div>
+        </div>
+        
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
               
-            
-              
-              
-                <a class="ui basic inactive label">14:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">15:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">16:00</a>  
-              
-                                     
-        </div> 
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
+              {% endif %}
+            {% endfor %}                         
+        </div>
+         
         <div class="additional">
           <p class="c_id">13</p>         
         </div>       
@@ -881,29 +775,21 @@
           SPb e-Learning
           </div>
         </div>
-        <div class="center aligned extra content">  
-            
+        
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
               
-              
-                <a class="ui basic inactive label">13:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">14:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">15:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">16:00</a>  
-              
-                                     
-        </div> 
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
+              {% endif %}
+            {% endfor %}                         
+        </div>
+         
         <div class="additional">
           <p class="c_id">14</p>         
         </div>       
@@ -915,29 +801,21 @@
           SPb SQA Group
           </div>
         </div>
-        <div class="center aligned extra content">  
-            
+        
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
               
-              
-                <a class="ui basic inactive label">13:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">14:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">15:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">16:00</a>  
-              
-                                     
-        </div> 
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
+              {% endif %}
+            {% endfor %}                         
+        </div>
+         
         <div class="additional">
           <p class="c_id"></p>         
         </div>       
@@ -949,31 +827,49 @@
           IT HR
           </div>
         </div>
-        <div class="center aligned extra content">  
-            
+        
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
               
-              
-                <a class="ui basic inactive label">13:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">14:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">15:00</a>  
-              
-            
-              
-              
-                <a class="ui basic inactive label">16:00</a>  
-              
-                                     
-        </div> 
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
+              {% endif %}
+            {% endfor %}                         
+        </div>
+         
         <div class="additional">
           <p class="c_id"></p>         
+        </div>       
+      </div>
+      
+      <div class="card">
+        <div class="center aligned content">
+          <div class="header">
+          SPb SQA Group
+          </div>
+        </div>
+        
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
+              
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
+              {% endif %}
+            {% endfor %}                         
+        </div>
+         
+        <div class="additional">
+          <p class="c_id">15</p>         
         </div>       
       </div>
       
@@ -981,65 +877,10 @@
 
     <div class="ui center aligned container cta">
       <button class="ui huge primary button"> Регистрация </button>
-    </div>      
+    </div> 
   </div>
 
   <!-- endof Communities-->
-
-  <!-- People -->
-
-  <!--<div id="people" class="ui vertical stripe segment">
-    <a class="anchor" id="people_a"></a>
-    <div class="ui center aligned container">
-        <h1 class="h-hero">
-        Персоналии      
-        </h1>      
-    </div> 
-    <div class="ui stackable two column grid">
-      <div class="column">
-        <div class="ui items">
-          <div class="item">
-            <div class="ui small image">
-              <img src="assets/images/avatar/nan.jpg">
-            </div>
-            <div class="content">
-              <div class="header">Никита Ефимов</div>
-              <div class="meta">
-                <span>Просто клевый парень, Selectel</span>          
-              </div>
-              <div class="description">
-                <p>
-                  Не следует, однако забывать, что укрепление и развитие структуры требуют от нас анализа дальнейших направлений развития. Товарищи! дальнейшее развитие различных форм деятельности требуют определения и уточнения соответствующий условий активизации.
-                </p>
-              </div>
-            </div>
-          </div>  
-        </div>       
-      </div>
-      <div class="column">
-        <div class="ui items">
-          <div class="item">
-            <div class="ui small image">
-              <img src="assets/images/avatar/nan.jpg">
-            </div>
-            <div class="content">
-              <div class="header">Никита Ефимов</div>
-              <div class="meta">
-                <span>Просто клевый парень, Selectel</span>          
-              </div>
-              <div class="description">
-                <p>
-                  Не следует, однако забывать, что укрепление и развитие структуры требуют от нас анализа дальнейших направлений развития. Товарищи! дальнейшее развитие различных форм деятельности требуют определения и уточнения соответствующий условий активизации.
-                </p>
-              </div>
-            </div>
-          </div>  
-        </div>       
-      </div>              
-    </div>
-  </div>-->
-
-  <!-- endof People -->
 
   <!--Partners-->
 
@@ -1106,13 +947,52 @@
       <div class="ui card">
         <div class="content">
           <div class="frame">
-            <a href="http://www.it-grad.ru/" target="_blank">
-              <img src="assets/images/logos/itgrad.png">
+            <a href="http://www.dins.ru/" target="_blank">
+              <img src="assets/images/logos/dins.png">
             </a>
           </div>
         </div>
         <div class="ui bottom attached extra content">
           <p class="meta">Серебряный партнер</p>
+        </div>         
+      </div>
+       
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="http://www.semrush.com/" target="_blank">
+              <img src="assets/images/logos/semrush_2.png">
+            </a>
+          </div>
+        </div>
+        <div class="ui bottom attached extra content">
+          <p class="meta">Серебряный партнер</p>
+        </div>         
+      </div>
+       
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="https://selectel.ru/?utm_campaign=selectel_sponsor&utm_medium=display&utm_source=itgm&utm_content=logo&utm_term=event" target="_blank">
+              <img src="assets/images/logos/selectel.png">
+            </a>
+          </div>
+        </div>
+        <div class="ui bottom attached extra content">
+          <p class="meta">Серебряный партнер</p>
+        </div>         
+      </div>
+       
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="http://kudago.com/" target="_blank">
+              <img src="assets/images/logos/kudago_logo.png">
+            </a>
+          </div>
+        </div>
+        <div class="ui bottom attached extra content">
+          <p class="meta">Бронзовый партнер</p>
         </div>         
       </div>
        
@@ -1165,7 +1045,17 @@
         <div class="content">
           <div class="frame">
             <a href="http://www.dataart.ru/" target="_blank">
-              <img src="assets/images/logos/da.png ">
+              <img src="assets/images/logos/dataart-logo-black.png ">
+            </a>
+          </div>
+        </div>       
+      </div>
+        
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="http://it-talk.dataart.ru/" target="_blank">
+              <img src="assets/images/logos/ittalk_logo.jpg ">
             </a>
           </div>
         </div>       
@@ -1214,6 +1104,26 @@
       <div class="ui card">
         <div class="content">
           <div class="frame">
+            <a href="http://rubynoname.ru/" target="_blank">
+              <img src="assets/images/logos/rubynoname.jpg ">
+            </a>
+          </div>
+        </div>       
+      </div>
+        
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="https://vk.com/proger_baby" target="_blank">
+              <img src="assets/images/logos/progson.png ">
+            </a>
+          </div>
+        </div>       
+      </div>
+        
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
             <a href="http://levelp.ru" target="_blank">
               <img src="assets/images/logos/levelup.png ">
             </a>
@@ -1236,6 +1146,46 @@
           <div class="frame">
             <a href="http://pgday.ru/ru/2016" target="_blank">
               <img src="assets/images/logos/pgday16.png ">
+            </a>
+          </div>
+        </div>       
+      </div>
+        
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="http://www.start-business.ru/" target="_blank">
+              <img src="assets/images/logos/pgbi.jpg ">
+            </a>
+          </div>
+        </div>       
+      </div>
+        
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="http://ichar.ru/" target="_blank">
+              <img src="assets/images/logos/ichar.png ">
+            </a>
+          </div>
+        </div>       
+      </div>
+        
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="https://www.reg.ru/" target="_blank">
+              <img src="assets/images/logos/regru_logo.png ">
+            </a>
+          </div>
+        </div>       
+      </div>
+        
+      <div class="ui card">
+        <div class="content">
+          <div class="frame">
+            <a href="http://pgday.ru/ru/2016" target="_blank">
+              <img src="assets/images/logos/pgday16-logo.png ">
             </a>
           </div>
         </div>       
@@ -1291,7 +1241,7 @@
           <div class="description">
             <i class="tiny marker icon"></i> 
             Санкт-Петербург, пр. Медиков д.3, КДЦ “Club House”
-            <a class="link" href="http://piter-united.ru/itgm5/map.html" target="_blank">подробный маршрут</a>
+            <a class="link" href="map.html" target="_blank">подробный маршрут</a>
           </div>
         </div>
         <div class="content">
@@ -1364,766 +1314,152 @@
     <i class="close icon"></i>
     <div class="ui center aligned dialog header">
       <div class="ui title">
-        UXSpb
+        SPb Linux User Group / DevOps-40
       </div>
       <div class="ui description"> 
-        <a class="link" href="http://ux-spb.ru/" target="_blank">сайт сообщества</a>
+        <a class="link" href="http://spblug.org/" target="_blank">сайт сообщества</a>
       </div>
     </div>
     <div class="ui vertically divided stackable grid container">
 
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">13:00</h1> 
-              <p>13:40</p>          
+              <p>13:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Kubernetes: хотели как лучше</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/linux_pomikalov.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Глеб Помыкалов</div>
+                    <div class="meta">
+                      cubic.ai
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">14:00</h1> 
-              <p>14:40</p>          
+              <p>14:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">DNS в хостинг-провайдере.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/linux_novakovski.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Константин Новаковский</div>
+                    <div class="meta">
+                      Selectel
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">15:00</h1> 
-              <p>15:40</p>          
+              <p>15:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Поднимаем Linux на SoC: грабли и трюки.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/linux_kurochkin.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Павел Курочкин</div>
+                    <div class="meta">
+                      НТЦ Метротек
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/linux_gabbidulin.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Денис Габбидулин</div>
+                    <div class="meta">
+                      НТЦ Метротек
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">16:00</h1> 
-              <p>16:40</p>          
+              <p>16:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Что нам стоит ад построить?! Централизованное управление посредством Kerberos и NIS без ldap и питонов.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/nan.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Вячеслав Ольховченков</div>
+                    <div class="meta">
+                      SPbLUG
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
+              </div>        
+            </div>            
                         
+        </div>
+                     
     </div>
   </div> 
 
 
   <div id="programme_2" class="programme ui modal">    
-    <i class="close icon"></i>
-    <div class="ui center aligned dialog header">
-      <div class="ui title">
-        SPb SPM Club
-      </div>
-      <div class="ui description"> 
-        <a class="link" href="https://plus.google.com/u/0/communities/108809460896106613736" target="_blank">сайт сообщества</a>
-      </div>
-    </div>
-    <div class="ui vertically divided stackable grid container">
-
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">13:00</h1> 
-              <p>13:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">14:00</h1> 
-              <p>14:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">15:00</h1> 
-              <p>15:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">16:00</h1> 
-              <p>16:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-                        
-    </div>
-  </div> 
-
-
-  <div id="programme_3" class="programme ui modal">    
-    <i class="close icon"></i>
-    <div class="ui center aligned dialog header">
-      <div class="ui title">
-        IT talk
-      </div>
-      <div class="ui description"> 
-        <a class="link" href="http://it-talk.dataart.ru/" target="_blank">сайт сообщества</a>
-      </div>
-    </div>
-    <div class="ui vertically divided stackable grid container">
-
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">13:00</h1> 
-              <p>13:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">14:00</h1> 
-              <p>14:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">15:00</h1> 
-              <p>15:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">16:00</h1> 
-              <p>16:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-                        
-    </div>
-  </div> 
-
-
-  <div id="programme_4" class="programme ui modal">    
-    <i class="close icon"></i>
-    <div class="ui center aligned dialog header">
-      <div class="ui title">
-        SPb Community of Analysts
-      </div>
-      <div class="ui description"> 
-        <a class="link" href="http://vk.com/spb_analytics" target="_blank">сайт сообщества</a>
-      </div>
-    </div>
-    <div class="ui vertically divided stackable grid container">
-
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">13:00</h1> 
-              <p>13:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">14:00</h1> 
-              <p>14:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">15:00</h1> 
-              <p>15:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">16:00</h1> 
-              <p>16:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-                        
-    </div>
-  </div> 
-
-
-  <div id="programme_5" class="programme ui modal">    
-    <i class="close icon"></i>
-    <div class="ui center aligned dialog header">
-      <div class="ui title">
-        DevOps-40 / SPb Linux User Group
-      </div>
-      <div class="ui description"> 
-        <a class="link" href="http://www.meetup.com/DevOps-40/" target="_blank">сайт сообщества</a>
-      </div>
-    </div>
-    <div class="ui vertically divided stackable grid container">
-
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">13:00</h1> 
-              <p>13:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">14:00</h1> 
-              <p>14:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">15:00</h1> 
-              <p>15:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">16:00</h1> 
-              <p>16:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-                        
-    </div>
-  </div> 
-
-
-  <div id="programme_6" class="programme ui modal">    
-    <i class="close icon"></i>
-    <div class="ui center aligned dialog header">
-      <div class="ui title">
-        Piter JS
-      </div>
-      <div class="ui description"> 
-        <a class="link" href="https://vk.com/piterjs" target="_blank">сайт сообщества</a>
-      </div>
-    </div>
-    <div class="ui vertically divided stackable grid container">
-
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">13:00</h1> 
-              <p>13:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">14:00</h1> 
-              <p>14:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">15:00</h1> 
-              <p>15:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">16:00</h1> 
-              <p>16:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-                        
-    </div>
-  </div> 
-
-
-  <div id="programme_7" class="programme ui modal">    
-    <i class="close icon"></i>
-    <div class="ui center aligned dialog header">
-      <div class="ui title">
-        SPb .Net Community
-      </div>
-      <div class="ui description"> 
-        <a class="link" href="https://plus.google.com/u/0/communities/115643868183582812348" target="_blank">сайт сообщества</a>
-      </div>
-    </div>
-    <div class="ui vertically divided stackable grid container">
-
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">13:00</h1> 
-              <p>13:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">14:00</h1> 
-              <p>14:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">15:00</h1> 
-              <p>15:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">16:00</h1> 
-              <p>16:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-                        
-    </div>
-  </div> 
-
-
-  <div id="programme_8" class="programme ui modal">    
     <i class="close icon"></i>
     <div class="ui center aligned dialog header">
       <div class="ui title">
@@ -2137,211 +1473,583 @@
 
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">13:00</h1> 
-              <p>13:40</p>          
+              <p>13:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">QuickCheck в Python: проверка гипотез и поиск ошибок.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/python_shorin.jpeg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Александр Шорин</div>
+                    <div class="meta">
+                      TicketsCloud
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">14:00</h1> 
-              <p>14:40</p>          
+              <p>14:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Почему I/O - боль.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/python_timofeev.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Роман Тимофеев</div>
+                    <div class="meta">
+                      Lightvision TV
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">15:00</h1> 
-              <p>15:40</p>          
+              <p>15:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Асинхронное программирование в python: как это было и что с этим стало.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/py_leonov.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">МаксимKudaGo Леонов</div>
+                    <div class="meta">
+                      
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">16:00</h1> 
-              <p>16:40</p>          
+              <p>16:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Mnj - пристройка к PyMongo, которая облегчает жизнь.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/python_matveenko.jpeg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Сергей Матвеенко</div>
+                    <div class="meta">
+                      DataArt
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
+              </div>        
+            </div>            
                         
+        </div>
+                     
     </div>
   </div> 
 
 
-  <div id="programme_9" class="programme ui modal">    
+  <div id="programme_3" class="programme ui modal">    
     <i class="close icon"></i>
     <div class="ui center aligned dialog header">
       <div class="ui title">
         FProg (Clojure/Erlang/Haskell)
       </div>
       <div class="ui description"> 
-        <a class="link" href="https://plus.google.com/communities/114227952963737516047" target="_blank">сайт сообщества</a>
+        <a class="link" href="https://plus.google.com/communities/106931692847918217517" target="_blank">сайт сообщества</a>
       </div>
     </div>
     <div class="ui vertically divided stackable grid container">
 
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">13:00</h1> 
-              <p>13:40</p>          
+              <p>13:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Блеск и нищета erlang.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/fprog_tolchanov.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Игнат Толчанов</div>
+                    <div class="meta">
+                      Umisoft
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">14:00</h1> 
-              <p>14:40</p>          
+              <p>14:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Макросы Scala или как заставить компилятор писать код за вас.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/fprog_mucyanko.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Михаил Муцянко</div>
+                    <div class="meta">
+                      JetBrains
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">15:00</h1> 
-              <p>15:40</p>          
+              <p>15:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Введение в Agda.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/fprog_davidova.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Мария Давыдова</div>
+                    <div class="meta">
+                      JetBrains
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">16:00</h1> 
-              <p>16:40</p>          
+              <p>16:25</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Необычные применения макросов.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/fprog_ignatiev.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Дмитрий Игнатьев</div>
+                    <div class="meta">
+                      -
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
+              </div>        
+            </div>            
                         
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">16:25</h1> 
+              <p>17:00</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Состояние Clojure на сегодняшний день. Параллелизм и ленивые вычисления на рабочем примере.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/pfrog_habibulin.jpeg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Ильшад Хабибулин</div>
+                    <div class="meta">
+                      -
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+                     
     </div>
   </div> 
 
 
-  <div id="programme_10" class="programme ui modal">    
+  <div id="programme_4" class="programme ui modal">    
+    <i class="close icon"></i>
+    <div class="ui center aligned dialog header">
+      <div class="ui title">
+        Piter JS
+      </div>
+      <div class="ui description"> 
+        <a class="link" href="https://meetabit.com/communities/1" target="_blank">сайт сообщества</a>
+      </div>
+    </div>
+    <div class="ui vertically divided stackable grid container">
+
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">13:00</h1> 
+              <p>13:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Upside-down database: real-time sync and offline work with Swarm.js.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/js_grishenko.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Виктор Грищенко</div>
+                    <div class="meta">
+                      Solu
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">14:00</h1> 
+              <p>14:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Refactoring AngularJS Apps to Components.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/js_parviainen.jpeg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Tero Parviainen</div>
+                    <div class="meta">
+                      Self employed
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">15:00</h1> 
+              <p>15:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Building apps for Solu platform using JavaScript.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/js_bradshaw.jpeg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Mike Bradshaw</div>
+                    <div class="meta">
+                      Solu
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">16:00</h1> 
+              <p>16:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">NW.js</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/js_poluboyarinov.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Михаил Полубояринов</div>
+                    <div class="meta">
+                      Параграф (ГК Мегамейд)
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+                     
+    </div>
+  </div> 
+
+
+  <div id="programme_5" class="programme ui modal">    
+    <i class="close icon"></i>
+    <div class="ui center aligned dialog header">
+      <div class="ui title">
+        SPb .Net Community
+      </div>
+      <div class="ui description"> 
+        <a class="link" href="https://plus.google.com/u/0/communities/115643868183582812348" target="_blank">сайт сообщества</a>
+      </div>
+    </div>
+    <div class="ui vertically divided stackable grid container">
+
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">13:00</h1> 
+              <p>13:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Когда в C# не хватает C++. Продолжение.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/net_baltic.jpeg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Сергей Балтийский</div>
+                    <div class="meta">
+                      JetBrains
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">14:00</h1> 
+              <p>14:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Sandboxing in .NET CLR.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/net_shcherbakov.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Михаил Щербаков</div>
+                    <div class="meta">
+                      IntelliEgg
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">15:00</h1> 
+              <p>15:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Использование Apache Cordova в реальном проекте.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/net_shabanov.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Антон Шабанов</div>
+                    <div class="meta">
+                      WaveAccess
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">16:00</h1> 
+              <p>16:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Простой и кросс-платформенный Web-сервер на базе .NET Framework.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/net_ivanov.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Александр Иванов</div>
+                    <div class="meta">
+                      EPAM
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/net_pravuk.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Роман Правук</div>
+                    <div class="meta">
+                      EPAM
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+                     
+    </div>
+  </div> 
+
+
+  <div id="programme_6" class="programme ui modal">    
     <i class="close icon"></i>
     <div class="ui center aligned dialog header">
       <div class="ui title">
@@ -2355,211 +2063,108 @@
 
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">13:00</h1> 
-              <p>13:40</p>          
+              <p>13:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Использование облачной инфраструктуры OpenStack для телеком и NFV.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/cloud_markelov.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Андрей Маркелов</div>
+                    <div class="meta">
+                      Ericsson
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">14:00</h1> 
-              <p>14:40</p>          
+              <p>14:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Backup as a Service как новый облачный тренд.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/cloud_ivanuk.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Дмитрий Иванюк</div>
+                    <div class="meta">
+                      Монт
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">15:00</h1> 
-              <p>15:40</p>          
+              <p>15:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated middle aligned thirteen wide column">
+              <div class="ui items">
+                <div class="item">
+                  <div class="empty content">
+                    <h3 class="header">Тема не определена</h3>                  
+                  </div>
+                  
                 </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
+              </div>         
+            </div> 
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">16:00</h1> 
-              <p>16:40</p>          
+              <p>16:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated middle aligned thirteen wide column">
+              <div class="ui items">
+                <div class="item">
+                  <div class="empty content">
+                    <h3 class="header">Тема не определена</h3>                  
+                  </div>
+                  
                 </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
+              </div>         
+            </div> 
                         
+        </div>
+                     
     </div>
   </div> 
 
 
-  <div id="programme_11" class="programme ui modal">    
-    <i class="close icon"></i>
-    <div class="ui center aligned dialog header">
-      <div class="ui title">
-        SPb PostgreSQL User Group
-      </div>
-      <div class="ui description"> 
-        <a class="link" href="/" target="_blank">сайт сообщества</a>
-      </div>
-    </div>
-    <div class="ui vertically divided stackable grid container">
-
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">13:00</h1> 
-              <p>13:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">14:00</h1> 
-              <p>14:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">15:00</h1> 
-              <p>15:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">16:00</h1> 
-              <p>16:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-                        
-    </div>
-  </div> 
-
-
-  <div id="programme_12" class="programme ui modal">    
+  <div id="programme_7" class="programme ui modal">    
     <i class="close icon"></i>
     <div class="ui center aligned dialog header">
       <div class="ui title">
@@ -2573,102 +2178,560 @@
 
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">13:00</h1> 
-              <p>13:40</p>          
+              <p>13:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Go и аудиоотпечатки.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/go_akulovich.jpeg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Алексей Акулович</div>
+                    <div class="meta">
+                      VK
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">14:00</h1> 
-              <p>14:40</p>          
+              <p>14:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Как мы перевели игровой сервер с питона на Go.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/go_pleshivcev.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Антон Плешивцев</div>
+                    <div class="meta">
+                      Spiced Jackal
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">15:00</h1> 
-              <p>15:40</p>          
+              <p>15:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Go как duct tape для крупного проекта - метрики, логи, синхронизация, проблемы и решения.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/go_podolski.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Даниил Подольский</div>
+                    <div class="meta">
+                      -
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">16:00</h1> 
-              <p>16:40</p>          
+              <p>16:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated middle aligned thirteen wide column">
+              <div class="ui items">
+                <div class="item">
+                  <div class="empty content">
+                    <h3 class="header">Тема не определена</h3>                  
+                  </div>
+                  
                 </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
+              </div>         
+            </div> 
                         
+        </div>
+                     
     </div>
   </div> 
 
 
-  <div id="programme_13" class="programme ui modal">    
+  <div id="programme_8" class="programme ui modal">    
+    <i class="close icon"></i>
+    <div class="ui center aligned dialog header">
+      <div class="ui title">
+        SPb Ruby User Group
+      </div>
+      <div class="ui description"> 
+        <a class="link" href="https://plus.google.com/communities/117927540789820622012" target="_blank">сайт сообщества</a>
+      </div>
+    </div>
+    <div class="ui vertically divided stackable grid container">
+
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">13:00</h1> 
+              <p>13:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Бесконтактный Ruby. Разработка и тестирование NFC-приложений.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/sprug_chechel.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Максим Чечель</div>
+                    <div class="meta">
+                      Breeze Technology Solutions
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">14:00</h1> 
+              <p>14:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">RSpec: Best practices, читабельность и здравый смысл.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/sprug_reznikova.jpeg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Ольга Резникова</div>
+                    <div class="meta">
+                      SPB TV
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">15:00</h1> 
+              <p>15:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Lotus.rb</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/srpug_deryabin.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Андрей Дерябин</div>
+                    <div class="meta">
+                      Evil Martians
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">16:00</h1> 
+              <p>16:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Chef, Vagrant: От Dev окружения до развертки Rails приложения.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/sprug_zikin.jpeg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Илья Зыкин</div>
+                    <div class="meta">
+                      -
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+                     
+    </div>
+  </div> 
+
+
+  <div id="programme_9" class="programme ui modal">    
+    <i class="close icon"></i>
+    <div class="ui center aligned dialog header">
+      <div class="ui title">
+        SPb SPM Club
+      </div>
+      <div class="ui description"> 
+        <a class="link" href="https://plus.google.com/u/0/communities/108809460896106613736" target="_blank">сайт сообщества</a>
+      </div>
+    </div>
+    <div class="ui vertically divided stackable grid container">
+
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">13:00</h1> 
+              <p>13:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Имитационная модель в среде Anylogic для прогнозирования коэффициента сосредоточенности Cкрам команды.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/spm_sachek.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Евгений Сачек</div>
+                    <div class="meta">
+                      Return On Intelligence (ROI), team-leader
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">14:00</h1> 
+              <p>14:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Развиваем доверие в команде.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/spm_pikulev.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Пикулев Алексей</div>
+                    <div class="meta">
+                      Luxoft Agile Practice
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">15:00</h1> 
+              <p>15:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Учимся на играх: Kanban в действии. Игра/интерактив.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/spm_martyushev.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Александр Мартюшев</div>
+                    <div class="meta">
+                      SEMrush
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">16:00</h1> 
+              <p>16:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Управление изменениями</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/spm_lehelt.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Владислав Лехельт</div>
+                    <div class="meta">
+                      -
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+                     
+    </div>
+  </div> 
+
+
+  <div id="programme_10" class="programme ui modal">    
+    <i class="close icon"></i>
+    <div class="ui center aligned dialog header">
+      <div class="ui title">
+        SPb Community of Analysts
+      </div>
+      <div class="ui description"> 
+        <a class="link" href="http://vk.com/spb_analytics" target="_blank">сайт сообщества</a>
+      </div>
+    </div>
+    <div class="ui vertically divided stackable grid container">
+
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">13:00</h1> 
+              <p>13:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Опыт BA-консалтинга: метрики процесса бизнес-анализа.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/coa_zelnova.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Наталья Желнова</div>
+                    <div class="meta">
+                      Performance Lab
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">14:00</h1> 
+              <p>14:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Фасилитации встреч по работе с требованиями.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/coa_mukhina.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Светлана Мухина</div>
+                    <div class="meta">
+                      Luxoft
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">15:00</h1> 
+              <p>15:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Аналитик на пути приближающегося поезда. Как снизить влияние когнитивных искажений с помощью практик риск-менеджмента - разбор кейсов.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/coa_suzdalcev.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Анатолий Суздальцев</div>
+                    <div class="meta">
+                      CEO KdZen, Inc.
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">16:00</h1> 
+              <p>16:20</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Кто отвечает за качество? (блиц)</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/coa_goldenberg.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Раиса Гольденберг</div>
+                    <div class="meta">
+                      -
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">16:25</h1> 
+              <p>16:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Ты - аналитик? Результаты тестирования участиков ITGM.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/coa_mitropolskiy.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Артём Митропольский</div>
+                    <div class="meta">
+                      -
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+                     
+    </div>
+  </div> 
+
+
+  <div id="programme_11" class="programme ui modal">    
     <i class="close icon"></i>
     <div class="ui center aligned dialog header">
       <div class="ui title">
@@ -2682,97 +2745,394 @@
 
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">13:00</h1> 
-              <p>13:40</p>          
+              <p>13:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Документы, которые читают.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/tw_kirillov.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Захар Кириллов</div>
+                    <div class="meta">
+                      КБ «Собака Павлова»
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">14:00</h1> 
-              <p>14:40</p>          
+              <p>14:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Документация по ГОСТ 34 для профессионалов (совместно с SPb Community of Analysts).</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/coa_zelnova.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Наталья Желнова</div>
+                    <div class="meta">
+                      Performance Lab
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">15:00</h1> 
-              <p>15:40</p>          
+              <p>15:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Есть ли в интернете место авторскому праву?</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/tw_andreev.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Евгений Андреев</div>
+                    <div class="meta">
+                      юрисконсульт
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">16:00</h1> 
-              <p>16:40</p>          
+              <p>16:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Три пути технического писателя.</h3>
+
+              
+              <div class="ui tiny orange tag label">Круглый стол</div>      
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/tw_salangin.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Станислав Салангин</div>
+                    <div class="meta">
+                      координатор СПб сообщества технических писателей
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
+              </div>        
+            </div>            
                         
+        </div>
+                     
+    </div>
+  </div> 
+
+
+  <div id="programme_12" class="programme ui modal">    
+    <i class="close icon"></i>
+    <div class="ui center aligned dialog header">
+      <div class="ui title">
+        UXSpb
+      </div>
+      <div class="ui description"> 
+        <a class="link" href="http://ux-spb.ru/" target="_blank">сайт сообщества</a>
+      </div>
+    </div>
+    <div class="ui vertically divided stackable grid container">
+
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">13:00</h1> 
+              <p>13:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">О чём вы никогда не догадаетесь пока не протестируете.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/ux_plotnikov.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Плотников Павел</div>
+                    <div class="meta">
+                      Dr. Web
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">14:00</h1> 
+              <p>14:45</p>          
+            </div>
+            
+            <div class="right floated middle aligned thirteen wide column">
+              <div class="ui items">
+                <div class="item">
+                  <div class="empty content">
+                    <h3 class="header">Тема не определена</h3>                  
+                  </div>
+                  
+                </div>
+              </div>         
+            </div> 
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">15:00</h1> 
+              <p>15:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Зачем проектировать доступный интерфейс. Взгляд из бизнеса.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/ux_erofeev.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Виктор Ерофеев</div>
+                    <div class="meta">
+                      CG Projects Group
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">16:00</h1> 
+              <p>16:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Сватовство продукта с проектировщиком.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/ux_julina.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Екатерина Юлина</div>
+                    <div class="meta">
+                      -
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+                     
+    </div>
+  </div> 
+
+
+  <div id="programme_13" class="programme ui modal">    
+    <i class="close icon"></i>
+    <div class="ui center aligned dialog header">
+      <div class="ui title">
+        SPb IT HR
+      </div>
+      <div class="ui description"> 
+        <a class="link" href="https://vk.com/spbithrteam" target="_blank">сайт сообщества</a>
+      </div>
+    </div>
+    <div class="ui vertically divided stackable grid container">
+
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">13:00</h1> 
+              <p>13:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Откуда берутся плохие HR и куда их надо девать</h3>
+
+              
+              <div class="ui tiny orange tag label">Круглый стол</div>      
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/hr_makarova.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Мария Макарова</div>
+                    <div class="meta">
+                      EPAM
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">14:00</h1> 
+              <p>14:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Внутренние коммуникации: системный подход</h3>
+
+              
+              
+              <div class="ui tiny orange tag label">Воркшоп</div>      
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/hr_matveeva.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Ирина Матвеева</div>
+                    <div class="meta">
+                      In.Praktika
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">15:00</h1> 
+              <p>15:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Чтобы создать успешную компанию/команду — задайте гениальный вопрос!</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/hr_salandaeva.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Юлия Саландаева</div>
+                    <div class="meta">
+                      Sprinthost.ru
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start">16:00</h1> 
+              <p>16:45</p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Почему кандидаты не проходят испытательный срок.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/hr_posledova.jpg">
+                  </div>
+                  <div class="content">
+                    <div class="author">Виктория Последова</div>
+                    <div class="meta">
+                      iChar
+                    </div>
+                  </div>
+                </div>
+                
+              </div>        
+            </div>            
+                        
+        </div>
+                     
     </div>
   </div> 
 
@@ -2791,97 +3151,77 @@
 
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
-              <h1 class="start">13:00</h1> 
-              <p>13:40</p>          
+              <h1 class="start"></h1> 
+              <p></p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header"></h3>
+
+              
+                            
+              <div class="ui items">
                 
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">14:00</h1> 
-              <p>14:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">15:00</h1> 
-              <p>15:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">16:00</h1> 
-              <p>16:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
+              </div>        
+            </div>            
                         
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start"></h1> 
+              <p></p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header"></h3>
+
+              
+                            
+              <div class="ui items">
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start"></h1> 
+              <p></p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header"></h3>
+
+              
+                            
+              <div class="ui items">
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start"></h1> 
+              <p></p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header"></h3>
+
+              
+                            
+              <div class="ui items">
+                
+              </div>        
+            </div>            
+                        
+        </div>
+                     
     </div>
   </div> 
 
@@ -2900,97 +3240,77 @@
 
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
-              <h1 class="start">13:00</h1> 
-              <p>13:40</p>          
+              <h1 class="start"></h1> 
+              <p></p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header"></h3>
+
+              
+                            
+              <div class="ui items">
                 
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">14:00</h1> 
-              <p>14:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">15:00</h1> 
-              <p>15:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
-      
-        <div class="row">
-        
-        
-            <div class="center aligned three wide column">
-              <h1 class="start">16:00</h1> 
-              <p>16:40</p>          
-            </div>
-            
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
+              </div>        
+            </div>            
                         
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start"></h1> 
+              <p></p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header"></h3>
+
+              
+                            
+              <div class="ui items">
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start"></h1> 
+              <p></p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header"></h3>
+
+              
+                            
+              <div class="ui items">
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start"></h1> 
+              <p></p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header"></h3>
+
+              
+                            
+              <div class="ui items">
+                
+              </div>        
+            </div>            
+                        
+        </div>
+                     
     </div>
   </div> 
 
@@ -3009,97 +3329,214 @@
 
       
         <div class="row">
-        
-        
+            <div class="center aligned three wide column">
+              <h1 class="start"></h1> 
+              <p></p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header"></h3>
+
+              
+                            
+              <div class="ui items">
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start"></h1> 
+              <p></p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header"></h3>
+
+              
+                            
+              <div class="ui items">
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start"></h1> 
+              <p></p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header"></h3>
+
+              
+                            
+              <div class="ui items">
+                
+              </div>        
+            </div>            
+                        
+        </div>
+      
+        <div class="row">
+            <div class="center aligned three wide column">
+              <h1 class="start"></h1> 
+              <p></p>          
+            </div>
+            
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header"></h3>
+
+              
+                            
+              <div class="ui items">
+                
+              </div>        
+            </div>            
+                        
+        </div>
+                     
+    </div>
+  </div> 
+
+
+  <div id="programme_15" class="programme ui modal">    
+    <i class="close icon"></i>
+    <div class="ui center aligned dialog header">
+      <div class="ui title">
+        SPb SQA Group
+      </div>
+      <div class="ui description"> 
+        <a class="link" href="http://sqagroup.spb.ru/" target="_blank">сайт сообщества</a>
+      </div>
+    </div>
+    <div class="ui vertically divided stackable grid container">
+
+      
+        <div class="row">
             <div class="center aligned three wide column">
               <h1 class="start">13:00</h1> 
-              <p>13:40</p>          
+              <p>13:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Report Portal – эффективность вашей автоматизации.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/sqa_gumenyuk.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Дмитрий Гуменюк</div>
+                    <div class="meta">
+                      EPAM Minsk
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">14:00</h1> 
-              <p>14:40</p>          
+              <p>14:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Dino Systems: Автоматизация тестирования телефонии: не как решение проблемы, а как построение процесса.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/sqa_babich.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Николай Бабич</div>
+                    <div class="meta">
+                      Dino Systems
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">15:00</h1> 
-              <p>15:40</p>          
+              <p>15:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">Accessibility: from the development challenge to human rights.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/sqa_ostrova.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Полина Острова</div>
+                    <div class="meta">
+                      EPAM
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
+              </div>        
+            </div>            
+                        
         </div>
       
         <div class="row">
-        
-        
             <div class="center aligned three wide column">
               <h1 class="start">16:00</h1> 
-              <p>16:40</p>          
+              <p>16:45</p>          
             </div>
             
-          
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
+            <div class="right floated thirteen wide column">          
+              <h3 class="ui header">BDD подход с точки зрения QA.</h3>
+
+              
+                            
+              <div class="ui items">
+                
+                <div class="item">
+                  <div class="ui circular image">
+                    <img src="assets/images/avatar/sqa_shapin.png">
+                  </div>
+                  <div class="content">
+                    <div class="author">Антон Шапин</div>
+                    <div class="meta">
+                      EPAM
+                    </div>
+                  </div>
                 </div>
                 
-              </div>
-            </div>         
-          </div> 
-          
-        </div>
+              </div>        
+            </div>            
                         
+        </div>
+                     
     </div>
   </div> 
  
@@ -3109,16 +3546,21 @@
 <script src="./assets/js/site.js"></script>
 <script type="text/javascript" src="./assets/js/vendor/jquery.plugin.js"></script>
 <script type="text/javascript" src="./assets/js/vendor/jquery.countdown.js"></script>
+<script type="text/javascript" src="./assets/js/vendor/jquery.countdown-ru.js"></script>
 <script type="text/javascript">
   $('#reg_form').modal('attach events', '.primary.button', 'show');
 </script>
 <script type="text/javascript">
   var futureDate = new Date("November 28, 2015 11:00:00");
   $('.countdown').countdown({
-    until       : futureDate, 
-    compact     : true, 
-    padZeroes   : true,
-    layout      : $('.countdown').html()
+    until: futureDate,
+    padZeroes: true,
+    layout: $('.countdown').html(),
+    alwaysExpire: true,
+    onExpiry: function() {
+      $('.countdown').remove();
+      $('#firstslide .primary.button').remove();
+    }
   });
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>

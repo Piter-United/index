@@ -78,11 +78,11 @@ title: IT Global Meetup
     </div>
 
 
-    <div class="ui center aligned countdown bottom attached extra content"> 
+     <div class="ui center aligned countdown bottom attached extra content">
       <span class="stat-info">до слета осталось: </span>
-      <span class="stat value">{dnn}</span> <span class="stat-info">дней</span> 
-      <span class="stat value">{hnn}</span> <span class="stat-info">часов</span> 
-      <span class="stat value">{mnn}</span> <span class="stat-info">минут</span> 
+      {d<}<span class="stat value">{dnn}</span> <span class="stat-info">{dl}</span>{d>}
+      <span class="stat value">{hnn}</span> <span class="stat-info">{hl}</span>
+      <span class="stat value">{mnn}</span> <span class="stat-info">{ml}</span>
     </div>
   </div>  
 
@@ -376,7 +376,7 @@ title: IT Global Meetup
         </div>
         <div class="nine wide column">
           <h3 class="ui header">Общение на островках сообществ</h3>
-          <p>Все общение на островках будет разбито на сорокаминутные (40 мин.) временные секции (13.00-14.40, 14.00-14.40 и т.д.) с двадцатиминутными (20 мин.) перерывами между ними.</p>
+          <p>Все общение на островках будет разбито на сорокапятиминутные (45 мин.) временные секции (13.00-13.45, 14.00-14.45 и т.д.) с пятнадцатиминутными (15 мин.) перерывами между ними.</p>
         </div>
       </div>  
       <div class="row">
@@ -401,8 +401,6 @@ title: IT Global Meetup
         Сообщества
         </h1>      
     </div> 
-
-    {% assign timeFrames = "13:00|14:00|15:00|16:00" | split: "|" %}
     <div class="ui four link cards column doubling grid container communities">
       {% for community in site.data.itgm6_communities %}
       <div class="card">
@@ -411,16 +409,21 @@ title: IT Global Meetup
           {{ community.title }}
           </div>
         </div>
-        <div class="center aligned extra content">  
-            {% for frame in timeFrames %}
-              {% assign event = community.schedule[frame] %}
-              {% if event %}
-                <a class="ui basic active label">{{frame}}</a>  
-              {% else %}
-                <a class="ui basic inactive label">{{frame}}</a>  
+        {% raw %}
+        <div class="center aligned extra content"> 
+            {% for event in community.schedule %}
+              
+              {% assign start_time = event.start | split: ":" %} 
+              {% if start_time[1] == '00' %} 
+                {% if event.theme != empty %}
+                  <a class="ui basic active label">{{event.start}}</a>  
+                {% else %}
+                  <a class="ui basic inactive label">{{event.start}}</a>  
+                {% endif %}
               {% endif %}
             {% endfor %}                         
-        </div> 
+        </div>
+        {% endraw %} 
         <div class="additional">
           <p class="c_id">{{community.id}}</p>         
         </div>       
@@ -430,65 +433,10 @@ title: IT Global Meetup
 
     <div class="ui center aligned container cta">
       <button class="ui huge primary button"> Регистрация </button>
-    </div>      
+    </div> 
   </div>
 
   <!-- endof Communities-->
-
-  <!-- People -->
-
-  <!--<div id="people" class="ui vertical stripe segment">
-    <a class="anchor" id="people_a"></a>
-    <div class="ui center aligned container">
-        <h1 class="h-hero">
-        Персоналии      
-        </h1>      
-    </div> 
-    <div class="ui stackable two column grid">
-      <div class="column">
-        <div class="ui items">
-          <div class="item">
-            <div class="ui small image">
-              <img src="assets/images/avatar/nan.jpg">
-            </div>
-            <div class="content">
-              <div class="header">Никита Ефимов</div>
-              <div class="meta">
-                <span>Просто клевый парень, Selectel</span>          
-              </div>
-              <div class="description">
-                <p>
-                  Не следует, однако забывать, что укрепление и развитие структуры требуют от нас анализа дальнейших направлений развития. Товарищи! дальнейшее развитие различных форм деятельности требуют определения и уточнения соответствующий условий активизации.
-                </p>
-              </div>
-            </div>
-          </div>  
-        </div>       
-      </div>
-      <div class="column">
-        <div class="ui items">
-          <div class="item">
-            <div class="ui small image">
-              <img src="assets/images/avatar/nan.jpg">
-            </div>
-            <div class="content">
-              <div class="header">Никита Ефимов</div>
-              <div class="meta">
-                <span>Просто клевый парень, Selectel</span>          
-              </div>
-              <div class="description">
-                <p>
-                  Не следует, однако забывать, что укрепление и развитие структуры требуют от нас анализа дальнейших направлений развития. Товарищи! дальнейшее развитие различных форм деятельности требуют определения и уточнения соответствующий условий активизации.
-                </p>
-              </div>
-            </div>
-          </div>  
-        </div>       
-      </div>              
-    </div>
-  </div>-->
-
-  <!-- endof People -->
 
   <!--Partners-->
 
@@ -582,7 +530,7 @@ title: IT Global Meetup
           <div class="description">
             <i class="tiny marker icon"></i> 
             Санкт-Петербург, пр. Медиков д.3, КДЦ “Club House”
-            <a class="link" href="http://piter-united.ru/itgm5/map.html" target="_blank">подробный маршрут</a>
+            <a class="link" href="map.html" target="_blank">подробный маршрут</a>
           </div>
         </div>
         <div class="content">
@@ -663,52 +611,52 @@ title: IT Global Meetup
     </div>
     <div class="ui vertically divided stackable grid container">
 
-      {% for frame in timeFrames %}
+      {% for event in community.schedule %}
         <div class="row">
-        {% assign event = community.schedule[frame] %}
-        {% assign time = frame | split: ":" %}
             <div class="center aligned three wide column">
-              <h1 class="start">{{time[0]}}:00</h1> 
-              <p>{{time[0]}}:40</p>          
+              <h1 class="start">{{event.start}}</h1> 
+              <p>{{event.end}}</p>          
             </div>
-            
-          {% if event %}
-
+            {% if event.theme == empty %}
+            <div class="right floated middle aligned thirteen wide column">
+              <div class="ui items">
+                <div class="item">
+                  <div class="empty content">
+                    <h3 class="header">Тема не определена</h3>                  
+                  </div>
+                  
+                </div>
+              </div>         
+            </div> 
+            {% else %}
             <div class="right floated thirteen wide column">          
               <h3 class="ui header">{{event.theme}}</h3>
 
               {% if event.is_discussion == 1 %}
               <div class="ui tiny orange tag label">Круглый стол</div>      
               {% endif %}
+              {% if event.is_discussion == 2 %}
+              <div class="ui tiny orange tag label">Воркшоп</div>      
+              {% endif %}              
               <div class="ui items">
+                {% for speaker in event.speakers %}
                 <div class="item">
                   <div class="ui circular image">
-                    <img src="assets/images/avatar/{{event.speaker_ava}}">
+                    <img src="assets/images/avatar/{{speaker.avatar}}">
                   </div>
                   <div class="content">
-                    <div class="author">{{event.speaker}}</div>
+                    <div class="author">{{speaker.name}}</div>
                     <div class="meta">
-                      {{event.work_place}}
+                      {{speaker.work_place}}
                     </div>
                   </div>
                 </div>
+                {% endfor %}
               </div>        
-            </div>
-          {% else %}
-          <div class="right floated middle aligned thirteen wide column">
-            <div class="ui items">
-              <div class="item">
-                <div class="empty content">
-                  <h3 class="header">Тема не определена</h3>
-                  <!--<a class="link" href="#">хочу предложить тему!</a>-->
-                </div>
-                
-              </div>
-            </div>         
-          </div> 
-          {% endif %}
+            </div>            
+            {% endif %}            
         </div>
-      {% endfor %}                  
+      {% endfor %}               
     </div>
   </div> 
 {% endfor %} 
@@ -718,16 +666,21 @@ title: IT Global Meetup
 <script src="./assets/js/site.js"></script>
 <script type="text/javascript" src="./assets/js/vendor/jquery.plugin.js"></script>
 <script type="text/javascript" src="./assets/js/vendor/jquery.countdown.js"></script>
+<script type="text/javascript" src="./assets/js/vendor/jquery.countdown-ru.js"></script>
 <script type="text/javascript">
   $('#reg_form').modal('attach events', '.primary.button', 'show');
 </script>
 <script type="text/javascript">
   var futureDate = new Date("November 28, 2015 11:00:00");
   $('.countdown').countdown({
-    until       : futureDate, 
-    compact     : true, 
-    padZeroes   : true,
-    layout      : $('.countdown').html()
+    until: futureDate,
+    padZeroes: true,
+    layout: $('.countdown').html(),
+    alwaysExpire: true,
+    onExpiry: function() {
+      $('.countdown').remove();
+      $('#firstslide .primary.button').remove();
+    }
   });
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>

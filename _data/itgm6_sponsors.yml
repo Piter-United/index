@@ -22,11 +22,11 @@
   level: Золотой партнер
   logo: epam.png
 
-# - title: DINO Systems
-#   link: http://www.dins.ru/
-#   desc: 
-#   level: Серебряный партнер
-#   logo: dins.png
+- title: DINO Systems
+  link: http://www.dins.ru/
+  desc: 
+  level: Серебряный партнер
+  logo: dins.png
 
 # - title: First Line Software
 #   link: http://www.firstlinesoftware.com/
@@ -58,17 +58,23 @@
 #   level: Серебряный партнер
 #   logo: da.png
 
-- title: IT-Grad
-  link: http://www.it-grad.ru/
+- title: SEMRush
+  link: http://www.semrush.com/
   desc: 
   level: Серебряный партнер
-  logo: itgrad.png
+  logo: semrush_2.png
 
-# - title: Luxoft
-#   link: https://www.luxoft.ru/
-#   desc: 
-#   level: Бронзовый партнер
-#   logo: luxoft.png
+- title: Selectel
+  link: "https://selectel.ru/?utm_campaign=selectel_sponsor&utm_medium=display&utm_source=itgm&utm_content=logo&utm_term=event"
+  desc: 
+  level: Серебряный партнер
+  logo: selectel.png
+
+- title: KudaGo
+  link: http://kudago.com/
+  desc: 
+  level: Бронзовый партнер
+  logo: kudago_logo.png
 
 # - title: OSS Prime
 #   link: http://ossprime.ru/
