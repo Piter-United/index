@@ -8,11 +8,13 @@ description: >
 name: piter-united.ru
 markdown: redcarpet
 
+# Начиная, кажется, с Jekyll версии 3, 'pygments' переименовали в 'highlighter'
+## при старте на новом движке в таком случае будет ругаться:
+### "Deprecation: The 'pygments' configuration option has been renamed to 'highlighter'. Please update your config file accordingly. The allowed values are 'rouge', 'pygments' or null."
+##### для версии >= 3.* нужно оставлять highlighter: rouge
+##### для версии <  3 нужно (2016-02-28 сайт на github pages ниже версии 3) - оставлять pygments: true
 pygments: true
-#Начиная, кажется, с Jekyll версии 3, 'pygments' переименовали в 'highlighter'
-##при старте на новом движке в таком случае будет ругаться:
-###"Deprecation: The 'pygments' configuration option has been renamed to 'highlighter'. Please update your config file accordingly. The allowed values are 'rouge', 'pygments' or null."
-highlighter: rouge
+#highlighter: rouge
 
 encoding: utf-8
 timezone: Europe/Moscow
