@@ -863,6 +863,11 @@ a {
 	margin-right: auto;
 }
 
+.myform{
+	padding: 60px;
+	background: white;
+}
+
 
 /* GALLERY */
 
@@ -1177,6 +1182,28 @@ textarea {
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
+}
+
+/* Header */
+.slider{
+	height: 88vh;
+	padding-top: 30vh;
+	background-image: url(../img/texture_primary.jpg);
+	background-size: 100%;
+	/*background-color: #621F65;*/
+	color: white;
+}
+
+.slider h1{
+	color: white;
+	font-size: 54px;
+	font-weight: 800;
+}
+
+.slider p{
+	color: white;
+	font-size: 21px;
+	line-height: 32px;
 }
 
 
