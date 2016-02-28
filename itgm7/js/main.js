@@ -234,14 +234,64 @@ jQuery(document).ready(function($) {
 	//GOOGLE MAPS
 		  
 	// Creating a LatLng object containing the coordinate for the center of the map
-	var latlng = new google.maps.LatLng(40.801485408197856, -73.96745953467104);
-	  
+	var latlng = new google.maps.LatLng(59.9690562, 30.3159592);
+
 	// Creating an object literal containing the properties we want to pass to the map  
 	var options = {  
-		zoom: 14, // This number can be set to define the initial zoom level of the map
+		zoom: 15, // This number can be set to define the initial zoom level of the map
 		center: latlng,
 		scrollwheel: false,
-		styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}],
+		styles: [{
+			"featureType": "water",
+			"elementType": "geometry",
+			"stylers": [{"color": "#e9e9e9"}, {"lightness": 17}]
+		}, {
+			"featureType": "landscape",
+			"elementType": "geometry",
+			"stylers": [{"color": "#f5f5f5"}, {"lightness": 20}]
+		}, {
+			"featureType": "road.highway",
+			"elementType": "geometry.fill",
+			"stylers": [{"color": "#ffffff"}, {"lightness": 17}]
+		}, {
+			"featureType": "road.highway",
+			"elementType": "geometry.stroke",
+			"stylers": [{"color": "#ffffff"}, {"lightness": 29}, {"weight": 0.2}]
+		}, {
+			"featureType": "road.arterial",
+			"elementType": "geometry",
+			"stylers": [{"color": "#ffffff"}, {"lightness": 18}]
+		}, {
+			"featureType": "road.local",
+			"elementType": "geometry",
+			"stylers": [{"color": "#ffffff"}, {"lightness": 16}]
+		}, {
+			"featureType": "poi",
+			"elementType": "geometry",
+			"stylers": [{"color": "#f5f5f5"}, {"lightness": 88}]
+		}, {
+			"featureType": "poi.park",
+			"elementType": "geometry",
+			"stylers": [{"color": "#dedede"}, {"lightness": 21}]
+		}, {
+			"elementType": "labels.text.stroke",
+			"stylers": [{"visibility": "on"}, {"color": "#ffffff"}, {"lightness": 16}]
+		}, {
+			"elementType": "labels.text.fill",
+			"stylers": [{"saturation": 36}, {"color": "#333333"}, {"lightness": 40}]
+		}, {"elementType": "labels.icon", "stylers": [{"visibility": "off"}]}, {
+			"featureType": "transit",
+			"elementType": "geometry",
+			"stylers": [{"color": "#f2f2f2"}, {"lightness": 19}]
+		}, {
+			"featureType": "administrative",
+			"elementType": "geometry.fill",
+			"stylers": [{"color": "#fefefe"}, {"lightness": 20}]
+		}, {
+			"featureType": "administrative",
+			"elementType": "geometry.stroke",
+			"stylers": [{"color": "#fefefe"}, {"lightness": 17}, {"weight": 1.2}]
+		}],
 		mapTypeId: google.maps.MapTypeId.ROADMAP, // This value can be set to define the map type ROADMAP/SATELLITE/HYBRID/TERRAIN
 		disableDefaultUI: true
 	};  
@@ -260,7 +310,7 @@ jQuery(document).ready(function($) {
 	
 	// Add Marker
 	var marker1 = new google.maps.Marker({
-		position: new google.maps.LatLng(40.801485408197856, -73.96745953467104), 
+		position: new google.maps.LatLng(59.9690562, 30.3159592),
 		map: map,		
 		icon: image // This path is the custom pin to be shown. Remove this line and the proceeding comma to use default pin
 	});	
@@ -272,7 +322,7 @@ jQuery(document).ready(function($) {
 		
 	// Add information window
 	var infowindow1 = new google.maps.InfoWindow({  
-		content:  createInfo('Eventr', '1571 Hidden Terrace,<br />New York, NY, 13247,<br />(917) 600-4570<br /><br />')
+		content:  createInfo('КДЦ "Club House"', 'пр. Медиков, 3 к.1,<br />г. Санкт-Петербург<br />')
 	}); 
 	
 	// Create information window
