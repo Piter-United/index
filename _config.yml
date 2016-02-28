@@ -7,7 +7,13 @@ description: >
 
 name: piter-united.ru
 markdown: redcarpet
+
 pygments: true
+#Начиная, кажется, с Jekyll версии 3, 'pygments' переименовали в 'highlighter'
+##при старте на новом движке в таком случае будет ругаться:
+###"Deprecation: The 'pygments' configuration option has been renamed to 'highlighter'. Please update your config file accordingly. The allowed values are 'rouge', 'pygments' or null."
+highlighter: rouge
+
 encoding: utf-8
 timezone: Europe/Moscow
 
@@ -18,3 +24,4 @@ metrika:
   clickmap: true
   trackLinks: true
   accurateTrackBounce: true
+
