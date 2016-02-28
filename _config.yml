@@ -1,3 +1,20 @@
-name: Your New Jekyll Site
+# Site settings
+title: piter-united
+about: IT-сообщества Санкт-Петербурга
+email: piterunited@gmail.com
+description: >
+  IT-сообщества Санкт-Петербурга
+
+name: piter-united.ru
 markdown: redcarpet
 pygments: true
+encoding: utf-8
+timezone: Europe/Moscow
+
+# Yandex.Metrika counter setting
+metrika:
+  id: 26968695
+  webvisor: true
+  clickmap: true
+  trackLinks: true
+  accurateTrackBounce: true
