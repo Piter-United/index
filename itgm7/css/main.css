@@ -954,6 +954,17 @@ a {
 	padding-top: 0px;
 }
 
+.label-sponsor-gold {
+	background-color: #ffd700;
+}
+
+.label-sponsor-silver {
+	background-color: #c0c0c0
+}
+
+.label-sponsor-initiator {
+	background-color: #ff9775
+}
 
 /* CONTACT */
 
