@@ -16,11 +16,19 @@
   level: Золотой партнер
   logo: /img/partners/partners/epam-01.png
 
+- title: SEMRush
+  link: http://www.semrush.com/
+  desc:
+  level: Золотой партнер
+  logo: /img/partners/partners/semrush-01.png
+
 - title: DINO Systems
   link: http://www.dins.ru/
-  desc: 
+  desc:
   level: Серебряный партнер
   logo: /img/partners/partners/dins-01.png
+
+
 
 # - title: First Line Software
 #   link: http://www.firstlinesoftware.com/
@@ -98,4 +106,4 @@
   link: mailto:piterunited@gmail.com
   desc: 
   level: Хотите стать партнером?
-  logo: /img/partners/newpartner.png
+  logo: /img/partners/partners/newpartner.png
