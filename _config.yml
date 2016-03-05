@@ -8,13 +8,20 @@ description: >
 name: piter-united.ru
 markdown: redcarpet
 
-# Начиная, кажется, с Jekyll версии 3, 'pygments' переименовали в 'highlighter'
+#-----------------------------------------------------------------------------------------------------------------------
+# Начиная, с Jekyll версии 3, 'pygments' переименовали в 'highlighter'
 ## при старте на новом движке в таком случае будет ругаться:
 ### "Deprecation: The 'pygments' configuration option has been renamed to 'highlighter'. Please update your config file accordingly. The allowed values are 'rouge', 'pygments' or null."
 ##### для версии >= 3.* нужно оставлять highlighter: rouge
 ##### для версии <  3 нужно (2016-02-28 сайт на github pages ниже версии 3) - оставлять pygments: true
-pygments: true
-#highlighter: rouge
+###Jekyll has built in support for syntax highlighting of over 60 languages thanks to Rouge.
+###Rouge is the default highlighter in Jekyll 3 and above.
+###To use it in Jekyll 2, set highlighter to rouge and ensure the rouge gem is installed properly.
+##
+#pygments: true
+highlighter: rouge
+##
+#-----------------------------------------------------------------------------------------------------------------------
 
 encoding: utf-8
 timezone: Europe/Moscow
@@ -26,4 +33,3 @@ metrika:
   clickmap: true
   trackLinks: true
   accurateTrackBounce: true
-

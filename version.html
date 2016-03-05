@@ -4,4 +4,25 @@ title: environment & version
 ---
 <p><b>environment:</b> {{ jekyll.environment }}, {{ jekyll.version }}</p>
 
+{% highlight ruby linenos %}
+def foo
+puts 'foo'
+end
+{% endhighlight %}
 
+
+```ruby
+def print_hi(name)
+puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+```
+
+{% highlight ruby %}
+def print_hi(name)
+puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
