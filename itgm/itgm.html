@@ -409,11 +409,9 @@ title: IT Global Meetup
           {{ community.title }}
           </div>
         </div>
-        {% raw %}
-        <div class="center aligned extra content"> 
+        <div class="center aligned extra content">
             {% for event in community.schedule %}
-              
-              {% assign start_time = event.start | split: ":" %} 
+              {% assign start_time = event.start | split: ":" %}
               {% if start_time[1] == '00' %} 
                 {% if event.theme != empty %}
                   <a class="ui basic active label">{{event.start}}</a>  
@@ -423,7 +421,6 @@ title: IT Global Meetup
               {% endif %}
             {% endfor %}                         
         </div>
-        {% endraw %} 
         <div class="additional">
           <p class="c_id">{{community.id}}</p>         
         </div>       
