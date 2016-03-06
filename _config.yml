@@ -1,13 +1,15 @@
 # Site settings
 title: piter-united
 about: IT-сообщества Санкт-Петербурга
-email: piterunited@gmail.com
-description: >
-  IT-сообщества Санкт-Петербурга
-
+description: IT-сообщества Санкт-Петербурга
 name: piter-united.ru
-markdown: redcarpet
+email: piterunited@gmail.com
+encoding: utf-8
+timezone: Europe/Moscow
 
+# Build settings
+markdown: kramdown
+#markdown: redcarpet
 #-----------------------------------------------------------------------------------------------------------------------
 # Начиная, с Jekyll версии 3, 'pygments' переименовали в 'highlighter'
 ## при старте на новом движке в таком случае будет ругаться:
@@ -18,18 +20,7 @@ markdown: redcarpet
 ###Rouge is the default highlighter in Jekyll 3 and above.
 ###To use it in Jekyll 2, set highlighter to rouge and ensure the rouge gem is installed properly.
 ##
-#pygments: true
 highlighter: rouge
+#pygments: true
 ##
 #-----------------------------------------------------------------------------------------------------------------------
-
-encoding: utf-8
-timezone: Europe/Moscow
-
-# Yandex.Metrika counter setting
-metrika:
-  id: 26968695
-  webvisor: true
-  clickmap: true
-  trackLinks: true
-  accurateTrackBounce: true
