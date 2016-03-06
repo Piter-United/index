@@ -318,7 +318,7 @@ jQuery(document).ready(function($) {
 
 	// Add information window
 	var infowindow1 = new google.maps.InfoWindow({
-		content:  createInfo('КДЦ  "Club House"', 'пр. Медиков, 3 к.1,<br />г. Санкт-Петербург<br />')
+		content:  createInfo('КДЦ  "Club House"', 'пр. Медиков, 3 к.1, г. Санкт-Петербург<br />')
 	});
 
     infowindow1.open(map, marker1);
