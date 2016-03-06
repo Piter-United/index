@@ -238,37 +238,33 @@ jQuery(document).ready(function($) {
 
 	// Creating an object literal containing the properties we want to pass to the map  
 	var options = {  
-		zoom: 15, // This number can be set to define the initial zoom level of the map
+		zoom: 17, // This number can be set to define the initial zoom level of the map
 		center: latlng,
-		scrollwheel: false,
-		styles: [{
-			"featureType": "water",
-			"elementType": "geometry",
-			"stylers": [{"color": "#e9e9e9"}, {"lightness": 17}]
-		}, {
-			"featureType": "landscape",
-			"elementType": "geometry",
-			"stylers": [{"color": "#f5f5f5"}, {"lightness": 20}]
-		}, {
-			"featureType": "road.highway",
-			"elementType": "geometry.fill",
-			"stylers": [{"color": "#ffffff"}, {"lightness": 17}]
-		}, {
-			"featureType": "road.highway",
-			"elementType": "geometry.stroke",
-			"stylers": [{"color": "#ffffff"}, {"lightness": 29}, {"weight": 0.2}]
-		}, {
-			"featureType": "road.arterial",
-			"elementType": "geometry",
-			"stylers": [{"color": "#ffffff"}, {"lightness": 18}]
-		}, {
+		scrollwheel: true,
+		zoomControl: true,
+		scaleControl: true,
+        fullscreenControl: true,
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            position: google.maps.ControlPosition.TOP_CENTER
+        },
+        zoomControlOptions: {
+            position: google.maps.ControlPosition.LEFT_CENTER
+        },
+        streetViewControl: true,
+        streetViewControlOptions: {
+            position: google.maps.ControlPosition.LEFT_TOP
+        },
+		styles: [
+            {
 			"featureType": "road.local",
 			"elementType": "geometry",
-			"stylers": [{"color": "#ffffff"}, {"lightness": 16}]
+			"stylers": [{"color": "#dedede"}, {"lightness": 16}]
 		}, {
 			"featureType": "poi",
 			"elementType": "geometry",
-			"stylers": [{"color": "#f5f5f5"}, {"lightness": 88}]
+			"stylers": [{"color": "#dedede"}, {"lightness": 88}]
 		}, {
 			"featureType": "poi.park",
 			"elementType": "geometry",
@@ -296,7 +292,7 @@ jQuery(document).ready(function($) {
 		disableDefaultUI: true
 	};  
 	// Calling the constructor, thereby initializing the map  
-	var map = new google.maps.Map(document.getElementById('gmap_canvas'), options);  
+	var map = new google.maps.Map(document.getElementById('gmap_canvas'), options);
 	
 	// Define Marker properties
 	var image = new google.maps.MarkerImage('img/map-logo.png',
@@ -310,7 +306,7 @@ jQuery(document).ready(function($) {
 	
 	// Add Marker
 	var marker1 = new google.maps.Marker({
-		position: new google.maps.LatLng(59.9690562, 30.3159592),
+		position: new google.maps.LatLng(59.9692200, 30.3165000),
 		map: map,		
 		icon: image // This path is the custom pin to be shown. Remove this line and the proceeding comma to use default pin
 	});	
@@ -322,7 +318,7 @@ jQuery(document).ready(function($) {
 		
 	// Add information window
 	var infowindow1 = new google.maps.InfoWindow({  
-		content:  createInfo('КДЦ "Club House"', 'пр. Медиков, 3 к.1,<br />г. Санкт-Петербург<br />')
+		content:  createInfo('КДЦ  "Club House"', 'пр. Медиков, 3 к.1,<br />г. Санкт-Петербург<br />')
 	}); 
 	
 	// Create information window
