@@ -240,7 +240,7 @@ jQuery(document).ready(function($) {
 	var options = {  
 		zoom: 17, // This number can be set to define the initial zoom level of the map
 		center: latlng,
-		scrollwheel: true,
+		scrollwheel: false,
 		zoomControl: true,
 		scaleControl: true,
         fullscreenControl: true,
