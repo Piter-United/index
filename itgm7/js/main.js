@@ -309,18 +309,20 @@ jQuery(document).ready(function($) {
 		position: new google.maps.LatLng(59.9692200, 30.3165000),
 		map: map,		
 		icon: image // This path is the custom pin to be shown. Remove this line and the proceeding comma to use default pin
-	});	
-	
-	// Add listener for a click on the pin
-	google.maps.event.addListener(marker1, 'click', function() {  
-		infowindow1.open(map, marker1);  
 	});
-		
+
+	// Add listener for a click on the pin
+	google.maps.event.addListener(marker1, 'click', function() {
+		infowindow1.open(map, marker1);
+	});
+
 	// Add information window
-	var infowindow1 = new google.maps.InfoWindow({  
+	var infowindow1 = new google.maps.InfoWindow({
 		content:  createInfo('КДЦ  "Club House"', 'пр. Медиков, 3 к.1,<br />г. Санкт-Петербург<br />')
-	}); 
-	
+	});
+
+    infowindow1.open(map, marker1);
+
 	// Create information window
 	function createInfo(title, content) {
 		return '<div class="infowindow"><h4>'+ title +'</h4>'+content+'</div>';
