@@ -32,14 +32,13 @@ title: IT Global Meetup #7
 
         <div class="collapse navbar-collapse" id="nav">
             <ul class="nav navbar-nav navbar-right uppercase">
-                <li><a data-toggle="elementscroll" href="#info">Мероприятие</a></li>
-                <li><a data-toggle="elementscroll" href="#speakers">Сообщества</a></li>
+                <li><a data-toggle="elementscroll" href="#info">О мероприятии</a></li>
+                <li><a data-toggle="elementscroll" href="#communities">Сообщества</a></li>
                 <li><a data-toggle="elementscroll" href="#program">Программа</a></li>
-                <!-- <li><a data-toggle="elementscroll" href="#venue">Venue</a></li> -->
                 <li><a data-toggle="elementscroll" href="#register">Регистрация</a></li>
                 <li><a data-toggle="elementscroll" href="#sponsors">Партнеры</a></li>
                 <li><a data-toggle="elementscroll" href="#gallery">Галлерея</a></li>
-                <li><a data-toggle="elementscroll" href="#footer">Контакты</a></li>
+                <li><a data-toggle="elementscroll" href="#venue">Место проведения</a></li>
             </ul>
         </div>
 
@@ -478,7 +477,7 @@ title: IT Global Meetup #7
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h3> Инфопартнеры </h3>
+                <h3>Официальные инфопартнеры</h3>
                 <p class="lead">Инициативу и слет поддерживают лучшие IT-компании.</p>
                 <div id="sponsors-carousel">
                     {% for sponsor in site.data.itgm7_sponsors %}
@@ -587,14 +586,11 @@ title: IT Global Meetup #7
 </section>
 
 
-
-<!-- google map -->
-<div id="gmap_canvas"></div>
-
-
-
-<!-- VENUE -->
+<!-- VENUE, место проведения -->
 <section id="venue">
+    <!-- google map -->
+    <div id="gmap_canvas"></div>
+
     <div class="venue">
         <div class="venue-inner">
             <div class="container">
