@@ -1,42 +1,43 @@
-- title: DataArt
-  link: http://www.dataart.ru/
-  desc: 
-  logo: da.png
+- title: ProfsoUX
+  link: http://profsoux.ru/
+  desc:
+#  logo: /itgm/assets/images/logos/profsoux.png
+  logo: img/partners/ProfsoUX16.svg
+
+- title: SECR-2016
+  link: http://2016.secr.ru/
+  desc:
+  logo: img/partners/secr16.png
+
+- title: Kechinov
+  link: http://mkechinov.ru/
+  desc:
+  logo: /itgm/assets/images/logos/kechinov.png
+
+#- title: DataArt
+#  link: http://www.dataart.ru/
+#  desc:
+#  logo: da.png
 
 # - title: IT talk
 #   link: http://it-talk.dataart.ru/
-#   desc: 
+#   desc:
 #   logo: /itgm/assets/images/logos/ittalk.png
 
 # - title: Теплица Социальных Технологий
 #   link: http://te-st.ru/
-#   desc: 
+#   desc:
 #   logo: /itgm/assets/images/logos/hor.png
 
-- title: LoftBlog
-  link: http://loftblog.ru/
-  desc: 
-  logo: loftblog.png
-
-- title: ProfsoUX
-  link: http://profsoux.ru/
-  desc: 
-  logo: profsoux.png
-
-- title: SECR-2015
-  link: http://2015.secr.ru/
-  desc: 
-  logo: secr15.png
+#- title: LoftBlog
+#  link: http://loftblog.ru/
+#  desc:
+#  logo: loftblog.png
 
 # - title: UMI
 #   link: http://www.umi-cms.ru/
-#   desc: 
+#   desc:
 #   logo: /itgm/assets/images/logos/umicms.png
-
-- title: Kechinov
-  link: http://mkechinov.ru/
-  desc: 
-  logo: kechinov.png
 
 # - title: Ай-Ти События
 #   link: http://it-sobytie.ru/
@@ -73,27 +74,27 @@
 #   desc: 
 #   logo: /itgm/assets/images/logos/kudago.png
 
-- title: LevelUp
-  link: http://levelp.ru
-  desc: 
-  logo: levelup.png
+#- title: LevelUp
+#  link: http://levelp.ru
+#  desc:
+#  logo: levelup.png
 
 # - title: Uransoft
 #   link: http://uransoft.ru
 #   desc: 
 #   logo: /itgm/assets/images/logos/uransoft.png
 
-- title: Бизнес Портрет
-  link: http://бизнеспортрет.рф
-  desc: 
-  logo: businessportret.png
+#- title: Бизнес Портрет
+#  link: http://бизнеспортрет.рф
+#  desc:
+#  logo: businessportret.png
 
-- title: PG Day 2016
-  link: http://pgday.ru/ru/2016
-  desc: 
-  logo: pgday16.png
+#- title: PG Day 2016
+#  link: http://pgday.ru/ru/2016
+#  desc:
+#  logo: pgday16.png
 
-- title: Новый инфопартнер
-  link: mailto:piterunited@gmail.com
-  desc: 
-  logo: newpartner.png
+#- title: Новый инфопартнер
+#  link: mailto:piterunited@gmail.com
+#  desc:
+#  logo: newpartner.png
