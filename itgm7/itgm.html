@@ -333,48 +333,39 @@ title: IT Global Meetup #7
                                         </div>
                                         <div class="col-lg-10 col-md-10 col-sm-10">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion"
-                                                   href="#{{program.id}}" aria-expanded="true"
-                                                   aria-controls="{{program.id}}">{{program.title}}</a>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#{{program.id}}" aria-expanded="true" aria-controls="{{program.id}}">{{program.title}}</a>
                                             </h4>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div id="{{program.id}}" class="panel-collapse collapse" role="tabpanel"
-                                     aria-labelledby="heading1">
+                                <div id="{{program.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
 
                                     <!-- Program Content -->
                                     <div class="panel-body">
                                         <div class="row">
                                             <div class="col-lg-2 col-md-2 col-sm-2">
-                                                <img class="img-responsive img-circle" src="img/speakers/speaker1.png" alt="">
+                                                <img class="img-responsive img-circle" src="{{program.logo}}" alt="">
                                             </div>
 
-                                            <div class="col-lg-7 col-md-7 col-sm-10">
-                                                <p class="speaker-name uppercase">Stanley Willis</p>
-                                                <h4>Mauris rhoncus scelerisque lacus</h4>
-                                                <p>Sed facilisis justo vitae risus viverra vulputate. Mauris vel ipsum
-                                                    dignissim diam viverra condimentum. Donec sodales, diam eget mattis
-                                                    condimentum, quam neque tempus purus, dictum viverra risus nisl quis
-                                                    metus.</p>
+                                            <div class="col-lg-10 col-md-10 col-sm-10">
+                                                <!--<p class="place-name uppercase">холл</p>-->
+                                                <!--<h4>заголовок</h4>-->
+                                                <p>{{program.text}}</p>
+                                                <br>
 
-                                                <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">45mins</span>
-                                                </p>
-                                                <p><i class="fa fa-lg fa-map-marker"></i> <span
-                                                        class="small">Saloon A</span></p>
-                                                <p><i class="fa fa-lg fa-signal"></i> <span
-                                                        class="small">Beginner</span></p>
+                                                <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">{{program.duration}}</span></p>
+                                                <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">{{program.place}}</span></p>
+                                                <!--<p><i class="fa fa-lg fa-signal"></i> <span class="small">Beginner</span></p>-->
                                             </div>
 
+                                            <!--
                                             <div class="col-lg-3 col-md-3 col-sm-10">
                                                 <h5>About Stanley Willis</h5>
-                                                <p class="small">Sed non congue nunc. Fusce pulvinar elementum rhoncus.
-                                                    Duis sit amet metus erat. Sed et ligula mattis, dictum nisl et,
-                                                    vestibulum urna.</p>
-                                                <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a
-                                                        class="small" href="#">themecube.net</a></span>
+                                                <p class="small">Sed non congue nunc. Fusce pulvinar elementum rhoncus. Duis sit amet metus erat. Sed et ligula mattis, dictum nisl et, vestibulum urna.</p>
+                                                <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a class="small" href="#">themecube.net</a></span>
                                             </div>
+                                            -->
                                         </div>
                                     </div>
                                 </div>
