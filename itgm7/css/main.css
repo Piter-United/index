@@ -1001,9 +1001,9 @@ a {
 
 /* контролы на карте разрешил */
 /*.gmnoprint,*/
-/*.gm-style-cc {*/
-	/*display:none;*/
-/*}*/
+.gm-style-cc {
+	display:none;
+}
 
 footer {
 	color:#b0b0b0;

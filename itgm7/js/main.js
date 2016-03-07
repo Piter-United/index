@@ -237,60 +237,54 @@ jQuery(document).ready(function($) {
 	var latlng = new google.maps.LatLng(59.9690562, 30.3159592);
 
 	// Creating an object literal containing the properties we want to pass to the map  
-	var options = {  
-		zoom: 17, // This number can be set to define the initial zoom level of the map
+	var options = {
+        mapTypeId: google.maps.MapTypeId.ROADMAP, // This value can be set to define the map type ROADMAP/SATELLITE/HYBRID/TERRAIN
+        // disableDefaultUI: false,
+        zoom: 17, // This number can be set to define the initial zoom level of the map
 		center: latlng,
-		scrollwheel: false,
-		zoomControl: true,
-		scaleControl: true,
-        fullscreenControl: true,
-        mapTypeControl: true,
-        mapTypeControlOptions: {
-            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-            position: google.maps.ControlPosition.TOP_CENTER
-        },
-        zoomControlOptions: {
-            position: google.maps.ControlPosition.LEFT_CENTER
-        },
-        streetViewControl: true,
-        streetViewControlOptions: {
-            position: google.maps.ControlPosition.LEFT_TOP
-        },
-		styles: [
-            {
-			"featureType": "road.local",
-			"elementType": "geometry",
-			"stylers": [{"color": "#dedede"}, {"lightness": 16}]
-		}, {
+        zoomControl: true,
+        scaleControl: true,
+        disableDefaultUI: true,
+
+        mapTypeControl: false,
+
+        scrollwheel: false,
+        fullscreenControl: false,
+
+        // zoomControlOptions: {
+        //     position: google.maps.ControlPosition.LEFT_CENTER
+        // },
+        streetViewControl: false,
+
+        styles: [
+{
 			"featureType": "poi",
 			"elementType": "geometry",
 			"stylers": [{"color": "#dedede"}, {"lightness": 88}]
-		}, {
+        }, {
 			"featureType": "poi.park",
 			"elementType": "geometry",
 			"stylers": [{"color": "#dedede"}, {"lightness": 21}]
-		}, {
+        }, {
 			"elementType": "labels.text.stroke",
 			"stylers": [{"visibility": "on"}, {"color": "#ffffff"}, {"lightness": 16}]
-		}, {
+        }, {
 			"elementType": "labels.text.fill",
 			"stylers": [{"saturation": 36}, {"color": "#333333"}, {"lightness": 40}]
-		}, {"elementType": "labels.icon", "stylers": [{"visibility": "off"}]}, {
+        }, {"elementType": "labels.icon", "stylers": [{"visibility": "off"}]}, {
 			"featureType": "transit",
 			"elementType": "geometry",
 			"stylers": [{"color": "#f2f2f2"}, {"lightness": 19}]
-		}, {
+        }, {
 			"featureType": "administrative",
 			"elementType": "geometry.fill",
 			"stylers": [{"color": "#fefefe"}, {"lightness": 20}]
-		}, {
+        }, {
 			"featureType": "administrative",
 			"elementType": "geometry.stroke",
 			"stylers": [{"color": "#fefefe"}, {"lightness": 17}, {"weight": 1.2}]
-		}],
-		mapTypeId: google.maps.MapTypeId.ROADMAP, // This value can be set to define the map type ROADMAP/SATELLITE/HYBRID/TERRAIN
-		disableDefaultUI: true
-	};  
+        }]
+	};
 	// Calling the constructor, thereby initializing the map  
 	var map = new google.maps.Map(document.getElementById('gmap_canvas'), options);
 	
