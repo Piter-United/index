@@ -990,7 +990,7 @@ a {
 /* CONTACT */
 
 #gmap_canvas {
-	height:420px;
+	height:470px;
 	transform:none !important;
 	-webkit-transform:none !important;
 	-moz-transform:none !important;
@@ -999,10 +999,11 @@ a {
 	border-top:1px solid #f2f2f2;
 }
 
-.gmnoprint,
-.gm-style-cc {
-	display:none;
-}
+/* контролы на карте разрешил */
+/*.gmnoprint,*/
+/*.gm-style-cc {*/
+	/*display:none;*/
+/*}*/
 
 footer {
 	color:#b0b0b0;
