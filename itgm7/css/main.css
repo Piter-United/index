@@ -64,7 +64,7 @@ h5 {
 }
 
 section {
-	padding:90px 0;
+	padding:80px 0;
 }
 
 .uppercase {
@@ -132,7 +132,7 @@ a {
 .sticky-wrapper {
 	position:absolute;
 	width:100%;
-	padding-top:30px;
+	padding-top:35px;
 }
 
 .sticky-wrapper a {
@@ -235,7 +235,7 @@ a {
 /* INFO */
 
 #info {
-	padding:70px 0 90px 0;
+	padding:80px 0 90px 0;
 }
 
 #info i {
@@ -280,7 +280,7 @@ a {
 #communities {
 	background:#f5f5f5;
 	border-top:1px solid #f0f0f0;
-	padding:70px 0 90px 0;
+	padding:80px 0 90px 0;
 }
 
 .speaker {
@@ -414,7 +414,7 @@ a {
 #program {
 	color:#ffffff;
 	background:#A35DB4;
-	padding:70px 0 90px 0;
+	padding:80px 0 90px 0;
 }
 
 #program h4 {
@@ -754,7 +754,7 @@ a {
 	/*background:#f5f5f5;*/
 	background-image: url(../img/texture4_.jpg);
 	border-bottom:1px solid #f0f0f0;
-	padding:70px 0 90px 0;
+	padding:90px 0 90px 0;
 	color: white;
 }
 
@@ -892,7 +892,7 @@ a {
 /* GALLERY */
 
 #gallery {
-	padding:70px 0 90px 0;
+	padding:80px 0 90px 0;
 }
 
 #timeline .item {
@@ -949,7 +949,7 @@ a {
 
 #sponsors {
 	margin:30px 0;
-	padding:70px 0 30px 0;
+	padding:80px 0 30px 0;
 }
 
 .sponsor {

@@ -234,7 +234,7 @@ jQuery(document).ready(function($) {
 	//GOOGLE MAPS
 		  
 	// Creating a LatLng object containing the coordinate for the center of the map
-	var latlng = new google.maps.LatLng(59.9690562, 30.3159592);
+	var latlng = new google.maps.LatLng(59.9691500, 30.3159592);
 
 	// Creating an object literal containing the properties we want to pass to the map  
 	var options = {
