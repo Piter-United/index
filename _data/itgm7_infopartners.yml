@@ -2,17 +2,17 @@
   link: http://profsoux.ru/
   desc:
 #  logo: /itgm/assets/images/logos/profsoux.png
-  logo: img/partners/ProfsoUX16.svg
+  logo: img/infopartners/ProfsoUX16.svg
 
 - title: SECR-2016
   link: http://2016.secr.ru/
   desc:
-  logo: img/partners/secr16.png
+  logo: img/infopartners/secr16.png
 
 - title: Kechinov
   link: http://mkechinov.ru/
   desc:
-  logo: /itgm/assets/images/logos/kechinov.png
+  logo: img/infopartners/kechinov.png
 
 #- title: DataArt
 #  link: http://www.dataart.ru/

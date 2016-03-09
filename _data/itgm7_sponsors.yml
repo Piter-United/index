@@ -1,68 +1,74 @@
-- title: Piter United 
-  link: http://piter-united.ru/main.html
-  desc: Объединение активистов ИТ сообществ Санкт-Петербурга
-  level: Организатор
-  logo: /img/partners/partners/pu.png
 
 - title: Петер Сервис
   link: http://www.billing.ru/
-  desc: 
+  desc:
   level: Золотой партнер
-  logo: /img/partners/partners/peterservice-01.png
+  logo: img/partners/peterservice-01.png
 
 - title: EPAM
   link: http://www.epam-group.ru/
-  desc: 
+  desc:
   level: Золотой партнер
-  logo: /img/partners/partners/epam-01.png
+  logo: img/partners/epam-01.png
 
 - title: SEMRush
   link: http://www.semrush.com/
   desc:
   level: Золотой партнер
-  logo: /img/partners/partners/semrush-01.png
+  logo: img/partners/semrush-01.png
 
 - title: DINO Systems
   link: http://www.dins.ru/
   desc:
   level: Серебряный партнер
-  logo: /img/partners/partners/dins-01.png
+  logo: img/partners/dins-01.png
 
+- title: Piter United
+  link: http://piter-united.ru/main.html
+  desc: Объединение активистов ИТ сообществ Санкт-Петербурга
+  level: Организатор
+  logo: img/partners/pu-100.png
+
+- title: Новый партнер
+  link: mailto:piterunited@gmail.com
+  desc:
+  level: Хотите стать партнером?
+  logo: img/partners/new_parthner.png
 
 
 # - title: First Line Software
 #   link: http://www.firstlinesoftware.com/
-#   desc: 
+#   desc:
 #   level: Золотой партнер
 #   logo: firstline.png
 
 # - title: ФРИИ
 #   link: http://www.iidf.ru/
-#   desc: 
+#   desc:
 #   level: Золотой партнер
 #   logo: free.png
 
 # - title: Autodesk
 #   link: http://www.autodesk.ru/
-#   desc: 
+#   desc:
 #   level: Золотой партнер
 #   logo: autodesk.png
 
 # - title: JetBrains
 #   link: https://www.jetbrains.com/
-#   desc: 
+#   desc:
 #   level: Серебряный партнер
 #   logo: jetbrains.png
 
 # - title: DataArt
 #   link: http://www.dataart.ru/
-#   desc: 
+#   desc:
 #   level: Серебряный партнер
 #   logo: da.png
 
 # - title: IT-Grad
 #   link: http://www.it-grad.ru/
-#   desc: 
+#   desc:
 #   level: Серебряный партнер
 #   logo: itgrad.png
 
@@ -74,36 +80,30 @@
 
 # - title: Luxoft
 #   link: https://www.luxoft.ru/
-#   desc: 
+#   desc:
 #   level: Бронзовый партнер
 #   logo: luxoft.png
 
 # - title: OSS Prime
 #   link: http://ossprime.ru/
-#   desc: 
+#   desc:
 #   level: Бронзовый партнер
 #   logo: /itgm/assets/images/logos/ossprime.png
 
 # - title: Манн Иванов и Фербер
 #   link: http://www.mann-ivanov-ferber.ru/
-#   desc: 
+#   desc:
 #   level: Бронзовый партнер
 #   logo: mannivanovferber.gif
 
 # - title: A25
 #   link: http://a25.ru/
-#   desc: 
+#   desc:
 #   level: Бронзовый партнер
 #   logo: /itgm/assets/images/logos/a25.png
 
 # - title: Grid Dynamics
 #   link: http://www.griddynamics.com/
-#   desc: 
+#   desc:
 #   level: Бронзовый партнер
 #   logo: /itgm/assets/images/logos/gd.png
-
-- title: Новый партнер
-  link: mailto:piterunited@gmail.com
-  desc: 
-  level: Хотите стать партнером?
-  logo: /img/partners/partners/newpartner.png
