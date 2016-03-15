@@ -418,6 +418,7 @@
      #  speaker_ava: nan.jpg 
 
 - title: SPb SQA Group
+  id: 16
   link: http://sqagroup.spb.ru/
   # schedule:
 
@@ -439,6 +440,7 @@
   #     theme : "Как все устроено: обсуждаем жизненный цикл задач на примере TFS и Jira."
 
 - title: IT HR
+  id: 17
   link: /
   # schedule:
 
@@ -460,6 +462,7 @@
   #     theme : "Круглый стол: кандидаты и HR. Стереотипы, которые нам мешают."   
 
 # - title: Agile Piter
+#   id: 18
 #   link: https://plus.google.com/u/0/communities/112264824472767454602
   # schedule:
 
@@ -481,6 +484,7 @@
   #     theme : "Тестирование в гибкой разрабокте. Круглый стол с сообществом SQA."
 
 # - title: MODX Community
+#   id: 19
 #   link: http://modx.pro/
   # schedule:
 
@@ -502,6 +506,7 @@
   #     theme : "NoSQL и MODX на примере ElasticSearch."
 
 # - title: CMS уголок (WordPress/MODX)
+#   id: 20
 #   link: http://modx.pro/
   # schedule:
 
@@ -523,6 +528,7 @@
   #     theme : Пишем плагин. Доводим до ума админку вместе с AngularJS 1.3
 
 # - title: "3D уголок (Unity/3D4WEB)"
+#   id: 21
 #   link: https://plus.google.com/u/0/communities/103652474826197512695
   # schedule:
 
@@ -544,6 +550,7 @@
   #     theme : "Как мы на коленке в обед сделали онлайновую многопользовательскую игру."
 
 # - title: HackIoT
+#   id: 22
 #   link: http://vk.com/hackIoT
   # schedule:
 
@@ -565,6 +572,7 @@
     #   theme : "Контроль за качеством кода."
 
 # - title: SPb Startup
+#   id: 23
 #   link: https://www.facebook.com/groups/pitervc/
   # schedule:
 
@@ -586,6 +594,7 @@
   #     theme : "Founder Institute SPB, открытие второго сезона."
 
 # - title: SPb Mobile
+#   id: 24
 #   link: https://plus.google.com/u/0/communities/110822898858097256001
   # schedule:
 
@@ -607,6 +616,7 @@
   #     theme : "Тестирование дизайна мобильных приложений."
 
 # - title: SPb Lisp Users
+#   id: 25
 #   link: http://vk.com/lisp.users
   # schedule:
 
@@ -627,10 +637,12 @@
   #     work_place : 
   #     theme : OCaml в gamedev.
 
-# - title: SPb Ruby User Group
-#   link: https://plus.google.com/communities/117927540789820622012
+- title: SPb Ruby User Group
+  id: 26
+  link: https://plus.google.com/communities/117927540789820622012
 
 # - title: SPb Frontend
+#   id: 27
 #   link: http://vk.com/spb_frontend
   # schedule:
 
