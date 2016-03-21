@@ -752,7 +752,7 @@ a {
 
 #register {
 	/*background:#f5f5f5;*/
-	background-image: url(../img/texture4_.jpg);
+	background-image: url(../img/texture_primary.jpg);
 	border-bottom:1px solid #f0f0f0;
 	padding:90px 0 90px 0;
 	color: white;
@@ -905,7 +905,7 @@ a {
 #testimonial {
 	background:#fac42b;
 	/*background-image: url(../img/bg-testimonial.png);*/
-	background-image: url(../img/texture4_.jpg);
+	background-image: url(../img/texture_primary.jpg);
 	background-repeat: no-repeat;
 	background-attachment:fixed;
 	background-position: center;
