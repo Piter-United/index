@@ -3,10 +3,14 @@
   desc:
   logo: img/infopartners/dataArt_logo.png
 
+- title: Портал видеоуроков и IT сообщество
+  link: http://loftblog.ru/
+  desc:
+  logo: img/infopartners/loftBlog_logo.png
+
 - title: ProfsoUX
   link: http://profsoux.ru/
   desc:
-#  logo: /itgm/assets/images/logos/profsoux.png
   logo: img/infopartners/ProfsoUX16.svg
 
 - title: SECR-2016

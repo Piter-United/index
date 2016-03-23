@@ -507,12 +507,20 @@ title: IT Global Meetup #7
                 <h3>Информационные партнеры</h3>
                 <p class="lead">Инициативу и слет поддерживают лучшие IT-компании.</p>
                 <div id="sponsors-carousel">
+                    {% assign logo_index = 0 %}
+
                     {% for sponsor in site.data.itgm7_infopartners %}
-                    <a href="{{sponsor.link}}" target="_blank">
-                        <div class="sponsor col-lg-2">
-                            <img class="img-responsive" width="150px" src="{{sponsor.logo}}" alt="{{sponsor.title}}">
-                        </div>
-                    </a>
+                        {% assign logo_index = logo_index | plus: 1%}
+                            {% if {{logo_index}} == 6 %}
+                            <br>
+                            {% endif %}
+                        <a href="{{sponsor.link}}" target="_blank">
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <div align="center">
+                                    <img class="img-responsive"  src="{{sponsor.logo}}" alt="{{sponsor.title}}">
+                                </div>
+                            </div>
+                        </a>
                     {% endfor %}
                 </div>
             </div>
