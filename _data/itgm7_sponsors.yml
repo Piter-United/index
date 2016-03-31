@@ -1,9 +1,3 @@
-- title: Selectel
-  link: https://selectel.ru/
-  desc:
-  level: Бронзовый партнер
-  logo: img/partners/selectel.png
-
 - title: DINO Systems
   link: http://www.dins.ru/
   desc:
@@ -27,6 +21,12 @@
   desc:
   level: Серебряный партнер
   logo: img/partners/peterservice-01.png
+
+- title: Selectel
+  link: https://selectel.ru/
+  desc:
+  level: Бронзовый партнер
+  logo: img/partners/selectel.png
 
 - title: Piter United
   link: http://piter-united.ru/main.html
