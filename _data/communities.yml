@@ -1,4 +1,4 @@
-- title: Piter United 
+- title: Piter United
   members:
   link: https://plus.google.com/u/0/communities/108851235934496354072
   desc: Объединение активистов ИТ сообществ Санкт-Петербурга
@@ -12,14 +12,14 @@
   logo: /new/img/spm.png
 
 - title: SPb CoA
-  members:  
+  members:
   link: http://vk.com/spb_analytics
   desc: Сообщество системных и бизнес аналитиков Петербурга.
   logo: /img/spbcoa.png
 
 - title: Piter JS
   members:
-  link: https://twitter.com/gopiterjs
+  link: http://piterjs.org
   desc: "Сообщество вокруг JavaScript, платформы node.js и все, что с ними связано."
   logo: /img/piterjs.jpg
 
@@ -27,7 +27,7 @@
   members:
   link: http://vk.com/spb_frontend
   desc: Сообщество front-end разработчиков
-  logo: /img/frontend.jpg 
+  logo: /img/frontend.jpg
 
 - title: DevOps-40
   members:
@@ -61,7 +61,7 @@
 - title: SPb Python Interest Group
   members:
   link: https://plus.google.com/u/0/communities/107328406287050920928
-  desc: Сообщество Python-программистов Санкт-Петербурга. 
+  desc: Сообщество Python-программистов Санкт-Петербурга.
   logo: img/python.png
 
 - title: "SPb .Net Community"
@@ -85,7 +85,7 @@
 - title: FProg SPb
   members:
   link: https://plus.google.com/u/0/communities/106931692847918217517
-  desc: Ценители функционального программирования из Питера. 
+  desc: Ценители функционального программирования из Питера.
   logo: img/clojure.png
 
 - title: Spb Lisp Users
@@ -122,7 +122,7 @@
   members:
   link: https://plus.google.com/u/0/communities/112264824472767454602
   desc: Сообщество практикующих и интересующихся гибкими подходами.
-  logo: img/agilepiter.png 
+  logo: img/agilepiter.png
 
 - title: SPb Technical Writers
   members:
@@ -139,29 +139,29 @@
 - title: SPb CIO Club
   members:
   link: http://www.spbcioclub.ru/
-  desc: Санкт-Петербургский клуб ИТ-директоров 
+  desc: Санкт-Петербургский клуб ИТ-директоров
   logo: img/spbcio.gif
 
 - title: UX SPb
   members:
   link: http://ux-spb.ru/
-  desc: Проектировщики интерфейсов и юзабилисты Санкт-Петербурга 
+  desc: Проектировщики интерфейсов и юзабилисты Санкт-Петербурга
   logo: img/uxspb.png
 
 - title: SPb Startup
   members:
   link: https://www.facebook.com/groups/pitervc/
-  desc: ИТ-предприниматели Санкт-Петербурга 
+  desc: ИТ-предприниматели Санкт-Петербурга
   logo: img/spbstartup.png
 
 - title: SPb WordPress
   members:
   link: http://wpspb.org/
-  desc: Сообщество неравнодушных к CMS WordPress 
+  desc: Сообщество неравнодушных к CMS WordPress
   logo: img/wpspb.png
 
 - title: IT Talk
   members:
   link: http://it-talk.dataart.ru/
   desc: Сообщество компании DataArt
-  logo: img/ittalk.png 
+  logo: img/ittalk.png
