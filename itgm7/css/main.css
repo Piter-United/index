@@ -1,10 +1,10 @@
 
-/* EVENTR CSS 
+/* EVENTR CSS
 
 	1. CORE CSS
 	2. NAVBAR
-	3. HIGHLIGHT 
-	4. INFO 
+	3. HIGHLIGHT
+	4. INFO
 	5. SPEAKERS
 	6. PROGRAM
 	7. DOWNLOAD
@@ -16,14 +16,14 @@
 	13. SPONSORS
 	14. FOOTER
 	15. MISC.
- 
+
  */
 
  /* Colors */
  /* Primary: #621F65 */
  /* Secondary: #873299 */
  /* Additional: #A35DB4 */
- 
+
 
 /* CORE CSS */
 
@@ -228,7 +228,7 @@ a {
 #highlight #right {
 	background: none;
 }
-	
+
 }
 
 
@@ -326,7 +326,7 @@ a {
 }
 
 #list-speaker li{
-	display:none; 
+	display:none;
 }
 
 /* speaker detail */
@@ -406,7 +406,7 @@ a {
 #speaker-detail #content {
 	height:230px;
 	margin-bottom:15px;
-} 
+}
 
 
 /* PROGRAM */
@@ -504,7 +504,7 @@ a {
 }
 
 #program .speaker-name {
-	
+
 	font-family:'montserratregular';
 	font-size:12px;
 	letter-spacing:1px;
@@ -611,7 +611,7 @@ a {
 	background:rgba(0,0,0, 0.7);
 	display:table-cell;
 	vertical-align:middle;
-	
+
 }
 
 .venue-inner h2 {
@@ -798,7 +798,7 @@ a {
 	bottom:-50px;
 	right:-50px;
 	display:block;
-	font-size:40px;	
+	font-size:40px;
 }
 
 .price-table .price {
@@ -917,7 +917,7 @@ a {
 }
 
 #testimonial .testimonial-inner {
-	background:rgba(0, 0, 0, 0.7);  
+	background:rgba(0, 0, 0, 0.7);
 	padding:50px 40px 30px 40px;
 	min-height:400px;
 }
@@ -965,7 +965,7 @@ a {
 
 #sponsors-carousel:last-child {
 	margin-right:0;
-} 
+}
 
 #sponsors i {
 	color:#fac42b;
@@ -1098,7 +1098,7 @@ textarea {
 	border:1px solid #999999;
 	margin-bottom:20px;
 	outline:none;
-} 
+}
 
 
 /* BUTTONS */
@@ -1179,7 +1179,7 @@ textarea {
 	top:0;
 	left:0;
 	width: 100%;
-	height: 100%; 
+	height: 100%;
 	z-index: 9999;
 	display:table;
 }
@@ -1193,7 +1193,7 @@ textarea {
   width: 30px;
   height: 30px;
   background-color: #fff;
-  
+
   margin: 100px auto;
   -webkit-animation: rotateplane 1.2s infinite ease-in-out;
   animation: rotateplane 1.2s infinite ease-in-out;
@@ -1206,13 +1206,13 @@ textarea {
 }
 
 @keyframes rotateplane {
-  0% { 
+  0% {
     transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
-  } 50% { 
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
     transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
-  } 100% { 
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  } 100% {
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
@@ -1277,7 +1277,7 @@ textarea {
 	transition: all 0.6s ease 0s;
 	width: 100%;
 }
-	
+
 .wrap:hover .overlay:after {
 	top: 50%;
 	opacity: 1;
@@ -1285,7 +1285,7 @@ textarea {
 
 .wrap .overlay:before {
 	background: none repeat scroll 0 0 rgba(250, 196, 43, 0.7);
-	bottom: -100%; 
+	bottom: -100%;
 	height: 100%;
 	content:"";
 	display: block;
@@ -1321,7 +1321,7 @@ textarea {
 	-o-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 }
-	
+
 .wrap:hover .icon {
 	opacity: 1;
 	visibility: visible;
@@ -1433,7 +1433,7 @@ figure.effect-ming span img {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale(1.5);
-	transform: scale(1.5); 
+	transform: scale(1.5);
 }
 
 figure.effect-ming:hover figcaption::before,
@@ -1449,4 +1449,14 @@ figure.effect-ming:hover figcaption {
 
 figure.effect-ming:hover img {
 	opacity: 0.4;
+}
+.ya-share2, .slack {
+    float: right;
+    display: block;
+}
+.slack {
+    padding-top: 7px;
+}
+.__slackin {
+    z-index: 9999;
 }
