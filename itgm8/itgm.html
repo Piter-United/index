@@ -268,7 +268,7 @@ title: IT Global Meetup #8
             </div>
 
             <ul id="list-speaker" class="list-unstyled">
-                {% for community in site.data.itgm7_communities %}
+                {% for community in site.data.itgm8_communities %}
 
                 <a href="{{ community.link }}" target="_blank">
                     <li class="col-lg-3 col-md-3 col-sm-4">
@@ -336,7 +336,7 @@ title: IT Global Meetup #8
                     <div role="tabpanel" class="tab-pane fade active in" id="day1" aria-labelledby="day1-tab">
                         <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
 
-                            {% for program in site.data.itgm7_programms %}
+                            {% for program in site.data.itgm8_programms %}
 
                             <!-- PROGRAM 1-->
                             <div class="panel panel-default">
@@ -452,7 +452,7 @@ title: IT Global Meetup #8
                 <h3> Партнеры мероприятия</h3>
                 <p class="lead">Инициативу и слет поддерживают лучшие IT-компании.</p>
                 <div id="sponsors-carousel">
-                    {% for sponsor in site.data.itgm7_sponsors %}
+                    {% for sponsor in site.data.itgm8_sponsors %}
                     <a href="{{sponsor.link}}" target="_blank" title="{{sponsor.desc}}">
                         <div class="col-lg-2 col-md-2 col-sm-2">
                             <div align="center">
@@ -495,7 +495,7 @@ title: IT Global Meetup #8
                 <div id="sponsors-carousel">
                     {% assign logo_index = 0 %}
 
-                    {% for sponsor in site.data.itgm7_infopartners %}
+                    {% for sponsor in site.data.itgm8_infopartners %}
                         {% assign logo_index = logo_index | plus: 1%}
                             {% if {{logo_index}} == 6 %}
                             <br>
@@ -553,7 +553,7 @@ title: IT Global Meetup #8
                 <p class="lead">Фотографии с прошлых мероприятий.</p>
 
                 <div id="timeline" data-columns>
-                    {% for photo in site.data.itgm7_photos %}
+                    {% for photo in site.data.itgm8_photos %}
                     <div class="item wrap">
                         <img class="img-responsive" src=" {{photo.photo}} " alt="">
                         <div class="overlay"></div>
