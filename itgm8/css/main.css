@@ -1168,13 +1168,12 @@ textarea {
 
 /* Header */
 .slider {
-	position: relative;
 	color: white;
 }
 
-.slider::before {
+.slider::before,
+.slider::after {
 	content: "";
-	background: url(../img/background.jpg);
 	opacity: 0.5;
 	top: 0;
 	left: 0;
@@ -1184,16 +1183,12 @@ textarea {
 	z-index: -1;
 }
 
+.slider::before {
+	background: url(../img/background.jpg);
+}
+
 .slider::after {
-	content: "";
 	background: #00953A;
-	opacity: 0.5;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	z-index: -1;
 }
 
 .slider .content {

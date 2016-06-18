@@ -5,30 +5,30 @@
 <!--[if gt IE 8]><!--> <html class="no-js" prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#" itemscope itemtype="http://schema.org/Event"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>IT Global Meetup #8</title>
+        <title>{{ page.title }}</title>
 
         <!-- viewport settings -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="IT Global Meetup. СПб, 23 июля 2016 в Club House. Слет ИТ-сообществ Санкт-Петербурга.">
+        <meta name="description" content="{{ page.description }}">
 
         <meta property="og:type" content="website">
-        <meta property="og:site_name" content="IT Global Meetup #8">
-        <meta property="og:title" content="IT Global Meetup #8">
+        <meta property="og:site_name" content="{{ page.title }}">
+        <meta property="og:title" content="{{ page.title }}">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="http://piter-united.ru/itgm8/img/site_logo/itgm_logo2.png" itemprop="image">
-        <meta property="og:image:secure_url" content="http://piter-united.ru/itgm8/img/site_logo/itgm_logo2.png">
+        <meta property="og:image" content="{{ page.logo }}" itemprop="image">
+        <meta property="og:image:secure_url" content="{{ page.logo }}">
         <meta property="og:image:type" content="image/png">
-        <meta property="og:description" content= "23 июля 2016, с 11.00 до 18.00. 8-й слет ИТ-сообществ Санкт-Петербурга. КДЦ Club House - СПб, пр. Медиков 3.">
+        <meta property="og:description" content= "{{ page.description }}">
         <meta property="og:url" content="http://piter-united.ru/itgm8/itgm.html">
 
         <!-- Добавьте в тег HTML атрибуты itemscope и itemtype. -->
         <!-- Добавьте указанные ниже теги в заголовок страницы. -->
-        <meta itemprop="name" content="IT Global Meetup #8">
-        <meta itemprop="description" content="23 июля 2016, с 11.00 до 18.00. 8-й слет ИТ-сообществ Санкт-Петербурга. КДЦ Club House - СПб, пр. Медиков 3.">
-        <meta itemprop="startDate" content="2016-07-23T11:00:00+03:00">
-        <meta itemprop="endDate" content="2016-07-23T18:00:00+03:00">
-        <meta itemprop="image" content="http://piter-united.ru/itgm8/img/site_logo/itgm_logo2.png">
+        <meta itemprop="name" content="{{ page.title }}">
+        <meta itemprop="description" content="{{ page.description }}">
+        <meta itemprop="startDate" content="{{ page.date.from }}">
+        <meta itemprop="endDate" content="{{ page.date.to }}">
+        <meta itemprop="image" content="{{ page.logo }}">
 
         <meta name="author" content="IT Global Meetup">
 
