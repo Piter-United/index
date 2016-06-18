@@ -102,7 +102,7 @@ a {
 }
 
 .navbar-custom a {
-	color:#333333;
+	color:#ffffff;
 }
 
 .navbar-custom .navbar-nav > li > a:hover {
@@ -121,16 +121,6 @@ a {
 	/*background: #621F65;*/
 	/*background: #00953A;*/
 	background: #fff;
-}
-
-.sticky-wrapper {
-	position:absolute;
-	width:100%;
-	padding-top:35px;
-}
-
-.sticky-wrapper a {
-	color:#ffffff;
 }
 
 .is-sticky .navbar-custom {
@@ -1179,7 +1169,6 @@ textarea {
 /* Header */
 .slider {
 	position: relative;
-	padding-top: 260px;
 	color: white;
 }
 
@@ -1205,6 +1194,14 @@ textarea {
 	right: 0;
 	position: absolute;
 	z-index: -1;
+}
+
+.slider .content {
+	margin: 173px 0 190px;";
+}
+
+.slider .navbar-container {
+	padding-top:35px;
 }
 
 .slider .share-btns {
