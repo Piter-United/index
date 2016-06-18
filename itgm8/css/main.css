@@ -1197,7 +1197,8 @@ textarea {
 }
 
 .slider .content {
-	margin: 173px 0 190px;";
+	margin-top: 173px;
+	margin-bottom: 190px;
 }
 
 .slider .navbar-container {
