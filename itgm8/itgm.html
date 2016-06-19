@@ -88,8 +88,18 @@ location:
         </div>
         <div class="row visible-md-block visible-lg-block">
             <div id="left" class="left col-lg-9 col-md-8 col-xs-8 text-right">
-                <h3>Присоединяйся</h3>
-                <p>До слета осталось...</p>
+                <h3>Поделиться</h3>
+                <div class="share-btns">
+                    <iframe src="https://piter-united.herokuapp.com/iframe" class="__slackin slack"></iframe>
+                    <div class="ya-share2"
+                         data-services="gplus,facebook,vkontakte,twitter,linkedin"
+                         data-image="http://piter-united.ru/itgm8/img/site_logo/itgm_logo2.png"
+                         data-lang="ru"
+                         data-size="m"
+                         data-title="IT Global Meetup #8"
+                         data-description="23 июля 2016, с 11.00 до 18.00. 8-й слет ИТ-сообществ Санкт-Петербурга. КДЦ Club House - СПб, пр. Медиков 3."
+                         data-url="http://piter-united.ru/itgm8/itgm.html"></div>
+                 </div>
             </div>
             <div id="right" class="col-lg-3 col-md-4 col-xs-4 text-left">
                 <div id="countdown"></div>
@@ -312,10 +322,9 @@ location:
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h3 class="">Общая программа мероприятия</h3>
+                <h3>Общая программа мероприятия</h3>
                 <p class="lead">Программа мероприятия нацелена на обмен опытом и общением с коллегами из других
                     компаний.</p>
-
                 <!-- SCHEDULE TAB -->
                 <ul id="myTab" class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="active">
@@ -425,33 +434,16 @@ location:
 <section id="sponsors">
     <div class="container">
         <div class="row" >
-            <div class="col-lg-12">
-                <h3> Партнеры мероприятия</h3>
-                <p class="lead">Инициативу и слет поддерживают лучшие IT-компании.</p>
-                <div id="sponsors-carousel">
+            <div class="col-md-12">
+                <h3 class="text-center">Партнеры мероприятия</h3>
+                <p class="lead text-center">Инициативу и слет поддерживают лучшие IT-компании.</p>
+                <div class="sponsors__list">
                     {% for sponsor in site.data.itgm8_sponsors %}
-                    <a href="{{sponsor.link}}" target="_blank" title="{{sponsor.desc}}">
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <div align="center">
-                            <img class="img-responsive" src="{{sponsor.logo}}" alt="{{sponsor.title}}">
-                            <div class="text-muted">
-                                <!--<div align="center">-->
-                            {{sponsor.level}}
-                            </div>
-<!--                            {% if sponsor.level == "Золотой партнер" %}
-                            <b>-->
-                                <!--<div class="center">{{sponsor.level}}</div>-->
-                            <!--</b>
-                            {% elsif sponsor.level == "Серебряный партнер" %}
-                            <div >{{sponsor.level}}</div>
-                            {% elsif sponsor.level == "Организатор" %}
-                            <div >{{sponsor.level}}</div>
-                            {% else %}
-                            {{sponsor.level}}
-                            {% endif %}-->
-                            </div>
-                        </div>
-                    </a>
+                    <div class="sponsors__list__item text-center">
+                        <img src="{{sponsor.logo}}" alt="{{sponsor.title}}">
+                        <br />
+                        <span>{{sponsor.level}}</span>
+                    </div>
                     {% endfor %}
                 </div>
             </div>
@@ -467,23 +459,13 @@ location:
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h3>Информационные партнеры</h3>
-                <p class="lead">Инициативу и слет поддерживают лучшие IT-компании.</p>
-                <div id="sponsors-carousel">
-                    {% assign logo_index = 0 %}
-
+                <h3 class="text-center">Информационные партнеры</h3>
+                <p class="lead text-center">Инициативу и слет поддерживают лучшие IT-компании.</p>
+                <div class="sponsors__list">
                     {% for sponsor in site.data.itgm8_infopartners %}
-                        {% assign logo_index = logo_index | plus: 1%}
-                            {% if {{logo_index}} == 6 %}
-                            <br>
-                            {% endif %}
-                        <a href="{{sponsor.link}}" target="_blank">
-                            <div class="col-lg-2 col-md-2 col-sm-2">
-                                <div align="center">
-                                    <img class="img-responsive"  src="{{sponsor.logo}}" alt="{{sponsor.title}}">
-                                </div>
-                            </div>
-                        </a>
+                    <div class="sponsors__list__item text-center">
+                        <img src="{{sponsor.logo}}" alt="{{sponsor.title}}">
+                    </div>
                     {% endfor %}
                 </div>
             </div>
@@ -532,7 +514,7 @@ location:
                 <div id="timeline" data-columns>
                     {% for photo in site.data.itgm8_photos %}
                     <div class="item wrap">
-                        <img class="img-responsive" src=" {{photo.photo}} " alt="">
+                        <img class="img-responsive" src="{{photo.photo}}" alt="">
                         <div class="overlay"></div>
                         <div class="icon">
                             <a class="image-popup" href="{{photo.photo}}" title=""><i class="pe-3x pe-7s-plus"></i></a>
