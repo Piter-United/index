@@ -3,7 +3,9 @@ layout: itgm8
 title: "IT Global Meetup #8"
 description: 23 июля 2016, с 11.00 до 18.00. 8-й слет ИТ-сообществ Санкт-Петербурга. КДЦ Club House - СПб, пр. Медиков 3.
 logo: http://piter-united.ru/itgm8/img/site_logo/itgm_logo2.png
+program_url: https://docs.google.com/spreadsheets/d/1IkVe1NmC4xDiSsNh5BS2-H78diSxQWYOrgDP1OKIM8Y/edit?usp=sharing
 date:
+    day: 23 июля
     from: 2016-07-23T11:00:00+03:00
     to: 2016-07-23T18:00:00+03:00
     string: 23 июля 2016 c 11.00 до 18.00
@@ -316,8 +318,9 @@ location:
 
                 <!-- SCHEDULE TAB -->
                 <ul id="myTab" class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#day1" id="day1-tab" role="tab" data-toggle="tab"
-                                                              aria-controls="day1" aria-expanded="true">02 апреля</a>
+                    <li role="presentation" class="active">
+                        <a href="#day1" id="day1-tab" role="tab"
+                           data-toggle="tab" aria-controls="day1" aria-expanded="true">{{ page.date.day }}</a>
                     </li>
                 </ul>
 
@@ -327,7 +330,6 @@ location:
                     <!-- DAY 1 -->
                     <div role="tabpanel" class="tab-pane fade active in" id="day1" aria-labelledby="day1-tab">
                         <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
-
                             {% for program in site.data.itgm8_programms %}
 
                             <!-- PROGRAM 1-->
@@ -352,28 +354,12 @@ location:
                                     <!-- Program Content -->
                                     <div class="panel-body">
                                         <div class="row">
-                                            <div class="col-lg-2 col-md-2 col-sm-2">
-                                                <img class="img-responsive img-circle" src="{{program.logo}}" alt="">
-                                            </div>
-
-                                            <div class="col-lg-10 col-md-10 col-sm-10">
-                                                <!--<p class="speaker-name uppercase">холл</p>-->
-                                                <!--<h4>заголовок</h4>-->
+                                            <div class="col-sm-offset-2 col-lg-10 col-md-10 col-sm-10">
                                                 <p>{{program.text}}</p>
                                                 <br>
-
                                                 <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">{{program.duration}}</span></p>
                                                 <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">{{program.place}}</span></p>
-                                                <!--<p><i class="fa fa-lg fa-signal"></i> <span class="small">Beginner</span></p>-->
                                             </div>
-
-                                            <!--
-                                            <div class="col-lg-3 col-md-3 col-sm-10">
-                                                <h5>About Stanley Willis</h5>
-                                                <p class="small">Sed non congue nunc. Fusce pulvinar elementum rhoncus. Duis sit amet metus erat. Sed et ligula mattis, dictum nisl et, vestibulum urna.</p>
-                                                <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a class="small" href="#">themecube.net</a></span>
-                                            </div>
-                                            -->
                                         </div>
                                     </div>
                                 </div>
@@ -396,17 +382,16 @@ location:
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-1 prog-icon">
                         <span class="pe-4x pe-7s-note2 program-icon"></span>
-                        <!-- <img class="img-responsive" src="img/download.png" alt=""> -->
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-12">
-                        <h3>Программы мероприятий сообществ</h3>
+                        <h3>Программа мероприятия</h3>
                         <p>У каждого IT-сообщества в рамках слета будет свой "островок".<br>
                             На островках сообщества представят заранее подготовленные программы.<br>
                             Каждая программа состоит из 4-х секций (докладов/презентаций) по 45 минут.<br>
                             В рамках секций вы сможете получить новые знания, задать вопросы,<br>
                             поделиться профессиональным опытом и обменяться контактами.</p>
                         <br>
-                        <a class="button button-small button-line-dark" href="https://docs.google.com/spreadsheets/d/1IkVe1NmC4xDiSsNh5BS2-H78diSxQWYOrgDP1OKIM8Y/pubhtml?gid=1681023721&single=true" target="_blank">открыть программу</a>
+                        <a class="button button-small button-line-dark" href="{{ page.program_url }}" target="_blank">открыть программу</a>
                     </div>
                 </div>
             </div>
