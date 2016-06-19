@@ -34,11 +34,11 @@
   level: Организатор
   logo: img/partners/pu-100.png
 
-- title: Новый партнер
-  link: mailto:piterunited@gmail.com
-  desc:
-  level: Хотите стать партнером?
-  logo: img/partners/new_parthner.png
+# - title: Новый партнер
+#   link: mailto:piterunited@gmail.com
+#   desc:
+#   level: Хотите стать партнером?
+#   logo: img/partners/new_parthner.png
 
 
 # - title: First Line Software
