@@ -13,6 +13,11 @@ location:
     name: КДЦ Club House
     address: пр. Медиков д.3 к.1
     string: КДЦ "Club House", пр. Медиков д.3 к.1
+metrics:
+    communities: 20
+    talks: 60
+    speakers: 60
+    visitors: 500
 ---
 
 <!-- NAVIGATION -->
@@ -74,11 +79,11 @@ location:
                     <iframe src="https://piter-united.herokuapp.com/iframe" class="__slackin slack"></iframe>
                     <div class="ya-share2"
                          data-services="gplus,facebook,vkontakte,twitter,linkedin"
-                         data-image="http://piter-united.ru/itgm8/img/site_logo/itgm_logo2.png"
+                         data-image="{{ page.logo }}"
                          data-lang="ru"
                          data-size="m"
-                         data-title="IT Global Meetup #8"
-                         data-description="23 июля 2016, с 11.00 до 18.00. 8-й слет ИТ-сообществ Санкт-Петербурга. КДЦ Club House - СПб, пр. Медиков 3."
+                         data-title="{{ page.title }}"
+                         data-description="{{ page.description }}"
                          data-url="http://piter-united.ru/itgm8/itgm.html"></div>
                  </div>
             </div>
@@ -145,7 +150,7 @@ location:
                         <div class="item">
                             <i class="pe pe-4x pe-7s-world"></i>
                             <div class="desc">
-                                <p class="number">20</p>
+                                <p class="number">{{ page.metrics.communities }}</p>
                                 <p class="description">сообществ</p>
                             </div>
                         </div>
@@ -153,7 +158,7 @@ location:
                         <div class="item">
                             <i class="pe pe-4x pe-7s-micro"></i>
                             <div class="desc">
-                                <p class="number">60</p>
+                                <p class="number">{{ page.metrics.talks }}</p>
                                 <p class="description">выступлений</p>
                             </div>
                         </div>
@@ -161,7 +166,7 @@ location:
                         <div class="item">
                             <i class="pe pe-4x pe-7s-display2"></i>
                             <div class="desc">
-                                <p class="number">60</p>
+                                <p class="number">{{ page.metrics.speakers }}</p>
                                 <p class="description">спикеров</p>
                             </div>
                         </div>
@@ -169,7 +174,7 @@ location:
                         <div class="item">
                             <i class="pe pe-va pe-4x pe-7s-id"></i>
                             <div class="desc">
-                                <p class="number">500</p>
+                                <p class="number">{{ page.metrics.visitors }}</p>
                                 <p class="description">участников</p>
                             </div>
                         </div>
