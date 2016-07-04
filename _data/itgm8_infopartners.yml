@@ -28,6 +28,11 @@
   desc:
   logo: img/infopartners/kechinov_inf.png
 
+- title: Linux Center
+  link: http://www.linuxcenter.ru
+  desc: 
+  logo: img/infopartners/logo_LXF.png
+
 - title: Первый городской бизнес-инкубатор
   link: http://start-business.ru/
   desc:
@@ -42,6 +47,11 @@
   link: http://rubynoname.ru/
   desc: 
   logo: img/infopartners/rubynoname.png
+
+- title: Linux Format
+  link: http://www.linuxformat.ru
+  desc: 
+  logo: img/infopartners/LC_logo.png
 
 #- title: DataArt
 #  link: http://www.dataart.ru/
