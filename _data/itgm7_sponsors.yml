@@ -1,32 +1,33 @@
-- title: DINO Systems
-  link: http://www.dins.ru/
-  desc:
-  level: Золотой партнер
-  logo: img/partners/dins-02.png
-
 - title: EPAM
   link: http://www.epam-group.ru/
   desc:
   level: Золотой партнер
   logo: img/partners/epam-01.png
 
-- title: SEMRush
-  link: http://www.semrush.com/
-  desc:
-  level: Золотой партнер
-  logo: img/partners/semrush-01.png
-
-- title: Петер Сервис
-  link: http://www.billing.ru/
-  desc:
-  level: Серебряный партнер
-  logo: img/partners/peterservice-01.png
 
 - title: Selectel
   link: https://selectel.ru/
   desc:
+  level: Золотой партнер
+  logo: img/partners/selectel_new.png
+
+- title: SEMRush
+  link: http://www.semrush.com/
+  desc:
+  level: Серебряный партнер
+  logo: img/partners/semrush-01.png
+
+- title: DINO Systems
+  link: http://www.dins.ru/
+  desc:
   level: Бронзовый партнер
-  logo: img/partners/selectel.png
+  logo: img/partners/dins-02.png
+
+# - title: Петер Сервис
+#   link: http://www.billing.ru/
+#   desc:
+#   level: Серебряный партнер
+#   logo: img/partners/peterservice-01.png
 
 - title: Piter United
   link: http://piter-united.ru/main.html
