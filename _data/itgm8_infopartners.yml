@@ -30,7 +30,7 @@
 
 - title: Linux Center
   link: http://www.linuxcenter.ru
-  desc: 
+  desc:
   logo: img/infopartners/logo_LXF.png
 
 - title: Первый городской бизнес-инкубатор
@@ -45,13 +45,18 @@
 
 - title: RubyNoName
   link: http://rubynoname.ru/
-  desc: 
+  desc:
   logo: img/infopartners/rubynoname.png
 
 - title: Linux Format
   link: http://www.linuxformat.ru
-  desc: 
+  desc:
   logo: img/infopartners/LC_logo.png
+
+- title: BIPULSE
+  link: http://bipulse.ru/
+  desc:
+  logo: img/infopartners/bipulse.png
 
 #- title: DataArt
 #  link: http://www.dataart.ru/
@@ -80,37 +85,37 @@
 
 # - title: Ай-Ти События
 #   link: http://it-sobytie.ru/
-#   desc: 
+#   desc:
 #   logo: /itgm/assets/images/logos/itsob.png
 
 # - title: Сын Программиста
 #   link: http://progerson.ru
-#   desc: 
+#   desc:
 #   logo: /itgm/assets/images/logos/progson.png
 
 # - title: Haker
 #   link: https://xakep.ru/
-#   desc: 
+#   desc:
 #   logo: /itgm/assets/images/logos/haker.png
 
 # - title: SPBITRU
 #   link: http://spbit.ru
-#   desc: 
+#   desc:
 #   logo: /itgm/assets/images/logos/spbitru.png
 
 # - title: kl10tch
 #   link: http://kl10tch.ru/
-#   desc: 
+#   desc:
 #   logo: /itgm/assets/images/logos/klutch.png
 
 # - title: OSS Prime
 #   link: http://ossprime.ru/
-#   desc: 
+#   desc:
 #   logo: /itgm/assets/images/logos/ossprime.png
 
 # - title: Kudago
 #   link: http://kudago.com/
-#   desc: 
+#   desc:
 #   logo: /itgm/assets/images/logos/kudago.png
 
 #- title: LevelUp
@@ -120,7 +125,7 @@
 
 # - title: Uransoft
 #   link: http://uransoft.ru
-#   desc: 
+#   desc:
 #   logo: /itgm/assets/images/logos/uransoft.png
 
 #- title: Бизнес Портрет
