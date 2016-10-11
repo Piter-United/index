@@ -1,0 +1,144 @@
+- title: DataArt компания - это люди!
+  link: http://dataart.ru/
+  desc:
+  logo: img/infopartners/dataArt_logo.png
+
+- title: Портал видеоуроков и IT сообщество
+  link: http://loftblog.ru/
+  desc:
+  logo: img/infopartners/loftBlog_logo.png
+
+- title: Портал spbIT.ru
+  link: http://spbit.ru/
+  desc:
+  logo: img/infopartners/spbit_logo.jpg
+
+- title: ProfsoUX
+  link: http://profsoux.ru/
+  desc:
+  logo: img/infopartners/ProfsoUX16.svg
+
+- title: SECR-2016
+  link: http://2016.secr.ru/
+  desc:
+  logo: img/infopartners/secr16.png
+
+- title: Kechinov
+  link: http://mkechinov.ru/
+  desc:
+  logo: img/infopartners/kechinov_inf.png
+
+- title: Linux Center
+  link: http://www.linuxcenter.ru
+  desc:
+  logo: img/infopartners/logo_LXF.png
+
+- title: Первый городской бизнес-инкубатор
+  link: http://start-business.ru/
+  desc:
+  logo: img/infopartners/first-bisnes-incubator.jpg
+
+- title: Айти-событие.рф
+  link: http://it-sobytie.ru/
+  desc:
+  logo: img/infopartners/itsob_logo.png
+
+- title: RubyNoName
+  link: http://rubynoname.ru/
+  desc:
+  logo: img/infopartners/rubynoname.png
+
+- title: Linux Format
+  link: http://www.linuxformat.ru
+  desc:
+  logo: img/infopartners/LC_logo.png
+
+- title: BIPULSE
+  link: http://bipulse.ru/
+  desc:
+  logo: img/infopartners/bipulse.png
+
+#- title: DataArt
+#  link: http://www.dataart.ru/
+#  desc:
+#  logo: da.png
+
+# - title: IT talk
+#   link: http://it-talk.dataart.ru/
+#   desc:
+#   logo: /itgm/assets/images/logos/ittalk.png
+
+# - title: Теплица Социальных Технологий
+#   link: http://te-st.ru/
+#   desc:
+#   logo: /itgm/assets/images/logos/hor.png
+
+#- title: LoftBlog
+#  link: http://loftblog.ru/
+#  desc:
+#  logo: loftblog.png
+
+# - title: UMI
+#   link: http://www.umi-cms.ru/
+#   desc:
+#   logo: /itgm/assets/images/logos/umicms.png
+
+# - title: Ай-Ти События
+#   link: http://it-sobytie.ru/
+#   desc:
+#   logo: /itgm/assets/images/logos/itsob.png
+
+# - title: Сын Программиста
+#   link: http://progerson.ru
+#   desc:
+#   logo: /itgm/assets/images/logos/progson.png
+
+# - title: Haker
+#   link: https://xakep.ru/
+#   desc:
+#   logo: /itgm/assets/images/logos/haker.png
+
+# - title: SPBITRU
+#   link: http://spbit.ru
+#   desc:
+#   logo: /itgm/assets/images/logos/spbitru.png
+
+# - title: kl10tch
+#   link: http://kl10tch.ru/
+#   desc:
+#   logo: /itgm/assets/images/logos/klutch.png
+
+# - title: OSS Prime
+#   link: http://ossprime.ru/
+#   desc:
+#   logo: /itgm/assets/images/logos/ossprime.png
+
+# - title: Kudago
+#   link: http://kudago.com/
+#   desc:
+#   logo: /itgm/assets/images/logos/kudago.png
+
+#- title: LevelUp
+#  link: http://levelp.ru
+#  desc:
+#  logo: levelup.png
+
+# - title: Uransoft
+#   link: http://uransoft.ru
+#   desc:
+#   logo: /itgm/assets/images/logos/uransoft.png
+
+#- title: Бизнес Портрет
+#  link: http://бизнеспортрет.рф
+#  desc:
+#  logo: businessportret.png
+
+#- title: PG Day 2016
+#  link: http://pgday.ru/ru/2016
+#  desc:
+#  logo: pgday16.png
+
+#- title: Новый инфопартнер
+#  link: mailto:piterunited@gmail.com
+#  desc:
+#  logo: newpartner.png

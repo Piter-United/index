@@ -1,0 +1,123 @@
+- title: UXSpb
+  id: 1
+  link: http://ux-spb.ru/
+
+- title: SPb SPM Club
+  id: 2
+  link: https://plus.google.com/u/0/communities/108809460896106613736
+
+- title: SPb CoA
+  id: 4
+  link: http://vk.com/spb_analytics
+
+- title: DevOps-40
+  id: 5
+  link: http://www.meetup.com/DevOps-40/
+
+- title: SPBLUG
+  id: 6
+  link: http://spblug.org/
+
+- title: Piter JS
+  id: 7
+  link: http://piterjs.org
+
+- title: "SPb .Net Community"
+  id: 8
+  link: https://plus.google.com/u/0/communities/115643868183582812348
+
+- title: SPb Python
+  id: 9
+  link: http://spbpython.guru/
+
+- title: FProg
+  id: 10
+  link: https://plus.google.com/communities/114227952963737516047
+
+- title: SPb GO Community
+  id: 11
+  link: "http://groups.google.com/forum/#!forum/golang-ru"
+
+- title: SPb TechWriters
+  id: 12
+  link: https://plus.google.com/u/0/communities/111110772662436773783
+
+- title: SPb e-Learning
+  id: 13
+  link: "https://www.linkedin.com/groups?home=&gid=8282289"
+
+- title: SPb SQA Group
+  id: 14
+  link: http://sqagroup.spb.ru/
+
+- title: SPb Ruby User Group
+  id: 15
+  link: https://plus.google.com/communities/117927540789820622012
+
+- title: SPb Jenkins
+  id: 16
+  link: http://www.meetup.com/St-Petersburg-Jenkins-Meetup/
+
+- title: SPb Open Data
+  id: 17
+  link: https://vk.com/spb_opendata
+
+- title: Embedded Systems
+  id: 18
+  link: http://www.meetup.com/Embedded-Systems-Meetup-St-Petersburg/
+
+- title: SPb R User Group
+  id: 19
+  link: https://vk.com/spbrug
+
+# - title: IT talk
+#   id: 3
+#   link: http://it-talk.dataart.ru/
+
+# - title: IT HR
+#   id: 17
+#   link: /
+
+# - title: Agile Piter
+#   id: 18
+#   link: https://plus.google.com/u/0/communities/112264824472767454602
+
+# - title: MODX Community
+#   id: 19
+#   link: http://modx.pro/
+
+# - title: CMS уголок (WordPress/MODX)
+#   id: 20
+#   link: http://modx.pro/
+
+# - title: "3D уголок (Unity/3D4WEB)"
+#   id: 21
+#   link: https://plus.google.com/u/0/communities/103652474826197512695
+
+# - title: HackIoT
+#   id: 22
+#   link: http://vk.com/hackIoT
+
+# - title: SPb Startup
+#   id: 23
+#   link: https://www.facebook.com/groups/pitervc/
+
+# - title: SPb Mobile
+#   id: 24
+#   link: https://plus.google.com/u/0/communities/110822898858097256001
+
+# - title: SPb Lisp Users
+#   id: 25
+#   link: http://vk.com/lisp.users
+
+# - title: SPb Frontend
+#   id: 27
+#   link: http://vk.com/spb_frontend
+
+# - title: SPb Cloud
+#   id: 10
+#   link: https://vk.com/spb.cloud
+
+# - title: SPb PostgreSQL
+#   id: 11
+#   link: /
