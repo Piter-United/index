@@ -524,6 +524,22 @@ a {
 	margin-top:20px;
 }
 
+.venue .venue-inner {
+	padding: 20px 0;
+}
+
+#footer .col-lg-5{
+	text-align: left!important;
+}
+
+#footer .col-lg-2 {
+	margin: 20px 0;
+}
+
+}
+
+#footer .col-lg-5{
+	text-align: right;
 }
 
 
@@ -560,7 +576,7 @@ a {
 
 #venue {
 	padding-top:0;
-	padding-bottom:0px;
+	padding-bottom:0;
 }
 
 #venue .venue {
@@ -940,7 +956,8 @@ a {
 .sponsors__list__item {
 	display: inline-block;
 	width: 24%;
-	margin: 20px 0;
+	margin: 20px 5px;
+	overflow: hidden;
 	vertical-align: middle;
 }
 .sponsors__list__item span {

@@ -326,6 +326,15 @@ jQuery(document).ready(function($) {
 
 $(window).load(function(){
 
+    $('.sponsors__list__item img').each(function ImageAspectSize() {
+        var w = $(this).width();
+        var pw = $(this).parent().width();
+        if (w > pw) {
+            $(this).css({
+                width: pw
+            });
+        }
+    });
 
 	$("#nav-primary").sticky({ topSpacing: 0, });
 
