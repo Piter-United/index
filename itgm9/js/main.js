@@ -100,7 +100,7 @@ jQuery(document).ready(function($) {
 	//COUNTDOWN TIMER
 	// var newYear = new Date();
     // newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1);
-    $('#countdown').countdown({until: new Date(2016, 12, 3)}); // enter event day
+    $('#countdown').countdown({until: new Date(2016, 11, 3)}); // enter event day
 
     // $('#removeCountdown').toggle(
     //     function() {
