@@ -1,17 +1,17 @@
-- title: DataArt компания - это люди!
-  link: http://dataart.ru/
-  desc:
-  logo: img/infopartners/dataArt_logo.png
+# - title: DataArt компания - это люди!
+#   link: http://dataart.ru/
+#   desc:
+#   logo: img/infopartners/dataArt_logo.png
 
 - title: Портал видеоуроков и IT сообщество
   link: http://loftblog.ru/
   desc:
   logo: img/infopartners/loftBlog_logo.png
 
-- title: Портал spbIT.ru
-  link: http://spbit.ru/
-  desc:
-  logo: img/infopartners/spbit_logo.jpg
+# - title: Портал spbIT.ru
+#   link: http://spbit.ru/
+#   desc:
+#   logo: img/infopartners/spbit_logo.jpg
 
 - title: ProfsoUX
   link: http://profsoux.ru/
@@ -23,40 +23,40 @@
   desc:
   logo: img/infopartners/secr16.png
 
-- title: Kechinov
-  link: http://mkechinov.ru/
-  desc:
-  logo: img/infopartners/kechinov_inf.png
+# - title: Kechinov
+#   link: http://mkechinov.ru/
+#   desc:
+#   logo: img/infopartners/kechinov_inf.png
 
-- title: Linux Center
-  link: http://www.linuxcenter.ru
-  desc:
-  logo: img/infopartners/logo_LXF.png
+# - title: Linux Center
+#   link: http://www.linuxcenter.ru
+#   desc:
+#   logo: img/infopartners/logo_LXF.png
 
-- title: Первый городской бизнес-инкубатор
-  link: http://start-business.ru/
-  desc:
-  logo: img/infopartners/first-bisnes-incubator.jpg
+# - title: Первый городской бизнес-инкубатор
+#   link: http://start-business.ru/
+#   desc:
+#   logo: img/infopartners/first-bisnes-incubator.jpg
 
 - title: Айти-событие.рф
   link: http://it-sobytie.ru/
   desc:
   logo: img/infopartners/itsob_logo.png
 
-- title: RubyNoName
-  link: http://rubynoname.ru/
-  desc:
-  logo: img/infopartners/rubynoname.png
+# - title: RubyNoName
+#   link: http://rubynoname.ru/
+#   desc:
+#   logo: img/infopartners/rubynoname.png
 
-- title: Linux Format
-  link: http://www.linuxformat.ru
-  desc:
-  logo: img/infopartners/LC_logo.png
+# - title: Linux Format
+#   link: http://www.linuxformat.ru
+#   desc:
+#   logo: img/infopartners/LC_logo.png
 
-- title: BIPULSE
-  link: http://bipulse.ru/
-  desc:
-  logo: img/infopartners/bipulse.png
+# - title: BIPULSE
+#   link: http://bipulse.ru/
+#   desc:
+#   logo: img/infopartners/bipulse.png
 
 #- title: DataArt
 #  link: http://www.dataart.ru/
