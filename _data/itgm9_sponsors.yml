@@ -11,10 +11,16 @@
 #   level: Золотой партнер
 #   logo: img/partners/selectel_new.png
 
+- title: Veeam
+  link: https://www.veeam.com/
+  desc:
+  level: Золотой партнер
+  logo: img/partners/veeam.png
+
 - title: Петер Сервис
   link: http://www.billing.ru/
   desc:
-  level: Золотой партнер
+  level: Серебряный партнер
   logo: img/partners/peterservice-01.png
 
 - title: SEMRush
@@ -22,6 +28,12 @@
   desc:
   level: Серебряный партнер
   logo: img/partners/semrush-01.png
+
+- title: T-Systems
+  link: https://www.t-systems.com/
+  desc:
+  level: Серебряный партнер
+  logo: img/partners/tsystems.png
 
 # - title: DINO Systems
 #   link: http://www.dins.ru/
