@@ -6,6 +6,10 @@
   id: 2
   link: https://plus.google.com/u/0/communities/108809460896106613736
 
+- title: SPb Product Managers
+  id: 3
+  link: https://www.facebook.com/groups/spbproducts/
+
 - title: SPb CoA
   id: 4
   link: http://vk.com/spb_analytics
@@ -50,9 +54,13 @@
   id: 14
   link: http://sqagroup.spb.ru/
 
-- title: SPb Ruby User Group
+# - title: SPb Ruby User Group
+#   id: 15
+#   link: https://plus.google.com/communities/117927540789820622012
+
+- title: Postgresql Russia
   id: 15
-  link: https://plus.google.com/communities/117927540789820622012
+  link: https://www.facebook.com/groups/postgresql/?fref=nf
 
 - title: SPb Jenkins
   id: 16
@@ -69,6 +77,10 @@
 - title: SPb R User Group
   id: 19
   link: https://vk.com/spbrug
+
+- title: SPb IT HR
+  id: 20
+  link: 
 
 # - title: IT talk
 #   id: 3
