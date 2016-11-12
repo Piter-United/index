@@ -341,7 +341,9 @@ metrics:
                 <div class="sponsors__list">
                     {% for sponsor in site.data.itgm9_sponsors %}
                     <div class="sponsors__list__item text-center">
-                        <img src="{{sponsor.logo}}" alt="{{sponsor.title}}">
+                        <a href="{{sponsor.link}}" target="_blank">
+                            <img src="{{sponsor.logo}}" alt="{{sponsor.title}}">
+                        </a>
                         <br />
                         <span>{{sponsor.level}}</span>
                     </div>
