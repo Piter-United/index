@@ -62,9 +62,13 @@
   id: 15
   link: https://www.facebook.com/groups/postgresql/?fref=nf
 
-- title: SPb Jenkins
+# - title: SPb Jenkins
+#  id: 16
+#  link: http://www.meetup.com/St-Petersburg-Jenkins-Meetup/
+
+- title: ИТ-тренера
   id: 16
-  link: http://www.meetup.com/St-Petersburg-Jenkins-Meetup/
+  link:  https://www.facebook.com/spbcoach/
 
 - title: SPb Open Data
   id: 17
