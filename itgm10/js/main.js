@@ -102,7 +102,7 @@ jQuery(document).ready(function ($) {
     // var newYear = new Date();
     // newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1);
     $('#countdown').countdown({
-        until: new Date(2016, 11, 3)
+        until: new Date(2017, 4, 14)
     }); // enter event day
 
     // $('#removeCountdown').toggle(
