@@ -5,11 +5,11 @@
 #   logo: img/partners/epam-01.png
 #
 #
-# - title: Selectel
-#   link: https://selectel.ru/
-#   desc:
-#   level: Золотой партнер
-#   logo: img/partners/selectel_new.png
+- title: Selectel
+  link: https://selectel.ru/
+  desc:
+  level: Золотой партнер
+  logo: img/partners/selectel_new.png
 
 # - title: Veeam
 #   link: https://www.veeam.com/
@@ -23,29 +23,29 @@
 #   level: Серебряный партнер
 #   logo: img/partners/peterservice-01.png
 
-# - title: SEMRush
-#   link: http://www.semrush.com/
-#   desc:
-#   level: Серебряный партнер
-#   logo: img/partners/semrush-01.png
+- title: SEMRush
+  link: http://www.semrush.com/
+  desc:
+  level: Золотой партнер
+  logo: img/partners/semrush-01.png
 
-# - title: T-Systems
-#   link: https://www.t-systems.com/
-#   desc:
-#   level: Серебряный партнер
-#   logo: img/partners/tsystems.png
+- title: T-Systems
+  link: https://www.t-systems.com/
+  desc:
+  level: Серебряный партнер
+  logo: img/partners/tsystems.png
 
-# - title: Fora-Soft
-#   link: http://www.forasoft.com
-#   desc:
-#   level: Серебряный партнер
-#   logo: img/partners/forasoft.png
+- title: Fora-Soft
+  link: http://www.forasoft.com
+  desc:
+  level: Серебряный партнер
+  logo: img/partners/forasoft.png
 
-# - title: Return on Intelligence
-#   link: http://www.returnonintelligence.com/
-#   desc:
-#   level: Серебряный партнер
-#   logo: img/partners/return_on_intelligence.png
+- title: Return on Intelligence
+  link: http://www.returnonintelligence.com/
+  desc:
+  level: Серебряный партнер
+  logo: img/partners/return_on_intelligence.png
 
 # - title: DINO Systems
 #   link: http://www.dins.ru/
