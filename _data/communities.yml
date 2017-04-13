@@ -9,7 +9,7 @@
   link: https://plus.google.com/u/0/communities/108809460896106613736
   desc: Петербургский клуб менеджеров проектов в IT.
   # logo: img/spmclub.png
-  logo: /new/img/spm.png
+  logo: img/spmclub.png
 
 - title: SPb CoA
   members:
@@ -164,4 +164,4 @@
   members:
   link: http://it-talk.dataart.ru/
   desc: Сообщество компании DataArt
-  logo: img/ittalk.png
+  logo: img/IT-Talk-SPb-logo.png
