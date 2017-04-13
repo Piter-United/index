@@ -6,22 +6,22 @@
 - title: Портал видеоуроков и IT сообщество
   link: http://loftblog.ru/
   desc:
-  logo: img/infopartners/loftBlog_logo.png
+  logo: img/infopartners/Loftblog_logo.png
 
 # - title: Портал spbIT.ru
 #   link: http://spbit.ru/
 #   desc:
 #   logo: img/infopartners/spbit_logo.jpg
 
-- title: ProfsoUX
-  link: http://profsoux.ru/
-  desc:
-  logo: img/infopartners/ProfsoUX16.svg
+# - title: ProfsoUX
+#   link: http://profsoux.ru/
+#   desc:
+#   logo: img/infopartners/ProfsoUX16.svg
 
-- title: SECR-2016
-  link: http://2016.secr.ru/
-  desc:
-  logo: img/infopartners/secr16.png
+# - title: SECR-2016
+#   link: http://2016.secr.ru/
+#   desc:
+#   logo: img/infopartners/secr16.png
 
 # - title: Kechinov
 #   link: http://mkechinov.ru/
@@ -53,10 +53,10 @@
 #   desc:
 #   logo: img/infopartners/LC_logo.png
 
-- title: BIPULSE
-  link: http://bipulse.ru/
-  desc:
-  logo: img/infopartners/bipulse-squad.png
+# - title: BIPULSE
+#   link: http://bipulse.ru/
+#   desc:
+#   logo: img/infopartners/bipulse-squad.png
 
 #- title: DataArt
 #  link: http://www.dataart.ru/
