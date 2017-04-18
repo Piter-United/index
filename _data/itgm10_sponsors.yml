@@ -47,6 +47,12 @@
   level: Серебряный партнер
   logo: img/partners/return_on_intelligence.png
 
+- title: Sprintbox
+  link: https://sprintbox.ru/
+  desc:
+  level: Бронзовый партнер
+  logo: img/partners/sprintbox.jpg
+
 # - title: DINO Systems
 #   link: http://www.dins.ru/
 #   desc:
