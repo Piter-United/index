@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#" itemscope itemtype="http://schema.org/Event"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#" itemscope itemtype="http://schema.org/Event"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#" itemscope itemtype="http://schema.org/Event"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#" itemscope itemtype="http://schema.org/Event">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+
+    <!-- viewport settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{ page.description }}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ page.title }}">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ page.logo }}" itemprop="image">
+    <meta property="og:image:secure_url" content="{{ page.logo }}">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:url" content="{{ page.url }}">
+
+    <meta itemprop="name" content="{{ page.title }}">
+    <meta itemprop="description" content="{{ page.description }}">
+    <meta itemprop="startDate" content="{{ page.date.from }}">
+    <meta itemprop="endDate" content="{{ page.date.to }}">
+    <meta itemprop="image" content="{{ page.logo }}">
+
+    <meta name="author" content="Piter-United">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/purple/style.css" />
+    <link rel="stylesheet" href="../css/purple/scss.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="../img/purple/logo.png" height="35px" />
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                    <ul class="nav navbar-nav ">
+                        <li><a href="#main">О мероприятии</a></li>
+                        <li><a href="#community">Участники</a></li>
+                        <li><a href="#programma">Программа</a></li>
+                        <li><a href="#partners">Партнеры</a></li>
+                        <li><a href="#team">Организаторы</a></li>
+                        <li><a href="#yandex">Поддержать</a></li>
+                        <li><a href="#reg">Регистрация</a></li>
+                        <li><a href="#googleMap">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    {{ content }}
+
+    <!-- GOOGLE ANALYTICS -->
+    <script src="../js/google-analytics.pageview.piter-united.ru.js"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" src="../js/yandex-metrika.piter-united.ru.js"></script>
+    <noscript>
+        <div><img src="//mc.yandex.ru/watch/26968695" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- Yandex.Metrika counter -->
+    <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+    <script src="https://yastatic.net/share2/share.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/purple.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKYu9HhoX6vEPUZL91xDN8Vzw4_t-3DPU&callback=myMap"></script>
+</body>
+
+</html>

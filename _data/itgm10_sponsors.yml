@@ -1,151 +1,33 @@
-# - title: EPAM
-#   link: http://www.epam-group.ru/
-#   desc:
-#   level: Золотой партнер
-#   logo: img/partners/epam-01.png
-#
-#
-- title: Selectel
-  link: https://selectel.ru/
-  desc:
-  level: Золотой партнер
-  logo: img/partners/selectel_new.png
+gold: 
+  - title: Selectel
+    link: https://selectel.ru
+    logo: img/logo-selectel.png
 
-# - title: Veeam
-#   link: https://www.veeam.com/
-#   desc:
-#   level: Золотой партнер
-#   logo: img/partners/veeam.png
+  - title: SEMRush
+    link: https://www.semrush.com
+    logo: img/semrush-logo.png
 
-# - title: Петер Сервис
-#   link: http://www.billing.ru/
-#   desc:
-#   level: Серебряный партнер
-#   logo: img/partners/peterservice-01.png
+silver:
+  - title: Return on Intelligence
+    link: http://www.returnonintelligence.ru
+    logo: img/logo_roi.png
+ 
+  - title: ForaSoft
+    link: https://forasoft.com/ru/
+    logo: img/forasoft-logo.png
 
-- title: SEMRush
-  link: http://www.semrush.com/
-  desc:
-  level: Золотой партнер
-  logo: img/partners/semrush-01.png
+  - title: T-System
+    link: http://www.t-systems.ru
+    logo: img/T-Systems_Logo.png
 
-- title: T-Systems
-  link: https://www.t-systems.com/
-  desc:
-  level: Серебряный партнер
-  logo: img/partners/tsystems.png
-
-- title: Fora-Soft
-  link: http://www.forasoft.com
-  desc:
-  level: Серебряный партнер
-  logo: img/partners/forasoft.png
-
-- title: Return on Intelligence
-  link: http://www.returnonintelligence.com/
-  desc:
-  level: Серебряный партнер
-  logo: img/partners/return_on_intelligence.png
-
-- title: Sprintbox
-  link: https://sprintbox.ru/
-  desc:
-  level: Бронзовый партнер
-  logo: img/partners/sprintbox.jpg
-
-# - title: DINO Systems
-#   link: http://www.dins.ru/
-#   desc:
-#   level: Бронзовый партнер
-#   logo: img/partners/dins-02.png
-
-- title: Piter United
-  link: http://piter-united.ru/main.html
-  desc: Объединение активистов ИТ сообществ Санкт-Петербурга
-  level: Организатор
-  logo: img/partners/pu-100.png
-
-- title: Новый партнер
-  link: mailto:piterunited@gmail.com
-  desc:
-  level: Хотите стать партнером?
-  logo: img/partners/new_parthner.png
-
-# - title: Новый партнер
-#   link: mailto:piterunited@gmail.com
-#   desc:
-#   level: Хотите стать партнером?
-#   logo: img/partners/new_parthner.png
+bronse:
 
 
-# - title: First Line Software
-#   link: http://www.firstlinesoftware.com/
-#   desc:
-#   level: Золотой партнер
-#   logo: firstline.png
+infopartners:
+  - title: LoftBlog
+    link: https://loftblog.ru
+    logo: img/loft-logo.png
 
-# - title: ФРИИ
-#   link: http://www.iidf.ru/
-#   desc:
-#   level: Золотой партнер
-#   logo: free.png
-
-# - title: Autodesk
-#   link: http://www.autodesk.ru/
-#   desc:
-#   level: Золотой партнер
-#   logo: autodesk.png
-
-# - title: JetBrains
-#   link: https://www.jetbrains.com/
-#   desc:
-#   level: Серебряный партнер
-#   logo: jetbrains.png
-
-# - title: DataArt
-#   link: http://www.dataart.ru/
-#   desc:
-#   level: Серебряный партнер
-#   logo: da.png
-
-# - title: IT-Grad
-#   link: http://www.it-grad.ru/
-#   desc:
-#   level: Серебряный партнер
-#   logo: itgrad.png
-
-# - title: SPb CIO Clob
-#   link: http://www.spbcioclub.ru/
-#   desc: Санкт-Петербургский клуб ИТ-директоров.
-#   level: Со-организатор
-#   logo: spbcio.gif
-
-# - title: Luxoft
-#   link: https://www.luxoft.ru/
-#   desc:
-#   level: Бронзовый партнер
-#   logo: luxoft.png
-
-# - title: OSS Prime
-#   link: http://ossprime.ru/
-#   desc:
-#   level: Бронзовый партнер
-#   logo: /itgm/assets/images/logos/ossprime.png
-
-# - title: Манн Иванов и Фербер
-#   link: http://www.mann-ivanov-ferber.ru/
-#   desc:
-#   level: Бронзовый партнер
-#   logo: mannivanovferber.gif
-
-# - title: A25
-#   link: http://a25.ru/
-#   desc:
-#   level: Бронзовый партнер
-#   logo: /itgm/assets/images/logos/a25.png
-
-# - title: Grid Dynamics
-#   link: http://www.griddynamics.com/
-#   desc:
-#   level: Бронзовый партнер
-#   logo: /itgm/assets/images/logos/gd.png
+  - title: Айти-Событие.рф
+    link: http://it-events.com
+    logo: img/it-sob-logo.png

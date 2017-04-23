@@ -1,8 +1,9 @@
 ---
-layout: itgm9
+layout: layout_purple
 title: "IT Global Meetup #10"
+page_title: "Весенний слёт IT сообществ Санкт-Петербурга"
 description: 14 мая 2017, с 11.00 до 18.00. 10-й слет ИТ-сообществ Санкт-Петербурга. КДЦ Club House - СПб, пр. Медиков 3.
-logo: http://piter-united.ru/itgm10/img/site_logo/itgm_logo2.png
+logo: http://piter-united.ru/img/itgm_logo_blue.png
 url: http://piter-united.ru/itgm10
 date:
     day: 14 мая
@@ -13,514 +14,505 @@ location:
     name: КДЦ Club House
     address: пр. Медиков д.3 к.1
     string: КДЦ "Club House", пр. Медиков д.3 к.1
-metrics:
-    communities: 20
-    talks: 60
-    speakers: 60
-    visitors: 500
 ---
-
-<!-- NAVIGATION -->
-<div class="slider">
-    <div class="navbar-container">
-        <nav id="nav-primary" class="navbar navbar-custom" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="/itgm10"><img src="img/site_logo/main_logo_white.png" alt="logo" class="img-responsive" width="40px"></a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="nav">
-                    <ul class="nav navbar-nav navbar-right uppercase">
-                        <li><a data-toggle="elementscroll" href="#info">О мероприятии</a></li>
-                        <li><a data-toggle="elementscroll" href="#communities">Сообщества</a></li>
-                        <li><a data-toggle="elementscroll" href="#program">Программа</a></li>
-                        <li><a data-toggle="elementscroll" href="#register">Регистрация</a></li>
-                        <li><a data-toggle="elementscroll" href="#sponsors">Партнеры</a></li>
-                        <li><a data-toggle="elementscroll" href="#gallery">Фотогалерея</a></li>
-                        <li><a data-toggle="elementscroll" href="#venue">Место проведения</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<!-- MAIN BANNER -->
+<div id="main" class="container-fluid container-fluid-main container-fluid-image">
+  <div class="container container-main text-white">
+    <div class="row">
+      <div class="col-md-9 col-sm-11 col-xs-12">
+        <h2>{{ page.page_title }}</h2>
+      </div>
     </div>
-    <div class="container-fluid">
-        <div class="row content">
-            <div class="col-md-offset-5 col-md-7 col-xs-12">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>{{ page.title }}</h1>
-                        <p>{{ page.date.string }}<br>{{ page.location.string }}</p>
-                        <div itemprop="location" itemscope itemtype="http://schema.org/Place">
-                            <meta itemprop="name" content="{{ page.location.name }}"/>
-                            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                                <meta itemprop="name" content="{{ page.location.name }}"/>
-                                <meta itemprop="streetAddress" content="{{ page.location.address }}"/>
-                                <meta itemprop="addressLocality" content="Санкт-Петербург"/>
-                                <meta itemprop="addressRegion" content="SPB"/>
-                                <meta itemprop="postalCode" content="123456"/>
-                                <meta itemprop="addressCountry" content="RU"/>
-                            </div>
-                        </div>
-                        <a class="button button-small button-line-light html-popup" href="register.html">зарегистрироваться</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row visible-md-block visible-lg-block">
-            <div id="left" class="left col-lg-9 col-md-8 col-xs-8 text-right">
-                <h3>Поделиться</h3>
-                <div class="share-btns">
-                    <iframe src="https://piter-united.herokuapp.com/iframe" class="__slackin slack"></iframe>
-                    <div class="ya-share2"
-                         data-services="gplus,facebook,vkontakte,twitter,linkedin"
-                         data-image="{{ page.logo }}"
-                         data-lang="ru"
-                         data-size="m"
-                         data-title="{{ page.title }}"
-                         data-description="{{ page.description }}"
-                         data-url="http://piter-united.ru/itgm9/itgm.html"></div>
-                 </div>
-            </div>
-            <div id="right" class="col-lg-3 col-md-4 col-xs-4 text-left">
-                <div id="countdown"></div>
-            </div>
-        </div>
+    <div class="row row-h1">
+      <div class="col-md-9 col-sm-11 col-xs-12">
+        <h1>{{ page.title }}</h1>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-md-5 col-sm-8 col-xs-11">
+        <p>{{ page.date.string }}</p>
+        <p>{{ page.location.string }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8">
+        <button type="button" class="btn btn-primary btn-lg full register">Зарегистрироваться</button>
+        <button type="button" class="btn btn-primary btn-lg mobile register">Зарегистрироваться</button>
+      </div>
+    </div>
+  </div>
+  <!-- SOCIAL -->
+  <div class="share-btns">
+    <iframe src="https://piter-united.herokuapp.com/iframe" class="__slackin slack"></iframe>
+    <div class="ya-share2" data-services="gplus,facebook,vkontakte,twitter,linkedin" data-image="{{ page.logo }}" data-lang="ru"
+      data-size="m" data-title="{{ page.title }}" data-description="{{ page.description }}" data-url="http://piter-united.ru/itgm10"></div>
+  </div>
 </div>
 
-<!-- INFO -->
-<section id="info">
-    <div class="container">
-        <div class="row">
+<!--ABOUT -->
+<div class="container-fluid container-fluid-info container-fluid-image">
+  <div class="container container-text text-white">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>О мероприятии</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-9 col-sm-11 col-xs-12">
+        <h1>Вся информация<br>о мероприятии.</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 col-sm-8 col-xs-11">
+        <p>IT Global Meetup регулярно собирает дружную IT-тусовку Петербурга и&nbsp;окунает участников в&nbsp;атмосферу обмена
+          опытом, профессиональными мнениями и&nbsp;взглядами. Любой активный IT-специалист сможет найти здесь единомышленников,
+          узнать что-то&nbsp;новое, заявить о&nbsp;себе.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <a href="javascript:;">IT Global Meetup в цифрах <i class="fa fa-angle-right fa"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
 
-            <div class="col-lg-12 text-center">
-                <h1>{{ page.title }}</h1>
-                <p class="lead">Слет IT-сообществ Санкт-Петербурга и Ленинградской области. <br>
-                    Цель мероприятия - обмен профессиональным опытом между IT-специалистами.<br>
-                    Общение происходит на "островках сообществ", где участники знакомятся, <br>
-                    обсуждают профессиональные темы, высказывают мнения, спорят и ищут решения.</p>
-            </div>
+<!--PHOTO+VIDEO -->
 
-            <div class="col-lg-10 col-lg-offset-1 col-md-12 text-center">
+<div class="container-fluid container-fluid-gray container-fluid-row1">
+  <div class="container container-row1">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="col-md-10 col-md-10-special">
+          <h3>Сообщества &ndash; сердце IT Global Meetup</h3>
+          <p>Основной целью мероприятия является популяризация городских IT-сообществ, привлечение в&nbsp;сообщества новых,
+            активных участников с&nbsp;их&nbsp;уникальными профессиональными мнениями и&nbsp;контентом. Чем больше мнений
+            в&nbsp;сообществе, чем&nbsp;они профессиональнее и&nbsp;глубже, тем&nbsp;полезнее и&nbsp;интереснее сообщество.
+          </p><br>
+        </div>
+      </div>
+      <div class="col-md-6 text-center col-img-video">
+        <a class="play" href="javascript:openVideo();">
+          <i class="fa fa-play-circle fa-3x"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid container-fluid-gray container-fluid-row2">
+  <div class="container container-row2">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="col-md-10 col-md-10-special">
+          <h3>Обучение через общение</h3>
+          <p>Мероприятие проходит в&nbsp;формате «глобального митапа», в&nbsp;рамках которого у&nbsp;каждого сообщества есть
+            свой «островок» &ndash; свой митап. На таких островках организовано общение участников сообществ в&nbsp;различных
+            формах: доклады, мастер-классы, разбор кейсов, круглые столы, мини-хакатоны, игры&nbsp;и&nbsp;т.д.</p><br>
+        </div>
+      </div>
+      <div class="col-md-6 text-center col-img-photo">
+        <a class="play" href="javascript:;">
+          <i class="fa fa-camera fa-2x"></i>
+          <!-- вызов модалки с фотогалереей -->
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--COMMUNITY -->
+<div id="community" class="container-fluid">
+  <div class="container container-text">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>Все IT сообщества</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-9 col-sm-11 col-xs-12">
+        <h1>В одно время.<br>В одном месте.</h1>
+      </div>
+    </div>
+  </div>
+  <!-- закрытие заголовка -->
+
+  <div class="container">
+    <!-- Строка 1 -->
+
+    {% for community in site.data.itgm10_communities %} {% assign loopindex = forloop.index | modulo: 4 %} {% if loopindex ==
+    1 or forloop.first %}
+    <div class="row text-center">
+      {% endif %}
+      <div class="col-sm-3">
+        <a class="a-thumbnail" href="{{ community.link }}" target="_blank">
+          <div class="thumbnail">
+            <h3>{{ community.title }}</h3>
+            <!-- <p>Краткое описание в три <br>строки</p> -->
+          </div>
+        </a>
+      </div>
+      {% if loopindex == 0 or forloop.last %}
+    </div>
+    {% endif %} {% endfor %}
+
+    <div class="btn-center">
+      <a href="mailto:piterunited@gmail.com" class="btn btn-primary btn-lg btn-block">Стать участником</a>
+    </div>
+  </div>
+  <!-- закрытие блока участников -->
+</div>
+<!-- закрытие fluid-->
+
+
+<!-- Карусель-карусель -->
+<div class="container-fluid container-fluid-gray container-fluid-carousel">
+  <div class="container">
+    <h1 class="text-center"><br/>&rdquo;</h1>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <h4>"Текст отзыва спикера"<br><span style="font-style:normal;">Имя Фамилия, Название Компании</span></h4>
+        </div>
+        <div class="item">
+          <h4>"Текст отзыва спикера"<br><span style="font-style:normal;">Имя Фамилия, Название Компании</span></h4>
+        </div>
+        <div class="item">
+          <h4>"Текст отзыва спикера"<br><span style="font-style:normal;">Имя Фамилия, Название Компании</span></h4>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+    <!-- закрытие  карусели -->
+  </div>
+  <!-- закрытие контейнера карусели -->
+</div>
+<!-- закрытие контейнера цвета -->
+
+<!--PROGRAMMA -->
+<div id="programma" class="container-fluid">
+  <div class="container container-text">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>Программа мероприятия</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-9 col-sm-11 col-xs-12">
+        <h1>Больше информации<br>за меньшее время.
+          <h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <a href="javascript:;">Подробнее о программе <i class="fa fa-angle-right fa"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- закрытие заголовка -->
+
+<!--TIMELINE -->
+<div class="container">
+  <div class="timeline">
+    {% for program in site.data.itgm10_programms %}
+    <div class="entry">
+      <div class="title">
+        <h3>{{ program.time }}</h3>
+      </div>
+      <div class="body">
+        <p>{{ program.title }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <!-- закрытие timeline -->
+</div>
+<!-- закрытие контера -->
+
+<!--PARTNERS -->
+<div id="partners" class="container-fluid container-fluid-gray">
+  <div class="container container-text">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>Компании-партнеры</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-9 col-sm-11 col-xs-12">
+        <h1>Нас поддерживают<br>лучшие IT компании.
+          <h1>
+      </div>
+    </div>
+  </div>
+  <!-- закрытие заголовка -->
+
+  <div class="container">
+    <!-- Gold -->
+    {% for sponsor in site.data.itgm10_sponsors.gold %} {% assign loopindex = forloop.index | modulo: 2 %} {% if loopindex ==
+    1 or forloop.first %}
+    <div class="row text-center">
+      {% endif %}
+      <div class="col-sm-6">
+        <a href="{{ sponsor.link }}" target="_blank">
+          <div class="thumbnail thumbnail-white">
+            <img src="{{ sponsor.logo }}" title="{{ sponsor.title }}">
+          </div>
+        </a>
+      </div>
+      {% if loopindex == 0 or forloop.last %}
+    </div>
+    {% endif %} {% endfor %}
+    <!-- закрытие строки -->
+    <!-- Silver -->
+    {% for sponsor in site.data.itgm10_sponsors.silver %} {% assign loopindex = forloop.index | modulo: 3 %} {% if loopindex
+    == 1 or forloop.first %}
+    <div class="row text-center">
+      {% endif %}
+      <div class="col-sm-4">
+        <a href="{{ sponsor.link }}" target="_blank">
+          <div class="thumbnail thumbnail-white">
+            <img src="{{ sponsor.logo }}" title="{{ sponsor.title }}">
+          </div>
+        </a>
+      </div>
+      {% if loopindex == 0 or forloop.last %}
+    </div>
+    {% endif %} {% endfor %}
+    <!-- закрытие строки -->
+    <!-- Silver -->
+    {% for sponsor in site.data.itgm10_sponsors.bronse %} {% assign loopindex = forloop.index | modulo: 4 %} {% if loopindex
+    == 1 or forloop.first %}
+    <div class="row text-center">
+      {% endif %}
+      <div class="col-sm-3">
+        <a href="{{ sponsor.link }}" target="_blank">
+          <div class="thumbnail thumbnail-white">
+            <img src="{{ sponsor.logo }}" title="{{ sponsor.title }}">
+          </div>
+        </a>
+      </div>
+      {% if loopindex == 0 or forloop.last %}
+    </div>
+    {% endif %} {% endfor %}
+    <!-- закрытие строки -->
+
+    <div class="btn-center">
+      <a href="mailto:piterunited@gmail.com" class="btn btn-primary btn-lg btn-block">Стать партнером</a>
+    </div>
+  </div>
+  <!-- закрытие блока партнеров -->
+</div>
+<!-- закрытие fluid цвет -->
+
+<!--INFO-PARTNERS -->
+<div class="container-fluid">
+  <div class="container container-text">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>Инфопартнеры</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-9 col-sm-11 col-xs-12">
+        <h1>О нас пишут<br>популярные порталы.
+          <h1>
+      </div>
+    </div>
+  </div>
+  <!-- закрытие заголовка -->
+
+  <div class="container">
+    {% for sponsor in site.data.itgm10_sponsors.infopartners %} {% assign loopindex = forloop.index | modulo: 2 %} {% if loopindex
+    == 1 or forloop.first %}
+    <div class="row text-center">
+      {% endif %}
+      <div class="col-sm-6">
+        <a href="{{ sponsor.link }}" target="_blank">
+          <div class="thumbnail thumbnail-white">
+            <img src="{{ sponsor.logo }}" title="{{ sponsor.title }}">
+          </div>
+        </a>
+      </div>
+      {% if loopindex == 0 or forloop.last %}
+    </div>
+    {% endif %} {% endfor %}
+
+    <div class="btn-center">
+      <a href="mailto:piterunited@gmail.com" class="btn btn-primary btn-lg btn-block">Стать партнером</a>
+    </div>
+  </div>
+  <!-- закрытие блока партнеров -->
+</div>
+<!-- закрытие fluid-->
+
+<div id="team" class="container-fluid container-fluid-gray container-fluid-carousel-big">
+  <div class="container container-text">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>Организаторы-волонтеры</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-9 col-sm-11 col-xs-12">
+        <h1>В нашей команде<br>истинные энтузиасты.
+          <h1>
+      </div>
+    </div>
+  </div>
+  <!-- закрытие заголовка -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12" data-wow-delay="0.2s">
+        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+          <!-- Photos -->
+          <ol class="carousel-indicators">
+            <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="../img/purple/org.png" alt="">
+            </li>
+            <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="../img/purple/org.png" alt="">
+            </li>
+            <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="../img/purple/org.png" alt="">
+            </li>
+          </ol>
+          <!-- Carousel Slides -->
+          <div class="carousel-inner text-center">
+
+            <!--  1 -->
+            <div class="item active">
+              <blockquote>
                 <div class="row">
-
-                    <div class="feature col-lg-4 col-md-4 col-sm-4">
-                        <i class="pe-4x pe-7s-refresh-2"></i>
-                        <h4>Обмен опытом</h4>
-                        <p>Возьмите 100% от мероприятия, задавайте вопросы, предлагайте решения, высказывайте
-                            мнения.</p>
-                    </div>
-
-                    <div class="feature col-lg-4 col-md-4 col-sm-4">
-                        <i class="pe-4x pe-7s-micro"></i>
-                        <h4>Личный брендинг</h4>
-                        <p>Выступайте, рассказывайте о своих достижениях, заинтересуйте своей экспертизой.</p>
-                    </div>
-
-                    <div class="feature col-lg-4 col-md-4 col-sm-4">
-                        <i class="pe-4x pe-7s-network"></i>
-                        <h4>Нетворкинг</h4>
-                        <p>Знакомьтесь с коллегами из других компаний, находите единомышленников.</p>
-                    </div>
-
+                  <div class="col-sm-8 col-sm-offset-2">
+                    <p>Сообщество - это инструмент сильных компаний. Их лидеры, выходя в сообщества и рассказывая о том «как»
+                      и «над чем» они работают, притягивают людей близких «по духу», превращая их в мотивированных сотрудников.</p>
+                    <small>Михаил Рыжиков</small>
+                  </div>
                 </div>
+              </blockquote>
             </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- FUNFACTS -->
-<section id="funfacts">
-    <div class="funfacts-inner">
-        <div class="container">
-            <div class="row">
-
-                <h2 class="hidden">funfacts</h2>
-
-                <div class="col-lg-10 col-lg-offset-1">
-                    <div id="funfacts-carousel">
-
-                        <div class="item">
-                            <i class="pe pe-4x pe-7s-world"></i>
-                            <div class="desc">
-                                <p class="number">{{ page.metrics.communities }}</p>
-                                <p class="description">сообществ</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <i class="pe pe-4x pe-7s-micro"></i>
-                            <div class="desc">
-                                <p class="number">{{ page.metrics.talks }}</p>
-                                <p class="description">выступлений</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <i class="pe pe-4x pe-7s-display2"></i>
-                            <div class="desc">
-                                <p class="number">{{ page.metrics.speakers }}</p>
-                                <p class="description">спикеров</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <i class="pe pe-va pe-4x pe-7s-id"></i>
-                            <div class="desc">
-                                <p class="number">{{ page.metrics.visitors }}</p>
-                                <p class="description">участников</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- COMMUNITIES -->
-<!--<section id="communities">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-lg-12">
-                <h3 class="">Сообщества</h3>
-                <p class="lead">Все IT-сообщества Петербурга в одно время в одном месте.</p>
-            </div>
-
-            <ul id="list-speaker" class="list-unstyled">
-                {% for community in site.data.itgm10_communities %}
-                <a href="{{ community.link }}" target="_blank">
-                    <li class="col-lg-3 col-md-3 col-sm-4">
-                        <div class="speaker">
-                            <div class="caption text-center">
-                                <h4>{{ community.title }}</h4>
-                                <p class="community">Санкт-Петербург</p>
-                            </div>
-                        </div>
-                    </li>
-                </a>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-</section>-->
-
-
-
-
-<!-- PROGRAM -->
-<!--<section id="program">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h3>Общая программа мероприятия</h3>
-                <p class="lead">Программа мероприятия нацелена на обмен опытом и общением с коллегами из других
-                    компаний.</p>
-                <ul id="myTab" class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active">
-                        <a href="#day1" id="day1-tab" role="tab"
-                           data-toggle="tab" aria-controls="day1" aria-expanded="true">{{ page.date.day }}</a>
-                    </li>
-                </ul>
-
-                <div id="myTabContent" class="tab-content">
-
-                    <div role="tabpanel" class="tab-pane fade active in" id="day1" aria-labelledby="day1-tab">
-                        <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
-                            {% for program in site.data.itgm10_programms %}
-
-                            <div class="panel panel-default">
-
-                                <div class="panel-heading" role="tab" id="heading1">
-                                    <div class="row">
-                                        <div class="col-lg-2 col-md-2 col-sm-2">
-                                            <p class="date">{{program.time}}</p>
-                                        </div>
-                                        <div class="col-lg-10 col-md-10 col-sm-10">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#{{program.id}}" aria-expanded="true" aria-controls="{{program.id}}">{{program.title}}</a>
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div id="{{program.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
-
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-sm-offset-2 col-lg-10 col-md-10 col-sm-10">
-                                                <p>{{program.text}}</p>
-                                                <br>
-                                                <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">{{program.duration}}</span></p>
-                                                <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">{{program.place}}</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-            </div>
-</section>-->
-
-
-
-
-<!-- DOWNLOAD PROGRAMM (ссылка на программу) -->
-<section id="download">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-lg-offset-2">
+            <!-- 2 -->
+            <div class="item">
+              <blockquote>
                 <div class="row">
-                    <div class="col-lg-2 col-md-2 col-sm-1 prog-icon">
-                        <span class="pe-4x pe-7s-note2 program-icon"></span>
-                    </div>
-                    <div class="col-lg-10 col-md-10 col-sm-12">
-                        <h3>Программа мероприятия</h3>
-                        <p>У каждого IT-сообщества в рамках слета будет свой "островок".<br>
-                            На островках сообщества представят заранее подготовленные программы.<br>
-                            Каждая программа состоит из 4-х секций (докладов/презентаций) по 45 минут.<br>
-                            В рамках секций вы сможете получить новые знания, задать вопросы,<br>
-                            поделиться профессиональным опытом и обменяться контактами.</p>
-                        <br>
-                        <!--<a class="button button-small button-line-dark" href="{{ page.program_url }}" target="_blank">открыть программу</a>-->
-                    </div>
+                  <div class="col-sm-8 col-sm-offset-2">
+                    <p>Мы уходим от формата «один говорит - остальные слушают». Открытая площадка и общение с коллегами из других
+                      компаний - это ценнейший ресурс и огромный стимул для роста активных IT-специалистов.</p>
+                    <small>Евгений Крапивко</small>
+                  </div>
                 </div>
+              </blockquote>
             </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-<!-- REGISTER -->
-<section id="register">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h3 class="text-center">Регистрация</h3>
-                <p class="lead text-center">Целевая аудитория мероприятия: IT-специалисты.<br>
-                    Участие бесплатное. Обязательным условием является регистрация.</p> <br>
-            </div>
-            <div class="col-lg-12 text-center">
-                <a class="button button-small button-line-light html-popup" href="register.html">зарегистрироваться</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-<!-- SPONSORS -->
-<section id="sponsors">
-    <div class="container">
-        <div class="row" >
-            <div class="col-md-12">
-                <h3 class="text-center">Партнеры мероприятия</h3>
-                <p class="lead text-center">Инициативу и слет поддерживают лучшие IT-компании.</p>
-                <div class="sponsors__list">
-                    {% for sponsor in site.data.itgm10_sponsors %}
-                    <div class="sponsors__list__item text-center">
-                        <a href="{{sponsor.link}}" target="_blank">
-                            <img src="{{sponsor.logo}}" alt="{{sponsor.title}}">
-                        </a>
-                        <br />
-                        <span>{{sponsor.level}}</span>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-<!-- INFOPARTNERS -->
-<section id="infopartners">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h3 class="text-center">Информационные партнеры</h3>
-                <p class="lead text-center">Инициативу и слет поддерживают лучшие IT-компании.</p>
-                <div class="sponsors__list">
-                    {% for sponsor in site.data.itgm10_infopartners %}
-                    <div class="sponsors__list__item text-center">
-                        <img src="{{sponsor.logo}}" alt="{{sponsor.title}}">
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-<!-- DONATION (Поддержка мероприятия) -->
-<section id="donation">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-lg-12">
-                <h3 class="text-center">Поддержка мероприятия</h3>
-                <p class="donate-form-main-text">Все собранные нами средства пойдут на покрытие организационных расходов мероприятия,<br>
-                                                 либо на закупку инвентаря необходимого сообществам (бумагу, флипчарты, ролл-апы и т.д.).<br>
-                                                 Мы будем вам очень признательны за поддержку мероприятия!</p>
-            </div>
-
-            <div class="donate-form">
-                <iframe frameborder="0" allowtransparency="true" scrolling="no"
-                        src="https://money.yandex.ru/embed/shop.xml?account=410011943203218&quickpay=shop&payment-type-choice=on&writer=seller&targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0+%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%D0%B3%D0%BE+%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F&targets-hint=&default-sum=500&button-text=03&fio=on&successURL=http%3A%2F%2Fpiter-united.ru"
-                        width="450" height="198"></iframe>
-            </div>
-
-            <p class="donate-form-subfooter"><i>Вы можете поддержать нас финансово (любой суммой), а можете <a
-                    href="mailto:piterunited@gmail.com">стать волонтером</a></i>.</p>
-        </div>
-    </div>
-</section>
-
-
-
-
-<!-- GALLERY -->
-<section id="gallery">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h3> Фотогалерея </h3>
-                <p class="lead">Фотографии с прошлых мероприятий.</p>
-
-                <div id="timeline" data-columns>
-                    {% for photo in site.data.itgm10_photos %}
-                    <div class="item wrap">
-                        <img class="img-responsive" src="{{photo.photo}}" alt="">
-                        <div class="overlay"></div>
-                        <div class="icon">
-                            <a class="image-popup" href="{{photo.photo}}" title=""><i class="pe-3x pe-7s-plus"></i></a>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- TESTIMONIAL -->
-<section id="testimonial">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6 no-padding">
-                <div class="testimonial-inner">
-                    <h2 class="hidden">testimonial</h2>
-                    <div id="testimonial-carousel">
-                        <div class="item">
-                            <img class="img-circle" src="img/testimonials_photo/testimonial1.png" alt="">
-                            <p class="lead">Сообщество - это инструмент сильных компаний.<br>
-                                            Их лидеры, выходя в сообщества и рассказывая о том «как» и «над чем» они работают,<br>
-                                            притягивают людей близких «по духу», превращая их в мотивированных сотрудников.</p>
-                            <p class="name">Михаил Рыжиков, идейный вдохновитель Piter United</p>
-                        </div>
-
-                         <div class="item">
-                            <img class="img-circle" src="img/testimonials_photo/testimonial2.jpg" alt="">
-                            <p class="lead">Мы уходим от формата «один говорит - остальные слушают».<br>
-                                            Открытая площадка и общение с коллегами из других компаний -<br>
-                                            это ценнейший ресурс и огромный стимул для роста активных IT-специалистов.</p>
-                            <p class="name">Евгений Крапивко, активист Piter United</p>
-                        </div> 
-
-                         <div class="item">
-                            <img class="img-circle" src="img/testimonials_photo/testimonial3.png" alt="">
-                            <p class="lead">Делитесь знаниями, не жадничайте!</p>
-                            <p class="name">Сергей Сёмка</p>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- VENUE, место проведения -->
-<section id="venue">
-    <!-- google map -->
-    <div id="gmap_canvas"></div>
-
-    <div class="venue">
-        <div class="venue-inner">
-            <div class="container">
+            <!-- 3 -->
+            <div class="item">
+              <blockquote>
                 <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
-                        <h2 class="">КДЦ "Club House"</h2>
-                        <p class="lead">Мероприятие пройдет в КДЦ "Club House". <br>5 минут пешком от м. Петроградская
-                            или на своей машине.</p>
-                        <h4>Санкт-Петербург. <br> пр. Медиков д.3 корп.1, КДЦ "Club House".</h4>
-                        <img class="img-responsive" src="img/site_logo/club-house-logo.png" alt="club-house">
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <i class="pe-4x pe-7s-map-2"></i>
-                        <h4 class="">Карта проезда</h4>
-                        <p>Санкт-Петербург.<br>пр. Медиков д.3 корп.1</p>
-                        <a class="button button-xsmall button-line-light" href="/itgm/map.html" target="_blank">Подробная карта</a>
-                    </div>
+                  <div class="col-sm-8 col-sm-offset-2">
+                    <p>Делитесь знаниями, не жадничайте!</p>
+                    <small>Сергей Сёмка</small>
+                  </div>
                 </div>
+              </blockquote>
             </div>
+          </div>
+          <!--  Next/Prev -->
+
+          <a class="left carousel-control" href="#quote-carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#quote-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
         </div>
+        <!-- закрытие карусели-->
+      </div>
+      <!-- закрытие col-->
     </div>
-</section>
+    <!-- закрытие row-->
+  </div>
+  <!-- закрытие котейнера карусели-->
+</div>
+<!-- закрытие fluid цвет-->
 
+<!-- TEAM BANNER -->
+<div class="container-fluid container-fluid-team container-fluid-image">
+  <div class="container container-text">
+    <div class="row"></div>
+    <div class="row row-h1">
+      <div class="col-sm-9">
+        <h1>Участвуйте<br>в организации.
+          <h1>
+      </div>
+    </div>
+    <!--<div class="row">
+      <div class="col-md-5 col-sm-8 col-xs-11">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+    </div>-->
+    <div class="row">
+      <div class="col-sm-8">
+        <a href="mailto:piterunited@gmail.com" class="btn btn-primary btn-lg">Стать волонтером</a>
+      </div>
+    </div>
+  </div>
+  <!-- закрытие заголовка-->
+</div>
+<!-- закрытие fluid-->
 
-<!-- Footer -->
-<section id="footer">
+<!-- YANDEX -->
+<div id="yandex" class="container-fluid">
+  <div class="container">
+    <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=410011943203218&quickpay=shop&payment-type-choice=on&writer=seller&targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0+%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%D0%B3%D0%BE+%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F&targets-hint=&default-sum=500&button-text=03&fio=on&successURL=http%3A%2F%2Fpiter-united.ru"
+      width="450" height="198"></iframe>
+  </div>
+</div>
+
+<!-- REG -->
+<div class="container-fluid">
+  <div id="reg">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-5">
-                <div class="text-left">
-                    <div class="header">Предыдущие мероприятия</div>
-                    <div class="content">
-                        {% for itgm in site.data.itgm_list %}
-                        <a class="ui label" href="{{itgm.link}}">{{itgm.name}}</a>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2">
-                <p class="text-center"><b>PiterUnited@gmail.com</b></p>
-            </div>
-            <div class="col-lg-5">
-                <div class="header">Мы в социальных сетях</div>
-                <div class="content">
-                    <a class="ui label" href="https://plus.google.com/u/0/communities/108851235934496354072" target="_blank"><i class="large google plus icon"></i></a>
-                    <a class="ui label" href="https://twitter.com/piter_united" target="_blank"><i class="large twitter icon"></i></a>
-                    <a class="ui label" href="https://medium.com/@piterunited" target="_blank"><i class="large medium icon"></i></a>
-                    <a class="ui label" href="https://www.facebook.com/groups/piterunited/" target="_blank"><i class="large facebook icon"></i></a>
-                    <a class="ui label" href="https://vk.com/piterunited" target="_blank"><i class="large vk icon"></i></a>
-                    <a class="ui label" href="https://www.linkedin.com/grp/home?gid=8117058" target="_blank"><i class="large linkedin icon"></i></a>
-                </div>
-            </div>
-        </div>
+      <div class="btn-center btn-reg">
+        <button type="button" class="btn btn-primary btn-lg btn-block register">Зарегистрироваться</button>
+      </div>
     </div>
-</section>
-<!--endof Footer -->
+  </div>
+</div>
+
+<!-- MAP -->
+
+<div id="googleMap"></div>
+
+<!-- FOOTER -->
+<div class="container-fluid container-fluid-footer">
+  <div class="container container-footer text-white">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip">
+      <i class="fa fa-angle-double-up fa"></i>
+    </a><br><br>
+    <p>IT Global Meetup #10</p>
+    <br><br>
+    </footer>
+  </div>
+</div>
