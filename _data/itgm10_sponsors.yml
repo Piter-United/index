@@ -21,7 +21,9 @@ silver:
     logo: img/T-Systems_Logo.png
 
 bronse:
-
+  - title: Sprintbox
+    link: https://sprintbox.ru/
+    logo: img/sprintbox.jpg
 
 infopartners:
   - title: LoftBlog
