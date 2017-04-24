@@ -6,84 +6,80 @@
   id: 2
   link: https://plus.google.com/u/0/communities/108809460896106613736
 
-- title: SPb Product Managers
+- title: SPb Community of Analysts
   id: 3
-  link: https://www.facebook.com/groups/spbproducts/
-
-- title: SPb CoA
-  id: 4
   link: http://vk.com/spb_analytics
 
 - title: DevOps-40
-  id: 5
+  id: 4
   link: http://www.meetup.com/DevOps-40/
 
-- title: SPBLUG
-  id: 6
+- title: SPbLUG
+  id: 5
   link: http://spblug.org/
 
 - title: Piter JS
-  id: 7
+  id: 6
   link: http://piterjs.org
 
-- title: "SPb .Net Community"
-  id: 8
+- title: SpbDotNet Community
+  id: 7
   link: https://plus.google.com/u/0/communities/115643868183582812348
 
-- title: SPb Python
-  id: 9
+- title: SPb Python Interest Group
+  id: 8
   link: http://spbpython.guru/
 
 - title: FProg
-  id: 10
+  id: 9
   link: https://plus.google.com/communities/114227952963737516047
 
 - title: SPb GO Community
-  id: 11
+  id: 10
   link: "http://groups.google.com/forum/#!forum/golang-ru"
 
 - title: SPb TechWriters
-  id: 12
+  id: 11
   link: https://plus.google.com/u/0/communities/111110772662436773783
 
 - title: SPb e-Learning
-  id: 13
+  id: 12
   link: "https://www.linkedin.com/groups?home=&gid=8282289"
 
 - title: SPb SQA Group
-  id: 14
+  id: 13
   link: http://sqagroup.spb.ru/
 
 # - title: SPb Ruby User Group
 #   id: 15
 #   link: https://plus.google.com/communities/117927540789820622012
 
-- title: Postgresql Russia
-  id: 15
+- title: SPb Database
+  id: 14
   link: https://www.facebook.com/groups/postgresql/?fref=nf
 
 # - title: SPb Jenkins
-#  id: 16
+#  id: 15
 #  link: http://www.meetup.com/St-Petersburg-Jenkins-Meetup/
 
-- title: "IT Coaches SPB"
-  id: 16
-  link:  https://www.facebook.com/spbcoach/
+# - title: "IT Coaches SPB"
+#   id: 15
+#   link:  https://www.facebook.com/spbcoach/
 
 - title: SPb Open Data
-  id: 17
+  id: 15
   link: https://vk.com/spb_opendata
 
 - title: Embedded Systems
-  id: 18
+  id: 16
   link: http://www.embedded.group
 
-- title: SPb R User Group
-  id: 19
-  link: https://vk.com/spbrug
+# - title: SPb R User Group
+#   id: 19
+#   link: https://vk.com/spbrug
 
 - title: SPb IT HR
-  id: 20
+  id: 17
   link: 
 
 # - title: IT talk
