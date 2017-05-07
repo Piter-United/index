@@ -144,6 +144,15 @@ $(document).ready(function () {
   });
 });
 
+function openProgram() {
+  $.magnificPopup.open({
+    items: {
+      src: 'http://itgm.dev.madpro.pro/program.html'
+    },
+    type: 'iframe'
+  });
+}
+
 
 function openVideo() {
   $.magnificPopup.open({
