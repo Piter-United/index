@@ -12,14 +12,16 @@ title: Piter United
 
 <div class="landing_row">
 	<div class="container">
-		<h3>Ближайшие митапы&nbsp&nbsp<a class="label label-danger" id="custom_label" href="/new/meetups.html">Все 14</a></h3>
+		<h3>Сообщества&nbsp&nbsp
+			<!-- <a class="label label-danger" id="custom_label" href="/new/meetups.html">Все 14</a> -->
+		</h3>
 		
 		<div class="container-flex">
-			{% for meetup in site.data.meetups %}
-			<div class="item-flex meetup">
-				<div class="afa"></div>
-				<h4> {{meetup.title}} </h4>
-				<p> {{meetup.desc}} </p>
+			{% for community in site.data.communities %}
+			<div class="item-flex community">
+				<!-- <div class="afa"></div> -->
+				<h4> {{community.title}} </h4>
+				<p> {{community.desc}} </p>
 			</div>
 			{% endfor %}
 		</div>
@@ -27,6 +29,15 @@ title: Piter United
 </div>
 
 <div class="landing_row">
+	<div class="container">
+		<h3>Новости&nbsp&nbsp
+			<!-- <a class="label label-danger" id="custom_label" href="/new/meetups.html">Все 14</a> -->
+		</h3>
+		<p>... встроить сюда посты с https://medium.com/@piterunited</p>
+	</div>
+</div>
+
+<!-- <div class="landing_row">
 	<div class="container">
 		<h3>Сообщества &nbsp&nbsp<a class="label label-danger" id="custom_label" href="/new/communities.html">Все 31</a></h3>
 	
@@ -40,6 +51,6 @@ title: Piter United
 		</div>
 		{% endfor %}
 	</div>
-</div>
+</div> -->
 
 

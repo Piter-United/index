@@ -14,8 +14,15 @@ a.brand{
 }
 
 .nav-pills li a{
-	color: #7f8c8d !important;
+	color: #d9534f !important;
 }
+
+.nav-pills li .btn{
+	border-color: #d9534f !important;
+}
+
+/*#7f8c8d*/
+
 
 /* Styles for Primary Navigation*/
 
@@ -88,9 +95,10 @@ a#registration:hover{
 
 .item-flex{
 	flex-grow: 1;
-	width: 300px;
+	width: 250px;
 	text-align: left;
-	margin: 4px;
+	margin: 8px;
+	padding: 20px;
 }
 
 .item-flex h4{
@@ -132,12 +140,16 @@ a#registration:hover{
 	display: inline-block;
 }
 
-.meetup:hover{
+/*.meetup:hover{
 	border: 1px solid #D0021B;
 }
 
 .meetup:hover h4{
 	color: #D0021B;
+}*/
+
+.community{
+	border: 1px solid #ddd;
 }
 
 .community:hover{

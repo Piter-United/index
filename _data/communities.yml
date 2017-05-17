@@ -46,11 +46,11 @@
   desc: Группа пользователей GNU/Linux и других OpenSource систем
   logo: img/spblug.png
 
-- title: SPb Cloud
-  members:
-  link: https://vk.com/spb.cloud
-  desc: Сообщество специалистов по облачным технологиями и виртуализации.
-  logo: img/cloud.jpg
+# - title: SPb Cloud
+#   members:
+#   link: https://vk.com/spb.cloud
+#   desc: Сообщество специалистов по облачным технологиями и виртуализации.
+#   logo: img/cloud.jpg
 
 - title: SPb Ruby User Group
   members:
@@ -82,23 +82,23 @@
   desc: Сообщество разработчиков под мобильные устройства.
   logo: img/mobile.png
 
-- title: FProg SPb
+- title: FProg
   members:
   link: https://plus.google.com/u/0/communities/106931692847918217517
   desc: Ценители функционального программирования из Питера.
   logo: img/clojure.png
 
-- title: Spb Lisp Users
-  members:
-  link: http://vk.com/lisp.users
-  desc: Сообщество программистов на Lisp
-  logo: img/lisp.png
+# - title: Spb Lisp Users
+#   members:
+#   link: http://vk.com/lisp.users
+#   desc: Сообщество программистов на Lisp
+#   logo: img/lisp.png
 
-- title: HackIoT
-  members:
-  link: https://vk.com/hackiot
-  desc: Интернет вещей воплоти.
-  logo: img/hackiot.jpg
+# - title: HackIoT
+#   members:
+#   link: https://vk.com/hackiot
+#   desc: Интернет вещей воплоти.
+#   logo: img/hackiot.jpg
 
 - title: SPb Unity User Group
   members:
@@ -106,11 +106,11 @@
   desc: Сообщество разработчиков на Unity3d в Санкт-Петербурге.
   logo: img/uug.png
 
-- title: 3D4WEB
-  members:
-  link: http://www.meetup.com/3D4WEB/
-  desc: Специалисты по 3D-моделям в WEB.
-  logo: img/3d4web.jpeg
+# - title: 3D4WEB
+#   members:
+#   link: http://www.meetup.com/3D4WEB/
+#   desc: Специалисты по 3D-моделям в WEB.
+#   logo: img/3d4web.jpeg
 
 - title: SPb SQA Group
   members:
@@ -148,20 +148,20 @@
   desc: Проектировщики интерфейсов и юзабилисты Санкт-Петербурга
   logo: img/uxspb.png
 
-- title: SPb Startup
-  members:
-  link: https://www.facebook.com/groups/pitervc/
-  desc: ИТ-предприниматели Санкт-Петербурга
-  logo: img/spbstartup.png
+# - title: SPb Startup
+#   members:
+#   link: https://www.facebook.com/groups/pitervc/
+#   desc: ИТ-предприниматели Санкт-Петербурга
+#   logo: img/spbstartup.png
 
-- title: SPb WordPress
-  members:
-  link: http://wpspb.org/
-  desc: Сообщество неравнодушных к CMS WordPress
-  logo: img/wpspb.png
+# - title: SPb WordPress
+#   members:
+#   link: http://wpspb.org/
+#   desc: Сообщество неравнодушных к CMS WordPress
+#   logo: img/wpspb.png
 
-- title: IT Talk
-  members:
-  link: http://it-talk.dataart.ru/
-  desc: Сообщество компании DataArt
-  logo: img/IT-Talk-SPb-logo.png
+# - title: IT Talk
+#   members:
+#   link: http://it-talk.dataart.ru/
+#   desc: Сообщество компании DataArt
+#   logo: img/IT-Talk-SPb-logo.png
