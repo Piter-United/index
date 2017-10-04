@@ -145,12 +145,12 @@ $(document).ready(function () {
 });
 
 function openProgram() {
-  $.magnificPopup.open({
-    items: {
-      src: 'http://itgm.dev.madpro.pro/program.html'
-    },
-    type: 'iframe'
-  });
+//   $.magnificPopup.open({
+//     items: {
+//       src: 'http://itgm.dev.madpro.pro/program.html'
+//     },
+//     type: 'iframe'
+//   });
 }
 
 
