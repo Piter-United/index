@@ -1,15 +1,15 @@
 ---
-layout: layout_purple
+layout: layout_red
 title: "IT Global Meetup #11"
 page_title: "Осенний слёт IT сообществ Санкт-Петербурга"
-description: 14 мая 2017, с 10.00 до 19.00. 10-й слет ИТ-сообществ Санкт-Петербурга. КДЦ Club House - СПб, пр. Медиков 3.
+description: 28 октября 2017, с 10.00 до 19.00. 10-й слет ИТ-сообществ Санкт-Петербурга. КДЦ Club House - СПб, пр. Медиков 3.
 logo: http://piter-united.ru/img/itgm_logo_blue.png
 url: http://piter-united.ru/itgm11
 date:
-    day: 14 мая
-    from: 2017-05-14T10:00:00+03:00
-    to: 2017-05-14T19:00:00+03:00
-    string: 14 мая 2017 c 10.00 до 19.00
+    day: 28 октября
+    from: 2017-10-28T10:00:00+03:00
+    to: 2017-10-28T19:00:00+03:00
+    string: 28 октября 2017 c 10.00 до 19.00
 location:
     name: КДЦ Club House
     address: пр. Медиков д.3 к.1
@@ -32,8 +32,8 @@ location:
       <div class="col-md-5 col-sm-8 col-xs-11">
         <p>&nbsp;</p>
         <p>&nbsp;</p>
-        <!--<p>{{ page.date.string }}</p>-->
-        <!--<p>{{ page.location.string }}</p>-->
+        <p>{{ page.date.string }}</p>
+        <p>{{ page.location.string }}</p>
       </div>
     </div>
     <div class="row">
@@ -47,7 +47,7 @@ location:
   <div class="share-btns">
     <iframe src="https://piter-united.herokuapp.com/iframe" class="__slackin slack"></iframe>
     <div class="ya-share2" data-services="gplus,facebook,vkontakte,twitter,linkedin" data-image="{{ page.logo }}" data-lang="ru"
-      data-size="m" data-title="{{ page.title }}" data-description="{{ page.description }}" data-url="http://piter-united.ru/itgm10"></div>
+      data-size="m" data-title="{{ page.title }}" data-description="{{ page.description }}" data-url="http://piter-united.ru/itgm11"></div>
   </div>
 </div>
 
@@ -95,6 +95,7 @@ location:
         </div>
       </div>
       <div class="col-md-6 text-center col-img-video">
+        <div class="col-img-view__overlay"></div>
         <a class="play" href="javascript:openVideo();">
           <i class="fa fa-play-circle fa-3x"></i>
         </a>
@@ -115,6 +116,7 @@ location:
         </div>
       </div>
       <div class="col-md-6 text-center col-img-photo">
+          <div class="col-img-photo__overlay"></div>
         <!--<a class="play" href="javascript:;">-->
           <!--<i class="fa fa-camera fa-2x"></i>-->
           <!-- вызов модалки с фотогалереей -->
@@ -249,116 +251,116 @@ location:
 <!-- закрытие контера -->
 
 <!--PARTNERS -->
-<!--<div id="partners" class="container-fluid container-fluid-gray">-->
-  <!--<div class="container container-text">-->
-    <!--<div class="row">-->
-      <!--<div class="col-sm-6">-->
-        <!--<h4>Компании-партнеры</h4>-->
-      <!--</div>-->
-    <!--</div>-->
-    <!--<div class="row">-->
-      <!--<div class="col-md-9 col-sm-11 col-xs-12">-->
-        <!--<h1>Нас поддерживают<br>лучшие IT компании.</h1>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
+<div id="partners" class="container-fluid container-fluid-gray">
+    <div class="container container-text">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>Компании-партнеры</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9 col-sm-11 col-xs-12">
+                <h1>Нас поддерживают<br>лучшие IT компании.</h1>
+            </div>
+        </div>
+    </div>
   <!-- закрытие заголовка -->
 
-  <!--<div class="container">-->
+    <div class="container">
     <!-- Gold -->
     {% for sponsor in site.data.itgm11_sponsors.gold %} {% assign loopindex = forloop.index | modulo: 2 %} {% if loopindex ==1 or forloop.first %}
-    <!--<div class="row text-center">-->
+        <div class="row text-center">
       {% endif %}
-      <!--<div class="col-sm-6">-->
-        <!--<a href="{{ sponsor.link }}" target="_blank">-->
-          <!--<div class="thumbnail thumbnail-white">-->
-            <!--<img src="{{ sponsor.logo }}" title="{{ sponsor.title }}">-->
-          <!--</div>-->
-        <!--</a>-->
-      <!--</div>-->
+            <div class="col-sm-6">
+                <a href="{{ sponsor.link }}" target="_blank">
+                    <div class="thumbnail thumbnail-white">
+                        <img src="{{ sponsor.logo }}" title="{{ sponsor.title }}">
+                    </div>
+                </a>
+            </div>
       {% if loopindex == 0 or forloop.last %}
-    <!--</div>-->
+        </div>
     {% endif %} {% endfor %}
     <!-- закрытие строки -->
     <!-- Silver -->
     {% for sponsor in site.data.itgm11_sponsors.silver %} {% assign loopindex = forloop.index | modulo: 3 %} {% if loopindex
     == 1 or forloop.first %}
-    <!--<div class="row text-center">-->
+        <div class="row text-center">
       {% endif %}
-      <!--<div class="col-sm-4">-->
-        <!--<a href="{{ sponsor.link }}" target="_blank">-->
-          <!--<div class="thumbnail thumbnail-white">-->
-            <!--<img src="{{ sponsor.logo }}" title="{{ sponsor.title }}">-->
-          <!--</div>-->
-        <!--</a>-->
-      <!--</div>-->
+            <div class="col-sm-4">
+                <a href="{{ sponsor.link }}" target="_blank">
+                    <div class="thumbnail thumbnail-white">
+                        <img src="{{ sponsor.logo }}" title="{{ sponsor.title }}">
+                    </div>
+                </a>
+            </div>
       {% if loopindex == 0 or forloop.last %}
-    <!--</div>-->
+        </div>
     {% endif %} {% endfor %}
     <!-- закрытие строки -->
     <!-- Silver -->
     {% for sponsor in site.data.itgm11_sponsors.bronse %} {% assign loopindex = forloop.index | modulo: 4 %} {% if loopindex
     == 1 or forloop.first %}
-    <!--<div class="row text-center">-->
+        <div class="row text-center">
       {% endif %}
-      <!--<div class="col-sm-3">-->
-        <!--<a href="{{ sponsor.link }}" target="_blank">-->
-          <!--<div class="thumbnail thumbnail-white">-->
-            <!--<img src="{{ sponsor.logo }}" title="{{ sponsor.title }}">-->
-          <!--</div>-->
-        <!--</a>-->
-      <!--</div>-->
+            <div class="col-sm-3">
+                <a href="{{ sponsor.link }}" target="_blank">
+                    <div class="thumbnail thumbnail-white">
+                        <img src="{{ sponsor.logo }}" title="{{ sponsor.title }}">
+                    </div>
+                </a>
+            </div>
       {% if loopindex == 0 or forloop.last %}
-    <!--</div>-->
+        </div>
     {% endif %} {% endfor %}
     <!-- закрытие строки -->
 
-    <!--<div class="btn-center">-->
-      <!--<a href="mailto:piterunited@gmail.com" class="btn btn-primary btn-lg btn-block">Стать партнером</a>-->
-    <!--</div>-->
-  <!--</div>-->
-  <!-- закрытие блока партнеров -->
-<!--</div>-->
+        <div class="btn-center">
+            <a href="mailto:piterunited@gmail.com" class="btn btn-primary btn-lg btn-block">Стать партнером</a>
+        </div>
+    </div>
+    <!-- закрытие блока партнеров -->
+</div>
 <!-- закрытие fluid цвет -->
 
 <!--INFO-PARTNERS -->
-<!--<div class="container-fluid">-->
-  <!--<div class="container container-text">-->
-    <!--<div class="row">-->
-      <!--<div class="col-sm-6">-->
-        <!--<h4>Инфопартнеры</h4>-->
-      <!--</div>-->
-    <!--</div>-->
-    <!--<div class="row">-->
-      <!--<div class="col-md-9 col-sm-11 col-xs-12">-->
-        <!--<h1>О нас пишут<br>популярные порталы.</h1>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
+<div class="container-fluid">
+    <div class="container container-text">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>Инфопартнеры</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9 col-sm-11 col-xs-12">
+                <h1>О нас пишут<br>популярные порталы.</h1>
+            </div>
+        </div>
+    </div>
   <!-- закрытие заголовка -->
 
-  <!--<div class="container">-->
-    {% for sponsor in site.data.itgm10_sponsors.infopartners %} {% assign loopindex = forloop.index | modulo: 2 %} {% if loopindex
+    <div class="container">
+    {% for sponsor in site.data.itgm11_sponsors.infopartners %} {% assign loopindex = forloop.index | modulo: 2 %} {% if loopindex
     == 1 or forloop.first %}
-    <!--<div class="row text-center">-->
+        <div class="row text-center">
       {% endif %}
-      <!--<div class="col-sm-6">-->
-        <!--<a href="{{ sponsor.link }}" target="_blank">-->
-          <!--<div class="thumbnail thumbnail-white">-->
-            <!--<img src="{{ sponsor.logo }}" title="{{ sponsor.title }}">-->
-          <!--</div>-->
-        <!--</a>-->
-      <!--</div>-->
+            <div class="col-sm-6">
+                <a href="{{ sponsor.link }}" target="_blank">
+                    <div class="thumbnail thumbnail-white">
+                        <img src="{{ sponsor.logo }}" title="{{ sponsor.title }}">
+                    </div>
+                </a>
+            </div>
       {% if loopindex == 0 or forloop.last %}
-    <!--</div>-->
+        </div>
     {% endif %} {% endfor %}
 
-    <!--<div class="btn-center">-->
-      <!--<a href="mailto:piterunited@gmail.com" class="btn btn-primary btn-lg btn-block">Стать партнером</a>-->
-    <!--</div>-->
-  <!--</div>-->
+        <div class="btn-center">
+            <a href="mailto:piterunited@gmail.com" class="btn btn-primary btn-lg btn-block">Стать партнером</a>
+        </div>
+    </div>
   <!-- закрытие блока партнеров -->
-<!--</div>-->
+</div>
 <!-- закрытие fluid-->
 
 <div id="team" class="container-fluid container-fluid-gray container-fluid-carousel-big">
@@ -513,7 +515,7 @@ location:
 
 <!-- MAP -->
 
-<!--<div id="googleMap"></div>-->
+<div id="googleMap"></div>
 
 <!-- FOOTER -->
 <div class="container-fluid container-fluid-footer">

@@ -1,39 +1,39 @@
-gold: 
-  - title: Selectel
-    link: https://selectel.ru
-    logo: img/logo-selectel.png
+gold:
+  # - title: Selectel
+  #   link: https://selectel.ru
+  #   logo: img/logo-selectel.png
 
-  - title: SEMRush
-    link: https://www.semrush.com
-    logo: img/semrush-logo.png
+  # - title: SEMRush
+  #   link: https://www.semrush.com
+  #   logo: img/semrush-logo.png
 
 silver:
-  - title: Return on Intelligence
-    link: http://www.returnonintelligence.ru
-    logo: img/logo_roi.png
- 
-  - title: ForaSoft
-    link: https://forasoft.com/ru/
-    logo: img/forasoft-logo.png
+  # - title: Return on Intelligence
+  #   link: http://www.returnonintelligence.ru
+  #   logo: img/logo_roi.png
 
-  - title: T-Systems
-    link: http://www.t-systems.ru
-    logo: img/T-Systems.png
+  # - title: ForaSoft
+  #   link: https://forasoft.com/ru/
+  #   logo: img/forasoft-logo.png
+
+  # - title: T-Systems
+  #   link: http://www.t-systems.ru
+  #   logo: img/T-Systems.png
 
 bronse:
-  - title: Sprintbox
-    link: https://sprintbox.ru/
-    logo: img/sprintbox.jpg
+  # - title: Sprintbox
+  #   link: https://sprintbox.ru/
+  #   logo: img/sprintbox.jpg
 
 infopartners:
-  - title: LoftBlog
-    link: https://loftblog.ru
-    logo: img/loft-logo.png
+  # - title: LoftBlog
+  #   link: https://loftblog.ru
+  #   logo: img/loft-logo.png
 
-  - title: Айти-Событие.рф
-    link: http://it-events.com
-    logo: img/it-sob-logo.png
+  # - title: Айти-Событие.рф
+  #   link: http://it-events.com
+  #   logo: img/it-sob-logo.png
 
-  - title: Нетология
-    link: http://netology.ru/
-    logo: img/netologiya.png
+  # - title: Нетология
+  #   link: http://netology.ru/
+  #   logo: img/netologiya.png
