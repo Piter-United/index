@@ -1,17 +1,17 @@
 gold:
-  # - title: Selectel
-  #   link: https://selectel.ru
-  #   logo: img/logo-selectel.png
+  - title: Return on Intelligence
+    link: http://www.returnonintelligence.ru
+    logo: img/partners/logo_roi.png
 
-  # - title: SEMRush
-  #   link: https://www.semrush.com
-  #   logo: img/semrush-logo.png
+  - title: Veeam
+    link: https://www.veeam.com/
+    logo: img/partners/veeam.png
+
+  - title: Peter-Service
+    link: http://www.billing.ru/
+    logo: img/partners/peterservice-01.png
 
 silver:
-  # - title: Return on Intelligence
-  #   link: http://www.returnonintelligence.ru
-  #   logo: img/logo_roi.png
-
   # - title: ForaSoft
   #   link: https://forasoft.com/ru/
   #   logo: img/forasoft-logo.png
@@ -21,9 +21,9 @@ silver:
   #   logo: img/T-Systems.png
 
 bronse:
-  # - title: Sprintbox
-  #   link: https://sprintbox.ru/
-  #   logo: img/sprintbox.jpg
+  - title: Sprintbox
+    link: https://sprintbox.ru/
+    logo: img/partners/sprintbox.jpg
 
 infopartners:
   # - title: LoftBlog
