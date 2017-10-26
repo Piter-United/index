@@ -839,7 +839,8 @@ button.mobile {
 
 .thumbnail-row_elm {
     display: flex;
-    align-items: flex-start;
+    align-items: space-around;
+    width: calc(25% - 5px);
 }
 
 .thumbnail-btn {
@@ -855,4 +856,53 @@ button.mobile {
 
 .thumbnail-btn:focus {
     outline: none;
+}
+
+.program_window {
+  position: relative;
+  margin: 20px auto;
+  width: 60%;
+  height: auto;
+  padding: 30px;
+  background:#fff;
+  color:#000;
+}
+
+.slot {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.slot.no-border {
+  border-bottom: 0;
+}
+
+.slot .slot__time {
+  min-width: 150px;
+}
+
+.slot .slot__info .slot__info__subject {
+  font-weight: bold;
+}
+
+.slot .slot__info .slot__info__speaker {
+  font-size: 15px;
+}
+
+.slot .slot__info .slot__info__description {
+  font-size: 14px;
+}
+
+.partners img {
+  width: 300px;
+}
+
+.partners .col-sm-6, .partners .col-sm-12 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
 }

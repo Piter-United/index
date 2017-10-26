@@ -137,7 +137,9 @@ location:
     <div class="row">
       <div class="col-md-9 col-sm-11 col-xs-12">
         <h1>В одно время.<br>В одном месте.</h1>
-        <a target="_blank" href="https://docs.google.com/spreadsheets/d/1sjrkaQOn2PQ-_MDcOIZ0CnkHkyYElNxZPYOtfn4wQYU/edit?usp=sharing">Подробнее о программе <i class="fa fa-angle-right fa"></i></a>
+        <div>
+          Для просмотра программы сообщества достаточно кликнуть на него.
+        </div>
       </div>
     </div>
   </div>
@@ -145,17 +147,35 @@ location:
 
   <div class="container">
     <!-- Строка 1 -->
-
     <div class="row text-center thumbnail-row">
-    {% for community in site.data.itgm11_communities %}
+    {% for item in site.data.itgm11_program %}
       <div class="col-sm-3 thumbnail-row_elm">
-        <a class="thumbnail-btn a-thumbnail" href="{{ community.link }}" target="_blank">
+        <a class="thumbnail-btn a-thumbnail" href="javascript:openProgram({{ forloop.index }})" target="_blank">
           <div class="thumbnail">
-            <h3>{{ community.title }}</h3>
+            <h3>{{ item.community }}</h3>
             <!-- <p>Краткое описание в три <br>строки</p> -->
           </div>
         </a>
       </div>
+      <div id="program_{{ forloop.index }}" class="program_window mfp-hide">
+        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+        {% for slot in item.program %}
+        <div class="slot{% if forloop.last %} no-border{% endif %}">
+          <div class="slot__time">{{ slot.time }}</div>
+          <div class="slot__info">
+            <div class="slot__info__subject">{{ slot.subject }}</div>
+            <div class="slot__info__speaker">
+              {{ slot.speaker }}
+              {% if slot.company == "" %}
+              {% else %}
+              ({{ slot.company }})
+              {% endif %}
+            </div>
+            <div class="slot__info__description">{{ slot.description }}</div>
+          </div>
+        </div>
+        {% endfor %}
+     </div>
     {% endfor %}
     </div>
 
@@ -225,7 +245,7 @@ location:
     </div>
     <div class="row">
       <div class="col-sm-6">
-        <a target="_blank" href="https://docs.google.com/spreadsheets/d/1sjrkaQOn2PQ-_MDcOIZ0CnkHkyYElNxZPYOtfn4wQYU/edit?usp=sharing">Подробнее о программе <i class="fa fa-angle-right fa"></i></a>
+        <a href="#community">Подробнее о программе <i class="fa fa-angle-right fa"></i></a>
       </div>
     </div>
   </div>
@@ -266,55 +286,34 @@ location:
     </div>
   <!-- закрытие заголовка -->
 
-    <div class="container">
-    <!-- Gold -->
-    {% for sponsor in site.data.itgm11_sponsors.gold %} {% assign loopindex = forloop.index | modulo: 2 %} {% if loopindex ==1 or forloop.first %}
-        <div class="row text-center">
-      {% endif %}
-            <div class="col-sm-6">
-                <a href="{{ sponsor.link }}" target="_blank">
-                    <div class="thumbnail thumbnail-white">
-                        <img src="{{ sponsor.logo }}" title="{{ sponsor.title }}">
-                    </div>
-                </a>
-            </div>
-      {% if loopindex == 0 or forloop.last %}
+    <div class="container partners">
+      <div class="row">
+        <div class="col-sm-6">
+          <a href="http://www.returnonintelligence.ru" target="_blank">
+            <img alt="Return on Intelligence" src="img/partners/logo_roi.png"/>
+          </a>
         </div>
-    {% endif %} {% endfor %}
-    <!-- закрытие строки -->
-    <!-- Silver -->
-    {% for sponsor in site.data.itgm11_sponsors.silver %} {% assign loopindex = forloop.index | modulo: 3 %} {% if loopindex
-    == 1 or forloop.first %}
-        <div class="row text-center">
-      {% endif %}
-            <div class="col-sm-4">
-                <a href="{{ sponsor.link }}" target="_blank">
-                    <div class="thumbnail thumbnail-white">
-                        <img src="{{ sponsor.logo }}" title="{{ sponsor.title }}">
-                    </div>
-                </a>
-            </div>
-      {% if loopindex == 0 or forloop.last %}
+        <div class="col-sm-6">
+          <a href="http://www.billing.ru/" target="_blank">
+            <img alt="Peter-Service" src="img/partners/peterservice-01.png"/>
+          </a>
         </div>
-    {% endif %} {% endfor %}
-    <!-- закрытие строки -->
-    <!-- Silver -->
-    {% for sponsor in site.data.itgm11_sponsors.bronse %} {% assign loopindex = forloop.index | modulo: 4 %} {% if loopindex
-    == 1 or forloop.first %}
-        <div class="row text-center">
-      {% endif %}
-            <div class="col-sm-3">
-                <a href="{{ sponsor.link }}" target="_blank">
-                    <div class="thumbnail thumbnail-white">
-                        <img src="{{ sponsor.logo }}" title="{{ sponsor.title }}">
-                    </div>
-                </a>
-            </div>
-      {% if loopindex == 0 or forloop.last %}
+        <div class="col-sm-12">
+          <a href="https://www.veeam.com/" target="_blank">
+            <img alt="Veeam" src="img/partners/veeam.png"/>
+          </a>
         </div>
-    {% endif %} {% endfor %}
-    <!-- закрытие строки -->
-
+        <div class="col-sm-6">
+          <a href="https://spintbox.ru" target="_blank">
+            <img alt="Sprintbox" src="img/partners/sprintbox.svg"/>
+          </a>
+        </div>
+        <div class="col-sm-6">
+          <a href="http://www.filanco.ru/" target="_blank">
+            <img alt="Filanco" src="img/partners/filanco.png"/>
+          </a>
+        </div>
+      </div>
         <div class="btn-center">
             <a href="mailto:piterunited@gmail.com" class="btn btn-primary btn-lg btn-block">Стать партнером</a>
         </div>
