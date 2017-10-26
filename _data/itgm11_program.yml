@@ -68,7 +68,7 @@
           speaker: "Алексей Золотых"
           company: "Wrike"
           subject: "Что посеешь, то и пожмешь или как уменьшить ваш javascript bundle"
-          description: ""
+          description: "Некоторые правктические аспекты сжатия javascript кода."
           photo: null
         -
           time: "13.00-13.45"
