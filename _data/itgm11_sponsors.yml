@@ -31,13 +31,13 @@ bronse:
 
 
 infopartners:
-  # - title: LoftBlog
-  #   link: https://loftblog.ru
-  #   logo: img/loft-logo.png
+  - title: LoftBlog
+    link: https://loftblog.ru
+    logo: img/partners/loft-logo.png
 
-  # - title: Айти-Событие.рф
-  #   link: http://it-events.com
-  #   logo: img/it-sob-logo.png
+  - title: SPB IT
+    link: https://spbit.ru
+    logo: img/partners/spbit.gif
 
   # - title: Нетология
   #   link: http://netology.ru/
